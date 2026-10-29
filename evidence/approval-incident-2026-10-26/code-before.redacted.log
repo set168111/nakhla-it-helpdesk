@@ -1,0 +1,72 @@
+.\.venv\Scripts\python.exe : test_truncated_issue_retains_documented_code_for_later_incident 
+(test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident) ... Executing 
+<Task pending name='Task-2' coro=<WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:382> wait_for=<Task 
+pending name='Task-3' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.203 seconds
+At line:87 char:1
++ .\.venv\Scripts\python.exe -m unittest discover -s tests -p test_agen ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_truncated_...k 0.203 seconds:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+FAIL
+
+======================================================================
+FAIL: test_truncated_issue_retains_documented_code_for_later_incident 
+(test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in 
+run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_agent_workflow.py", line 388, in 
+test_truncated_issue_retains_documented_code_for_later_incident
+    self.assertEqual(self.mcp.writes, [])
+AssertionError: Lists differ: [({'affected_users': 1, 'attempted_steps':[3257 chars]a1')] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+({'affected_users': 1, 'attempted_steps': ['I already restarted.'], 'category': 'network_access', 'department': 
+'Support', 'description': 'Requester reported:  My NakhlaConnect VPN fails. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. 
+Connection detail. Connection detail. Connection detail. Connec', 'kb_refs': [], 'priority': 'P2', 'requester_email': 
+'sara.mikhail@nakhla.example', 'subject': 'VPN connection failure'}, 'act-c0f13fdb17ff45e89fc1040719b7cfa1')
+
+Diff is 4552 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.537s
+
+FAILED (failures=1)

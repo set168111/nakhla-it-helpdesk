@@ -1,0 +1,61 @@
+.venv/Scripts/python.exe : FExecuting <Task pending name='Task-6' 
+coro=<WorkflowTests.test_repeated_lockout_followup_preserves_context_and_approval() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:139> wait_for=<Task pending 
+name='Task-7' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.234 seconds
+At line:2 char:86
++ ... | Out-Null; .venv/Scripts/python.exe -B -m unittest tests.test_agent_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (FExecuting <Tas...k 0.234 seconds:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Executing <Task finished name='Task-6' 
+coro=<WorkflowTests.test_repeated_lockout_followup_preserves_context_and_approval() done, defined at 
+[WORKSPACE]\tests\test_agent_workflow.py:138> 
+exception=AssertionError("'clarification' != 'await_confirmation'\n- clarification\n+ await_confirmation\n") created 
+at [PRIVATE_PATH]> took 0.109 seconds
+F
+======================================================================
+FAIL: test_unexplained_daily_lockouts_use_documented_security_priority 
+(tests.test_agent_workflow.WorkflowTests.test_unexplained_daily_lockouts_use_documented_security_priority)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[WORKSPACE]\tests\test_agent_workflow.py", line 119, in 
+test_unexplained_daily_lockouts_use_documented_security_priority
+    self.assertEqual((policy["category"], policy["priority"], count), ("security", "P2", 1))
+AssertionError: Tuples differ: ('identity_access', None, 1) != ('security', 'P2', 1)
+
+First differing element 0:
+'identity_access'
+'security'
+
+- ('identity_access', None, 1)
++ ('security', 'P2', 1)
+
+======================================================================
+FAIL: test_repeated_lockout_followup_preserves_context_and_approval 
+(tests.test_agent_workflow.WorkflowTests.test_repeated_lockout_followup_preserves_context_and_approval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in 
+run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_agent_workflow.py", line 149, in 
+test_repeated_lockout_followup_preserves_context_and_approval
+    self.assertEqual(result["state"], "await_confirmation")
+AssertionError: 'clarification' != 'await_confirmation'
+- clarification
++ await_confirmation
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.584s
+
+FAILED (failures=2)

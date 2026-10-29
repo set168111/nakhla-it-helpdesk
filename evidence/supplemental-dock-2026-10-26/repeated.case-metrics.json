@@ -1,0 +1,2297 @@
+{
+  "scope": "Unmodified shared evaluator; whole-case time includes setup, all turns and assertions; turn timings are separate; no judge.",
+  "outcome": "shared_runner_returned",
+  "metadata": {
+    "generated_utc": "2026-10-26T11:09:51.413879+00:00",
+    "source_sha256": {
+      "app\\__init__.py": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b",
+      "app\\agent.py": "93fcbf0c41fffe691e9c1a6b90904a01409c373254e05edc694151f0618a843f",
+      "app\\approvals.py": "b9a431872c8c6badf51b415f52cb259447922269321b0373d921a49c52513047",
+      "app\\helpdesk_policy.py": "f0829bee59f0d92be54051f43bf63b61708f034495f2ee832cf8301a97195faf",
+      "app\\main.py": "887dc93c8c243190c3e3e8d42855cad2af17dbba6c669364cad40f2d4267a3f8",
+      "app\\mcp_client.py": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186",
+      "app\\retrieval.py": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd",
+      "app\\storage.py": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351",
+      "requirements.txt": "b94878882178bc084db080559de1c75d80dd507a6d7890f6f0bcbddde35da5c3",
+      "evals\\run_evals.py": "05266e356c65050fb577bd6df17370c381a526ad9b1a362d51ed8b8facbed696",
+      "evals\\combined_cases.jsonl": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098"
+    },
+    "corpus_sha256": "1213f57ba542276ed4a73d932ef6c95c01400e4d6d8bfc3f1a1076cc10c3a332",
+    "safe_config": {
+      "MODEL": "openai/gpt-4.1-mini",
+      "EMBEDDING_MODEL": "openai/text-embedding-3-small",
+      "PROJECT_BUDGET_USD": "2.50",
+      "HELPDESK_TODAY": ""
+    },
+    "safe_config_sha256": "dfac7c52536afe8d9a4056e992fa808a8bb2eb79c419239db09cf31c9ae6a850"
+  },
+  "ledger_before": {
+    "available": true,
+    "confirmed_cost_usd": 1.62394794,
+    "unknown_reserved_usd": 0.02552396,
+    "calculated_cost_usd": 0,
+    "reservations": 1356
+  },
+  "ledger_after": {
+    "available": true,
+    "confirmed_cost_usd": 1.85249282,
+    "unknown_reserved_usd": 0.04033004,
+    "calculated_cost_usd": 0,
+    "reservations": 1571
+  },
+  "summary": {
+    "attempted_case_runs": 69,
+    "passed_case_runs": 65,
+    "success_rate": 0.9420289855072463,
+    "case_wall_avg_seconds": 5.936903615942329,
+    "case_wall_p95_seconds": 15.43748069999856,
+    "turn_wall_avg_seconds": 4.040049730694339,
+    "turn_wall_p95_seconds": 9.184890300006373,
+    "usage_complete": false,
+    "total_cost_usd": null,
+    "average_cost_per_attempted_case_usd": null,
+    "turns_missing_usage": 0,
+    "turns_with_unknown_usage": 1,
+    "confirmed_cost_reported_partial_usd": 0.22854487999999984,
+    "unknown_reserved_usd": 0.01480608
+  },
+  "cases": [
+    {
+      "case_id": "S2-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 7.742820500017842,
+      "cost_usd": 0.003871859999999838,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.724265900003957,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13626,
+            "completion_tokens": 381,
+            "cost_usd": 0.003871859999999838,
+            "confirmed_cost_usd": 0.003871859999999838,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003871859999999838
+        }
+      ]
+    },
+    {
+      "case_id": "S2-02",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 0.17059289998724125,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.1621043000195641,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.567341599991778,
+      "cost_usd": 0.006256160000000177,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.5503102999937255,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14329,
+            "completion_tokens": 327,
+            "cost_usd": 0.006256160000000177,
+            "confirmed_cost_usd": 0.006256160000000177,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006256160000000177
+        }
+      ]
+    },
+    {
+      "case_id": "S2-04",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.64041449999786,
+      "cost_usd": 0.00042365999999982584,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.6346510000003036,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 821,
+            "completion_tokens": 59,
+            "cost_usd": 0.00042365999999982584,
+            "confirmed_cost_usd": 0.00042365999999982584,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00042365999999982584
+        }
+      ]
+    },
+    {
+      "case_id": "S2-05",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 15.43748069999856,
+      "cost_usd": 0.008987320000000132,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.490708400000585,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14266,
+            "completion_tokens": 291,
+            "cost_usd": 0.002179300000000106,
+            "confirmed_cost_usd": 0.002179300000000106,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.002179300000000106
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.648414399998728,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15524,
+            "completion_tokens": 373,
+            "cost_usd": 0.006808020000000026,
+            "confirmed_cost_usd": 0.006808020000000026,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006808020000000026
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.26702049997402355,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-06",
+      "category": "rejection",
+      "passed": true,
+      "wall_seconds": 6.71274510002695,
+      "cost_usd": 0.0060786600000000135,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.616126999986591,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14131,
+            "completion_tokens": 266,
+            "cost_usd": 0.0060786600000000135,
+            "confirmed_cost_usd": 0.0060786600000000135,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0060786600000000135
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.07032710002386011,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-07",
+      "category": "tool_failure",
+      "passed": false,
+      "wall_seconds": 0.18826840000110678,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.13378419997752644,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-08",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 6.831589299981715,
+      "cost_usd": 0.006387739999999864,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.800777099997504,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14663,
+            "completion_tokens": 326,
+            "cost_usd": 0.006387739999999864,
+            "confirmed_cost_usd": 0.006387739999999864,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006387739999999864
+        }
+      ]
+    },
+    {
+      "case_id": "S2-09",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 0.14285199998994358,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.1317323999828659,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-10",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.283537199982675,
+      "cost_usd": 0.0036680399999999835,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.015954100003,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12576,
+            "completion_tokens": 324,
+            "cost_usd": 0.0036680399999999835,
+            "confirmed_cost_usd": 0.0036680399999999835,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0036680399999999835
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2393778999976348,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 6.766751099989051,
+      "cost_usd": 0.003739840000000161,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.740194000012707,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14132,
+            "completion_tokens": 244,
+            "cost_usd": 0.003739840000000161,
+            "confirmed_cost_usd": 0.003739840000000161,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003739840000000161
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-02",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 9.256097600009525,
+      "cost_usd": 0.004408320000000021,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 9.233745800011093,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15027,
+            "completion_tokens": 414,
+            "cost_usd": 0.004408320000000021,
+            "confirmed_cost_usd": 0.004408320000000021,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.004408320000000021
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 23.20096590000321,
+      "cost_usd": 0.005317119999999953,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 22.906847999984166,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13354,
+            "completion_tokens": 344,
+            "cost_usd": 0.005317119999999953,
+            "confirmed_cost_usd": 0.005317119999999953,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005317119999999953
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.26514900001347996,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-04",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 6.506302900001174,
+      "cost_usd": 0.0021460599999998387,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.485606600006577,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13007,
+            "completion_tokens": 321,
+            "cost_usd": 0.0021460599999998387,
+            "confirmed_cost_usd": 0.0021460599999998387,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0021460599999998387
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-05",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 0.28658650000579655,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.27804240002296865,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-06",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 9.516388999996707,
+      "cost_usd": 0.006005260000000012,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 9.184890300006373,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13550,
+            "completion_tokens": 365,
+            "cost_usd": 0.006005260000000012,
+            "confirmed_cost_usd": 0.006005260000000012,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006005260000000012
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2992314000148326,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-07",
+      "category": "memory",
+      "passed": true,
+      "wall_seconds": 7.123257900006138,
+      "cost_usd": 0.0038320400000000365,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.3449628000089433,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.75605060000089,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13826,
+            "completion_tokens": 330,
+            "cost_usd": 0.0038320400000000365,
+            "confirmed_cost_usd": 0.0038320400000000365,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0038320400000000365
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-08",
+      "category": "rejection",
+      "passed": true,
+      "wall_seconds": 7.097710600006394,
+      "cost_usd": 0.00556928000000001,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.013807899988024,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12834,
+            "completion_tokens": 272,
+            "cost_usd": 0.00556928000000001,
+            "confirmed_cost_usd": 0.00556928000000001,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00556928000000001
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.06545279998681508,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-09",
+      "category": "tool_failure",
+      "passed": true,
+      "wall_seconds": 0.25378669999190606,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.20316500001354143,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-10",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 7.318097499985015,
+      "cost_usd": 0.005462280000000153,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.023047299997415,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12490,
+            "completion_tokens": 291,
+            "cost_usd": 0.005462280000000153,
+            "confirmed_cost_usd": 0.005462280000000153,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005462280000000153
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.22508010000456125,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.04214420000789687,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-11",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.4238290000066627,
+      "cost_usd": 0.00038723999999978886,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.4138629999943078,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 766,
+            "completion_tokens": 50,
+            "cost_usd": 0.00038723999999978886,
+            "confirmed_cost_usd": 0.00038723999999978886,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00038723999999978886
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-12",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 8.804507799999556,
+      "cost_usd": 0.003620100000000015,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 8.562534299999243,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12532,
+            "completion_tokens": 305,
+            "cost_usd": 0.003620100000000015,
+            "confirmed_cost_usd": 0.003620100000000015,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003620100000000015
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2201338000013493,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-13",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 5.026204699999653,
+      "cost_usd": 0.0035045400000000004,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 5.010671500000171,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 7760,
+            "completion_tokens": 250,
+            "cost_usd": 0.0035045400000000004,
+            "confirmed_cost_usd": 0.0035045400000000004,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0035045400000000004
+        }
+      ]
+    },
+    {
+      "case_id": "S2-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 7.292112499999348,
+      "cost_usd": 0.003957860000000091,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.275961500010453,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13681,
+            "completion_tokens": 421,
+            "cost_usd": 0.003957860000000091,
+            "confirmed_cost_usd": 0.003957860000000091,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003957860000000091
+        }
+      ]
+    },
+    {
+      "case_id": "S2-02",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 0.2121556000201963,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.20364049999625422,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 6.7596416999876965,
+      "cost_usd": 0.006172339999999998,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.734361800015904,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14060,
+            "completion_tokens": 342,
+            "cost_usd": 0.006172339999999998,
+            "confirmed_cost_usd": 0.006172339999999998,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006172339999999998
+        }
+      ]
+    },
+    {
+      "case_id": "S2-04",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.3387712000112515,
+      "cost_usd": 0.000415580000000082,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.3267055000178516,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 821,
+            "completion_tokens": 54,
+            "cost_usd": 0.000415580000000082,
+            "confirmed_cost_usd": 0.000415580000000082,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.000415580000000082
+        }
+      ]
+    },
+    {
+      "case_id": "S2-05",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 15.528551399998832,
+      "cost_usd": 0.013145839999999964,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.001194400014356,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14253,
+            "completion_tokens": 278,
+            "cost_usd": 0.006146899999999844,
+            "confirmed_cost_usd": 0.006146899999999844,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006146899999999844
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 8.274581000005128,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15821,
+            "completion_tokens": 418,
+            "cost_usd": 0.00699894000000012,
+            "confirmed_cost_usd": 0.00699894000000012,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00699894000000012
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.22587980001117103,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-06",
+      "category": "rejection",
+      "passed": true,
+      "wall_seconds": 7.356509500008542,
+      "cost_usd": 0.006142899999999951,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.277558600006159,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14271,
+            "completion_tokens": 271,
+            "cost_usd": 0.006142899999999951,
+            "confirmed_cost_usd": 0.006142899999999951,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006142899999999951
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.06012780001037754,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-07",
+      "category": "tool_failure",
+      "passed": false,
+      "wall_seconds": 0.19548379999469034,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.1409902999876067,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-08",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 12.059825100004673,
+      "cost_usd": 0.006387680000000007,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 12.028275299991947,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14474,
+            "completion_tokens": 373,
+            "cost_usd": 0.006387680000000007,
+            "confirmed_cost_usd": 0.006387680000000007,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006387680000000007
+        }
+      ]
+    },
+    {
+      "case_id": "S2-09",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 0.283775699994294,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.27517229999648407,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-10",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 8.362044300010893,
+      "cost_usd": 0.005418539999999972,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 8.096776299993508,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12512,
+            "completion_tokens": 258,
+            "cost_usd": 0.005418539999999972,
+            "confirmed_cost_usd": 0.005418539999999972,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005418539999999972
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.23944040000787936,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 6.214033299998846,
+      "cost_usd": 0.0037422400000000078,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.196822300000349,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14134,
+            "completion_tokens": 245,
+            "cost_usd": 0.0037422400000000078,
+            "confirmed_cost_usd": 0.0037422400000000078,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0037422400000000078
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-02",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 7.5711704999848735,
+      "cost_usd": 0.0033799000000001023,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.550636900006793,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15032,
+            "completion_tokens": 418,
+            "cost_usd": 0.0033799000000001023,
+            "confirmed_cost_usd": 0.0033799000000001023,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0033799000000001023
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.102707000012742,
+      "cost_usd": 0.005967439999999824,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.876348999998299,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13500,
+            "completion_tokens": 354,
+            "cost_usd": 0.005967439999999824,
+            "confirmed_cost_usd": 0.005967439999999824,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005967439999999824
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.20639890001621097,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-04",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 6.358603100001346,
+      "cost_usd": 0.0021412600000001447,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.34232090000296,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13007,
+            "completion_tokens": 318,
+            "cost_usd": 0.0021412600000001447,
+            "confirmed_cost_usd": 0.0021412600000001447,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0021412600000001447
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-05",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 0.23681760000181384,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.22925420000683516,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-06",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 7.317149899987271,
+      "cost_usd": 0.003889660000000017,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.917782900010934,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13553,
+            "completion_tokens": 362,
+            "cost_usd": 0.003889660000000017,
+            "confirmed_cost_usd": 0.003889660000000017,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003889660000000017
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.3785348000237718,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-07",
+      "category": "memory",
+      "passed": true,
+      "wall_seconds": 7.100483499991242,
+      "cost_usd": 0.005994739999999998,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.2135573999839835,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.864323299989337,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13813,
+            "completion_tokens": 293,
+            "cost_usd": 0.005994739999999998,
+            "confirmed_cost_usd": 0.005994739999999998,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005994739999999998
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-08",
+      "category": "rejection",
+      "passed": true,
+      "wall_seconds": 5.974465400009649,
+      "cost_usd": 0.003616480000000033,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 5.895903399999952,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12816,
+            "completion_tokens": 256,
+            "cost_usd": 0.003616480000000033,
+            "confirmed_cost_usd": 0.003616480000000033,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003616480000000033
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.05946109999786131,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-09",
+      "category": "tool_failure",
+      "passed": true,
+      "wall_seconds": 0.236012400011532,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.17753230000380427,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-10",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 6.757075400004396,
+      "cost_usd": 0.0035590599999999473,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.4152251000050455,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12472,
+            "completion_tokens": 282,
+            "cost_usd": 0.0035590599999999473,
+            "confirmed_cost_usd": 0.0035590599999999473,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0035590599999999473
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2956410000042524,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.03008850000333041,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-11",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.2635596000181977,
+      "cost_usd": 0.0003856399999999649,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.255833800008986,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 766,
+            "completion_tokens": 49,
+            "cost_usd": 0.0003856399999999649,
+            "confirmed_cost_usd": 0.0003856399999999649,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0003856399999999649
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-12",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 6.283308600017335,
+      "cost_usd": 0.005482919999999947,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.04468610000913,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12513,
+            "completion_tokens": 298,
+            "cost_usd": 0.005482919999999947,
+            "confirmed_cost_usd": 0.005482919999999947,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005482919999999947
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.20778920000884682,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-13",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 6.019823999988148,
+      "cost_usd": 0.0015206599999999515,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.004693099996075,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 7760,
+            "completion_tokens": 306,
+            "cost_usd": 0.0015206599999999515,
+            "confirmed_cost_usd": 0.0015206599999999515,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0015206599999999515
+        }
+      ]
+    },
+    {
+      "case_id": "S2-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 9.256963399995584,
+      "cost_usd": 0.003947460000000014,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 9.238486099988222,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13767,
+            "completion_tokens": 393,
+            "cost_usd": 0.003947460000000014,
+            "confirmed_cost_usd": 0.003947460000000014,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003947460000000014
+        }
+      ]
+    },
+    {
+      "case_id": "S2-02",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 0.1702215000113938,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.16260589999728836,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.166435100021772,
+      "cost_usd": 0.006181240000000088,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.147009900014382,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14058,
+            "completion_tokens": 348,
+            "cost_usd": 0.006181240000000088,
+            "confirmed_cost_usd": 0.006181240000000088,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006181240000000088
+        }
+      ]
+    },
+    {
+      "case_id": "S2-04",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.4068532999954186,
+      "cost_usd": 0.0004220600000000019,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.3986918999871705,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 821,
+            "completion_tokens": 58,
+            "cost_usd": 0.0004220600000000019,
+            "confirmed_cost_usd": 0.0004220600000000019,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0004220600000000019
+        }
+      ]
+    },
+    {
+      "case_id": "S2-05",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 15.6694170999981,
+      "cost_usd": 0.009049019999999963,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.2953564999916125,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14271,
+            "completion_tokens": 320,
+            "cost_usd": 0.0022276999999999436,
+            "confirmed_cost_usd": 0.0022276999999999436,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0022276999999999436
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 8.100016699987464,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15633,
+            "completion_tokens": 354,
+            "cost_usd": 0.00682132000000002,
+            "confirmed_cost_usd": 0.00682132000000002,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00682132000000002
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.23797439999179915,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-06",
+      "category": "rejection",
+      "passed": true,
+      "wall_seconds": 6.195375899987994,
+      "cost_usd": 0.0021956999999999116,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.094623199984198,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14271,
+            "completion_tokens": 276,
+            "cost_usd": 0.0021956999999999116,
+            "confirmed_cost_usd": 0.0021956999999999116,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0021956999999999116
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.07496440000250004,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-07",
+      "category": "tool_failure",
+      "passed": false,
+      "wall_seconds": 0.2711390000185929,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.21583120001014322,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-08",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 7.119360000011511,
+      "cost_usd": 0.004002080000000019,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.087366799998563,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14522,
+            "completion_tokens": 334,
+            "cost_usd": 0.004002080000000019,
+            "confirmed_cost_usd": 0.004002080000000019,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.004002080000000019
+        }
+      ]
+    },
+    {
+      "case_id": "S2-09",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 0.24047049999353476,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.23212229998898692,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "S2-10",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 6.910637399996631,
+      "cost_usd": 0.0036700600000001415,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.731937200005632,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12577,
+            "completion_tokens": 325,
+            "cost_usd": 0.0036700600000001415,
+            "confirmed_cost_usd": 0.0036700600000001415,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0036700600000001415
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.15791750000789762,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-01",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 5.9804704999842215,
+      "cost_usd": 0.006037080000000028,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 5.9633807000063825,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 14131,
+            "completion_tokens": 240,
+            "cost_usd": 0.006037080000000028,
+            "confirmed_cost_usd": 0.006037080000000028,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.006037080000000028
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-02",
+      "category": "grounding",
+      "passed": true,
+      "wall_seconds": 13.581107599980896,
+      "cost_usd": 0.003376319999999877,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 13.549724599986803,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 15031,
+            "completion_tokens": 416,
+            "cost_usd": 0.003376319999999877,
+            "confirmed_cost_usd": 0.003376319999999877,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003376319999999877
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-03",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.1269395999843255,
+      "cost_usd": 0.005922299999999936,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.88514669999131,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13435,
+            "completion_tokens": 342,
+            "cost_usd": 0.005922299999999936,
+            "confirmed_cost_usd": 0.005922299999999936,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005922299999999936
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2067936999956146,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-04",
+      "category": "guardrail",
+      "passed": true,
+      "wall_seconds": 7.659862300002715,
+      "cost_usd": 0.0036372600000000865,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.641158899990842,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13007,
+            "completion_tokens": 317,
+            "cost_usd": 0.0036372600000000865,
+            "confirmed_cost_usd": 0.0036372600000000865,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0036372600000000865
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-05",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 0.24678549999953248,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.23673259999486618,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-06",
+      "category": "happy_path",
+      "passed": true,
+      "wall_seconds": 7.620503099984489,
+      "cost_usd": 0.003948859999999943,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.344949999998789,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13577,
+            "completion_tokens": 393,
+            "cost_usd": 0.003948859999999943,
+            "confirmed_cost_usd": 0.003948859999999943,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.003948859999999943
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.24771700002020225,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-07",
+      "category": "memory",
+      "passed": true,
+      "wall_seconds": 7.148972700000741,
+      "cost_usd": 0.0037971400000000877,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.18032949999906123,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/chat",
+          "wall_seconds": 6.940425400011009,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 13827,
+            "completion_tokens": 308,
+            "cost_usd": 0.0037971400000000877,
+            "confirmed_cost_usd": 0.0037971400000000877,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0037971400000000877
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-08",
+      "category": "rejection",
+      "passed": false,
+      "wall_seconds": 3.1700194000150077,
+      "cost_usd": null,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 3.1607992999779526,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": true,
+          "usage": {
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": null,
+            "confirmed_cost_usd": 0.00040167999999995985,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.01480608
+          },
+          "cost_usd": null
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-09",
+      "category": "tool_failure",
+      "passed": true,
+      "wall_seconds": 0.276374000008218,
+      "cost_usd": 0,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 0.2215779999969527,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-10",
+      "category": "conflict",
+      "passed": true,
+      "wall_seconds": 7.625873300014064,
+      "cost_usd": 0.0036086799999999197,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.271477800008142,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12504,
+            "completion_tokens": 305,
+            "cost_usd": 0.0036086799999999197,
+            "confirmed_cost_usd": 0.0036086799999999197,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0036086799999999197
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.2859906000085175,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.027918500010855496,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-11",
+      "category": "unknown",
+      "passed": true,
+      "wall_seconds": 2.3490858000004664,
+      "cost_usd": 0.00039372000000015284,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 2.3405150000180583,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 766,
+            "completion_tokens": 54,
+            "cost_usd": 0.00039372000000015284,
+            "confirmed_cost_usd": 0.00039372000000015284,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.00039372000000015284
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-12",
+      "category": "policy_conflict",
+      "passed": true,
+      "wall_seconds": 7.716330900002504,
+      "cost_usd": 0.005500099999999897,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 7.456497999985004,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 12524,
+            "completion_tokens": 306,
+            "cost_usd": 0.005500099999999897,
+            "confirmed_cost_usd": 0.005500099999999897,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.005500099999999897
+        },
+        {
+          "path": "/api/approve",
+          "wall_seconds": 0.22871920000761747,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": null,
+            "completion_tokens": null,
+            "cost_usd": 0,
+            "confirmed_cost_usd": 0,
+            "calculated_cost_usd": null,
+            "unknown_reserved_usd": 0
+          },
+          "cost_usd": 0
+        }
+      ]
+    },
+    {
+      "case_id": "OWN-13",
+      "category": "clarification",
+      "passed": true,
+      "wall_seconds": 5.614941099978751,
+      "cost_usd": 0.0014678599999999875,
+      "turns": [
+        {
+          "path": "/api/chat",
+          "wall_seconds": 5.596588199987309,
+          "http_status": 200,
+          "usage_missing": false,
+          "usage_unknown": false,
+          "usage": {
+            "prompt_tokens": 7760,
+            "completion_tokens": 273,
+            "cost_usd": 0.0014678599999999875,
+            "confirmed_cost_usd": 0.0014678599999999875,
+            "calculated_cost_usd": 0.0,
+            "unknown_reserved_usd": 0.0
+          },
+          "cost_usd": 0.0014678599999999875
+        }
+      ]
+    }
+  ]
+}

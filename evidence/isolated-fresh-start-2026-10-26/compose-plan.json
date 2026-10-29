@@ -1,0 +1,13 @@
+{
+  "project": "nakhla-helpdesk-preflight-20261026-cfc47b",
+  "package": "nakhla-it-helpdesk",
+  "ports": {
+    "ui": 7861,
+    "app": 8001,
+    "simulator": 8104
+  },
+  "fresh_named_volume": "nakhla-helpdesk-preflight-20261026-cfc47b-data",
+  "application_budget_cap_usd": 0.02,
+  "provider_key": "private process environment only; not copied to package",
+  "no_working_data_mounts": true
+}

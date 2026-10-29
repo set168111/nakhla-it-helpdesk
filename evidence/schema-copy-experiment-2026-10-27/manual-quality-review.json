@@ -1,0 +1,16 @@
+{
+  "essential_scenario_checks": "Both arms meet the explicitly checked NX-781, onboarding and Finance draft requirements; no approved actions or simulator writes",
+  "candidate_observations": [
+    {
+      "case": "PDF",
+      "observation": "Final prose includes internal KB-012 chunk identifiers in addition to normal document citations; extra presentation noise."
+    },
+    {
+      "case": "Finance",
+      "observation": "Final prose says all Finance VPN issues are handled as security incidents. KB-002/KB-016 mandate category security and Security Operations routing; this broader incident terminology is not explicitly established and should not be read as confirmed active compromise/P1."
+    }
+  ],
+  "both_arms_onboarding": "Both initial answers triggered the unchanged deterministic onboarding timing guard; both retained one correction and then passed Reviewer. Final laptop timing and activation-link recipient match KB-012.",
+  "finance_immutable_payloads": "Identical across arms, including security/P2, requester, department, truthful no-troubleshooting statement, error code and KB refs.",
+  "recommendation": "Retain the baseline in working source; do not promote candidate. Preserve candidate privately as a promising token/cost result, with quality wording concerns and speed/causality limitations unresolved."
+}

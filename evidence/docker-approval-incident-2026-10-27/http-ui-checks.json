@@ -1,0 +1,19 @@
+{
+  "http://127.0.0.1:8102/health": {
+    "http_status": 200,
+    "bytes": 36
+  },
+  "http://127.0.0.1:8000/health": {
+    "http_status": 200,
+    "bytes": 15
+  },
+  "http://127.0.0.1:7860/": {
+    "http_status": 200,
+    "bytes": 80402
+  },
+  "http://127.0.0.1:7860/config": {
+    "http_status": 200,
+    "bytes": 28492,
+    "component_count": 20
+  }
+}

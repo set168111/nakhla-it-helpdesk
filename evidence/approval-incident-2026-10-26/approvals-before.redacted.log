@@ -1,0 +1,150 @@
+.\.venv\Scripts\python.exe : test_503_no_automatic_retry (test_approvals.ApprovalTests.test_503_no_automatic_retry) 
+... ok
+At line:86 char:1
++ .\.venv\Scripts\python.exe -m unittest discover -s tests -p test_appr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_503_no_aut...c_retry) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_changed_draft_supersedes (test_approvals.ApprovalTests.test_changed_draft_supersedes) ... ok
+test_concurrent_double_approval_one_write (test_approvals.ApprovalTests.test_concurrent_double_approval_one_write) ... 
+ok
+test_directory_change_blocks_write (test_approvals.ApprovalTests.test_directory_change_blocks_write) ... ok
+test_directory_unavailable_blocks_write (test_approvals.ApprovalTests.test_directory_unavailable_blocks_write) ... ok
+test_expired_draft_cannot_commit (test_approvals.ApprovalTests.test_expired_draft_cannot_commit) ... ok
+test_incident_activated_after_draft_supersedes_without_write 
+(test_approvals.ApprovalTests.test_incident_activated_after_draft_supersedes_without_write) ... ERROR
+test_incident_during_unknown_recovery_preserves_duplicate_write_guard 
+(test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard) ... ERROR
+test_live_503_same_key_recovery (test_approvals.ApprovalTests.test_live_503_same_key_recovery) ... skipped 'Opt in to 
+a single local simulator create-ticket fault'
+test_live_schema_api_accepts_truthful_immediate_escalation 
+(test_approvals.ApprovalTests.test_live_schema_api_accepts_truthful_immediate_escalation) ... skipped 'Opt in to a 
+local simulator write; no external provider'
+test_non_boolean_approval_no_write (test_approvals.ApprovalTests.test_non_boolean_approval_no_write) ... Executing 
+<Task finished name='Task-44' coro=<ApprovalTests.test_non_boolean_approval_no_write() done, defined at 
+[WORKSPACE]\tests\test_approvals.py:223> result=None created at 
+[PRIVATE_PATH]> took 0.141 seconds
+ok
+test_payload_tampering_cannot_commit (test_approvals.ApprovalTests.test_payload_tampering_cannot_commit) ... ok
+test_read_dispatch_cannot_call_writes (test_approvals.ApprovalTests.test_read_dispatch_cannot_call_writes) ... ok
+test_reject_unknown_cross_session_and_replay_no_write 
+(test_approvals.ApprovalTests.test_reject_unknown_cross_session_and_replay_no_write) ... ok
+test_restart_session_and_unknown_recovery (test_approvals.ApprovalTests.test_restart_session_and_unknown_recovery) ... 
+Executing <Task finished name='Task-64' coro=<ApprovalTests.test_restart_session_and_unknown_recovery() done, defined 
+at [WORKSPACE]\tests\test_approvals.py:178> result=None created at 
+[PRIVATE_PATH]> took 0.235 seconds
+ok
+test_retention_removes_only_old_resolved_history 
+(test_approvals.ApprovalTests.test_retention_removes_only_old_resolved_history) ... Executing <Task finished 
+name='Task-69' coro=<ApprovalTests.test_retention_removes_only_old_resolved_history() done, defined at 
+[WORKSPACE]\tests\test_approvals.py:228> result=None created at 
+[PRIVATE_PATH]> took 0.782 seconds
+ok
+test_schema_truthful_immediate_entry_and_exact_commit 
+(test_approvals.ApprovalTests.test_schema_truthful_immediate_entry_and_exact_commit) ... ok
+test_unknown_retry_changed_evidence_retains_unknown 
+(test_approvals.ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown) ... Executing <Task pending 
+name='Task-79' coro=<ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown() running at 
+[WORKSPACE]\tests\test_approvals.py:208> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.266 seconds
+Executing <Task finished name='Task-79' coro=<ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown() 
+done, defined at [WORKSPACE]\tests\test_approvals.py:205> result=None 
+created at [PRIVATE_PATH]> took 0.156 seconds
+ok
+test_unknown_retry_retains_payload_and_key (test_approvals.ApprovalTests.test_unknown_retry_retains_payload_and_key) 
+... Executing <Task pending name='Task-84' coro=<ApprovalTests.test_unknown_retry_retains_payload_and_key() running at 
+[WORKSPACE]\tests\test_approvals.py:155> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+ok
+
+======================================================================
+ERROR: test_incident_activated_after_draft_supersedes_without_write 
+(test_approvals.ApprovalTests.test_incident_activated_after_draft_supersedes_without_write)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in 
+run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_approvals.py", line 72, in 
+test_incident_activated_after_draft_supersedes_without_write
+    draft = self.incident_draft()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_approvals.py", line 64, in incident_draft
+    return self.approvals.propose("s", payload, employee)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\app\approvals.py", line 76, in propose
+    self.validate(payload, employee)
+  File "[WORKSPACE]\app\approvals.py", line 55, in validate
+    self.schema.validate(payload)
+  File "[WORKSPACE]\.venv\Lib\site-packages\jsonschema\validators.py", 
+line 450, in validate
+    raise error
+jsonschema.exceptions.ValidationError: 'network' is not one of ['network_access', 'identity_access', 'hardware', 
+'software', 'email_collab', 'security', 'onboarding', 'other']
+
+Failed validating 'enum' in schema['properties']['category']:
+    {'enum': ['network_access',
+              'identity_access',
+              'hardware',
+              'software',
+              'email_collab',
+              'security',
+              'onboarding',
+              'other']}
+
+On instance['category']:
+    'network'
+
+======================================================================
+ERROR: test_incident_during_unknown_recovery_preserves_duplicate_write_guard 
+(test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in 
+run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_approvals.py", line 84, in 
+test_incident_during_unknown_recovery_preserves_duplicate_write_guard
+    draft = self.incident_draft()
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_approvals.py", line 64, in incident_draft
+    return self.approvals.propose("s", payload, employee)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\app\approvals.py", line 76, in propose
+    self.validate(payload, employee)
+  File "[WORKSPACE]\app\approvals.py", line 55, in validate
+    self.schema.validate(payload)
+  File "[WORKSPACE]\.venv\Lib\site-packages\jsonschema\validators.py", 
+line 450, in validate
+    raise error
+jsonschema.exceptions.ValidationError: 'network' is not one of ['network_access', 'identity_access', 'hardware', 
+'software', 'email_collab', 'security', 'onboarding', 'other']
+
+Failed validating 'enum' in schema['properties']['category']:
+    {'enum': ['network_access',
+              'identity_access',
+              'hardware',
+              'software',
+              'email_collab',
+              'security',
+              'onboarding',
+              'other']}
+
+On instance['category']:
+    'network'
+
+----------------------------------------------------------------------
+Ran 19 tests in 3.345s
+
+FAILED (errors=2, skipped=2)

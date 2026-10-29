@@ -1,0 +1,18 @@
+{
+  "changed_preexisting_source_data_files_excluding_transient_SQLite_sidecars": [],
+  "source_indexes_databases_ledgers_traces_byte_identical": true,
+  "app_rows_before": {
+    "sessions": 494,
+    "actions": 159
+  },
+  "app_rows_after": {
+    "sessions": 494,
+    "actions": 159
+  },
+  "transient_SQLite_sidecars_excluded": [
+    "data/helpdesk.sqlite3-shm",
+    "data/helpdesk.sqlite3-wal"
+  ],
+  "no_working_chat_or_approval_requests": true,
+  "initial_postcheck_interruption": "First raw-file comparison encountered a removed SQLite -shm file; rerun distinguishes transient sidecars from durable data. No data loss or repair was inferred."
+}

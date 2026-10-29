@@ -1,0 +1,15 @@
+{
+  "working": {
+    "confirmed_usd": 1.90487596,
+    "unknown_reserved_usd": 0.04033004,
+    "calculated_usd": 0,
+    "reservations": 1617
+  },
+  "prior_isolated": {
+    "confirmed_usd": 0,
+    "unknown_reserved_usd": 0,
+    "projects": []
+  },
+  "available_usd": 0.554794,
+  "authorized_isolated_cap_usd": 0.02
+}

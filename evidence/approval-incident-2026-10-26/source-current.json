@@ -1,0 +1,22 @@
+{
+  "scope": "offline correction source snapshot",
+  "sha256": {
+    ".gitignore": "5a38ead2ec8d487ca9a73d796981f66cc43a1d376c6bb5ca32ed5a0ed9b80a33",
+    "app/agent.py": "c158fc0c5f4dc290a71407425ca301c1f3afc3987a997101064477344a3f536a",
+    "app/approvals.py": "d3d561352a0dc9045f21e60037b9aafe7a9b5ddb6e0533ede11dc359410c2397",
+    "tests/test_agent_workflow.py": "b68a55f215d987cb757833d095638584055beef78407c6e798598515a23120c7",
+    "tests/test_approvals.py": "df4f399884c4faa64c1e4fc4aa1266c6a68589fc3d57d3c393df093dd928ea9d"
+  },
+  "runtime_files_changed_since_historical_docker": [
+    "app/approvals.py",
+    "app/agent.py"
+  ],
+  "offline_results": {
+    "passed": 83,
+    "live_opt_ins_skipped": 2,
+    "full_suite_rerun": false
+  },
+  "paid_calls": 0,
+  "service_actions": 0,
+  "git_mutations": 0
+}

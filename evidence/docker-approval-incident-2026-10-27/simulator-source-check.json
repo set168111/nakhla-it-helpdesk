@@ -1,0 +1,16 @@
+{
+  "all_match": true,
+  "file_count": 10,
+  "sha256": {
+    "services/helpdesk_mcp.py": "5eadc27af5c139e2318999dfec8589a379747729906d5100c836d7f6f2c1ea93",
+    "services/Dockerfile": "f1de10db5c4d2a8c922d3b10b17f8b2ebaa8bc8afda0b30155115f1e274b6e57",
+    "services/__init__.py": "df475fa89ab8600a1db71b6189b19f13559f3e43af71c4cc7f94cc3f40820043",
+    "services/helpdesk_api.py": "2ab0feb0c440101dfeda0f0bad683330c8eb50cd759b85a550c62384c75f56bf",
+    "services/data/employees.json": "ef1da140f8b4fb844886b1a4f5450e35a81ec690546fe97400bd985747fb5a77",
+    "services/data/status.json": "be3c8943b577acaff2386fb04a6d66253563b530144fdf3a004439c09e51bf17",
+    "dataset/manifest.json": "ee9b126baa2bf55f1fe5971b679d613629abbfcb217de03ee269c8c4f2a3537f",
+    "dataset/schemas/ticket.schema.json": "80ac79e3aa276188f1098d2accc8f72ac409d9ee8977e20bc9d34a415181f42c",
+    "dataset/schemas/kb_front_matter.schema.json": "66853b8fd687a3b445c9b6b62c0a0fb489b8cae74ee95d2d2410432dea63bdb3",
+    "dataset/tickets/historical_tickets.json": "094e92aafa14ba8056b508e14c22f634d85f32d08b8d706c09f38c4c778e55fe"
+  }
+}

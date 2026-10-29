@@ -1,0 +1,12 @@
+# Fresh-clone peer preflight
+
+Status: **prepared, not performed**. No peer has been contacted. Use the root [README](../README.md) as the only startup guide and record difficulties verbatim; do not silently fix the peer's environment and call it a clean pass.
+
+1. Obtain the source from the owner on a separate machine/folder. A public project repo does not yet exist; once authorized and available, clone the supplied URL. Record source revision/hash, OS, Docker/Compose versions, tester and date. Do not copy the owner's .env, data/, browser profiles or keys.
+2. Follow README Run it: copy .env.example, supply your own OpenRouter key and matching simulator key, then run `docker compose -p nakhla-helpdesk up --build -d --wait`. Confirm ports7860/8000/8102 are free. **First ingestion is paid**; obtain budget authorization first. Do not use the owner's remaining balance or reset a ledger. No startup/paid action is performed by this checklist.
+3. Confirm app/simulator health return200 and the UI opens at http://127.0.0.1:7860. Record startup time, logs and whether any undocumented intervention was needed. Confirm the fictional-company notice and initially disabled approval buttons.
+4. If paid functional checks are explicitly authorized, exercise one cited answer (NX-781) and one Finance ticket draft. Confirm Sources, correct policy and no write before approval; reject it and verify zero writes. If testing approval, use a fresh draft and confirm only a returned real simulator ID. Record results separately from the already passed owner's manual session; the peer should not rerun the69-attempt suite by default.
+5. Read the preserved65/69 score and S2-07 limitation. Verify the README clearly separates the manual passes, final targeted evidence, OWN-08 passing retest and supplemental503 results. Do not turn missing dock impact facts into a priority or count supplemental503 as S2-07 passing.
+6. Report PASS/FAIL/NOT RUN for startup and each authorized behavior, with screenshots/logs, costs and any missing README step. Include explicit NOT RUN for checks without API budget. Stop only the peer's isolated project with the README stop command. Do not stop or reset the owner's running app.
+
+Peer report fields: tester/date; source identity; machine/prerequisites; startup steps/outcome; authorized functional results; paid spend/reservations; README corrections needed; overall outcome and untested scope. Registration, DESIGN review, check-ins and instructor approval are not established by peer preflight.

@@ -1,0 +1,15 @@
+{
+  "app": {
+    "http_status": 200
+  },
+  "simulator": {
+    "http_status": 200
+  },
+  "ui": {
+    "http_status": 200
+  },
+  "ui_config": {
+    "http_status": 200
+  },
+  "created_tickets": 0
+}

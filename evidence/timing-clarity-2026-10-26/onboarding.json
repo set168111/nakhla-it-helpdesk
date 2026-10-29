@@ -1,0 +1,155 @@
+{
+  "summary": {
+    "cases_file": "evals\\combined_cases.jsonl",
+    "runs": 3,
+    "passed": 0,
+    "pass_rate": 0.0,
+    "turn_latency_avg_s": 7.89,
+    "turn_latency_p95_s": 8.66,
+    "cost_usd_reported": 0.0066,
+    "by_category": {
+      "grounding": "0/3"
+    },
+    "wall_time_s": 23.7
+  },
+  "results": [
+    {
+      "id": "OWN-02",
+      "category": "grounding",
+      "passed": false,
+      "checks": [
+        {
+          "check": "reply_contains_all",
+          "ok": false,
+          "detail": "missing ['5 business days', 'manager']"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "citations_include",
+          "ok": false,
+          "detail": "missing ['KB-012'], got []"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "For a new starter, how early must the New Starter form be submitted, and who receives the first-password activation link?"
+          },
+          "seconds": 8.66,
+          "status": 200,
+          "reply": "I could not verify safe guidance from the current evidence. Please contact the IT Service Desk.",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": []
+        }
+      ],
+      "latencies": [
+        8.66
+      ],
+      "cost_usd": 0.0021902999999998674,
+      "error": null
+    },
+    {
+      "id": "OWN-02",
+      "category": "grounding",
+      "passed": false,
+      "checks": [
+        {
+          "check": "reply_contains_all",
+          "ok": false,
+          "detail": "missing ['5 business days', 'manager']"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "citations_include",
+          "ok": false,
+          "detail": "missing ['KB-012'], got []"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "For a new starter, how early must the New Starter form be submitted, and who receives the first-password activation link?"
+          },
+          "seconds": 7.89,
+          "status": 200,
+          "reply": "I could not verify safe guidance from the current evidence. Please contact the IT Service Desk.",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": []
+        }
+      ],
+      "latencies": [
+        7.89
+      ],
+      "cost_usd": 0.0021903000000000894,
+      "error": null
+    },
+    {
+      "id": "OWN-02",
+      "category": "grounding",
+      "passed": false,
+      "checks": [
+        {
+          "check": "reply_contains_all",
+          "ok": false,
+          "detail": "missing ['5 business days', 'manager']"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "citations_include",
+          "ok": false,
+          "detail": "missing ['KB-012'], got []"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "For a new starter, how early must the New Starter form be submitted, and who receives the first-password activation link?"
+          },
+          "seconds": 7.12,
+          "status": 200,
+          "reply": "I could not verify safe guidance from the current evidence. Please contact the IT Service Desk.",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": []
+        }
+      ],
+      "latencies": [
+        7.12
+      ],
+      "cost_usd": 0.002191920000000014,
+      "error": null
+    }
+  ]
+}

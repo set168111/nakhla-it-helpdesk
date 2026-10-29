@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-26",
+  "scope": "Portfolio README and peer checklist only; application source unchanged",
+  "screenshot": {
+    "path": "docs/running-ui.png",
+    "sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4",
+    "source": "Actual Chrome headless rendering of running http://127.0.0.1:7860",
+    "screen": "idle fictional requester; no chat submitted; no replay or mockup"
+  },
+  "local_links_checked": true,
+  "source_manifest_unchanged": true,
+  "paid_calls_made_by_this_task": 0,
+  "observed_actual_ledger": {
+    "available": true,
+    "confirmed_cost_usd": 1.89322008,
+    "unknown_reserved_usd": 0.04033004,
+    "calculated_cost_usd": 0,
+    "reservations": 1609,
+    "remaining_usd": 0.56644988
+  },
+  "ledger_note": "The balance is newer than the earlier targeted-run ledger. Existing billing records are preserved; no chat/embedding request was issued by this documentation/screenshot task.",
+  "peer_preflight": "prepared only; no contact or peer pass",
+  "contributors": {
+    "status": "confirmed by user",
+    "solo": true,
+    "github_username": "set168111",
+    "profile": "https://github.com/set168111",
+    "full_name": "omitted at user request",
+    "human_contributions": [
+      "project decisions",
+      "directing and reviewing AI-assisted implementation",
+      "manual testing",
+      "validating fixes"
+    ],
+    "ai_assistance": "Codex/ChatGPT: design, code, debugging and documentation",
+    "kit_credit": "supplied bootcamp kit",
+    "no_teammate_peer_pass_or_instructor_approval_claimed": true
+  },
+  "course_registration_design_review_checkins": "unverified",
+  "presentation_preparation": {
+    "status": "Prepared only, not executed",
+    "publication_list": "docs/publication-files.md",
+    "exact_candidates": "docs/publication-files.txt",
+    "candidate_count": 155,
+    "video_script": "docs/video-script.md",
+    "live_demo": "docs/demo.md",
+    "future_only_commands": "docs/demo-commands.txt",
+    "local_file_links_valid": true,
+    "source_unchanged_against_verified_lockout_manifest": true,
+    "manual_lockout_pass": "Explicit user report; separate from automated live result; awaiting approval",
+    "no_paid_calls_tests_git_publish_recording": true,
+    "publication_review": "Candidate list only; evidence privacy/public-only links/license and final assembly review remain pending"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "cases_file": "evals\\combined_cases.jsonl",
+    "runs": 1,
+    "passed": 1,
+    "pass_rate": 1.0,
+    "turn_latency_avg_s": 9.7,
+    "turn_latency_p95_s": 9.7,
+    "cost_usd_reported": 0.0044,
+    "by_category": {
+      "grounding": "1/1"
+    },
+    "wall_time_s": 9.7
+  },
+  "results": [
+    {
+      "id": "OWN-02",
+      "category": "grounding",
+      "passed": true,
+      "checks": [
+        {
+          "check": "reply_contains_all",
+          "ok": true,
+          "detail": "missing []"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "citations_include",
+          "ok": true,
+          "detail": "missing [], got ['KB-012']"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "For a new starter, how early must the New Starter form be submitted, and who receives the first-password activation link?"
+          },
+          "seconds": 9.7,
+          "status": 200,
+          "reply": "The New Starter form must be submitted through HR at least 5 business days before the new starter's start date. The one-time activation link for the first password is emailed to the hiring manager, never to the new starter's personal address. [KB-012]\nLocal new starters collect their laptop at the IT Service Desk counter on day 1. Remote new starters receive their laptop by courier the business day before their start date. On day 1, the activation link is opened together with the manager to set the password. [KB-012]",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": [
+            "KB-012"
+          ]
+        }
+      ],
+      "latencies": [
+        9.7
+      ],
+      "cost_usd": 0.004423520000000014,
+      "error": null
+    }
+  ]
+}

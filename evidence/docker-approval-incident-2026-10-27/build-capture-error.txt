@@ -1,0 +1,1 @@
+Initial app-only build wrapper failed while decoding Docker output as cp1252 (byte0x81); its exit result was not captured. No success is inferred. Subsequent image source/cache probe and explicit build completion evidence determine status.

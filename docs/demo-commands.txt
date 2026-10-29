@@ -1,0 +1,22 @@
+PREPARED COMMANDS ONLY - NOT EXECUTED
+Use only for a separately authorized rehearsal/demo with API budget.
+These address the fictional simulator at8102, not the application ledger.
+Reset deletes currently created simulator tickets and logs; preserve needed evidence first.
+Do not run against the owner's current session just to prepare documentation.
+
+PowerShell - future simulator setup:
+Invoke-RestMethod -Method Post -Uri http://localhost:8102/admin/reset
+Invoke-RestMethod -Method Delete -Uri http://localhost:8102/admin/faults
+
+PowerShell - show actual created tickets before/after approval or failure:
+Invoke-RestMethod -Uri http://localhost:8102/admin/tickets | ConvertTo-Json -Depth 10
+
+PowerShell - arm the same supplemental create_ticket fault just before the dock case:
+$demoFault = @{target='create_ticket'; mode='error_503'; count=5} | ConvertTo-Json
+Invoke-RestMethod -Method Post -Uri http://localhost:8102/admin/faults -ContentType 'application/json' -Body $demoFault
+
+PowerShell - clear remaining demo faults after the failure segment:
+Invoke-RestMethod -Method Delete -Uri http://localhost:8102/admin/faults
+
+Do not delete data/, reset/restore spending.sqlite3, display .env or change application code.
+A failed dock attempt adds zero tickets; any earlier approved Finance ticket can remain.

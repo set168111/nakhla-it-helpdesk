@@ -1,0 +1,14 @@
+{
+  "app\\agent.py": "93fcbf0c41fffe691e9c1a6b90904a01409c373254e05edc694151f0618a843f",
+  "app\\approvals.py": "b9a431872c8c6badf51b415f52cb259447922269321b0373d921a49c52513047",
+  "app\\helpdesk_policy.py": "f0829bee59f0d92be54051f43bf63b61708f034495f2ee832cf8301a97195faf",
+  "app\\main.py": "887dc93c8c243190c3e3e8d42855cad2af17dbba6c669364cad40f2d4267a3f8",
+  "app\\mcp_client.py": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186",
+  "app\\retrieval.py": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd",
+  "app\\storage.py": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351",
+  "app\\__init__.py": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b",
+  "evals\\cases.sample.jsonl": "4056aecdbc906065714d819bdbab761fc716b52933797e3535d52b6fc56ff6d3",
+  "evals\\combined_cases.jsonl": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098",
+  "evals\\run_evals.py": "05266e356c65050fb577bd6df17370c381a526ad9b1a362d51ed8b8facbed696",
+  "evals\\supplemental_cases.jsonl": "d867bebddbe92f5a96e87eb4b3bdae05dd61d02e1c1319baacfd78523cbc3491"
+}

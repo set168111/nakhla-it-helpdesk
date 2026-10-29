@@ -1,0 +1,35 @@
+# secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+/data/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.pid
+setup-pip.log
+venv/
+.pytest_cache/
+
+# your vector index / caches (rebuild them from dataset/)
+*.npz
+.chroma/
+chroma_db/
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local package safety
+.env.*
+!.env.example
+local-packages/
+/*.log
+**/pre-verification-data/
+**/pre-local-checkpoint-records/
+**/*browser-profile*/

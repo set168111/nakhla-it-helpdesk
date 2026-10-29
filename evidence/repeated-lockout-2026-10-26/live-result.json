@@ -1,0 +1,80 @@
+{
+  "request": {
+    "session_id": "lockout-live-195add9219",
+    "message": "My NakhlaID account shows NID-423 and has locked three times today without a known cause. I already checked saved passwords on my devices and found none. Please prepare a ticket.",
+    "user": {
+      "email": "sara.mikhail@nakhla.example"
+    }
+  },
+  "http_status": 200,
+  "elapsed_seconds": 8.796999999991385,
+  "response": {
+    "session_id": "lockout-live-195add9219",
+    "reply": "Five failed sign-ins within 15 minutes lock the account for 30 minutes and show error NID-423. Three or more lockouts in one day without a known cause are treated as a possible password-guessing attack and must be reported to Security Operations with category 'security' and priority P2. [SP-001] [KB-006]\nReview this exact ticket draft, then approve or reject it.",
+    "state": "await_confirmation",
+    "pending_action": {
+      "action_id": "act-4f310d58710348dc89dc42979eb47290",
+      "type": "create_ticket",
+      "summary": "Create ticket with exactly these fields: {\"affected_users\":1,\"attempted_steps\":[\"I already checked saved passwords on my devices and found none.\"],\"category\":\"security\",\"department\":\"Support\",\"description\":\"Requester reported:  My NakhlaID account shows NID-423 and has locked three times today without a known cause. I already checked saved passwords on my devices and found none. Please prepare a ticket.\",\"kb_refs\":[\"SP-001\",\"KB-006\"],\"priority\":\"P2\",\"requester_email\":\"sara.mikhail@nakhla.example\",\"subject\":\"Repeated NakhlaID account lockouts with error NID-423\"}",
+      "payload": {
+        "affected_users": 1,
+        "attempted_steps": [
+          "I already checked saved passwords on my devices and found none."
+        ],
+        "category": "security",
+        "department": "Support",
+        "description": "Requester reported:  My NakhlaID account shows NID-423 and has locked three times today without a known cause. I already checked saved passwords on my devices and found none. Please prepare a ticket.",
+        "kb_refs": [
+          "SP-001",
+          "KB-006"
+        ],
+        "priority": "P2",
+        "requester_email": "sara.mikhail@nakhla.example",
+        "subject": "Repeated NakhlaID account lockouts with error NID-423"
+      }
+    },
+    "result": null,
+    "citations": [
+      {
+        "id": "SP-001",
+        "title": "Account security and password policy",
+        "url": null
+      },
+      {
+        "id": "KB-006",
+        "title": "Account lockout (NID-423)",
+        "url": null
+      }
+    ],
+    "tool_calls": [
+      {
+        "tool": "get_service_status",
+        "ok": true,
+        "ms": 21
+      },
+      {
+        "tool": "lookup_employee",
+        "ok": true,
+        "ms": 12
+      },
+      {
+        "tool": "search_tickets",
+        "ok": true,
+        "ms": 18
+      },
+      {
+        "tool": "retrieve",
+        "ok": true,
+        "ms": 823
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 13323,
+      "completion_tokens": 318,
+      "cost_usd": 0.005839139999999965,
+      "confirmed_cost_usd": 0.005839139999999965,
+      "calculated_cost_usd": 0.0,
+      "unknown_reserved_usd": 0.0
+    }
+  }
+}

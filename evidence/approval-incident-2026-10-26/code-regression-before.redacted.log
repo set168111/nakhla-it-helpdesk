@@ -1,0 +1,26 @@
+test_truncated_issue_retains_documented_code_for_later_incident (test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident) ... FAIL
+
+======================================================================
+FAIL: test_truncated_issue_retains_documented_code_for_later_incident (test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_agent_workflow.py", line 388, in test_truncated_issue_retains_documented_code_for_later_incident
+    self.assertEqual(self.mcp.writes, [])
+AssertionError: Lists differ: [({'affected_users': 1, 'attempted_steps':[3257 chars]6d')] != []
+
+First list contains 1 additional elements.
+First extra element 0:
+({'affected_users': 1, 'attempted_steps': ['I already restarted.'], 'category': 'network_access', 'department': 'Support', 'description': 'Requester reported:  My NakhlaConnect VPN fails. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connection detail. Connec', 'kb_refs': [], 'priority': 'P2', 'requester_email': 'sara.mikhail@nakhla.example', 'subject': 'VPN connection failure'}, 'act-3fcc3aeeb16540beb8832a658b05936d')
+
+Diff is 4552 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.275s
+
+FAILED (failures=1)

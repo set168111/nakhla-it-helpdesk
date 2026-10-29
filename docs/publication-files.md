@@ -1,0 +1,13 @@
+# Clean local package manifest
+
+Local package name: **nakhla-it-helpdesk**. [publication-files.txt](publication-files.txt) is the exact package-relative inclusion list; the initial commit of the public repository contains exactly these paths (verified against the Git index before the commit). All listed paths resolve inside the package.
+
+Includes application/tests/harness, unchanged supplied simulator/data/cases/pins, configuration example, scoped licensing/provenance, the actual fictional UI screenshot, prepared scripts, curated historical/lockout proof and user-reported manual records. Copied course guidance is replaced with official-source link pointers; course logos/visuals and five unrelated Capstone documents are not included. Machine-specific native stop tooling and the backup REQUIREMENTS.md are excluded and retained in the working project.
+
+No real .env, databases/WAL/SHM, embedding caches, browser profiles, private runtime dumps, .git, .venv or compiled caches are included. Intentional fictional KB-018 data is preserved byte-for-byte. [Evidence-copy notice](EVIDENCE-COPY-NOTICE.md) and [provenance](package-provenance.json) identify reviewed/redacted copies and current-section extracts; original evidence stays local. Filename suffix `.redacted` identifies copies with private paths or credentials removed. [Verification report](package-verification.json) records file/link/anchor/credential checks, not a test-suite or fresh-start pass.
+
+MIT is limited to [identified original contributions](../LICENSE-SCOPE.md). Supplied/mixed material retains [separate notices](../THIRD_PARTY_NOTICES.md), not a blanket MIT license. Supplied kit material is published under the assignment's instruction to copy the kit into a public project repository (exact wording in THIRD_PARTY_NOTICES.md); this is not a licence grant, so it is neither relicensed nor covered by MIT, and nothing beyond that instruction is claimed.
+
+Historical65/69, three S2-07 failures, separate OWN-08 retest and supplemental503 results remain distinct. The latest rejection PASS is user-reported, not replayed. Solo attribution/AI assistance and unverified course/peer status remain explicit. [Agent-run fresh-start and actual cost](fresh-start-check.md) passed; independent peer preflight remains uncompleted and no peer review or instructor approval is claimed. Public repository: https://github.com/set168111/nakhla-it-helpdesk. Video segments exist; final assembly and upload are pending; no course submission has been made.
+
+Current-source refresh: [27 October Docker verification](../evidence/docker-approval-incident-2026-10-27/SUMMARY.md) passed within its bounded scope. Historical isolated fresh-start and independent peer status remain separate.

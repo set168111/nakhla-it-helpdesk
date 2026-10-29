@@ -1,0 +1,20 @@
+{
+  "kind": "agent-run fresh-start check; NOT independent peer preflight",
+  "project": "nakhla-helpdesk-preflight-20261026-cfc47b",
+  "passed": true,
+  "startup_note": "First immediate UI request disconnected; continued same retained containers/volume and waited for UI readiness.",
+  "documents": 20,
+  "pdf_documents": 2,
+  "chunks": 100,
+  "runtime_files_match": 43,
+  "health_MCP_UI": "passed",
+  "cached_restart": "passed; identical vector hash and ledger rows, cached=true log",
+  "chat_approval_or_ticket_calls": 0,
+  "cost_usd": 0.00022386,
+  "unknown_reserved_usd": 0,
+  "aggregate_remaining_usd": 0.55457014,
+  "isolated_stopped": true,
+  "working_containers_unchanged": true,
+  "working_ledger_unchanged": true,
+  "package_has_no_env_or_data": true
+}

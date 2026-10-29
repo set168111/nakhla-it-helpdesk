@@ -1,0 +1,18 @@
+﻿flowchart TD
+    UI[Gradio :7860] --> API[FastAPI :8000]
+    API --> Support[Support: reads and draft]
+    Support --> R[Real embeddings + NumPy retrieval]
+    R --> K[All 20 metadata-preserving Markdown/PDF documents]
+    R --> P[Code precedence and department rules]
+    P --> Support
+    Support --> Reviewer[Reviewer: grounding and completeness]
+    Reviewer -->|one correction maximum| Support
+    Reviewer --> API
+    API --> S[SQLite sessions and immutable actions]
+    API -->|exact approved draft| A[Approval coordinator]
+    A -->|action_id idempotency| MCP[Supplied stdio MCP]
+    Support --> MCP
+    MCP --> Sim[Supplied simulator :8102]
+    Support --> B[Shared spending reservations]
+    R --> B
+

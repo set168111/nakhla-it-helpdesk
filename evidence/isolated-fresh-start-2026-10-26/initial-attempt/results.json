@@ -1,0 +1,14 @@
+{
+  "kind": "agent-run fresh-start check; NOT independent peer preflight",
+  "project": "nakhla-helpdesk-preflight-20261026-cfc47b",
+  "passed": false,
+  "error": "Server disconnected without sending a response.",
+  "isolated_stopped": true,
+  "working_containers_unchanged": true,
+  "isolated_billing": "unknown; retain full authorized $0.02 allocation until reconciled",
+  "cost_usd": 0,
+  "unknown_reserved_usd": 0.02,
+  "aggregate_remaining_usd": 0.534794,
+  "working_ledger_unchanged": true,
+  "package_has_no_env_or_data": true
+}

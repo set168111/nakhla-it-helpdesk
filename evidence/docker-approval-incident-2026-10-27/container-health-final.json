@@ -1,0 +1,23 @@
+[
+  {
+    "service": "app",
+    "id": "5d41db97c015c8be34fec7281763513b6f275e16191becb71e788dec921201b2",
+    "running": true,
+    "health": "healthy",
+    "image": "sha256:755cc99ef33ac62ed1776f38848d1529df0f32ad77efe16ad2b6a876ba4b1ce2"
+  },
+  {
+    "service": "ui",
+    "id": "0657559e935dd07e2a85505220dcf933419fcd0ce56b4a6edc05666a73f90302",
+    "running": true,
+    "health": null,
+    "image": "sha256:3dd88dff792105e0a4f2986d7414d3761000e408b5508c3fc9229cf78f643a3a"
+  },
+  {
+    "service": "helpdesk-api",
+    "id": "90c0faeb9482ef99a0a7d62f3b013595779ec92d5516aa9442a57dee7c6d3c67",
+    "running": true,
+    "health": "healthy",
+    "image": "sha256:5d0e6254be03d31e35ad484d29c914f5b731088b30341fab02511c2a587cd74b"
+  }
+]

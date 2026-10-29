@@ -1,0 +1,11 @@
+{
+  "kind": "focused existing tests inside app container",
+  "tests_run": 10,
+  "passed": true,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "external_network": "blocked by harness",
+  "state": "TemporaryDirectory per test; working data untouched",
+  "real_ticket_writes": 0
+}

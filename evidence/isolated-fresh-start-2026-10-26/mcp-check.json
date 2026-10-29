@@ -1,0 +1,24 @@
+{
+  "tools": [
+    "add_ticket_note",
+    "create_ticket",
+    "get_service_status",
+    "get_ticket",
+    "lookup_employee",
+    "search_tickets"
+  ],
+  "directory_ok": true,
+  "status_ok": true,
+  "tool_calls": [
+    {
+      "tool": "lookup_employee",
+      "ok": true,
+      "ms": 30
+    },
+    {
+      "tool": "get_service_status",
+      "ok": true,
+      "ms": 10
+    }
+  ]
+}

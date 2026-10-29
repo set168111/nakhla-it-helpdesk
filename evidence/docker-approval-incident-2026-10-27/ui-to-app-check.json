@@ -1,0 +1,7 @@
+{
+  "backend_url": "http://app:8000/health",
+  "http_status": 200,
+  "body": {
+    "status": "ok"
+  }
+}

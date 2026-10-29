@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "http200": true,
+    "approval_required": true,
+    "security_P2": true,
+    "citations": true,
+    "no_result": true,
+    "no_create_call": true,
+    "ticket_collection_unchanged": true,
+    "requester_preserved": true,
+    "truthful_attempt": true,
+    "action_still_pending": true
+  },
+  "action_id": "act-4f310d58710348dc89dc42979eb47290",
+  "action_status": "pending",
+  "approval_sent": false,
+  "real_ticket_write_sent": false
+}

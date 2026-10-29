@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26",
+  "finding": "Confirmed offline: unexplained daily repeated lockouts returned identity_access/None and impact clarification before fix.",
+  "before": {
+    "focused_tests": 2,
+    "failed": 2
+  },
+  "after": {
+    "focused_tests": 2,
+    "focused_passed": 2,
+    "relevant_tests": 97,
+    "relevant_passed": 95,
+    "skipped": 2,
+    "actual_unittest_exit": 0
+  },
+  "changed_source_files_against_last_docker_manifest": [
+    "app\\agent.py",
+    "app\\helpdesk_policy.py",
+    "tests\\test_agent_workflow.py"
+  ],
+  "source_sha256": {
+    "app\\agent.py": "f75e612bcad15efe0766997a66ff374e6e8eef288d714b1d9e22fd6132faf7fa",
+    "app\\helpdesk_policy.py": "f234b76188e709fe4d304ccc1406dd789584a5d7abbc8521e7565f65997d7460",
+    "tests\\test_agent_workflow.py": "1e89303e2b453e1b9b834074888052f2f7df70196e2d799f5babb0ab3115dfcb"
+  },
+  "ledger": {
+    "confirmed_usd": 1.89322008,
+    "unknown_reserved_usd": 0.04033004,
+    "remaining_usd": 0.56644988,
+    "reservations": 1609
+  },
+  "paid_calls": "Offline phase0; authorized live phase1 chat request",
+  "docker": "App alone rebuilt/restarted;43 workspace/container files match; health and container MCP inventory/directory/status passed; simulator/UI untouched.",
+  "live_verification": {
+    "attempted": 1,
+    "passed": 1,
+    "category": "security",
+    "priority": "P2",
+    "citations": [
+      "SP-001",
+      "KB-006"
+    ],
+    "approval_sent": false,
+    "action_status": "pending",
+    "new_tickets": 0
+  },
+  "historical_results": "65/69 retained: S2-07 x3 and OWN-08 x1; OWN-08 retest and supplemental503 separate.",
+  "ledger_after_live": {
+    "confirmed_usd": 1.89905922,
+    "unknown_reserved_usd": 0.04033004,
+    "remaining_usd": 0.56061074,
+    "reservations": 1613,
+    "targeted_confirmed_delta_usd": 0.005839139999999965,
+    "targeted_unknown_delta_usd": 0.0
+  },
+  "manual_result": {
+    "status": "PASS - user-reported",
+    "date": "2026-10-26",
+    "scope": "security/P2; SP-001/KB-006 Sources; exact attempted step; no unnecessary clarification; awaiting approval",
+    "approval_or_ticket_creation_claimed": false
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cc0ca0129f787b4f6eb02b825d40ca25533bacd6f406ce61d68cf9c289d12478",
+    "name": "/nakhla-helpdesk-preflight-20261026-cfc47b-app-1",
+    "image_id": "sha256:74aabf761fcc03cfcf798432d564d7b0a5190093fc6a7db628d58ab5a3645514",
+    "service": "app",
+    "running": true,
+    "started_at": "2026-10-26T16:51:28.842851535Z",
+    "health": "healthy",
+    "mounts": [
+      {
+        "type": "volume",
+        "name": "nakhla-helpdesk-preflight-20261026-cfc47b-data",
+        "destination": "/workspace/data"
+      }
+    ]
+  },
+  {
+    "id": "71eab66987b3f12d960b4c16bbe696903d84f68d197aa92536ab0e442bd88824",
+    "name": "/nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1",
+    "image_id": "sha256:0ae2b58675c61dbebdbd28ab64713b6268f3b4ca11be64a2a6d3cbf96bc8f9d4",
+    "service": "helpdesk-api",
+    "running": true,
+    "started_at": "2026-10-26T16:51:23.522748792Z",
+    "health": "healthy",
+    "mounts": []
+  },
+  {
+    "id": "5bd958d8bb1f7e4db59e0ecd8e2a418a0e4dd74580efd729e1c9815b452d8ce1",
+    "name": "/nakhla-helpdesk-preflight-20261026-cfc47b-ui-1",
+    "image_id": "sha256:aac4fde3e762c3aee426f4a18ac8f53c6cf04d517c231f5c4e0126154b4b62f5",
+    "service": "ui",
+    "running": true,
+    "started_at": "2026-10-26T16:51:40.070263586Z",
+    "health": null,
+    "mounts": []
+  }
+]

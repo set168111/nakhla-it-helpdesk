@@ -1,0 +1,314 @@
+.venv/Scripts/python.exe : .Executing <Task pending name='Task-27' 
+coro=<WorkflowTests.test_active_incident_matches_gateway_and_blocks_duplicate() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:418> wait_for=<Task pending 
+name='Task-28' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.140 seconds
+At line:2 char:1
++ .venv/Scripts/python.exe -m unittest tests.test_agent_workflow tests. ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (.Executing <Tas...k 0.140 seconds:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+......Executing <Task pending name='Task-107' 
+coro=<WorkflowTests.test_expensive_candidate_timeout_is_not_automatically_retried() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:314> wait_for=<Task pending 
+name='Task-108' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.188 seconds
+..Executing <Task pending name='Task-139' 
+coro=<WorkflowTests.test_failed_retrieval_retains_billed_query_cost_in_response_usage() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:533> wait_for=<Task pending 
+name='Task-140' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.110 seconds
+.Executing <Task pending name='Task-149' 
+coro=<WorkflowTests.test_finance_explicit_nothing_tried_preserves_canonical_entry() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:685> wait_for=<Task pending 
+name='Task-150' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.250 seconds
+.Executing <Task pending name='Task-168' 
+coro=<WorkflowTests.test_finance_immediate_escalation_records_truthful_attempt_then_approval_only() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:386> wait_for=<Task pending 
+name='Task-169' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task pending name='Task-187' coro=<WorkflowTests.test_followup_context_survives_store_reopen() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:471> wait_for=<Task pending 
+name='Task-188' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.188 seconds
+..Executing <Task pending name='Task-225' 
+coro=<WorkflowTests.test_history_read_uses_actual_owned_records_not_stale_incident() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:847> wait_for=<Task pending 
+name='Task-226' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.156 seconds
+..Executing <Task finished name='Task-243' coro=<WorkflowTests.test_impact_clarification_asks_only_remaining_fact() 
+done, defined at [WORKSPACE]\tests\test_agent_workflow.py:250> result=None 
+created at [PRIVATE_PATH]> took 0.156 seconds
+..Executing <Task pending name='Task-252' 
+coro=<WorkflowTests.test_impact_update_replaces_pending_action_and_preserves_approved_payload() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:227> wait_for=<Task pending 
+name='Task-261' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.157 seconds
+Executing <Task pending name='Task-252' 
+coro=<WorkflowTests.test_impact_update_replaces_pending_action_and_preserves_approved_payload() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:245> wait_for=<Task pending 
+name='Task-289' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task pending name='Task-307' 
+coro=<WorkflowTests.test_implicit_distinct_printer_issue_clears_old_vpn_error() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:544> wait_for=<Task pending 
+name='Task-308' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.156 seconds
+.Executing <Task pending name='Task-320' 
+coro=<WorkflowTests.test_incident_then_crm_then_nothing_tried_keeps_only_crm_issue() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:643> wait_for=<Task pending 
+name='Task-321' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.156 seconds
+Executing <Task pending name='Task-320' 
+coro=<WorkflowTests.test_incident_then_crm_then_nothing_tried_keeps_only_crm_issue() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:659> wait_for=<Task pending 
+name='Task-329' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+...Executing <Task finished name='Task-370' 
+coro=<WorkflowTests.test_missing_live_prerequisite_returns_explicit_not_ready_after_reads() done, defined at 
+[WORKSPACE]\tests\test_agent_workflow.py:452> result=None created at 
+[PRIVATE_PATH]> took 0.172 seconds
+.Executing <Task pending name='Task-375' coro=<WorkflowTests.test_missing_review_completeness_fails_schema_and_stops() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:777> wait_for=<Task 
+pending name='Task-376' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+....Executing <Task pending name='Task-437' coro=<WorkflowTests.test_new_issue_clears_old_incident_error_context() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:485> wait_for=<Task 
+pending name='Task-438' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.203 seconds
+..Executing <Task pending name='Task-455' 
+coro=<WorkflowTests.test_non_catalogue_software_requires_each_of_four_source_facts() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:704> wait_for=<Task pending 
+name='Task-498' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+Executing <Task pending name='Task-455' 
+coro=<WorkflowTests.test_non_catalogue_software_requires_each_of_four_source_facts() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:704> wait_for=<Task pending 
+name='Task-512' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.265 seconds
+.Executing <Task pending name='Task-530' coro=<WorkflowTests.test_noncurrent_or_invented_chunk_never_reaches_user() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:365> wait_for=<Task 
+pending name='Task-531' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+Executing <Task pending name='Task-530' coro=<WorkflowTests.test_noncurrent_or_invented_chunk_never_reaches_user() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:365> wait_for=<Task 
+pending name='Task-546' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+..Executing <Task pending name='Task-569' 
+coro=<WorkflowTests.test_onboarding_full_checklist_restores_missing_steps_without_changing_timing() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:189> wait_for=<Task pending 
+name='Task-570' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.140 seconds
+.Executing <Task pending name='Task-594' 
+coro=<WorkflowTests.test_onboarding_repeated_timing_error_stops_without_publishing_it() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:174> wait_for=<Task pending 
+name='Task-595' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+..Executing <Task pending name='Task-623' 
+coro=<WorkflowTests.test_onboarding_timing_correction_preserves_checklist_and_sources() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:152> wait_for=<Task pending 
+name='Task-624' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.171 seconds
+.Executing <Task pending name='Task-648' 
+coro=<WorkflowTests.test_pending_payload_cannot_leak_model_invented_id_or_secret() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:503> wait_for=<Task pending 
+name='Task-658' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+.Executing <Task pending name='Task-671' 
+coro=<WorkflowTests.test_positive_followup_can_replace_earlier_negative_ticket_intent() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:808> wait_for=<Task pending 
+name='Task-672' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.156 seconds
+.Executing <Task pending name='Task-690' coro=<WorkflowTests.test_read_selection_timeout_has_one_bounded_retry() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:287> wait_for=<Task 
+pending name='Task-691' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+.Executing <Task pending name='Task-709' 
+coro=<WorkflowTests.test_retry_preserves_exact_payload_and_action_key_after_failure() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:432> wait_for=<Task pending 
+name='Task-710' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.140 seconds
+Executing <Task finished name='Task-709' 
+coro=<WorkflowTests.test_retry_preserves_exact_payload_and_action_key_after_failure() done, defined at 
+[WORKSPACE]\tests\test_agent_workflow.py:429> result=None created at 
+[PRIVATE_PATH]> took 0.156 seconds
+.Executing <Task pending name='Task-728' 
+coro=<WorkflowTests.test_reviewer_rejection_allows_one_correction_then_acceptance() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:340> wait_for=<Task pending 
+name='Task-729' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+.Executing <Task pending name='Task-753' 
+coro=<WorkflowTests.test_second_read_selection_timeout_stops_without_more_calls() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:297> wait_for=<Task pending 
+name='Task-754' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task pending name='Task-763' coro=<WorkflowTests.test_second_reviewer_rejection_stops_without_procedure() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:349> wait_for=<Task 
+pending name='Task-764' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+.Executing <Task pending name='Task-788' coro=<WorkflowTests.test_short_remaining_deadline_prevents_selection_retry() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:306> wait_for=<Task 
+pending name='Task-789' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+.Executing <Task pending name='Task-798' 
+coro=<WorkflowTests.test_sms_followup_is_not_replaced_by_previous_binary_question() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:830> wait_for=<Task pending 
+name='Task-799' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.157 seconds
+.Executing <Task pending name='Task-817' coro=<WorkflowTests.test_software_request_cannot_invent_a_missing_manager() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:745> wait_for=<Task 
+pending name='Task-818' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+..Executing <Task pending name='Task-841' 
+coro=<WorkflowTests.test_ticket_history_is_not_blocked_by_stale_contractor_vpn_refusal() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:879> wait_for=<Task pending 
+name='Task-842' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task pending name='Task-854' 
+coro=<WorkflowTests.test_typed_requester_facts_and_last_supported_answer_persist() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:552> wait_for=<Task pending 
+name='Task-855' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.125 seconds
+Executing <Task pending name='Task-854' 
+coro=<WorkflowTests.test_typed_requester_facts_and_last_supported_answer_persist() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:559> wait_for=<Task pending 
+name='Task-869' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task pending name='Task-881' 
+coro=<WorkflowTests.test_unknown_error_rejects_adjacent_fix_but_permits_requested_escalation() running at 
+[WORKSPACE]\tests\test_agent_workflow.py:510> wait_for=<Task pending 
+name='Task-882' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.109 seconds
+.Executing <Task pending name='Task-908' coro=<WorkflowTests.test_vague_vpn_bare_code_followup_preserves_requester() 
+running at [WORKSPACE]\tests\test_agent_workflow.py:589> wait_for=<Task 
+pending name='Task-909' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.156 seconds
+.Executing <Task finished name='Task-927' 
+coro=<WorkflowTests.test_vague_vpn_incident_code_followup_takes_incident_gate() done, defined at 
+[WORKSPACE]\tests\test_agent_workflow.py:619> result=None created at 
+[PRIVATE_PATH]> took 0.141 seconds
+.Executing <Task finished name='Task-932' coro=<WorkflowTests.test_vague_vpn_known_employee_asks_error_before_model() 
+done, defined at [WORKSPACE]\tests\test_agent_workflow.py:564> result=None 
+created at [PRIVATE_PATH]> took 0.500 seconds
+.Executing <Task pending name='Task-937' coro=<WorkflowTests.test_vague_vpn_preserves_department_exceptions() running 
+at [WORKSPACE]\tests\test_agent_workflow.py:606> wait_for=<Task pending 
+name='Task-938' coro=<RunnableCallable.ainvoke() running at [PRIVATE_PATH] 
+HelpDesk\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at 
+[PRIVATE_PATH]> cb=[_run_until_complete_cb() at 
+[PRIVATE_PATH] created at 
+[PRIVATE_PATH]> took 0.219 seconds
+.........
+----------------------------------------------------------------------
+Ran 63 tests in 15.148s
+
+OK

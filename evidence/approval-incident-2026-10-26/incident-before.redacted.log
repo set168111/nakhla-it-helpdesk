@@ -1,0 +1,21 @@
+test_incident_activated_after_draft_supersedes_without_write (test_approvals.ApprovalTests.test_incident_activated_after_draft_supersedes_without_write) ... ok
+test_incident_during_unknown_recovery_preserves_duplicate_write_guard (test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard) ... FAIL
+
+======================================================================
+FAIL: test_incident_during_unknown_recovery_preserves_duplicate_write_guard (test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "[PRIVATE_PATH]", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[PRIVATE_PATH]", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "[WORKSPACE]\tests\test_approvals.py", line 94, in test_incident_during_unknown_recovery_preserves_duplicate_write_guard
+    self.assertIn("INC-2207", reply["reply"])
+AssertionError: 'INC-2207' not found in 'The write outcome is unknown. No ticket is confirmed; retry only this same draft and action key.'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.392s
+
+FAILED (failures=1)

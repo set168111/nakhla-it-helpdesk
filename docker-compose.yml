@@ -1,0 +1,55 @@
+# Nakhla Helpdesk: unchanged simulator plus app and Gradio UI.
+# docker compose -p nakhla-helpdesk up --build
+# Real credential/index readiness is required before the app/UI become healthy.
+services:
+  helpdesk-api:
+    build:
+      context: .
+      dockerfile: services/Dockerfile
+    ports:
+      - "8102:8102"
+    environment:
+      HELPDESK_API_KEY: ${HELPDESK_API_KEY:-dev-key-change-me}
+      HELPDESK_TODAY: ${HELPDESK_TODAY:-}
+    restart: unless-stopped
+
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    environment:
+      HELPDESK_API_URL: http://helpdesk-api:8102
+      HELPDESK_API_KEY: ${HELPDESK_API_KEY:-dev-key-change-me}
+      APP_DATA_DIR: /workspace/data
+    volumes:
+      # Share the SAME spending ledger with local runs; packaging cannot reset budget.
+      - ./data:/workspace/data
+    # Explicit, budgeted real ingestion; cached restarts do not re-embed.
+    # Missing credentials or budget stops startup instead of creating fake vectors.
+    command: ["sh", "-c", "python -m app.retrieval ingest && exec python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+    depends_on:
+      helpdesk-api:
+        condition: service_healthy
+    healthcheck:
+      # A readiness check may queue behind the bounded55s app turn; do not
+      # classify an in-progress, healthy turn as a deadlocked container.
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health',timeout=65)"]
+      interval: 15s
+      timeout: 70s
+      retries: 5
+      start_period: 90s
+
+  ui:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      APP_URL: http://app:8000
+      UI_HOST: 0.0.0.0
+      GRADIO_ANALYTICS_ENABLED: "False"
+    command: ["python", "ui/app_ui.py"]
+    depends_on:
+      app:
+        condition: service_healthy
+

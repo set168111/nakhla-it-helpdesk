@@ -1,0 +1,29 @@
+{
+  "at_utc": "2026-10-27T17:50:39.094632+00:00",
+  "ledgers_read_only": {
+    "working": {
+      "confirmed_usd": 1.90487596,
+      "unknown_reserved_usd": 0.04033004,
+      "rows": 1617
+    },
+    "prior_isolated": {
+      "confirmed_usd": 0.00022386,
+      "unknown_reserved_usd": 0,
+      "rows": 1
+    },
+    "schema_baseline": {
+      "confirmed_usd": 0.0184421,
+      "unknown_reserved_usd": 0,
+      "rows": 13
+    },
+    "schema_candidate": {
+      "confirmed_usd": 0.017342879999999998,
+      "unknown_reserved_usd": 0,
+      "rows": 13
+    }
+  },
+  "aggregate_confirmed_usd": 1.9408848,
+  "aggregate_unknown_reserved_usd": 0.04033004,
+  "aggregate_remaining_usd": 0.51878516,
+  "current_verification_paid_calls": 0
+}

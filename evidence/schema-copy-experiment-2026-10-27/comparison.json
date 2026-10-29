@@ -1,0 +1,562 @@
+{
+  "rows": {
+    "baseline-NX781": {
+      "arm": "baseline",
+      "case": "NX781",
+      "state": "answer",
+      "model_calls": 3,
+      "prompt_tokens": 14513,
+      "completion_tokens": 377,
+      "turn_seconds": 16.20300000000134,
+      "actual_cost_usd": 0.00640976,
+      "actual_model_cost_usd": 0.0064084,
+      "actual_embedding_cost_usd": 1.36e-06,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 0,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 2,
+          "seconds": 6.827999999994063,
+          "prompt_tokens": 8706,
+          "completion_tokens": 361,
+          "actual_cost_usd": 0.00406
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 1.389999999999418,
+          "prompt_tokens": 5807,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.0023484
+        }
+      },
+      "mcp_startup_seconds": 0.9839999999967404,
+      "retrieval_initialization_seconds": 0.3129999999946449,
+      "embedding_seconds": 0.7810000000026776,
+      "quality_checks_passed": true
+    },
+    "baseline-PDF": {
+      "arm": "baseline",
+      "case": "PDF",
+      "state": "answer",
+      "model_calls": 4,
+      "prompt_tokens": 14733,
+      "completion_tokens": 409,
+      "turn_seconds": 13.014999999999418,
+      "actual_cost_usd": 0.0065487,
+      "actual_model_cost_usd": 0.0065476,
+      "actual_embedding_cost_usd": 1.1e-06,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 1,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 3,
+          "seconds": 8.562000000005355,
+          "prompt_tokens": 11995,
+          "completion_tokens": 393,
+          "actual_cost_usd": 0.0054268
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 1.2969999999986612,
+          "prompt_tokens": 2738,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.0011208
+        }
+      },
+      "mcp_startup_seconds": 0.8899999999994179,
+      "retrieval_initialization_seconds": 0.07899999999790452,
+      "embedding_seconds": 0.6089999999967404,
+      "quality_checks_passed": true
+    },
+    "baseline-Finance": {
+      "arm": "baseline",
+      "case": "Finance",
+      "state": "await_confirmation",
+      "model_calls": 3,
+      "prompt_tokens": 12527,
+      "completion_tokens": 295,
+      "turn_seconds": 10.468999999997322,
+      "actual_cost_usd": 0.0054836400000000006,
+      "actual_model_cost_usd": 0.0054828,
+      "actual_embedding_cost_usd": 8.4e-07,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 0,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 2,
+          "seconds": 4.4689999999973224,
+          "prompt_tokens": 7083,
+          "completion_tokens": 279,
+          "actual_cost_usd": 0.0032796
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 0.9370000000053551,
+          "prompt_tokens": 5444,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.0022032
+        }
+      },
+      "mcp_startup_seconds": 0.7969999999986612,
+      "retrieval_initialization_seconds": 0.04700000000593718,
+      "embedding_seconds": 0.8129999999946449,
+      "quality_checks_passed": true
+    },
+    "candidate-NX781": {
+      "arm": "candidate",
+      "case": "NX781",
+      "state": "answer",
+      "model_calls": 3,
+      "prompt_tokens": 13364,
+      "completion_tokens": 373,
+      "turn_seconds": 12.297000000005937,
+      "actual_cost_usd": 0.005943459999999999,
+      "actual_model_cost_usd": 0.0059424,
+      "actual_embedding_cost_usd": 1.06e-06,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 0,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 2,
+          "seconds": 5.250000000007276,
+          "prompt_tokens": 7678,
+          "completion_tokens": 357,
+          "actual_cost_usd": 0.0036423999999999996
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 1.0,
+          "prompt_tokens": 5686,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.0023
+        }
+      },
+      "mcp_startup_seconds": 0.8439999999973224,
+      "retrieval_initialization_seconds": 0.14100000000325963,
+      "embedding_seconds": 0.6089999999967404,
+      "quality_checks_passed": true
+    },
+    "candidate-PDF": {
+      "arm": "candidate",
+      "case": "PDF",
+      "state": "answer",
+      "model_calls": 4,
+      "prompt_tokens": 13746,
+      "completion_tokens": 453,
+      "turn_seconds": 12.860000000000582,
+      "actual_cost_usd": 0.0062243,
+      "actual_model_cost_usd": 0.0062232,
+      "actual_embedding_cost_usd": 1.1e-06,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 1,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 3,
+          "seconds": 6.578000000001339,
+          "prompt_tokens": 11076,
+          "completion_tokens": 437,
+          "actual_cost_usd": 0.0051296
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 0.8909999999959837,
+          "prompt_tokens": 2670,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.0010936
+        }
+      },
+      "mcp_startup_seconds": 0.8280000000013388,
+      "retrieval_initialization_seconds": 0.062000000005355105,
+      "embedding_seconds": 0.7350000000005821,
+      "quality_checks_passed": true
+    },
+    "candidate-Finance": {
+      "arm": "candidate",
+      "case": "Finance",
+      "state": "await_confirmation",
+      "model_calls": 3,
+      "prompt_tokens": 11696,
+      "completion_tokens": 310,
+      "turn_seconds": 8.530999999995402,
+      "actual_cost_usd": 0.00517512,
+      "actual_model_cost_usd": 0.0051744,
+      "actual_embedding_cost_usd": 7.2e-07,
+      "unknown_reserved_usd": 0,
+      "cached_input_tokens": 0,
+      "corrections": 0,
+      "reviewer_rejections": 0,
+      "roles": {
+        "Support": {
+          "calls": 2,
+          "seconds": 4.10899999999674,
+          "prompt_tokens": 6345,
+          "completion_tokens": 294,
+          "actual_cost_usd": 0.0030084
+        },
+        "Reviewer": {
+          "calls": 1,
+          "seconds": 0.9689999999973224,
+          "prompt_tokens": 5351,
+          "completion_tokens": 16,
+          "actual_cost_usd": 0.002166
+        }
+      },
+      "mcp_startup_seconds": 0.875,
+      "retrieval_initialization_seconds": 0.0629999999946449,
+      "embedding_seconds": 1.0,
+      "quality_checks_passed": true
+    }
+  },
+  "quality_checks": {
+    "baseline-NX781": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "answer": true,
+      "no_draft": true,
+      "correct_source": true,
+      "minimum_and_recommendation": true,
+      "software_center": true
+    },
+    "baseline-PDF": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "answer": true,
+      "no_draft": true,
+      "pdf_source": true,
+      "advance_form": true,
+      "manager_receives_activation": true,
+      "local_day_one": true,
+      "remote_before_start": true
+    },
+    "baseline-Finance": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "await_confirmation": true,
+      "security_p2": true,
+      "finance_identity": true,
+      "error_retained": true,
+      "truthful_attempts": true,
+      "relevant_policy_citation": true
+    },
+    "candidate-NX781": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "answer": true,
+      "no_draft": true,
+      "correct_source": true,
+      "minimum_and_recommendation": true,
+      "software_center": true
+    },
+    "candidate-PDF": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "answer": true,
+      "no_draft": true,
+      "pdf_source": true,
+      "advance_form": true,
+      "manager_receives_activation": true,
+      "local_day_one": true,
+      "remote_before_start": true
+    },
+    "candidate-Finance": {
+      "http_200": true,
+      "no_result": true,
+      "no_write_tools": true,
+      "no_deprecated_or_poisoned_citation": true,
+      "await_confirmation": true,
+      "security_p2": true,
+      "finance_identity": true,
+      "error_retained": true,
+      "truthful_attempts": true,
+      "relevant_policy_citation": true
+    }
+  },
+  "paired_comparisons": {
+    "NX781": {
+      "model_calls": {
+        "baseline": 3,
+        "candidate": 3,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": 0.0
+      },
+      "prompt_tokens": {
+        "baseline": 14513,
+        "candidate": 13364,
+        "absolute_candidate_minus_baseline": -1149,
+        "percent_candidate_minus_baseline": -7.917039895266313
+      },
+      "completion_tokens": {
+        "baseline": 377,
+        "candidate": 373,
+        "absolute_candidate_minus_baseline": -4,
+        "percent_candidate_minus_baseline": -1.0610079575596818
+      },
+      "turn_seconds": {
+        "baseline": 16.20300000000134,
+        "candidate": 12.297000000005937,
+        "absolute_candidate_minus_baseline": -3.9059999999954016,
+        "percent_candidate_minus_baseline": -24.106646917207176
+      },
+      "actual_cost_usd": {
+        "baseline": 0.00640976,
+        "candidate": 0.005943459999999999,
+        "absolute_candidate_minus_baseline": -0.0004663000000000002,
+        "percent_candidate_minus_baseline": -7.274843363870102
+      },
+      "corrections": {
+        "baseline": 0,
+        "candidate": 0,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": null
+      }
+    },
+    "PDF": {
+      "model_calls": {
+        "baseline": 4,
+        "candidate": 4,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": 0.0
+      },
+      "prompt_tokens": {
+        "baseline": 14733,
+        "candidate": 13746,
+        "absolute_candidate_minus_baseline": -987,
+        "percent_candidate_minus_baseline": -6.69924658928935
+      },
+      "completion_tokens": {
+        "baseline": 409,
+        "candidate": 453,
+        "absolute_candidate_minus_baseline": 44,
+        "percent_candidate_minus_baseline": 10.75794621026895
+      },
+      "turn_seconds": {
+        "baseline": 13.014999999999418,
+        "candidate": 12.860000000000582,
+        "absolute_candidate_minus_baseline": -0.15499999999883585,
+        "percent_candidate_minus_baseline": -1.1909335382162334
+      },
+      "actual_cost_usd": {
+        "baseline": 0.0065487,
+        "candidate": 0.0062243,
+        "absolute_candidate_minus_baseline": -0.00032439999999999986,
+        "percent_candidate_minus_baseline": -4.953654923878019
+      },
+      "corrections": {
+        "baseline": 1,
+        "candidate": 1,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": 0.0
+      }
+    },
+    "Finance": {
+      "model_calls": {
+        "baseline": 3,
+        "candidate": 3,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": 0.0
+      },
+      "prompt_tokens": {
+        "baseline": 12527,
+        "candidate": 11696,
+        "absolute_candidate_minus_baseline": -831,
+        "percent_candidate_minus_baseline": -6.633671270056678
+      },
+      "completion_tokens": {
+        "baseline": 295,
+        "candidate": 310,
+        "absolute_candidate_minus_baseline": 15,
+        "percent_candidate_minus_baseline": 5.084745762711864
+      },
+      "turn_seconds": {
+        "baseline": 10.468999999997322,
+        "candidate": 8.530999999995402,
+        "absolute_candidate_minus_baseline": -1.9380000000019209,
+        "percent_candidate_minus_baseline": -18.511796733235425
+      },
+      "actual_cost_usd": {
+        "baseline": 0.0054836400000000006,
+        "candidate": 0.00517512,
+        "absolute_candidate_minus_baseline": -0.0003085200000000005,
+        "percent_candidate_minus_baseline": -5.626189903057102
+      },
+      "corrections": {
+        "baseline": 0,
+        "candidate": 0,
+        "absolute_candidate_minus_baseline": 0,
+        "percent_candidate_minus_baseline": null
+      }
+    }
+  },
+  "totals": {
+    "baseline": {
+      "model_calls": 10,
+      "prompt_tokens": 41773,
+      "completion_tokens": 1081,
+      "turn_seconds": 39.68699999999808,
+      "actual_cost_usd": 0.0184421,
+      "corrections": 1
+    },
+    "candidate": {
+      "model_calls": 10,
+      "prompt_tokens": 38806,
+      "completion_tokens": 1136,
+      "turn_seconds": 33.68800000000192,
+      "actual_cost_usd": 0.017342879999999998,
+      "corrections": 1
+    }
+  },
+  "total_differences": {
+    "model_calls": {
+      "baseline": 10,
+      "candidate": 10,
+      "absolute_candidate_minus_baseline": 0,
+      "percent_candidate_minus_baseline": 0.0
+    },
+    "prompt_tokens": {
+      "baseline": 41773,
+      "candidate": 38806,
+      "absolute_candidate_minus_baseline": -2967,
+      "percent_candidate_minus_baseline": -7.1026739760132145
+    },
+    "completion_tokens": {
+      "baseline": 1081,
+      "candidate": 1136,
+      "absolute_candidate_minus_baseline": 55,
+      "percent_candidate_minus_baseline": 5.087881591119334
+    },
+    "turn_seconds": {
+      "baseline": 39.68699999999808,
+      "candidate": 33.68800000000192,
+      "absolute_candidate_minus_baseline": -5.998999999996158,
+      "percent_candidate_minus_baseline": -15.1157809862082
+    },
+    "actual_cost_usd": {
+      "baseline": 0.0184421,
+      "candidate": 0.017342879999999998,
+      "absolute_candidate_minus_baseline": -0.0010992200000000014,
+      "percent_candidate_minus_baseline": -5.960384121114198
+    },
+    "corrections": {
+      "baseline": 1,
+      "candidate": 1,
+      "absolute_candidate_minus_baseline": 0,
+      "percent_candidate_minus_baseline": 0.0
+    }
+  },
+  "budget": {
+    "working": {
+      "confirmed_usd": 1.90487596,
+      "unknown_reserved_usd": 0.04033004,
+      "rows": 1617,
+      "calculated_usd": 0
+    },
+    "prior_isolated_actual_ledger_copy": {
+      "confirmed_usd": 0.00022386,
+      "unknown_reserved_usd": 0,
+      "rows": 1,
+      "calculated_usd": 0
+    },
+    "experiment_arms": {
+      "baseline": {
+        "confirmed_usd": 0.0184421,
+        "unknown_reserved_usd": 0,
+        "rows": 13,
+        "calculated_usd": 0
+      },
+      "candidate": {
+        "confirmed_usd": 0.017342879999999998,
+        "unknown_reserved_usd": 0,
+        "rows": 13,
+        "calculated_usd": 0
+      }
+    },
+    "experiment_confirmed_usd": 0.035784979999999994,
+    "experiment_unknown_reserved_usd": 0,
+    "aggregate_confirmed_usd": 1.9408848,
+    "aggregate_unknown_reserved_usd": 0.04033004,
+    "aggregate_remaining_usd": 0.51878516,
+    "total_experiment_cap_usd": 0.12
+  },
+  "working_files_unchanged": true,
+  "working_file_count": 235,
+  "candidate_promoted": false,
+  "limitations": [
+    "Only six turns; no reliable p95 or consistent speed improvement established",
+    "Different provider cache hits, cold pricing/client setup and run order can confound latency and cost",
+    "Independent fresh process/MCP per turn; ASGI contract timing includes cold app setup and first-turn pricing",
+    "Quality checks are explicit predicates plus human-style source review, not a paid model judge"
+  ],
+  "manual_quality_review": {
+    "essential_scenario_checks": "Both arms meet the explicitly checked NX-781, onboarding and Finance draft requirements; no approved actions or simulator writes",
+    "candidate_observations": [
+      {
+        "case": "PDF",
+        "observation": "Final prose includes internal KB-012 chunk identifiers in addition to normal document citations; extra presentation noise."
+      },
+      {
+        "case": "Finance",
+        "observation": "Final prose says all Finance VPN issues are handled as security incidents. KB-002/KB-016 mandate category security and Security Operations routing; this broader incident terminology is not explicitly established and should not be read as confirmed active compromise/P1."
+      }
+    ],
+    "both_arms_onboarding": "Both initial answers triggered the unchanged deterministic onboarding timing guard; both retained one correction and then passed Reviewer. Final laptop timing and activation-link recipient match KB-012.",
+    "finance_immutable_payloads": "Identical across arms, including security/P2, requester, department, truthful no-troubleshooting statement, error code and KB refs.",
+    "recommendation": "Retain the baseline in working source; do not promote candidate. Preserve candidate privately as a promising token/cost result, with quality wording concerns and speed/causality limitations unresolved."
+  },
+  "retrieval_comparison": {
+    "NX781": {
+      "baseline_chunks": 35,
+      "candidate_chunks": 34,
+      "same_chunk_set": false,
+      "same_chunk_order": false,
+      "baseline_only_chunks": [
+        "KB-010:2:dcd7f1b4b4"
+      ],
+      "candidate_only_chunks": []
+    },
+    "PDF": {
+      "baseline_chunks": 30,
+      "candidate_chunks": 30,
+      "same_chunk_set": true,
+      "same_chunk_order": true,
+      "baseline_only_chunks": [],
+      "candidate_only_chunks": []
+    },
+    "Finance": {
+      "baseline_chunks": 27,
+      "candidate_chunks": 27,
+      "same_chunk_set": true,
+      "same_chunk_order": false,
+      "baseline_only_chunks": [],
+      "candidate_only_chunks": [],
+      "identical_ticket_payloads": true
+    }
+  },
+  "shutdown_verification": {
+    "at_utc": "2026-10-27T17:09:11.135871+00:00",
+    "working_project_running_container_ids": [],
+    "experiment_port_8114_closed": true,
+    "working_services_started_by_experiment": false,
+    "docker_desktop_engine": "started only with explicit user authorization; left available; no global shutdown attempted"
+  },
+  "recommendation": "Retain the baseline in working source; do not promote candidate. Preserve candidate privately as a promising token/cost result, with quality wording concerns and speed/causality limitations unresolved."
+}

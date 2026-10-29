@@ -1,0 +1,20 @@
+[
+  {
+    "id": "act-5ff989ffb8f54c5cac65d54fac19c865",
+    "status": "failed",
+    "error": "{\"code\":\"service_unavailable\",\"http_status\":503,\"message\":\"Simulated outage: create_ticket is temporarily unavailable. Nothing was changed.\"}",
+    "result": null
+  },
+  {
+    "id": "act-7e5b679cc98f4ef2bdaa50d0c9b69976",
+    "status": "failed",
+    "error": "{\"code\":\"service_unavailable\",\"http_status\":503,\"message\":\"Simulated outage: create_ticket is temporarily unavailable. Nothing was changed.\"}",
+    "result": null
+  },
+  {
+    "id": "act-85b575e194394fb0b8669128165ac2fc",
+    "status": "failed",
+    "error": "{\"code\":\"service_unavailable\",\"http_status\":503,\"message\":\"Simulated outage: create_ticket is temporarily unavailable. Nothing was changed.\"}",
+    "result": null
+  }
+]

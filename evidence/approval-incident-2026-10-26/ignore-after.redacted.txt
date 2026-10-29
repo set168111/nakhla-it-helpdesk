@@ -1,0 +1,5 @@
+::	services/data/employees.json
+::	services/data/status.json
+IT HelpDesk/.gitignore:8:/data/	data/helpdesk.sqlite3
+IT HelpDesk/.gitignore:8:/data/	data/runtime-probe.txt
+warning: unable to access '[PRIVATE_PATH]': Permission denied

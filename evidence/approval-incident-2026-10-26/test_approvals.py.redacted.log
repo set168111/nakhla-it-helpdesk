@@ -1,0 +1,30 @@
+test_503_no_automatic_retry (test_approvals.ApprovalTests.test_503_no_automatic_retry) ... ok
+test_changed_draft_supersedes (test_approvals.ApprovalTests.test_changed_draft_supersedes) ... ok
+test_concurrent_double_approval_one_write (test_approvals.ApprovalTests.test_concurrent_double_approval_one_write) ... ok
+test_directory_change_blocks_write (test_approvals.ApprovalTests.test_directory_change_blocks_write) ... ok
+test_directory_unavailable_blocks_write (test_approvals.ApprovalTests.test_directory_unavailable_blocks_write) ... ok
+test_expired_draft_cannot_commit (test_approvals.ApprovalTests.test_expired_draft_cannot_commit) ... ok
+test_incident_activated_after_draft_supersedes_without_write (test_approvals.ApprovalTests.test_incident_activated_after_draft_supersedes_without_write) ... Executing <Task finished name='Task-34' coro=<ApprovalTests.test_incident_activated_after_draft_supersedes_without_write() done, defined at [WORKSPACE]\tests\test_approvals.py:71> result=None created at [PRIVATE_PATH]> took 0.109 seconds
+ok
+test_incident_during_unknown_recovery_preserves_duplicate_write_guard (test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard) ... Executing <Task pending name='Task-39' coro=<ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard() running at [WORKSPACE]\tests\test_approvals.py:106> cb=[_run_until_complete_cb() at [PRIVATE_PATH] created at [PRIVATE_PATH]> took 0.157 seconds
+ok
+test_live_503_same_key_recovery (test_approvals.ApprovalTests.test_live_503_same_key_recovery) ... skipped 'Opt in to a single local simulator create-ticket fault'
+test_live_schema_api_accepts_truthful_immediate_escalation (test_approvals.ApprovalTests.test_live_schema_api_accepts_truthful_immediate_escalation) ... skipped 'Opt in to a local simulator write; no external provider'
+test_non_boolean_approval_no_write (test_approvals.ApprovalTests.test_non_boolean_approval_no_write) ... ok
+test_payload_tampering_cannot_commit (test_approvals.ApprovalTests.test_payload_tampering_cannot_commit) ... Executing <Task finished name='Task-49' coro=<ApprovalTests.test_payload_tampering_cannot_commit() done, defined at [WORKSPACE]\tests\test_approvals.py:195> result=None created at [PRIVATE_PATH]> took 0.109 seconds
+ok
+test_read_dispatch_cannot_call_writes (test_approvals.ApprovalTests.test_read_dispatch_cannot_call_writes) ... ok
+test_reject_unknown_cross_session_and_replay_no_write (test_approvals.ApprovalTests.test_reject_unknown_cross_session_and_replay_no_write) ... ok
+test_restart_session_and_unknown_recovery (test_approvals.ApprovalTests.test_restart_session_and_unknown_recovery) ... Executing <Task finished name='Task-64' coro=<ApprovalTests.test_restart_session_and_unknown_recovery() done, defined at [WORKSPACE]\tests\test_approvals.py:178> result=None created at [PRIVATE_PATH]> took 0.157 seconds
+ok
+test_retention_removes_only_old_resolved_history (test_approvals.ApprovalTests.test_retention_removes_only_old_resolved_history) ... Executing <Task finished name='Task-69' coro=<ApprovalTests.test_retention_removes_only_old_resolved_history() done, defined at [WORKSPACE]\tests\test_approvals.py:228> result=None created at [PRIVATE_PATH]> took 0.781 seconds
+ok
+test_schema_truthful_immediate_entry_and_exact_commit (test_approvals.ApprovalTests.test_schema_truthful_immediate_entry_and_exact_commit) ... ok
+test_unknown_retry_changed_evidence_retains_unknown (test_approvals.ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown) ... Executing <Task finished name='Task-79' coro=<ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown() done, defined at [WORKSPACE]\tests\test_approvals.py:205> result=None created at [PRIVATE_PATH]> took 0.109 seconds
+ok
+test_unknown_retry_retains_payload_and_key (test_approvals.ApprovalTests.test_unknown_retry_retains_payload_and_key) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 3.176s
+
+OK (skipped=2)

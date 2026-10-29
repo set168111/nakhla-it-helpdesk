@@ -1,0 +1,7 @@
+test_truncated_issue_retains_documented_code_for_later_incident (test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident) ... Executing <Task pending name='Task-2' coro=<WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident() running at [WORKSPACE]\tests\test_agent_workflow.py:382> wait_for=<Task pending name='Task-3' coro=<RunnableCallable.ainvoke() running at [WORKSPACE]\.venv\Lib\site-packages\langgraph\_internal\_runnable.py:431> cb=[Task.task_wakeup()] created at [PRIVATE_PATH]> cb=[_run_until_complete_cb() at [PRIVATE_PATH] created at [PRIVATE_PATH]> took 0.110 seconds
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.299s
+
+OK

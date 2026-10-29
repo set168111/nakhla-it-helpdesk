@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "confirmed_usd": 0.0184421,
+    "unknown_reserved_usd": 0,
+    "rows": 13,
+    "calculated_usd": 0
+  },
+  "candidate": {
+    "confirmed_usd": 0.017342879999999998,
+    "unknown_reserved_usd": 0,
+    "rows": 13,
+    "calculated_usd": 0
+  }
+}

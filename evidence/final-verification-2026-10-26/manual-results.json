@@ -1,0 +1,118 @@
+[
+  {
+    "check": "Onboarding laptop timing and KB-012 citation",
+    "status": "PASS - explicitly reported by user",
+    "date": "2026-10-26",
+    "scope": "Timing and citation only; not blanket acceptance of all onboarding/AI output.",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "VPN NX-503 -> INC-2207/no duplicate",
+    "status": "User previously reported correct response",
+    "scope": "Reported first step of manual CRM sequence.",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Unknown CRM-1150 admits no documented fix",
+    "status": "User previously reported correct response",
+    "scope": "Reported second step of manual sequence.",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Short nothing-tried CRM follow-up",
+    "status": "Prior manual failure; code and automated same-session UI regression fixed",
+    "scope": "User later observed a CRM draft; no separate complete human approval/immutability pass claimed.",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Impact update blocked/no workaround -> P2",
+    "status": "Prior manual failure; automated fix passed; explicit manual pass not received",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Vague VPN phrase -> error-code clarification/NX-781 follow-up",
+    "status": "Prior manual failure; automated fix passed; explicit manual pass not received",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Final onboarding clarity, completeness and matching KB-012 Sources",
+    "status": "PASS - explicitly reported by user",
+    "date": "2026-10-26",
+    "scope": "Final local manual retest: clear separate laptop timings, complete answer and matching KB-012 Sources. User-reported; no additional paid call or inferred broader acceptance.",
+    "user_statement": "Record the final manual onboarding pass: clear separate laptop timings, complete answer and matching KB-012 Sources.",
+    "historical_note": "Earlier scoped record retained; latest explicit user enumeration supersedes missing-manual-pass/pending wording for the same behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Vague VPN follow-up",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Vague VPN -> NX-781 follow-up, correct versions and citations.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Finance approval lifecycle",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Finance draft -> Reject -> fresh draft -> Approve -> IT-2001.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Active incident handling",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Active incident handling without a duplicate ticket.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: CRM issue context replacement",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "CRM issue replacing VPN context, with truthful nothing tried.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Impact update approval",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Updated impact -> fresh P2 draft -> Approve -> IT-2002.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Approval UI after success",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Approve disabled after success.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Final onboarding",
+    "status": "PASS - user-reported manual result",
+    "date": "2026-10-26",
+    "scope": "Final onboarding timing, complete answer and matching KB-012 Sources.",
+    "provenance": "Explicit user enumeration in this conversation; not an automated replay. No new runtime ticket lookup or model call.",
+    "retest": "Not required unless subsequent changes affect this behavior."
+  },
+  {
+    "check": "Reconciled manual pass: Repeated unexplained daily lockouts",
+    "date": "2026-10-26",
+    "status": "PASS - user-reported manual result",
+    "scope": "security/P2; SP-001 and KB-006 Sources; exact reported attempted step; no unnecessary clarification; awaiting approval.",
+    "attempted_step": "I already checked saved passwords on my devices and found none.",
+    "approval_scope": "Awaiting approval; no manual approval or ticket creation is claimed.",
+    "provenance": "Explicit user report in conversation, separate from live-result.json automated API check. No repeated test or paid call made to record it."
+  },
+  {
+    "check": "Reconciled manual pass: Rejection clears draft without writes",
+    "date": "2026-10-26",
+    "status": "PASS - user-reported manual result",
+    "scope": "Draft cleared; response said Nothing was written; no tool calls.",
+    "provenance": "Explicit user report in conversation; not an automated replay. No test or paid call made to record it.",
+    "approval_or_creation_claimed": false
+  }
+]

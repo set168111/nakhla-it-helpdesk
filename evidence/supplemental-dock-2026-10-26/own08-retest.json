@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "cases_file": "evals\\combined_cases.jsonl",
+    "runs": 1,
+    "passed": 1,
+    "pass_rate": 1.0,
+    "turn_latency_avg_s": 3.51,
+    "turn_latency_p95_s": 6.91,
+    "cost_usd_reported": 0.0036,
+    "by_category": {
+      "rejection": "1/1"
+    },
+    "wall_time_s": 7.0
+  },
+  "results": [
+    {
+      "id": "OWN-08",
+      "category": "rejection",
+      "passed": true,
+      "checks": [
+        {
+          "check": "reply_not_contains",
+          "ok": true,
+          "detail": "must not say []"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "result_absent",
+          "ok": true,
+          "detail": "expected no result, got {}"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "My Finance VPN shows NX-403. Prepare the required escalation ticket."
+          },
+          "seconds": 6.91,
+          "status": 200,
+          "reply": "Finance VPN issues must be routed directly to Security Operations with category 'security' and priority P2 for one to three affected users, as per Finance department rules overriding general rules. The Finance VPN uses the FIN-SECURE profile on GW-3, which only Security Operations may change, and no troubleshooting should be done with Finance staff before escalation. [KB-002] [KB-016] [KB-015]\nReview this exact ticket draft, then approve or reject it.",
+          "transcript": null,
+          "pending_action": {
+            "action_id": "act-96ff66c252684582a7cb15ea361fe3bd",
+            "type": "create_ticket",
+            "summary": "Create ticket with exactly these fields: {\"affected_users\":1,\"attempted_steps\":[\"No troubleshooting attempted; immediate escalation required by policy.\"],\"category\":\"security\",\"department\":\"Finance\",\"description\":\"Requester reported:  My Finance VPN shows NX-403. Prepare the required escalation ticket.\",\"kb_refs\":[\"KB-002\",\"KB-016\",\"KB-015\"],\"priority\":\"P2\",\"requester_email\":\"rana.khalil@nakhla.example\",\"subject\":\"Finance VPN NX-403 error escalation\"}",
+            "payload": {
+              "affected_users": 1,
+              "attempted_steps": [
+                "No troubleshooting attempted; immediate escalation required by policy."
+              ],
+              "category": "security",
+              "department": "Finance",
+              "description": "Requester reported:  My Finance VPN shows NX-403. Prepare the required escalation ticket.",
+              "kb_refs": [
+                "KB-002",
+                "KB-016",
+                "KB-015"
+              ],
+              "priority": "P2",
+              "requester_email": "rana.khalil@nakhla.example",
+              "subject": "Finance VPN NX-403 error escalation"
+            }
+          },
+          "result": null,
+          "citations": [
+            "KB-002",
+            "KB-016",
+            "KB-015"
+          ]
+        },
+        {
+          "turn": {
+            "approve": false
+          },
+          "seconds": 0.11,
+          "status": 200,
+          "reply": "Draft rejected. Nothing was written.",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": []
+        }
+      ],
+      "latencies": [
+        6.91,
+        0.11
+      ],
+      "cost_usd": 0.0036256800000000755,
+      "error": null
+    }
+  ]
+}

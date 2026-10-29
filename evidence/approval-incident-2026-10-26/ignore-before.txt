@@ -1,0 +1,5 @@
+Read-only git check-ignore -v --no-index before correction:
+.gitignore:8:data/ services/data/employees.json
+.gitignore:8:data/ services/data/status.json
+.gitignore:8:data/ data/helpdesk.sqlite3
+Transcribed from tool output; no Git mutation.

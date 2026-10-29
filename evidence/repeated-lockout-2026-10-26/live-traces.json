@@ -1,0 +1,679 @@
+[
+  {
+    "turn_id": "4e3592f4e04c4fa2ad725aba7155119a",
+    "session_hash": "11ec9e6bf97a",
+    "events": [
+      {
+        "role": "Support",
+        "budget_preflight_usd": 0.0020832,
+        "turn_spent_usd": 0.0
+      },
+      {
+        "role": "Support",
+        "ms": 1958,
+        "cost_usd": 0.0003604,
+        "cost_basis": "provider",
+        "call": 1
+      },
+      {
+        "role": "Support",
+        "selected_read": "retrieve"
+      },
+      {
+        "role": "Support",
+        "retrieval_audit": {
+          "department": "Support",
+          "query_error_codes": [
+            "NID-423"
+          ],
+          "unknown_error_codes": [],
+          "selected": [
+            {
+              "chunk_id": "SP-002:2:e99ca6ef72",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:3:cf5196a0de",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:4:bdcdced71b",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:5:3589d26877",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:6:7febf084fb",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:0:14b89f1a54",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-002:1:13163e3833",
+              "id": "SP-002",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:3:5ad6ed3576",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:1:2a3af33679",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:2:43f162eb65",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:4:a3aaab67dc",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:6:fa194ba371",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:0:fe3d954c52",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:7:8bfee9a57b",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "SP-001:5:1a20325985",
+              "id": "SP-001",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-016:1:04fb038d48",
+              "id": "KB-016",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-016:3:6db46fdbfa",
+              "id": "KB-016",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-016:2:33e880f4e7",
+              "id": "KB-016",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-016:0:aacd641bda",
+              "id": "KB-016",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:1:162da55cec",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:4:8ec6c96828",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:0:5d7523550d",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:3:a22297e8c8",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:5:ce1572a841",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:6:922cefbfdc",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-015:2:2402d59a84",
+              "id": "KB-015",
+              "reason": "governing_policy_closure"
+            },
+            {
+              "chunk_id": "KB-004:2:5f5759d332",
+              "id": "KB-004",
+              "reason": "ranked_retrieval"
+            },
+            {
+              "chunk_id": "KB-006:0:750f41ce79",
+              "id": "KB-006",
+              "reason": "exact_error_document_closure"
+            },
+            {
+              "chunk_id": "KB-006:1:7f864d4d25",
+              "id": "KB-006",
+              "reason": "exact_error_document_closure"
+            },
+            {
+              "chunk_id": "KB-006:2:e5c403ed94",
+              "id": "KB-006",
+              "reason": "exact_error_document_closure"
+            },
+            {
+              "chunk_id": "KB-006:3:4eaea96f4f",
+              "id": "KB-006",
+              "reason": "exact_error_document_closure"
+            },
+            {
+              "chunk_id": "KB-006:4:aca36c0a7d",
+              "id": "KB-006",
+              "reason": "exact_error_document_closure"
+            }
+          ],
+          "excluded": [
+            {
+              "chunk_id": "KB-001:0:6a96a4e2c0",
+              "id": "KB-001",
+              "status": "deprecated",
+              "reason": "non_current_quarantined"
+            },
+            {
+              "chunk_id": "KB-002:0:3d28bc2493",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:1:750a333521",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:2:7af080ecdb",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:3:66c8eb3a9e",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:4:2288fd57b0",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:5:a8263f7aa5",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:6:19acafd4a1",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-002:7:df33001c3c",
+              "id": "KB-002",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:0:f0d103a571",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:1:66cd1e3f1c",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:2:e07eec8e56",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:3:4614421dd3",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:4:02dd32ea16",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-003:5:58943a95c4",
+              "id": "KB-003",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-004:0:9549aa0a5d",
+              "id": "KB-004",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-004:1:47ec7a79dd",
+              "id": "KB-004",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-004:3:fb7541dc06",
+              "id": "KB-004",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-004:4:11b38f5a84",
+              "id": "KB-004",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-005:0:6a96a4e2c0",
+              "id": "KB-005",
+              "status": "deprecated",
+              "reason": "non_current_quarantined"
+            },
+            {
+              "chunk_id": "KB-007:0:6684505ed0",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-007:1:f2d25f12f7",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-007:2:dc082a6157",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-007:3:9227c8beae",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-007:4:0d3c5c4a46",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-007:5:3667f4c1be",
+              "id": "KB-007",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-008:0:c3a3c5d757",
+              "id": "KB-008",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-008:1:56114c27e6",
+              "id": "KB-008",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-008:2:580db7d4bc",
+              "id": "KB-008",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-008:3:fe329ba534",
+              "id": "KB-008",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-008:4:19d3ce45dd",
+              "id": "KB-008",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:0:6561a2367b",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:1:d7a8938fe7",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:2:4b65caa681",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:3:752d28768a",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:4:4c6d68157b",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-009:5:22a539e461",
+              "id": "KB-009",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-010:0:3331dc1ecc",
+              "id": "KB-010",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-010:1:37123aef77",
+              "id": "KB-010",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-010:2:dcd7f1b4b4",
+              "id": "KB-010",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-010:3:e4edbb76d2",
+              "id": "KB-010",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-010:4:75028364fb",
+              "id": "KB-010",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:0:2264c6e639",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:1:20d94a0f8a",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:2:a0e1faa436",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:3:4acb63e46a",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:4:9940593e89",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-011:5:3f9ca9c9fe",
+              "id": "KB-011",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-012:0:b93ccce3f3",
+              "id": "KB-012",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-013:0:741a816e14",
+              "id": "KB-013",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:0:54958a584e",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:1:58afa789d5",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:2:c0024a0726",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:3:ac60109d67",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:4:d34e858937",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:5:6cd0435c9c",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:6:746b8bb891",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-014:7:8d3e81ae8a",
+              "id": "KB-014",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:0:156111c3ad",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:1:2095994c8a",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:2:9bcf006369",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:3:a76eddfd6e",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:4:87f2c1eaa3",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:5:c011f62fbf",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:6:21009bfa40",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:7:592cb6b76c",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-017:8:898b4bd399",
+              "id": "KB-017",
+              "status": "current",
+              "reason": "outside_ranked_or_required_closure"
+            },
+            {
+              "chunk_id": "KB-018:0:6a96a4e2c0",
+              "id": "KB-018",
+              "status": "draft",
+              "reason": "non_current_quarantined"
+            }
+          ]
+        }
+      },
+      {
+        "role": "Support",
+        "action": "retrieve",
+        "evidence": [
+          "SP-002:2:e99ca6ef72",
+          "SP-002:3:cf5196a0de",
+          "SP-002:4:bdcdced71b",
+          "SP-002:5:3589d26877",
+          "SP-002:6:7febf084fb",
+          "SP-002:0:14b89f1a54",
+          "SP-002:1:13163e3833",
+          "SP-001:3:5ad6ed3576",
+          "SP-001:1:2a3af33679",
+          "SP-001:2:43f162eb65",
+          "SP-001:4:a3aaab67dc",
+          "SP-001:6:fa194ba371",
+          "SP-001:0:fe3d954c52",
+          "SP-001:7:8bfee9a57b",
+          "SP-001:5:1a20325985",
+          "KB-016:1:04fb038d48",
+          "KB-016:3:6db46fdbfa",
+          "KB-016:2:33e880f4e7",
+          "KB-016:0:aacd641bda",
+          "KB-015:1:162da55cec",
+          "KB-015:4:8ec6c96828",
+          "KB-015:0:5d7523550d",
+          "KB-015:3:a22297e8c8",
+          "KB-015:5:ce1572a841",
+          "KB-015:6:922cefbfdc",
+          "KB-015:2:2402d59a84",
+          "KB-004:2:5f5759d332",
+          "KB-006:0:750f41ce79",
+          "KB-006:1:7f864d4d25",
+          "KB-006:2:e5c403ed94",
+          "KB-006:3:4eaea96f4f",
+          "KB-006:4:aca36c0a7d"
+        ]
+      },
+      {
+        "role": "Support",
+        "budget_preflight_usd": 0.015611519999999999,
+        "turn_spent_usd": 0.0003615399999999133
+      },
+      {
+        "role": "Support",
+        "ms": 3340,
+        "cost_usd": 0.0032348,
+        "cost_basis": "provider",
+        "call": 2
+      },
+      {
+        "role": "Support",
+        "candidate_json_redacted": "{\"intent\": \"draft\", \"claims\": [{\"text\": \"Five failed sign-ins within 15 minutes lock the account for 30 minutes and show error NID-423. Three or more lockouts in one day without a known cause are treated as a possible password-guessing attack and must be reported to Security Operations with category 'security' and priority P2.\", \"chunk_ids\": [\"SP-001:3:5ad6ed3576\", \"KB-006:0:750f41ce79\", \"KB-006:3:4eaea96f4f\"]}], \"question\": \"\", \"subject\": \"Repeated NakhlaID account lockouts with error NID-423\", \"description\": \"Requester reported:  My NakhlaID account shows NID-423 and has locked three times today without a known cause. I already checked saved passwords on my devices and found none. Please prepare a ticket.\", \"attempted_steps\": [\"I already checked saved passwords on my devices and found none.\"], \"affected_users\": 1, \"blocked\": true, \"workaround\": false, \"security_incident\": false, \"software_request\": null}"
+      },
+      {
+        "role": "Reviewer",
+        "budget_preflight_usd": 0.01162176,
+        "turn_spent_usd": 0.0035963399999999115
+      },
+      {
+        "role": "Reviewer",
+        "ms": 1182,
+        "cost_usd": 0.0022428,
+        "cost_basis": "provider",
+        "call": 3
+      },
+      {
+        "role": "Reviewer",
+        "accepted": true,
+        "complete": true,
+        "corrections": ""
+      }
+    ],
+    "model_calls": 3
+  }
+]

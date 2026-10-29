@@ -1,0 +1,13 @@
+test_approval_requires_strict_boolean_and_id_only (test_contract_safety.ContractSafetyTests.test_approval_requires_strict_boolean_and_id_only) ... ok
+test_chat_preserves_contract_fields_and_explicit_requester (test_contract_safety.ContractSafetyTests.test_chat_preserves_contract_fields_and_explicit_requester) ... ok
+test_health_checks_supplied_dependency_even_when_index_and_key_present (test_contract_safety.ContractSafetyTests.test_health_checks_supplied_dependency_even_when_index_and_key_present) ... ok
+test_health_fails_closed_for_each_missing_live_prerequisite (test_contract_safety.ContractSafetyTests.test_health_fails_closed_for_each_missing_live_prerequisite) ... ok
+test_invalid_identity_size_or_session_never_reaches_runtime (test_contract_safety.ContractSafetyTests.test_invalid_identity_size_or_session_never_reaches_runtime) ... ok
+test_no_application_admin_or_voice_route (test_contract_safety.ContractSafetyTests.test_no_application_admin_or_voice_route) ... ok
+test_ready_health_is_exact_contract (test_contract_safety.ContractSafetyTests.test_ready_health_is_exact_contract) ... ok
+test_user_is_optional_and_chat_cannot_smuggle_approval (test_contract_safety.ContractSafetyTests.test_user_is_optional_and_chat_cannot_smuggle_approval) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.375s
+
+OK

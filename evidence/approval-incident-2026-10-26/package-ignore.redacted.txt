@@ -1,0 +1,4 @@
+::	local-packages/nakhla-it-helpdesk/services/data/employees.json
+::	local-packages/nakhla-it-helpdesk/services/data/status.json
+IT HelpDesk/local-packages/nakhla-it-helpdesk/.gitignore:8:/data/	local-packages/nakhla-it-helpdesk/data/runtime-probe.txt
+warning: unable to access '[PRIVATE_PATH]': Permission denied

@@ -1,0 +1,67 @@
+{
+  "package": "nakhla-it-helpdesk",
+  "verification_kind": "Static local package file/link/anchor/privacy review (final copy, re-run 2026-10-29). Static only: no application, test, Docker, UI or API execution was performed in this preparation.",
+  "file_count": 218,
+  "manifest_exactly_matches_files": true,
+  "missing_files_or_links": [],
+  "forbidden_runtime_paths": [],
+  "credential_pattern_matches_no_values": [],
+  "private_path_matches_no_values": [],
+  "runtime_file_count": 43,
+  "KB018_fixture_byte_identical": true,
+  "preserved_original_evidence_hashes_unchanged": true,
+  "redacted_evidence_copies": [
+    "evidence/repeated-lockout-2026-10-26/before.redacted.log",
+    "evidence/repeated-lockout-2026-10-26/relevant-offline.redacted.log",
+    "evidence/supplemental-dock-2026-10-26/offline.redacted.log",
+    "evidence/timing-clarity-2026-10-26/targeted-offline-final.redacted.log",
+    "evidence/approval-incident-2026-10-26/approvals-before.redacted.log",
+    "evidence/approval-incident-2026-10-26/code-after.redacted.log",
+    "evidence/approval-incident-2026-10-26/code-before.redacted.log",
+    "evidence/approval-incident-2026-10-26/code-regression-before.redacted.log",
+    "evidence/approval-incident-2026-10-26/ignore-after.redacted.txt",
+    "evidence/approval-incident-2026-10-26/incident-before.redacted.log",
+    "evidence/approval-incident-2026-10-26/test_agent_workflow.py.redacted.log",
+    "evidence/approval-incident-2026-10-26/test_approvals.py.redacted.log",
+    "evidence/approval-incident-2026-10-26/workflow-final.redacted.log",
+    "evidence/approval-incident-2026-10-26/package-ignore.redacted.txt",
+    "evidence/docker-approval-incident-2026-10-27/containers-after-start.redacted.json",
+    "evidence/docker-approval-incident-2026-10-27/containers-before.redacted.json"
+  ],
+  "fresh_start": "Historical isolated PASS predating approval/incident changes; not rerun",
+  "independent_peer_preflight": "UNCOMPLETED",
+  "paid_calls_or_service_actions": 0,
+  "scope_limit": "Credential pattern scanning is a static check, not a legal clearance or Git-history audit; the supplied kit keeps its own terms and is not covered by the scoped MIT licence.",
+  "docker_verification": "Historical PASS recorded in evidence/docker-approval-incident-2026-10-27/verification.json (working project, mocked, no paid calls); not re-run for this copy",
+  "passed": null,
+  "MIT_scope_files_exist_and_match_original_contributions": true,
+  "MIT_scope_file_count": 17,
+  "runtime_evidence": "evidence/docker-approval-incident-2026-10-27/verification.json",
+  "static_checks_rerun": {
+    "file_count": 218,
+    "manifest_exactly_matches_git_index": true,
+    "relative_links_checked": 236,
+    "relative_links_bad": 0
+  },
+  "runtime_verification": {
+    "performed_in_this_preparation": false,
+    "tests_run": 0,
+    "docker_run": false,
+    "paid_or_live_api_calls": 0,
+    "fresh_clone_run": false,
+    "historical_evidence": "Earlier runtime evidence is preserved under evidence/ and describes the working project at that time; it was not re-run for this copy."
+  },
+  "runtime_source_vs_working_project": {
+    "files_compared": 43,
+    "byte_identical": 43,
+    "identical_after_LF_normalisation": 43,
+    "differing_after_LF_normalisation": [],
+    "note": "static comparison of the copy against the working project at preparation time"
+  },
+  "static_checks_passed": true,
+  "supplied_kit_snapshot": {
+    "source": "fork commit 2ae2f52 on origin/main of set168111/Agentic-AI-Bootcamp-Students (the snapshot actually used)",
+    "upstream_compared": "local ref 39636dd: no differences for scenario-2-it-helpdesk or the Final-Mini-Project README versus 2ae2f52",
+    "repinned": false
+  }
+}

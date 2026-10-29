@@ -1,0 +1,32 @@
+[
+  {
+    "id": "35524740c96bc1d5251c1aab0a4c8be102564b50bdc50756fa8f2c8bc87d8443",
+    "name": "/nakhla-helpdesk-app-1",
+    "service": "app",
+    "image_id": "sha256:38f01b33ca91eccea7c52f92716b2b504ef7d0969071b3a8e4a11d2d1c3b32b9",
+    "running": false,
+    "mounts": [
+      {
+        "Type": "bind",
+        "Source": "[WORKSPACE]\\data",
+        "Destination": "/workspace/data"
+      }
+    ]
+  },
+  {
+    "id": "0657559e935dd07e2a85505220dcf933419fcd0ce56b4a6edc05666a73f90302",
+    "name": "/nakhla-helpdesk-ui-1",
+    "service": "ui",
+    "image_id": "sha256:3dd88dff792105e0a4f2986d7414d3761000e408b5508c3fc9229cf78f643a3a",
+    "running": false,
+    "mounts": []
+  },
+  {
+    "id": "90c0faeb9482ef99a0a7d62f3b013595779ec92d5516aa9442a57dee7c6d3c67",
+    "name": "/nakhla-helpdesk-helpdesk-api-1",
+    "service": "helpdesk-api",
+    "image_id": "sha256:5d0e6254be03d31e35ad484d29c914f5b731088b30341fab02511c2a587cd74b",
+    "running": false,
+    "mounts": []
+  }
+]

@@ -1,0 +1,18 @@
+{"kind": "focused existing tests inside app container", "tests_run": 10, "passed": true, "failures": 0, "errors": 0, "skipped": 0, "external_network": "blocked by harness", "state": "TemporaryDirectory per test; working data untouched", "real_ticket_writes": 0}
+test_incident_activated_after_draft_supersedes_without_write (test_approvals.ApprovalTests.test_incident_activated_after_draft_supersedes_without_write) ... ok
+test_incident_during_unknown_recovery_preserves_duplicate_write_guard (test_approvals.ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard) ... Executing <Task pending name='Task-7' coro=<ApprovalTests.test_incident_during_unknown_recovery_preserves_duplicate_write_guard() running at /tmp/helpdesk-focused-tests/test_approvals.py:106> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:181] created at /usr/local/lib/python3.12/asyncio/runners.py:100> took 0.104 seconds
+ok
+test_concurrent_double_approval_one_write (test_approvals.ApprovalTests.test_concurrent_double_approval_one_write) ... ok
+test_unknown_retry_retains_payload_and_key (test_approvals.ApprovalTests.test_unknown_retry_retains_payload_and_key) ... ok
+test_unknown_retry_changed_evidence_retains_unknown (test_approvals.ApprovalTests.test_unknown_retry_changed_evidence_retains_unknown) ... ok
+test_payload_tampering_cannot_commit (test_approvals.ApprovalTests.test_payload_tampering_cannot_commit) ... ok
+test_expired_draft_cannot_commit (test_approvals.ApprovalTests.test_expired_draft_cannot_commit) ... ok
+test_restart_session_and_unknown_recovery (test_approvals.ApprovalTests.test_restart_session_and_unknown_recovery) ... ok
+test_truncated_issue_retains_documented_code_for_later_incident (test_agent_workflow.WorkflowTests.test_truncated_issue_retains_documented_code_for_later_incident) ... ok
+test_active_incident_matches_gateway_and_blocks_duplicate (test_agent_workflow.WorkflowTests.test_active_incident_matches_gateway_and_blocks_duplicate) ... Executing <Task pending name='Task-63' coro=<WorkflowTests.test_active_incident_matches_gateway_and_blocks_duplicate() running at /tmp/helpdesk-focused-tests/test_agent_workflow.py:494> wait_for=<Task pending name='Task-64' coro=<RunnableCallable.ainvoke() running at /usr/local/lib/python3.12/site-packages/langgraph/_internal/_runnable.py:431> cb=[Task.task_wakeup()] created at /usr/local/lib/python3.12/asyncio/tasks.py:422> cb=[_run_until_complete_cb() at /usr/local/lib/python3.12/asyncio/base_events.py:181] created at /usr/local/lib/python3.12/asyncio/runners.py:100> took 0.357 seconds
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.715s
+
+OK

@@ -1,0 +1,33 @@
+{
+  "documents": 20,
+  "chunks": 100,
+  "ready": true,
+  "cached": false,
+  "budget": {
+    "spent_usd": 0.00022386,
+    "reserved_usd": 0,
+    "remaining_usd": 0.01977614,
+    "calculated_cost_usd": 0,
+    "ceiling_usd": 0.02,
+    "calls": 1
+  }
+}
+INFO:     127.0.0.1:40244 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.1:55750 - "GET /health HTTP/1.1" 200 OK
+{
+  "documents": 20,
+  "chunks": 100,
+  "ready": true,
+  "cached": true
+}
+INFO:     172.19.0.1:48188 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55300 - "GET /health HTTP/1.1" 200 OK
+INFO:     172.19.0.4:52228 - "GET /health HTTP/1.1" 200 OK
+{
+  "documents": 20,
+  "chunks": 100,
+  "ready": true,
+  "cached": true
+}
+INFO:     172.19.0.1:38960 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46714 - "GET /health HTTP/1.1" 200 OK

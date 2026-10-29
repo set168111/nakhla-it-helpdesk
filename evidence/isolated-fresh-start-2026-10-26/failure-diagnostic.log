@@ -1,0 +1,29 @@
+helpdesk-api-1  | INFO:     Started server process [1]
+app-1           | {
+app-1           |   "documents": 20,
+app-1           |   "chunks": 100,
+app-1           |   "ready": true,
+helpdesk-api-1  | INFO:     Waiting for application startup.
+helpdesk-api-1  | INFO:     Application startup complete.
+helpdesk-api-1  | INFO:     Uvicorn running on http://0.0.0.0:8102 (Press CTRL+C to quit)
+helpdesk-api-1  | INFO:     127.0.0.1:38574 - "GET /health HTTP/1.1" 200 OK
+helpdesk-api-1  | INFO:     127.0.0.1:52378 - "GET /health HTTP/1.1" 200 OK
+app-1           |   "cached": false,
+app-1           |   "budget": {
+app-1           |     "spent_usd": 0.00022386,
+app-1           |     "reserved_usd": 0,
+helpdesk-api-1  | INFO:     172.19.0.3:34226 - "GET /api/status HTTP/1.1" 200 OK
+helpdesk-api-1  | INFO:     172.19.0.3:34228 - "GET /api/status HTTP/1.1" 200 OK
+helpdesk-api-1  | INFO:     172.19.0.1:43034 - "GET /health HTTP/1.1" 200 OK
+app-1           |     "remaining_usd": 0.01977614,
+app-1           |     "calculated_cost_usd": 0,
+app-1           |     "ceiling_usd": 0.02,
+app-1           |     "calls": 1
+app-1           |   }
+app-1           | }
+app-1           | INFO:     Started server process [1]
+app-1           | INFO:     Waiting for application startup.
+app-1           | INFO:     Application startup complete.
+app-1           | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+app-1           | INFO:     127.0.0.1:40244 - "GET /health HTTP/1.1" 200 OK
+app-1           | INFO:     172.19.0.1:55750 - "GET /health HTTP/1.1" 200 OK

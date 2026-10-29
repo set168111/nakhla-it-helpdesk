@@ -1,0 +1,23 @@
+{
+  "isolated_project": "nakhla-helpdesk-preflight-20261026-cfc47b",
+  "isolated_volume": "nakhla-helpdesk-preflight-20261026-cfc47b-data",
+  "isolated_confirmed_usd": 0.00022386,
+  "isolated_unknown_reserved_usd": 0,
+  "working_ledger": {
+    "confirmed_usd": 1.90487596,
+    "unknown_reserved_usd": 0.04033004,
+    "calculated_usd": 0,
+    "reservations": 1617
+  },
+  "prior_isolated": {
+    "confirmed_usd": 0,
+    "unknown_reserved_usd": 0,
+    "projects": []
+  },
+  "aggregate_confirmed_usd": 1.90509982,
+  "aggregate_unknown_reserved_usd": 0.04033004,
+  "accounting_rule": "Sum working ledger plus retained isolated ledger snapshots; no budget reset",
+  "working_ledger_modified_by_this_check": false,
+  "retained_volume_stopped": true,
+  "remaining_usd": 0.55457014
+}

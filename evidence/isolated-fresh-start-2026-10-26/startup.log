@@ -1,0 +1,146 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.97kB 0.0s done
+#1 DONE 0.0s
+
+#2 [ui internal] load build definition from Dockerfile
+#2 transferring dockerfile: 423B 0.0s done
+#2 DONE 0.1s
+
+#3 [helpdesk-api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 885B 0.0s done
+#3 DONE 0.1s
+
+#4 [ui internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 2.2s
+
+#5 [helpdesk-api internal] load .dockerignore
+#5 transferring context: 157B 0.0s done
+#5 DONE 0.0s
+
+#6 [app 1/8] FROM docker.io/library/python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704
+#6 resolve docker.io/library/python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704
+#6 resolve docker.io/library/python:3.12-slim@sha256:a0f57064cbdcd6285fa45f51237ab0b35ea8ebaed06a1f5973e89e19dfb86704 0.1s done
+#6 DONE 0.1s
+
+#7 [helpdesk-api internal] load build context
+#7 transferring context: 113.86kB 0.1s done
+#7 DONE 0.1s
+
+#8 [helpdesk-api 2/7] WORKDIR /app
+#8 CACHED
+
+#9 [helpdesk-api 3/7] RUN pip install --no-cache-dir fastapi==0.141.1 uvicorn==0.52.1 jsonschema==4.26.0
+#9 CACHED
+
+#10 [helpdesk-api 4/7] COPY services/ /app/services/
+#10 CACHED
+
+#11 [helpdesk-api 5/7] COPY dataset/manifest.json /app/dataset/manifest.json
+#11 CACHED
+
+#12 [helpdesk-api 6/7] COPY dataset/schemas/ /app/dataset/schemas/
+#12 CACHED
+
+#13 [helpdesk-api 7/7] COPY dataset/tickets/ /app/dataset/tickets/
+#13 CACHED
+
+#14 [app internal] load build context
+#14 transferring context: 322.19kB 0.1s done
+#14 DONE 0.2s
+
+#15 [app 4/8] RUN python -m pip install --no-cache-dir -r requirements.txt
+#15 CACHED
+
+#16 [app 5/8] COPY app ./app
+#16 CACHED
+
+#17 [app 7/8] COPY dataset ./dataset
+#17 CACHED
+
+#18 [app 3/8] COPY requirements.txt .
+#18 CACHED
+
+#19 [app 6/8] COPY services ./services
+#19 CACHED
+
+#20 [app 2/8] WORKDIR /workspace
+#20 CACHED
+
+#21 [ui 8/8] COPY ui ./ui
+#21 CACHED
+
+#22 [app] exporting to image
+#22 exporting layers done
+#22 exporting manifest sha256:2e6a8e6294cd2200305ee55a43830c603349f476c08914cddb204007e17d5bdc 0.0s done
+#22 exporting config sha256:6dc94f63306677f0f2cff1b6acdaec486e6f5ed034c08a7d5a0d2eb7bd0d8384 0.0s done
+#22 exporting attestation manifest sha256:b9b848f2efc514cc466d7beef33cca339b70e4289246117fd7770b666aed6f53 0.1s done
+#22 exporting manifest list sha256:74aabf761fcc03cfcf798432d564d7b0a5190093fc6a7db628d58ab5a3645514
+#22 exporting manifest list sha256:74aabf761fcc03cfcf798432d564d7b0a5190093fc6a7db628d58ab5a3645514 0.0s done
+#22 naming to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-app:latest done
+#22 unpacking to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-app:latest 0.0s done
+#22 DONE 0.3s
+
+#23 [helpdesk-api] exporting to image
+#23 exporting layers done
+#23 exporting manifest sha256:8c7b77b924bb752babd32da04e3d77343682f4761f08cf506ab18fef1cbfc08c 0.0s done
+#23 exporting config sha256:583ac2db0248bb1d9a0d4154167c27307493fc4e922332045ef093783653c0c3 0.0s done
+#23 exporting attestation manifest sha256:604fbbd7f3a791ce7a9c56d923ebca63410022e5e6a24c3796dce87cd31efe2c 0.1s done
+#23 exporting manifest list sha256:0ae2b58675c61dbebdbd28ab64713b6268f3b4ca11be64a2a6d3cbf96bc8f9d4 0.0s done
+#23 naming to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api:latest 0.0s done
+#23 unpacking to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api:latest 0.0s done
+#23 DONE 0.3s
+
+#24 [ui] exporting to image
+#24 exporting layers done
+#24 exporting manifest sha256:b2608c5dd14e6f0bc2b2f49df4cf213b04d7ae116e387727d0dddff5ab5ce993 0.0s done
+#24 exporting config sha256:4726092d32e69d69ec129c08f0c31466a2cc80686745d4b787bb7d3c1919907f 0.0s done
+#24 exporting attestation manifest sha256:6df7ba3487b53512b1c3b45d2ba4046f4bb31ce83929032db0a63fb2e053d02e 0.1s done
+#24 exporting manifest list sha256:aac4fde3e762c3aee426f4a18ac8f53c6cf04d517c231f5c4e0126154b4b62f5 0.0s done
+#24 naming to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-ui:latest 0.0s done
+#24 unpacking to docker.io/library/nakhla-helpdesk-preflight-20261026-cfc47b-ui:latest 0.0s done
+#24 DONE 0.3s
+
+#25 [helpdesk-api] resolving provenance for metadata file
+#25 DONE 0.1s
+
+#26 [app] resolving provenance for metadata file
+#26 DONE 0.1s
+
+#27 [ui] resolving provenance for metadata file
+#27 DONE 0.0s
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-app Building 
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-ui Building 
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api Building 
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-ui Built 
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api Built 
+ Image nakhla-helpdesk-preflight-20261026-cfc47b-app Built 
+ Network nakhla-helpdesk-preflight-20261026-cfc47b_default Creating 
+ Volume nakhla-helpdesk-preflight-20261026-cfc47b-data Creating 
+ Network nakhla-helpdesk-preflight-20261026-cfc47b_default Creating 
+ Volume nakhla-helpdesk-preflight-20261026-cfc47b-data Creating 
+ Volume nakhla-helpdesk-preflight-20261026-cfc47b-data Created 
+ Volume nakhla-helpdesk-preflight-20261026-cfc47b-data Created 
+ Network nakhla-helpdesk-preflight-20261026-cfc47b_default Created 
+ Network nakhla-helpdesk-preflight-20261026-cfc47b_default Created 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Creating 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Created 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Creating 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Created 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Creating 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Created 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Starting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Started 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Waiting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Healthy 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Starting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Started 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Waiting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Healthy 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Starting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Started 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Waiting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Waiting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Waiting 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-helpdesk-api-1 Healthy 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-ui-1 Healthy 
+ Container nakhla-helpdesk-preflight-20261026-cfc47b-app-1 Healthy 

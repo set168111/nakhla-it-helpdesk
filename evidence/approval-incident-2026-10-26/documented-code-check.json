@@ -1,0 +1,30 @@
+{
+  "kind": "offline drafting-description and approval matcher compatibility; not model quality",
+  "code_count": 24,
+  "checks": {
+    "MDM-12": true,
+    "MDM-31": true,
+    "MDM-44": true,
+    "MFA-201": true,
+    "MFA-310": true,
+    "NID-401": true,
+    "NID-423": true,
+    "NID-460": true,
+    "NID-512": true,
+    "NID-530": true,
+    "NX-112": true,
+    "NX-403": true,
+    "NX-503": true,
+    "NX-781": true,
+    "NX-905": true,
+    "NXM-421": true,
+    "NXM-552": true,
+    "PRN-07": true,
+    "PRN-21": true,
+    "PRN-33": true,
+    "SWC-0404": true,
+    "SWC-1603": true,
+    "SWC-2001": true,
+    "WLAN-17": true
+  }
+}

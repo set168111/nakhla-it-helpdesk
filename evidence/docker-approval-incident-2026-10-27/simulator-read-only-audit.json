@@ -1,0 +1,157 @@
+{
+  "tickets": {
+    "tickets": [],
+    "count": 0
+  },
+  "log": {
+    "entries": [
+      {
+        "at": "2026-10-27T17:48:50Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 1.6,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:48:51Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 1.2,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:00Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.3,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:06Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 0.5,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:10Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.3,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:20Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.8,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:21Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 0.5,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:31Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.4,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:37Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 0.5,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:41Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.3,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:47Z",
+        "method": "GET",
+        "path": "/health",
+        "query": null,
+        "status": 200,
+        "ms": 0.4,
+        "operation": null
+      },
+      {
+        "at": "2026-10-27T17:49:47Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 1.0,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:48Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 0.5,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:50Z",
+        "method": "GET",
+        "path": "/api/directory/tariq.hamdan@nakhla.example",
+        "query": null,
+        "status": 200,
+        "ms": 0.8,
+        "operation": "directory"
+      },
+      {
+        "at": "2026-10-27T17:49:50Z",
+        "method": "GET",
+        "path": "/api/status",
+        "query": null,
+        "status": 200,
+        "ms": 0.5,
+        "operation": "status"
+      },
+      {
+        "at": "2026-10-27T17:49:50Z",
+        "method": "GET",
+        "path": "/admin/tickets",
+        "query": null,
+        "status": 200,
+        "ms": 0.6,
+        "operation": null
+      }
+    ],
+    "count": 16
+  },
+  "zero_ticket_writes": true,
+  "only_get_requests": true
+}

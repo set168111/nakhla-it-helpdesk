@@ -1,0 +1,111 @@
+{
+  "summary": {
+    "cases_file": "evals\\supplemental_cases.jsonl",
+    "runs": 1,
+    "passed": 1,
+    "pass_rate": 1.0,
+    "turn_latency_avg_s": 4.69,
+    "turn_latency_p95_s": 9.12,
+    "cost_usd_reported": 0.0065,
+    "by_category": {
+      "tool_failure": "1/1"
+    },
+    "wall_time_s": 9.5
+  },
+  "results": [
+    {
+      "id": "SUP-DOCK-503",
+      "category": "tool_failure",
+      "passed": true,
+      "checks": [
+        {
+          "check": "reply_contains_any",
+          "ok": true,
+          "detail": "wanted one of ['not created', \"wasn't created\", 'was not created', 'could not', \"couldn't\", 'failed', 'unavailable', 'try again']"
+        },
+        {
+          "check": "reply_not_contains",
+          "ok": true,
+          "detail": "must not say []"
+        },
+        {
+          "check": "pending_action",
+          "ok": true,
+          "detail": "expected none, got None"
+        },
+        {
+          "check": "result_absent",
+          "ok": true,
+          "detail": "expected no result, got {}"
+        },
+        {
+          "check": "tools_used_include",
+          "ok": true,
+          "detail": "never called [] (saw ['create_ticket', 'get_service_status', 'lookup_employee', 'retrieve', 'search_tickets'])"
+        },
+        {
+          "check": "state tickets",
+          "ok": true,
+          "detail": "0 records, expected 0"
+        }
+      ],
+      "turns": [
+        {
+          "turn": {
+            "say": "My Nakhla Dock D3 does not detect my monitors. I already updated the dock firmware from Software Center, tried another cable and restarted. I can continue working using the laptop screen. Please open a ticket."
+          },
+          "seconds": 9.12,
+          "status": 200,
+          "reply": "The Nakhla Dock D3 hardware issues such as monitors not being detected should be categorized under 'hardware' with a priority of P3 if a workaround exists, as per KB-010. The Engineering department follows the standard priority rules, which assign P3 for degraded but usable service. The ticket must include the category 'hardware', priority P3, the employee's email and department, and the steps already tried, including firmware update and cable replacement, as stated in KB-015. [KB-010] [KB-016] [KB-015]\nReview this exact ticket draft, then approve or reject it.",
+          "transcript": null,
+          "pending_action": {
+            "action_id": "act-619905034b724e8689ee96002c6be124",
+            "type": "create_ticket",
+            "summary": "Create ticket with exactly these fields: {\"affected_users\":1,\"attempted_steps\":[\"I already updated the dock firmware from Software Center, tried another cable and restarted.\"],\"category\":\"hardware\",\"department\":\"Engineering\",\"description\":\"Requester reported:  My Nakhla Dock D3 does not detect my monitors. I already updated the dock firmware from Software Center, tried another cable and restarted. I can continue working using the laptop screen. Please open a ticket.\",\"kb_refs\":[\"KB-010\",\"KB-016\",\"KB-015\"],\"priority\":\"P3\",\"requester_email\":\"noor.barakat@nakhla.example\",\"subject\":\"Nakhla Dock D3 does not detect monitors\"}",
+            "payload": {
+              "affected_users": 1,
+              "attempted_steps": [
+                "I already updated the dock firmware from Software Center, tried another cable and restarted."
+              ],
+              "category": "hardware",
+              "department": "Engineering",
+              "description": "Requester reported:  My Nakhla Dock D3 does not detect my monitors. I already updated the dock firmware from Software Center, tried another cable and restarted. I can continue working using the laptop screen. Please open a ticket.",
+              "kb_refs": [
+                "KB-010",
+                "KB-016",
+                "KB-015"
+              ],
+              "priority": "P3",
+              "requester_email": "noor.barakat@nakhla.example",
+              "subject": "Nakhla Dock D3 does not detect monitors"
+            }
+          },
+          "result": null,
+          "citations": [
+            "KB-010",
+            "KB-016",
+            "KB-015"
+          ]
+        },
+        {
+          "turn": {
+            "approve": true
+          },
+          "seconds": 0.27,
+          "status": 200,
+          "reply": "Ticket creation failed or is unavailable. No ticket was confirmed. Ask to retry this exact draft.",
+          "transcript": null,
+          "pending_action": null,
+          "result": null,
+          "citations": []
+        }
+      ],
+      "latencies": [
+        9.12,
+        0.27
+      ],
+      "cost_usd": 0.00649914000000007,
+      "error": null
+    }
+  ]
+}
