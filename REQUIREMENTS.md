@@ -39,7 +39,7 @@ Current scoped finding: repeated unexplained daily lockouts were incorrectly rou
 | Evaluation coverage |10 supplied+13 original cases; historical65/69 preserved; supplemental503 separate |
 | Final onboarding wording | Prior63offline+one livePASS and user manual pass; not a new full-source suite |
 | Docker and callable entry point | Current lockout source verified:43 files, health/MCP and targeted live draft |
-| README/diagram/screenshot/contributions | Complete; public repository created for the course submission, video assembly/upload pending, no independent peer preflight claimed |
+| README/diagram/screenshot/contributions | Complete; public repository created for the course submission, video assembly/upload was pending at that date and the completed [portfolio video](<assets/video/Nakhla IT Helpdesk portfolio.mp4>) has since been added, no independent peer preflight claimed |
 | Human course/delivery requirements | Registration/review/check-ins unverified; solo/pair conflict disclosed; final delivery deferred |
 
 

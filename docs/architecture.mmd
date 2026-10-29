@@ -1,4 +1,6 @@
-﻿flowchart TD
+﻿%% SUPERSEDED: this older diagram is incomplete and has been replaced by the two architecture screenshots in README.md
+%% (docs/architecture-answer-draft.png and docs/architecture-approval-ticket.png). It is retained only as a historical reference.
+flowchart TD
     UI[Gradio :7860] --> API[FastAPI :8000]
     API --> Support[Support: reads and draft]
     Support --> R[Real embeddings + NumPy retrieval]

@@ -20,6 +20,7 @@ app/main.py
 app/mcp_client.py
 app/retrieval.py
 app/storage.py
+assets/video/Nakhla IT Helpdesk portfolio.mp4
 check_kit.py
 dataset/README.md
 dataset/knowledge_base/KB-001-vpn-legacy-install-guide.md
@@ -50,9 +51,10 @@ dataset/tickets/historical_tickets.json
 dataset/validate_dataset.py
 docker-compose.yml
 docs/EVIDENCE-COPY-NOTICE.md
+docs/architecture-answer-draft.png
+docs/architecture-approval-ticket.png
 docs/architecture.mmd
 docs/demo-commands.txt
-docs/demo.md
 docs/fresh-start-check.md
 docs/local-testing.md
 docs/package-provenance.json
@@ -61,7 +63,6 @@ docs/peer-preflight.md
 docs/publication-files.md
 docs/publication-files.txt
 docs/running-ui.png
-docs/video-script.md
 evals/cases.sample.jsonl
 evals/check_supplemental_result.py
 evals/combined_cases.jsonl

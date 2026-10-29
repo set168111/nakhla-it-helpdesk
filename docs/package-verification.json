@@ -1,7 +1,7 @@
 {
   "package": "nakhla-it-helpdesk",
-  "verification_kind": "Static local package file/link/anchor/privacy review (final copy, re-run 2026-10-29). Static only: no application, test, Docker, UI or API execution was performed in this preparation.",
-  "file_count": 218,
+  "verification_kind": "Static local package file/link/anchor/privacy review (final copy, re-run 2026-10-29 after the video/architecture update). Static only: no application, test, Docker, UI or API execution was performed in this preparation.",
+  "file_count": 219,
   "manifest_exactly_matches_files": true,
   "missing_files_or_links": [],
   "forbidden_runtime_paths": [],
@@ -38,10 +38,11 @@
   "MIT_scope_file_count": 17,
   "runtime_evidence": "evidence/docker-approval-incident-2026-10-27/verification.json",
   "static_checks_rerun": {
-    "file_count": 218,
+    "file_count": 219,
     "manifest_exactly_matches_git_index": true,
-    "relative_links_checked": 236,
-    "relative_links_bad": 0
+    "relative_links_checked": 219,
+    "relative_links_bad": 0,
+    "relative_links_scope": "Markdown links/images in all 57 tracked .md files, resolved to files on disk (the 2026-10-29 re-run used this narrower method; the earlier 236 figure was from a differently scoped check and is not comparable)"
   },
   "runtime_verification": {
     "performed_in_this_preparation": false,
@@ -63,5 +64,22 @@
     "source": "fork commit 2ae2f52 on origin/main of set168111/Agentic-AI-Bootcamp-Students (the snapshot actually used)",
     "upstream_compared": "local ref 39636dd: no differences for scenario-2-it-helpdesk or the Final-Mini-Project README versus 2ae2f52",
     "repinned": false
+  },
+  "static_update_2026-10-29": {
+    "scope": "Portfolio video and two architecture screenshots added; two planning pages removed from the publication copy only; README, status wording and superseded-diagram notice updated",
+    "video_sha256_source_equals_published": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
+    "video_duration_seconds_mp4_header": 144.341,
+    "video_re_encoded": false,
+    "screenshots_sha256": {
+      "docs/architecture-answer-draft.png": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
+      "docs/architecture-approval-ticket.png": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263"
+    },
+    "removed_from_publication_copy_only": [
+      "docs/video-script.md",
+      "docs/demo.md"
+    ],
+    "captions_checked_against_code": true,
+    "staged_secret_pattern_scan": "no credential-pattern, private-key, .env/database or local-path matches in staged text files; no values recorded",
+    "runtime_executed": false
   }
 }

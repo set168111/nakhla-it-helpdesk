@@ -44,6 +44,7 @@
     "candidate_count": 155,
     "video_script": "docs/video-script.md",
     "live_demo": "docs/demo.md",
+    "publication_copy_note": "Historical record. docs/video-script.md and docs/demo.md were later omitted from the standalone publication copy (retained in the original working project); the completed portfolio video was added at assets/video/Nakhla IT Helpdesk portfolio.mp4. No other value in this record has been changed.",
     "future_only_commands": "docs/demo-commands.txt",
     "local_file_links_valid": true,
     "source_unchanged_against_verified_lockout_manifest": true,

@@ -1,5 +1,5 @@
 {
-  "scope": "Reviewed standalone publication copy for the public repository set168111/nakhla-it-helpdesk (publication authorised by the course assignment); packaging prepared 2026-10-29",
+  "scope": "Reviewed standalone publication copy for the repository set168111/nakhla-it-helpdesk (currently private; publication authorised by the course assignment); packaging prepared 2026-10-29",
   "originals_retained_in_working_project": true,
   "course_guidance": "Official-source pointer stubs, not redistributed course content/visuals",
   "files": [
@@ -45,12 +45,13 @@
     },
     {
       "original_local_path": "DESIGN.md",
-      "original_sha256": "87f09824469aa4b48e5810d34c36b5249ffd4d4d5e44547f65ad8023bd8ea52d",
+      "original_sha256": "6c249c3e01cf4b2547dff3be018a17a700741902e5e0f905a2655d23676e61aa",
       "package_path": "DESIGN.md",
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: working-project original gained a superseded-diagram note; this published copy is unchanged"
       ],
       "redactions": 0,
       "package_sha256": "3582e73ab7f39c9d7f3557bc66802475e61532ecd8726bc89034099ce7890c6d"
@@ -72,10 +73,11 @@
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked"
       ],
       "redactions": 0,
-      "package_sha256": "e3b2fe4dbc064ad1e145e47168bdf891bf7c76e920dcf88995646849a1c14b9d"
+      "package_sha256": "216724ca7a211e90fab2a36205e4e6bf0eef3babc4728bc8299bc7b680ceb5a8"
     },
     {
       "original_local_path": "LICENSE-SCOPE.md",
@@ -109,14 +111,15 @@
     },
     {
       "original_local_path": "README.md",
-      "original_sha256": "5054fc0c514c30e6d35f4a2fe24c42464e9f1f21dc218dfdc0a0707d78b67c9b",
+      "original_sha256": "1e0f5c9d93d9110c71b778f524c8c336b060f5678375474b71f28df90b36c524",
       "package_path": "README.md",
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: top portfolio-video link; video status updated; architecture section replaced with two screenshots, alt text and captions; editable-diagram link removed; \"public\" wording removed"
       ],
       "redactions": 0,
-      "package_sha256": "9922e449a10aaf63bace83320e20192994d8d48b97518298726e096158ddaeeb"
+      "package_sha256": "37c27810fb16432e7b0481348f71f66dcdb917e23555b9ff12554186431d629d"
     },
     {
       "original_local_path": "REQUIREMENTS.md",
@@ -125,10 +128,11 @@
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: video-status row qualified; portfolio video linked"
       ],
       "redactions": 0,
-      "package_sha256": "701fa64a195772bd6a05c08b043237a2896811b280f795586084dc04e1cde9e8"
+      "package_sha256": "f6bd8178faad071f7273f47504f3a4442f3778251243ad8e7bd73b558811ca88"
     },
     {
       "original_local_path": "TASKS.md",
@@ -137,10 +141,11 @@
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked"
       ],
       "redactions": 0,
-      "package_sha256": "7dae511763d0d12d6c931eb29362fb087f19ac00b53e748fbf24234d7e23c073"
+      "package_sha256": "bd1911acb08676d4964962f9de6502b4a07b6ccf6ddc7aacab26f9270383c463"
     },
     {
       "original_local_path": "THIRD_PARTY_NOTICES.md",
@@ -232,6 +237,16 @@
       ],
       "redactions": 0,
       "package_sha256": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351"
+    },
+    {
+      "original_local_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+      "original_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
+      "package_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+      "transformations": [
+        "added 2026-10-29: completed portfolio video (2:24, 144.341 s), copied byte-for-byte from the working project; not re-encoded"
+      ],
+      "redactions": 0,
+      "package_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e"
     },
     {
       "original_local_path": "check_kit.py",
@@ -535,14 +550,35 @@
       "package_sha256": "74d8645f8c2745e48771eb14491562cd2845479c031956379934c9e9a136251b"
     },
     {
-      "original_local_path": "docs/architecture.mmd",
-      "original_sha256": "5d99c75371ce06c820f487234becfc0fe55501b27beb387d576a6003a59d6c5d",
-      "package_path": "docs/architecture.mmd",
+      "original_local_path": "docs/architecture-answer-draft.png",
+      "original_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
+      "package_path": "docs/architecture-answer-draft.png",
       "transformations": [
-        "reviewed copy; original content retained"
+        "added 2026-10-29: architecture screenshot (3180x1725) rendered from a temporary copy of the supplied-design slides HTML; original HTML not modified"
       ],
       "redactions": 0,
-      "package_sha256": "5d99c75371ce06c820f487234becfc0fe55501b27beb387d576a6003a59d6c5d"
+      "package_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a"
+    },
+    {
+      "original_local_path": "docs/architecture-approval-ticket.png",
+      "original_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263",
+      "package_path": "docs/architecture-approval-ticket.png",
+      "transformations": [
+        "added 2026-10-29: architecture screenshot (3180x1725) rendered from a temporary copy of the supplied-design slides HTML; original HTML not modified"
+      ],
+      "redactions": 0,
+      "package_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263"
+    },
+    {
+      "original_local_path": "docs/architecture.mmd",
+      "original_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7",
+      "package_path": "docs/architecture.mmd",
+      "transformations": [
+        "reviewed copy; original content retained",
+        "2026-10-29 video/architecture update: superseded notice (comment lines) added; diagram unchanged"
+      ],
+      "redactions": 0,
+      "package_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7"
     },
     {
       "original_local_path": "docs/demo-commands.txt",
@@ -553,16 +589,6 @@
       ],
       "redactions": 0,
       "package_sha256": "4a22a4a23c0a09898c04648769bde443311335135c3c638db19eddccc8565fda"
-    },
-    {
-      "original_local_path": "docs/demo.md",
-      "original_sha256": "00b8cf48dc1897467a0a2f803a231772eebbf57ac54308262ad8931f3ba95630",
-      "package_path": "docs/demo.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "00b8cf48dc1897467a0a2f803a231772eebbf57ac54308262ad8931f3ba95630"
     },
     {
       "original_local_path": "docs/fresh-start-check.md",
@@ -580,10 +606,31 @@
       "package_path": "docs/local-testing.md",
       "transformations": [
         "publication-specific operations extract; machine-specific native instructions omitted",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: planning-page links replaced by portfolio-video link"
       ],
       "redactions": 0,
-      "package_sha256": "6b703fa086965ead62116a1a179225900f2a9f749bd3f7c9823fc52bc14ce732"
+      "package_sha256": "32e8dda6d87a5c2e34b1f161673a5003dd1de9464415ee9d32c6e21929fdeb78"
+    },
+    {
+      "original_local_path": null,
+      "original_sha256": null,
+      "package_path": "docs/package-provenance.json",
+      "transformations": [
+        "generated record; own hash not recorded (self-referential)"
+      ],
+      "redactions": 0,
+      "package_sha256": null
+    },
+    {
+      "original_local_path": null,
+      "original_sha256": null,
+      "package_path": "docs/package-verification.json",
+      "transformations": [
+        "generated record; own hash not recorded (self-referential)"
+      ],
+      "redactions": 0,
+      "package_sha256": null
     },
     {
       "original_local_path": "docs/peer-preflight.md",
@@ -602,10 +649,21 @@
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "preserved package-specific manifest explanation",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
+        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
+        "2026-10-29 video/architecture update: paths/counts and wording updated for 219-path list"
       ],
       "redactions": 0,
-      "package_sha256": "a34eafb3780c5d84c982aa52be1fea931175bfd4a3ed36451c41f5625477cbee"
+      "package_sha256": "76986214edac0af6def9c727567d4d987429de70d4f8d27098e12f7b78d25e1f"
+    },
+    {
+      "original_local_path": null,
+      "original_sha256": null,
+      "package_path": "docs/publication-files.txt",
+      "transformations": [
+        "generated path list of the files committed (219, including itself and the two JSON records); updated 2026-10-29 for the video, two screenshots and removal of two planning pages"
+      ],
+      "redactions": 0,
+      "package_sha256": "8b17d7072697689243ee25d5b96f0229b30f6e6f510d6840f5d67befa72ab87c"
     },
     {
       "original_local_path": "docs/running-ui.png",
@@ -616,16 +674,6 @@
       ],
       "redactions": 0,
       "package_sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4"
-    },
-    {
-      "original_local_path": "docs/video-script.md",
-      "original_sha256": "b907cbfe2b8248409d421c93584a1a17b55d9b949579010bd0833d5f7c0e956d",
-      "package_path": "docs/video-script.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b907cbfe2b8248409d421c93584a1a17b55d9b949579010bd0833d5f7c0e956d"
     },
     {
       "original_local_path": "evals/cases.sample.jsonl",
@@ -1492,10 +1540,11 @@
       "original_sha256": "bd52998044ee59afb065053aac6eea417e101f29b4258efecfb417868b276c20",
       "package_path": "evidence/portfolio-readme-check.json",
       "transformations": [
-        "reviewed copy; original content retained"
+        "reviewed copy; original content retained",
+        "2026-10-29 video/architecture update: historical record kept; publication_copy_note key added, no recorded value changed"
       ],
       "redactions": 0,
-      "package_sha256": "aec8686f683af93e083e5427c232f280a15e110ca4f2069a2f91b0be69c6d848"
+      "package_sha256": "93610e7407e4f296d1cea8190265a923b13948ba5d35e33f24188942f257d35c"
     },
     {
       "original_local_path": "evidence/repeated-lockout-2026-10-26/SUMMARY.md",
@@ -2167,36 +2216,6 @@
       ],
       "redactions": 0,
       "package_sha256": "2b872142801bb2067a3debe0669d75c5259181ca331b0965516737d8f41b8b38"
-    },
-    {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/publication-files.txt",
-      "transformations": [
-        "generated path list of the files committed (218, including itself and the two JSON records)"
-      ],
-      "redactions": 0,
-      "package_sha256": "138c66cfa92c4dd077d8868538fd80a6d86e6e9e946a94e462c964cca07cfe68"
-    },
-    {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/package-provenance.json",
-      "transformations": [
-        "generated record; own hash not recorded (self-referential)"
-      ],
-      "redactions": 0,
-      "package_sha256": null
-    },
-    {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/package-verification.json",
-      "transformations": [
-        "generated record; own hash not recorded (self-referential)"
-      ],
-      "redactions": 0,
-      "package_sha256": null
     }
   ],
   "excluded": [
@@ -2215,7 +2234,7 @@
     "repinned": false
   },
   "publication_basis": "Assignment instructs students to create a new public repo, copy the kit contents into it and commit; supplied kit stays under its own notices and is not relicensed (see THIRD_PARTY_NOTICES.md, LICENSE-SCOPE.md)",
-  "publication": "authorised by the course assignment; see git history of the public repository",
+  "publication": "authorised by the course assignment; see git history of the repository",
   "files_whose_hash_changed_in_this_refresh": [
     "DESIGN.md",
     "HANDOVER.md",
@@ -2227,5 +2246,29 @@
     "docs/local-testing.md",
     "docs/publication-files.md"
   ],
-  "file_count_listed": 218
+  "file_count_listed": 219,
+  "update_2026-10-29_video_and_architecture": {
+    "added": [
+      "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+      "docs/architecture-answer-draft.png",
+      "docs/architecture-approval-ticket.png"
+    ],
+    "removed_from_publication_copy_only": [
+      "docs/video-script.md",
+      "docs/demo.md"
+    ],
+    "originals_of_removed_files_retained_in_working_project": true,
+    "edited": [
+      "README.md",
+      "HANDOVER.md",
+      "TASKS.md",
+      "REQUIREMENTS.md",
+      "docs/architecture.mmd",
+      "docs/local-testing.md",
+      "docs/publication-files.md",
+      "docs/publication-files.txt",
+      "evidence/portfolio-readme-check.json"
+    ],
+    "note": "Static documentation/asset update only; no application code, tests, Docker, services or API calls. docs/architecture.mmd is superseded by the two screenshots."
+  }
 }

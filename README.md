@@ -1,5 +1,7 @@
 # Nakhla IT Helpdesk - grounded support with approved ticket creation
 
+**[Watch the portfolio demo (2:24)](<assets/video/Nakhla IT Helpdesk portfolio.mp4>)**
+
 > **Verification dates:** this repository was developed locally in October 2026. Verification notes below are dated historical records, not a fresh-clone or peer result for this copy; see [Status and remaining work](#status-and-remaining-work).
 
 > **Material limitations:** asserted employee identity (no real authentication), single-process SQLite, dependence on an external paid model API, a simulated helpdesk that resets on restart, one unresolved supplied scenario (S2-07), and mixed-provenance licensing.
@@ -7,9 +9,9 @@
 
 An IT support assistant for employees of the fictional Nakhla Systems. It finds current company guidance, cites its sources, checks incidents and department exceptions, and drafts tickets for review. A ticket is written only after the user approves the exact draft.
 
-**Publication status:** the public course-submission repository for this project, https://github.com/set168111/nakhla-it-helpdesk. The video is not yet part of it. No peer review or instructor approval is claimed. [File manifest](docs/publication-files.md), [scoped licence](LICENSE.md), [provenance](THIRD_PARTY_NOTICES.md).
+**Publication status:** the course-submission repository for this project, https://github.com/set168111/nakhla-it-helpdesk. The completed portfolio video (2:24) is included in it: [watch it](<assets/video/Nakhla IT Helpdesk portfolio.mp4>). No peer review or instructor approval is claimed. [File manifest](docs/publication-files.md), [scoped licence](LICENSE.md), [provenance](THIRD_PARTY_NOTICES.md).
 
-**Recorded evaluation:** 65/69 historical case attempts (94.20%). **Stack:** Python, LangGraph, FastAPI, Gradio, stdio MCP, SQLite, NumPy, OpenRouter `openai/gpt-4.1-mini`. **Three-minute video:** segments recorded; final assembly and upload pending. **Repository:** https://github.com/set168111/nakhla-it-helpdesk (see [status](#status-and-remaining-work)).
+**Recorded evaluation:** 65/69 historical case attempts (94.20%). **Stack:** Python, LangGraph, FastAPI, Gradio, stdio MCP, SQLite, NumPy, OpenRouter `openai/gpt-4.1-mini`. **Portfolio video:** completed (2:24) and included in this repository. **Repository:** https://github.com/set168111/nakhla-it-helpdesk (see [status](#status-and-remaining-work)).
 
 ![Actual running Nakhla IT Helpdesk UI with fictional requester](docs/running-ui.png)
 
@@ -27,27 +29,23 @@ Actual local UI captured on 26 October 2026 at http://127.0.0.1:7860. The idle s
 
 ## Architecture
 
-```mermaid
-flowchart TD
-    UI[Gradio UI] --> API[FastAPI contract]
-    API --> Support[Support: choose reads and draft]
-    Support --> Retrieval[Metadata and hybrid retrieval]
-    Retrieval --> KB[20 Markdown and PDF documents]
-    Support --> Reviewer[Reviewer: grounding and completeness]
-    Reviewer -->|one correction maximum| Support
-    Reviewer --> API
-    API --> Memory[SQLite context and immutable actions]
-    API -->|explicit approval| Gate[Approval coordinator]
-    Support --> MCP[Supplied stdio MCP]
-    Gate -->|approved payload and action ID| MCP
-    MCP --> Simulator[Fictional helpdesk API]
-```
+**Answer / draft preparation**
+
+![Answer and draft preparation workflow: the employee's request reaches the FastAPI app code, which loads saved context from SQLite, makes system-record reads through MCP, and passes the question to Support. Support uses local vector search, policy rules and a query embedding from OpenRouter over the 20 company documents, then the Reviewer checks the draft before app code finalises it, saves the exact draft and returns it to the Gradio UI.](docs/architecture-answer-draft.png)
+
+*App code loads saved context and reads system records through MCP. Support searches company guidance and drafts an answer or ticket. Reviewer checks the evidence and policy, with one correction allowed. Code finalises the response and, for a ticket, validates and saves the exact draft for employee approval.*
+
+**Approval / ticket creation**
+
+![Approval and ticket creation workflow: the employee's approval reaches the FastAPI app code, which hands the approved draft to the approval code, the only writer. The approval code claims the draft and records the outcome in SQLite, and sends one action ID through MCP to the simulated systems; the outcome returns to the Gradio UI.](docs/architecture-approval-ticket.png)
+
+*After the employee approves the saved draft, code claims the action and rechecks its validity and current system information. MCP sends the creation request to the simulated ticket API. Code records the outcome in SQLite and returns a confirmed ticket ID, failure, or uncertain status. This approval step makes no AI-model calls.*
 
 - **Support** selects allowed reads and drafts answers/actions, while application code performs the deterministic directory, status and ticket-history reads and the incident/policy checks; **Reviewer** checks evidence and completeness with one bounded correction: [app/agent.py](app/agent.py).
 - **Retrieval** preserves metadata, combines exact-code matching with real embeddings and applies precedence/department filtering: [app/retrieval.py](app/retrieval.py), [app/helpdesk_policy.py](app/helpdesk_policy.py).
 - **MCP** exposes the supplied directory/status/history/ticket API: [app/mcp_client.py](app/mcp_client.py), [services/helpdesk_mcp.py](services/helpdesk_mcp.py).
 - **Memory and approval** use persistent SQLite sessions and immutable action payloads; only the approval coordinator writes: [app/storage.py](app/storage.py), [app/approvals.py](app/approvals.py).
-- [app/main.py](app/main.py) exposes the contract; [ui/app_ui.py](ui/app_ui.py) renders chat, Sources and the approval card. [Editable diagram](docs/architecture.mmd) and [design/history](DESIGN.md).
+- [app/main.py](app/main.py) exposes the contract; [ui/app_ui.py](ui/app_ui.py) renders chat, Sources and the approval card. [Design/history](DESIGN.md).
 
 | Component | Real or simulated? | Notes |
 |---|---|---|
@@ -158,8 +156,8 @@ Historical ledger snapshot after authorized lockout verification: confirmed spen
 
 ## Status and remaining work
 
-- **Repository:** this is the standalone public repository https://github.com/set168111/nakhla-it-helpdesk, created for the Final Mini Project submission. It is separate from the bootcamp repository the project was developed in. Its history starts with a single initial commit; the dated records below describe the earlier local development.
-- **Video:** the three-minute demo video segments exist; final assembly and upload are pending. The [script](docs/video-script.md) and [live-demo script](docs/demo.md) are planning documents.
+- **Repository:** this is the standalone repository https://github.com/set168111/nakhla-it-helpdesk, created for the Final Mini Project submission. It is separate from the bootcamp repository the project was developed in. Its history starts with a single initial commit; the dated records below describe the earlier local development.
+- **Video:** the completed portfolio video (2:24) is included in this repository: [watch it](<assets/video/Nakhla IT Helpdesk portfolio.mp4>). It is a demonstration, not a new test or evaluation; the recorded results are the dated evidence below.
 - **Review:** no independent peer preflight has been performed and no instructor approval is claimed. A [peer-preflight checklist](docs/peer-preflight.md) is prepared.
 - **Licensing/redistribution:** MIT covers only the [listed original files](LICENSE-SCOPE.md). The supplied course kit is included because the assignment instructs students to copy the kit contents into a new public repository; it keeps its own notices, is not relicensed, and is excluded from the MIT grant. The dataset carries its own explicit grant. Exact wording and boundaries: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - **Known gap:** supplied scenario **S2-07** fails in all three historical repeats and is deliberately unchanged (see above). Separate retests and supplemental tests do not waive it.
