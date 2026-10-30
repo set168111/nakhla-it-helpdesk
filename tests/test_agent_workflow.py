@@ -17,7 +17,7 @@ import httpx
 from openai import APITimeoutError
 from unittest.mock import patch
 
-from app.agent import SupportWorkflow, requested_draft, sms_permission_question, claim_capacity, source_attempts, explicitly_nothing_tried, report_policy, onboarding_timing_error
+from app.agent import SupportWorkflow, conversation_recall, draft_signal, requested_draft, sms_permission_question, claim_capacity, source_attempts, explicitly_nothing_tried, report_policy, onboarding_timing_error
 from app.approvals import Approvals, IMMEDIATE_ESCALATION
 from app.storage import Store
 
@@ -966,6 +966,153 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertFalse(any(name=='get_ticket' for name,_ in self.mcp.calls))
         self.assertIsNone(result['pending_action'])
         self.assertEqual(self.mcp.writes,[])
+
+    RECALL_QUESTION = "Which VPN error did I report, and what troubleshooting did I say I tried?"
+
+    async def report_vpn_ticket(self, session="s"):
+        first = await self.chat(self.workflow({"action": "retrieve"}), "My VPN shows NX-999. What should I do?", session)
+        self.assertEqual(first["state"], "unknown")
+        draft = {"intent": "draft", "subject": "NakhlaConnect NX-999", "description": "VPN shows NX-999.",
+                 "attempted_steps": [], "affected_users": 1}
+        workflow = self.workflow({"action": "retrieve"}, draft, {"accepted": True, "complete": True})
+        second = await self.chat(workflow, "I have not tried anything yet. I can continue working without the VPN. Please prepare a ticket.", session)
+        self.assertEqual(second["state"], "await_confirmation")
+        return second["pending_action"]
+
+    async def assert_recall_without_side_effects(self, message, session="s"):
+        before = copy.deepcopy(self.store.get_session(session))
+        writes, calls = len(self.mcp.writes), len(self.mcp.calls)
+        status = self.store.latest_action(session)["status"]
+        expected = "superseded" if status in ("pending", "failed") else status
+        workflow = self.workflow()
+        result = await self.chat(workflow, message, session)
+        self.assertEqual(result["state"], "recall")
+        self.assertEqual(workflow.script_calls, [])
+        self.assertEqual((len(self.mcp.writes), len(self.mcp.calls)), (writes, calls))
+        self.assertIsNone(result["pending_action"])
+        self.assertEqual(result["citations"], [])
+        self.assertNotIn("[KB", result["reply"])
+        self.assertEqual(self.store.get_session(session), before)
+        self.assertEqual(self.store.latest_action(session)["status"], expected)
+        return result
+
+    async def test_reported_recall_sequence_after_approval_and_rejection(self):
+        for approve in (True, False):
+            with self.subTest(approve=approve):
+                session = "approved" if approve else "rejected"
+                self.mcp.writes.clear()
+                pending = await self.report_vpn_ticket(session)
+                outcome = await self.approvals.decide(session, pending["action_id"], approve)
+                self.assertEqual(bool(outcome.get("result")), approve)
+                self.assertEqual(len(self.mcp.writes), 1 if approve else 0)
+                result = await self.assert_recall_without_side_effects(self.RECALL_QUESTION, session)
+                self.assertIn("NX-999", result["reply"])
+                self.assertIn("no troubleshooting", result["reply"].lower())
+                self.assertNotIn("What have you already tried", result["reply"])
+                self.assertEqual(len(self.mcp.writes), 1 if approve else 0)
+                self.assertEqual(self.store.get_session(session)["draft_pending"], "draft")
+
+    async def test_recall_paraphrases_are_answered_from_the_conversation(self):
+        await self.report_vpn_ticket()
+        for question in ["What error code did I tell you about earlier?",
+                         "Can you remind me what I reported and whether I tried anything?",
+                         "Which error did I mention, and have I already tried any fixes?",
+                         "what did I say I tried?",
+                         "Remind me which VPN error I reported."]:
+            with self.subTest(question=question):
+                self.assertTrue(conversation_recall(question, "NX-999"))
+                result = await self.assert_recall_without_side_effects(question)
+                self.assertTrue("NX-999" in result["reply"] or "no troubleshooting" in result["reply"].lower())
+
+    def test_recall_detection_does_not_swallow_real_requests(self):
+        for text in ["How do I fix NX-999?", "What should I do about it?", "Please prepare that same ticket again.",
+                     "I tried restarting the VPN client.", "My VPN shows NX-403. Which gateway should I use?",
+                     "Can you show ticket IT-2001?", "What is the company policy on MFA?",
+                     "I have not tried anything yet.", "This is a new issue: which printer should I use?"]:
+            with self.subTest(text=text):
+                self.assertFalse(conversation_recall(text, "NX-999"))
+
+    def test_questions_are_not_recorded_as_troubleshooting_attempts(self):
+        self.assertEqual(source_attempts([self.RECALL_QUESTION]), [])
+        for question in ["What troubleshooting did I say I tried?", "Did I try restarting the client?",
+                         "Have I already tried the VPN reset?", "Which steps did I tell you about?",
+                         "Remind me what I tried."]:
+            with self.subTest(question=question):
+                self.assertEqual(source_attempts([question]), [])
+        self.assertEqual(source_attempts(["My VPN shows NX-999. I tried restarting the client."]),
+                         ["I tried restarting the client."])
+        self.assertEqual(source_attempts(["I tried restarting the client. Which VPN error did I report?"]),
+                         ["I tried restarting the client."])
+        self.assertEqual(source_attempts(["I have not tried anything yet."]), ["I have not tried anything yet."])
+
+    async def test_recall_reports_genuine_attempts_and_nothing_tried_separately(self):
+        await self.chat(self.workflow({"action": "retrieve"}), "My VPN shows NX-999. I tried restarting the client and rebooting. What should I do?")
+        workflow = self.workflow()
+        result = await self.chat(workflow, "Which VPN error did I report, and what did I try?")
+        self.assertEqual((result["state"], workflow.script_calls, self.mcp.writes), ("recall", [], []))
+        self.assertIn("NX-999", result["reply"])
+        self.assertIn("restarting the client", result["reply"])
+        self.assertNotIn("no troubleshooting", result["reply"].lower())
+        await self.chat(self.workflow({"action": "retrieve"}), "My VPN shows NX-998. I have not tried anything yet. What should I do?", "other")
+        recalled = await self.chat(self.workflow(), "What did I say I tried?", "other")
+        self.assertEqual(recalled["state"], "recall")
+        self.assertIn("no troubleshooting", recalled["reply"].lower())
+
+    async def test_recall_without_a_prior_conversation_is_not_invented(self):
+        workflow = self.workflow()
+        result = await self.chat(workflow, "Which error did I report?", "fresh")
+        self.assertNotEqual(result["state"], "recall")
+        self.assertEqual(self.mcp.writes, [])
+
+    async def test_recall_does_not_authorise_or_reuse_an_old_ticket_request(self):
+        pending = await self.report_vpn_ticket()
+        await self.approvals.decide("s", pending["action_id"], True)
+        await self.assert_recall_without_side_effects(self.RECALL_QUESTION)
+        workflow = self.workflow({"action": "retrieve"}, ANSWER, {"accepted": True, "complete": True})
+        result = await self.chat(workflow, "Thanks, the VPN still shows the same code.")
+        self.assertNotEqual(result["state"], "await_confirmation")
+        self.assertIsNone(result["pending_action"])
+        self.assertEqual(len(self.mcp.writes), 1)
+
+    async def test_explicit_new_ticket_request_after_recall_still_drafts(self):
+        pending = await self.report_vpn_ticket()
+        await self.approvals.decide("s", pending["action_id"], False)
+        await self.assert_recall_without_side_effects(self.RECALL_QUESTION)
+        draft = {"intent": "draft", "subject": "NakhlaConnect NX-999", "description": "VPN shows NX-999.",
+                 "attempted_steps": [], "affected_users": 1}
+        workflow = self.workflow({"action": "retrieve"}, draft, {"accepted": True, "complete": True})
+        result = await self.chat(workflow, "Please prepare that same ticket again.")
+        self.assertEqual(result["state"], "await_confirmation")
+        self.assertNotEqual(result["pending_action"]["action_id"], pending["action_id"])
+        self.assertEqual(self.mcp.writes, [])
+
+    async def test_missing_facts_after_clarification_complete_the_requested_draft(self):
+        await self.chat(self.workflow({"action": "retrieve"}), "My VPN shows NX-999. What should I do?")
+        clarification = await self.chat(self.workflow(), "I have not tried anything yet. Please prepare a ticket.")
+        self.assertEqual(clarification["state"], "clarification")
+        self.assertEqual(self.store.get_session("s")["draft_pending"], "clarification")
+        draft = {"intent": "draft", "subject": "NakhlaConnect NX-999", "description": "VPN shows NX-999.",
+                 "attempted_steps": [], "affected_users": 1}
+        workflow = self.workflow({"action": "retrieve"}, draft, {"accepted": True, "complete": True})
+        result = await self.chat(workflow, "I can continue working without the VPN.")
+        self.assertEqual(result["state"], "await_confirmation")
+        self.assertEqual(self.store.get_session("s")["draft_pending"], "draft")
+
+    async def test_switching_to_a_new_issue_does_not_inherit_draft_intent(self):
+        await self.chat(self.workflow({"action": "retrieve"}), "My VPN shows NX-999. What should I do?")
+        await self.chat(self.workflow(), "I have not tried anything yet. Please prepare a ticket.")
+        self.assertEqual(self.store.get_session("s")["draft_pending"], "clarification")
+        workflow = self.workflow({"action": "retrieve"}, ANSWER, {"accepted": True, "complete": True})
+        result = await self.chat(workflow, "New issue: NakhlaID shows NID-423.")
+        self.assertNotEqual(result["state"], "await_confirmation")
+        self.assertIsNone(result["pending_action"])
+        self.assertEqual(self.store.get_session("s")["draft_pending"], "")
+        self.assertEqual(self.mcp.writes, [])
+
+    def test_draft_signal_is_per_message(self):
+        self.assertTrue(draft_signal("Please prepare a ticket."))
+        self.assertIsNone(draft_signal(self.RECALL_QUESTION))
+        self.assertFalse(requested_draft(self.RECALL_QUESTION))
 
 
 if __name__ == "__main__":

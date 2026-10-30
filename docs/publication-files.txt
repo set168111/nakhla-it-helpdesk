@@ -149,6 +149,7 @@ evidence/isolated-fresh-start-2026-10-26/ui-to-app-check.json
 evidence/isolated-fresh-start-2026-10-26/working-containers-after.json
 evidence/isolated-fresh-start-2026-10-26/working-containers-before.json
 evidence/local-checkpoint-summary.md
+evidence/memory-routing-fix-2026-10-30/SUMMARY.md
 evidence/portfolio-readme-check.json
 evidence/repeated-lockout-2026-10-26/SUMMARY.md
 evidence/repeated-lockout-2026-10-26/before.redacted.log
