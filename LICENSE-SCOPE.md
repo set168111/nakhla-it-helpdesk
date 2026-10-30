@@ -1,6 +1,6 @@
 # Identified MIT scope
 
-The MIT grant in LICENSES/MIT.txt covers only copyrightable original project contributions controlled by set168111 in the following files. Imports do not relicense dependencies. No right in copied quotations or other third-party material is added.
+The MIT grant in LICENSES/MIT.txt covers only copyrightable original project contributions controlled by Sari Tahhan (GitHub: set168111) in the following files. Imports do not relicense dependencies. No right in copied quotations or other third-party material is added.
 
 - `app/__init__.py`
 - `app/agent.py`
@@ -22,4 +22,4 @@ The MIT grant in LICENSES/MIT.txt covers only copyrightable original project con
 
 All other content is outside this explicit MIT grant unless separately stated by its original notice. In particular: services/, dataset/, check_kit.py, ui/app_ui.py (adapted starter), evals/run_evals.py, supplied/combined/supplemental case text, supplied configuration/pins, course reference material and visual assets are excluded. Recorded provider/source excerpts in evidence are not covered by this grant. Original documentation remains attributed to its authors; this conservative scope does not assert a new license over every document or screenshot.
 
-User contribution: solo work by set168111 (https://github.com/set168111): project decisions, directing/reviewing AI-assisted implementation, manual testing and validating fixes. Codex/ChatGPT assisted design, code, debugging and documentation. No teammate, independent peer pass, instructor approval or solo-course exemption is claimed. Full name omitted at the user's request.
+User contribution: solo work by Sari Tahhan (https://github.com/set168111): project decisions, directing/reviewing AI-assisted implementation, manual testing and validating fixes. Codex/ChatGPT assisted design, code, debugging and documentation. No teammate, independent peer pass, instructor approval or solo-course exemption is claimed.

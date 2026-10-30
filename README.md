@@ -174,11 +174,11 @@ Earlier verification records are retained under `evidence/` as dated history; th
 
 ## Contributions
 
-This was **solo work** by [set168111](https://github.com/set168111). Full name omitted at the contributor's request.
+This was **solo work** by [Sari Tahhan](https://github.com/set168111).
 
 | Contributor | Contributions |
 |---|---|
-| [set168111](https://github.com/set168111) | Project decisions; directing and reviewing AI-assisted implementation; manual testing; validating fixes. |
+| [Sari Tahhan](https://github.com/set168111) | Project decisions; directing and reviewing AI-assisted implementation; manual testing; validating fixes. |
 | Codex / ChatGPT (AI assistance) | Assistance with design, code, debugging and documentation. |
 
 No human teammate, independent peer-preflight pass or instructor approval is claimed. Peer preflight remains prepared but not performed; course registration, DESIGN review and check-ins remain unverified. The profile link is contributor attribution only.

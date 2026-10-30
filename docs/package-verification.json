@@ -81,5 +81,21 @@
     "captions_checked_against_code": true,
     "staged_secret_pattern_scan": "no credential-pattern, private-key, .env/database or local-path matches in staged text files; no values recorded",
     "runtime_executed": false
+  },
+  "static_update_2026-10-30": {
+    "scope": "Contributor attribution text updated to 'Sari Tahhan'; no application code, tests, Docker, services or API calls",
+    "files_edited": [
+      "DESIGN.md",
+      "HANDOVER.md",
+      "LICENSE-SCOPE.md",
+      "LICENSE.md",
+      "LICENSES/MIT.txt",
+      "README.md",
+      "REQUIREMENTS.md",
+      "TASKS.md",
+      "docs/publication-files.md"
+    ],
+    "hash_refresh": "package_sha256 recomputed for each edited file in docs/package-provenance.json",
+    "file_count": 219
   }
 }

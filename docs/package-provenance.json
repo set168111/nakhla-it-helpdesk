@@ -45,16 +45,17 @@
     },
     {
       "original_local_path": "DESIGN.md",
-      "original_sha256": "6c249c3e01cf4b2547dff3be018a17a700741902e5e0f905a2655d23676e61aa",
+      "original_sha256": "056f229c4a5052b867e13ca4f947cfd55f74fb154e518ec744385b2fd9fb9af5",
       "package_path": "DESIGN.md",
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: working-project original gained a superseded-diagram note; this published copy is unchanged"
+        "2026-10-29 video/architecture update: working-project original gained a superseded-diagram note; this published copy is unchanged",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "3582e73ab7f39c9d7f3557bc66802475e61532ecd8726bc89034099ce7890c6d"
+      "package_sha256": "209f93438c5c377e0df07d7d825a68dcf88b1c1293a9db60f7a90f771f849aaf"
     },
     {
       "original_local_path": "Dockerfile",
@@ -74,65 +75,71 @@
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked"
+        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "216724ca7a211e90fab2a36205e4e6bf0eef3babc4728bc8299bc7b680ceb5a8"
+      "package_sha256": "5b70cae1f9461809f797ad306f15aeac6c89297a1bb2604ba27979c39e73bd73"
     },
     {
       "original_local_path": "LICENSE-SCOPE.md",
-      "original_sha256": "38526907af51d8a5ed4acccb3e85f88d0a451d97e960d075b341fdb920a76760",
+      "original_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a",
       "package_path": "LICENSE-SCOPE.md",
       "transformations": [
-        "reviewed copy; original content retained"
+        "reviewed copy; original content retained",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "38526907af51d8a5ed4acccb3e85f88d0a451d97e960d075b341fdb920a76760"
+      "package_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a"
     },
     {
       "original_local_path": "LICENSE.md",
-      "original_sha256": "9e9d17b9e45c32bca31a2bad0ff6919c7d709d7adeaca80081f17740b8cb0fc1",
+      "original_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90",
       "package_path": "LICENSE.md",
       "transformations": [
-        "reviewed copy; original content retained"
+        "reviewed copy; original content retained",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "9e9d17b9e45c32bca31a2bad0ff6919c7d709d7adeaca80081f17740b8cb0fc1"
+      "package_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90"
     },
     {
       "original_local_path": "LICENSES/MIT.txt",
-      "original_sha256": "9b5e76aaba88c2977983bbabc853034e2e000eda9b1c25d9611330695684b3b0",
+      "original_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5",
       "package_path": "LICENSES/MIT.txt",
       "transformations": [
-        "reviewed copy; original content retained"
+        "reviewed copy; original content retained",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "9b5e76aaba88c2977983bbabc853034e2e000eda9b1c25d9611330695684b3b0"
+      "package_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5"
     },
     {
       "original_local_path": "README.md",
-      "original_sha256": "1e0f5c9d93d9110c71b778f524c8c336b060f5678375474b71f28df90b36c524",
+      "original_sha256": "cdf1db3d4cb483dc6cd8c18a52d8d2683f8a2297f0c908aac3c46e98c1a71fff",
       "package_path": "README.md",
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: top portfolio-video link; video status updated; architecture section replaced with two screenshots, alt text and captions; editable-diagram link removed; \"public\" wording removed"
+        "2026-10-29 video/architecture update: top portfolio-video link; video status updated; architecture section replaced with two screenshots, alt text and captions; editable-diagram link removed; \"public\" wording removed",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "37c27810fb16432e7b0481348f71f66dcdb917e23555b9ff12554186431d629d"
+      "package_sha256": "4d0e6eb09a2cf20b5a52dea0b798c56f876d4f025772e9d4c6afdd76c4b32990"
     },
     {
       "original_local_path": "REQUIREMENTS.md",
-      "original_sha256": "74032a8383868ee6be754cc247e39a06c6485c3384152e8c6d6f73bed8b7a326",
+      "original_sha256": "0a38043961dcce796c7375704ea0f5cc039832d4e88436613c501d4eb9b9a4f5",
       "package_path": "REQUIREMENTS.md",
       "transformations": [
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: video-status row qualified; portfolio video linked"
+        "2026-10-29 video/architecture update: video-status row qualified; portfolio video linked",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "f6bd8178faad071f7273f47504f3a4442f3778251243ad8e7bd73b558811ca88"
+      "package_sha256": "6195408584bf048ed401817f06e74aabd4d81feec13355eb022004941792a224"
     },
     {
       "original_local_path": "TASKS.md",
@@ -142,10 +149,11 @@
         "current-source Docker evidence refresh; runtime source unchanged",
         "current-section extract",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked"
+        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "bd1911acb08676d4964962f9de6502b4a07b6ccf6ddc7aacab26f9270383c463"
+      "package_sha256": "bc119290d4968fc3d79e6a6840a7a9cb8e509482cf98a5e9ac9cd999da46db4c"
     },
     {
       "original_local_path": "THIRD_PARTY_NOTICES.md",
@@ -650,10 +658,11 @@
         "current-source Docker evidence refresh; runtime source unchanged",
         "preserved package-specific manifest explanation",
         "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: paths/counts and wording updated for 219-path list"
+        "2026-10-29 video/architecture update: paths/counts and wording updated for 219-path list",
+        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "76986214edac0af6def9c727567d4d987429de70d4f8d27098e12f7b78d25e1f"
+      "package_sha256": "51097f180dc11cb54f00dcd8da324874cef266e9d788d59a7b5e5e7c5b5d7fc5"
     },
     {
       "original_local_path": null,
@@ -2270,5 +2279,20 @@
       "evidence/portfolio-readme-check.json"
     ],
     "note": "Static documentation/asset update only; no application code, tests, Docker, services or API calls. docs/architecture.mmd is superseded by the two screenshots."
+  },
+  "update_2026-10-30_contributor_attribution": {
+    "edited": [
+      "DESIGN.md",
+      "HANDOVER.md",
+      "LICENSE-SCOPE.md",
+      "LICENSE.md",
+      "LICENSES/MIT.txt",
+      "README.md",
+      "REQUIREMENTS.md",
+      "TASKS.md",
+      "docs/publication-files.md"
+    ],
+    "note": "Static text update only. Contributor name 'Sari Tahhan' added where attribution previously gave only the GitHub username and 'full name omitted'. GitHub username preserved in URLs, repository paths and technical identifiers; AI-assistance credits and historical evidence files (including evidence/portfolio-readme-check.json) unchanged. package_sha256 refreshed for edited files; repository visibility not changed.",
+    "no_application_code_tests_docker_services_or_api_calls": true
   }
 }
