@@ -79,7 +79,7 @@
         "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "5b70cae1f9461809f797ad306f15aeac6c89297a1bb2604ba27979c39e73bd73"
+      "package_sha256": "c7b07719f6512bf1e94382b97e614b12c4010a5b3a8f224a70b1cbdf50c6129a"
     },
     {
       "original_local_path": "LICENSE-SCOPE.md",
@@ -125,7 +125,7 @@
         "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "4d0e6eb09a2cf20b5a52dea0b798c56f876d4f025772e9d4c6afdd76c4b32990"
+      "package_sha256": "b7c949954389f54719b5fb12d013fa08dd6609b01a2d4841a411cfa0566b159c"
     },
     {
       "original_local_path": "REQUIREMENTS.md",
@@ -184,7 +184,7 @@
         "scoped approval-incident correction refresh"
       ],
       "redactions": 0,
-      "package_sha256": "c158fc0c5f4dc290a71407425ca301c1f3afc3987a997101064477344a3f536a"
+      "package_sha256": "38f20e8a160ca8fa05aa8c48b88f155f9b146afbb9644496b18a40f7d397e40b"
     },
     {
       "original_local_path": "app/approvals.py",
@@ -248,13 +248,14 @@
     },
     {
       "original_local_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "original_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
+      "original_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
       "package_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
       "transformations": [
-        "added 2026-10-29: completed portfolio video (2:24, 144.341 s), copied byte-for-byte from the working project; not re-encoded"
+        "added 2026-10-29: completed portfolio video (2:24, 144.341 s), copied byte-for-byte from the working project; not re-encoded",
+        "updated 2026-10-30: replaced byte-for-byte by the approved final cut (19,324,654 bytes, 2:24.34; previous 14,309,937-byte version ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e backed up outside Git); not re-encoded"
       ],
       "redactions": 0,
-      "package_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e"
+      "package_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d"
     },
     {
       "original_local_path": "check_kit.py",
@@ -662,7 +663,7 @@
         "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
       ],
       "redactions": 0,
-      "package_sha256": "51097f180dc11cb54f00dcd8da324874cef266e9d788d59a7b5e5e7c5b5d7fc5"
+      "package_sha256": "64f05e4e886c910f4b1a360bd62730f3059e6d0208efa60c968a3f3bf88c6f56"
     },
     {
       "original_local_path": null,
@@ -672,7 +673,7 @@
         "generated path list of the files committed (219, including itself and the two JSON records); updated 2026-10-29 for the video, two screenshots and removal of two planning pages"
       ],
       "redactions": 0,
-      "package_sha256": "8b17d7072697689243ee25d5b96f0229b30f6e6f510d6840f5d67befa72ab87c"
+      "package_sha256": "38b6f3e42ee3d1b80aa011c5ad1f26e24945b9f8fa2599e981a9a782b4a235af"
     },
     {
       "original_local_path": "docs/running-ui.png",
@@ -1545,6 +1546,16 @@
       "package_sha256": "00e38affb3fe7f4e7100cf5e7ed6269096d54629b6575ae4a1cdce0cb1401db9"
     },
     {
+      "original_local_path": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
+      "original_sha256": "f51f31bb44413bebfb0bde9dbfd0033e7cafc242ed8ad2f66f4b4953f2ef4632",
+      "package_path": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
+      "transformations": [
+        "added 2026-10-30: conversation-recall and draft-intent fix checkpoint summary (offline mocked tests and user-reported manual evidence); line endings differ from the working copy, text otherwise unchanged"
+      ],
+      "redactions": 0,
+      "package_sha256": "fa00dab4a92926321ff0c9ff9ecb40098c5db8ec81c64ad014e84c8bbf386d13"
+    },
+    {
       "original_local_path": "evidence/portfolio-readme-check.json",
       "original_sha256": "bd52998044ee59afb065053aac6eea417e101f29b4258efecfb417868b276c20",
       "package_path": "evidence/portfolio-readme-check.json",
@@ -2164,7 +2175,7 @@
         "scoped approval-incident correction refresh"
       ],
       "redactions": 0,
-      "package_sha256": "b68a55f215d987cb757833d095638584055beef78407c6e798598515a23120c7"
+      "package_sha256": "72f0ebec1aa85e90095e72ce035222e6d42d22c06117bb42d7cba04ce164d524"
     },
     {
       "original_local_path": "tests/test_approvals.py",
@@ -2255,7 +2266,7 @@
     "docs/local-testing.md",
     "docs/publication-files.md"
   ],
-  "file_count_listed": 219,
+  "file_count_listed": 220,
   "update_2026-10-29_video_and_architecture": {
     "added": [
       "assets/video/Nakhla IT Helpdesk portfolio.mp4",
@@ -2294,5 +2305,41 @@
     ],
     "note": "Static text update only. Contributor name 'Sari Tahhan' added where attribution previously gave only the GitHub username and 'full name omitted'. GitHub username preserved in URLs, repository paths and technical identifiers; AI-assistance credits and historical evidence files (including evidence/portfolio-readme-check.json) unchanged. package_sha256 refreshed for edited files; repository visibility not changed.",
     "no_application_code_tests_docker_services_or_api_calls": true
+  },
+  "files_whose_hash_changed_in_this_refresh_2026-10-30": [
+    "HANDOVER.md",
+    "README.md",
+    "app/agent.py",
+    "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+    "docs/publication-files.md",
+    "docs/publication-files.txt",
+    "tests/test_agent_workflow.py"
+  ],
+  "update_2026-10-30_memory_fix_and_video_finalisation": {
+    "added": [
+      "evidence/memory-routing-fix-2026-10-30/SUMMARY.md"
+    ],
+    "edited": [
+      "README.md",
+      "app/agent.py",
+      "tests/test_agent_workflow.py",
+      "HANDOVER.md",
+      "docs/publication-files.md",
+      "docs/publication-files.txt"
+    ],
+    "replaced": [
+      "assets/video/Nakhla IT Helpdesk portfolio.mp4"
+    ],
+    "video_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
+    "stale_package_sha256_refreshed": [
+      "HANDOVER.md",
+      "README.md",
+      "app/agent.py",
+      "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+      "docs/publication-files.md",
+      "docs/publication-files.txt",
+      "tests/test_agent_workflow.py"
+    ],
+    "note": "Static metadata update only. Earlier sections are preserved as historical records. The memory-fix test and manual results are recorded in the evidence summary and were not re-run here. No application code, tests, Docker, services or API calls were run in this update; repository visibility not changed."
   }
 }

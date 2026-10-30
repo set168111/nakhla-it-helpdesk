@@ -1,7 +1,7 @@
 {
   "package": "nakhla-it-helpdesk",
   "verification_kind": "Static local package file/link/anchor/privacy review (final copy, re-run 2026-10-29 after the video/architecture update). Static only: no application, test, Docker, UI or API execution was performed in this preparation.",
-  "file_count": 219,
+  "file_count": 220,
   "manifest_exactly_matches_files": true,
   "missing_files_or_links": [],
   "forbidden_runtime_paths": [],
@@ -80,7 +80,8 @@
     ],
     "captions_checked_against_code": true,
     "staged_secret_pattern_scan": "no credential-pattern, private-key, .env/database or local-path matches in staged text files; no values recorded",
-    "runtime_executed": false
+    "runtime_executed": false,
+    "superseded_2026-10-30": "Historical value as recorded on 2026-10-29. The video was replaced on 2026-10-30; the current published hash is in static_update_2026-10-30_memory_fix_and_video_finalisation."
   },
   "static_update_2026-10-30": {
     "scope": "Contributor attribution text updated to 'Sari Tahhan'; no application code, tests, Docker, services or API calls",
@@ -97,5 +98,46 @@
     ],
     "hash_refresh": "package_sha256 recomputed for each edited file in docs/package-provenance.json",
     "file_count": 219
+  },
+  "static_update_2026-10-30_memory_fix_and_video_finalisation": {
+    "scope": "Records the memory-routing-fix checkpoint package changes and the final portfolio video replacement. Static package/metadata checks only.",
+    "memory_fix_checkpoint": {
+      "files_changed": [
+        "README.md",
+        "app/agent.py",
+        "tests/test_agent_workflow.py",
+        "docs/publication-files.md",
+        "docs/publication-files.txt"
+      ],
+      "file_added": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
+      "test_and_manual_results_source": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md (offline mocked tests and a user-reported manual retest; recorded there, not executed or replayed in this finalisation)",
+      "historical_65_of_69_unchanged": true
+    },
+    "video_finalisation": {
+      "file": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
+      "previous_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
+      "previous_size_bytes": 14309937,
+      "sha256_source_equals_both_published_copies": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
+      "size_bytes": 19324654,
+      "duration_seconds": 144.34,
+      "resolution": "1920x1080",
+      "re_encoded_by_this_task": false,
+      "previous_version_backed_up_outside_git": true,
+      "caption_window_checked": "49-53 s, by frame extraction from the source before copying"
+    },
+    "static_checks": {
+      "file_count": 220,
+      "manifest_exactly_matches_git_index": true,
+      "missing_tracked_files": 0,
+      "markdown_files_checked": 58,
+      "relative_links_checked": 223,
+      "relative_links_bad": 0,
+      "readme_video_link_targets_published_file": true,
+      "package_sha256_refreshed_for_stale_entries": true
+    },
+    "runtime_executed": false,
+    "tests_docker_services_or_api_calls_run_in_this_update": false,
+    "repository_visibility_changed": false,
+    "v1_0_tag_created_or_moved": false
   }
 }
