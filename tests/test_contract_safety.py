@@ -10,7 +10,7 @@ from types import SimpleNamespace
 
 from fastapi.testclient import TestClient
 
-from app.main import create_app
+from tests.auth_helpers import AuthedAsyncClient, AuthedTestClient, claim_for, create_test_app
 
 
 def reply(session_id: str, text: str) -> dict:
@@ -37,7 +37,7 @@ class Runtime:
 
 class ContractSafetyTests(unittest.TestCase):
     def test_ready_health_is_exact_contract(self):
-        with TestClient(create_app(Runtime())) as client:
+        with AuthedTestClient(create_test_app(Runtime())) as client:
             response = client.get("/health")
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json(), {"status": "ok"})
@@ -45,7 +45,7 @@ class ContractSafetyTests(unittest.TestCase):
     def test_health_fails_closed_for_each_missing_live_prerequisite(self):
         for ready, credential in ((False, True), (True, False), (False, False)):
             with self.subTest(index_ready=ready, credential=credential):
-                with TestClient(create_app(Runtime(ready, credential))) as client:
+                with AuthedTestClient(create_test_app(Runtime(ready, credential))) as client:
                     response = client.get("/health")
                     self.assertEqual(response.status_code, 503)
                     self.assertNotEqual(response.json().get("status"), "ok")
@@ -61,7 +61,7 @@ class ContractSafetyTests(unittest.TestCase):
 
         runtime = Runtime()
         runtime.mcp = UnavailableMCP()
-        with TestClient(create_app(runtime)) as client:
+        with AuthedTestClient(create_test_app(runtime)) as client:
             response = client.get("/health")
             self.assertEqual(response.status_code, 503)
             self.assertEqual(response.json()["reason"], "helpdesk_mcp_unavailable")
@@ -71,7 +71,7 @@ class ContractSafetyTests(unittest.TestCase):
         runtime = Runtime()
         body = {"session_id": "contract-1", "message": "My VPN fails.",
                 "user": {"email": "sara.mikhail@nakhla.example"}}
-        with TestClient(create_app(runtime)) as client:
+        with AuthedTestClient(create_test_app(runtime)) as client:
             response = client.post("/api/chat", json=body)
             self.assertEqual(response.status_code, 200)
             self.assertEqual(runtime.chat_calls, [(body["session_id"], body["message"], body["user"])])
@@ -84,10 +84,11 @@ class ContractSafetyTests(unittest.TestCase):
 
     def test_user_is_optional_and_chat_cannot_smuggle_approval(self):
         runtime = Runtime()
-        with TestClient(create_app(runtime)) as client:
+        with AuthedTestClient(create_test_app(runtime)) as client:
             valid = client.post("/api/chat", json={"session_id": "contract-2", "message": "Help"})
             self.assertEqual(valid.status_code, 200)
-            self.assertIsNone(runtime.chat_calls[0][2])
+            # the body user field stays optional, but the runtime only ever receives the signed-in identity
+            self.assertEqual(runtime.chat_calls[0][2], {"email": "sara.mikhail@nakhla.example"})
             forbidden = client.post("/api/chat", json={"session_id": "contract-2", "message": "Approve", "approved": True})
             self.assertEqual(forbidden.status_code, 422)
             self.assertEqual(runtime.approval_calls, [])
@@ -102,7 +103,7 @@ class ContractSafetyTests(unittest.TestCase):
             {"session_id": "ok", "message": "Help", "user": {"email": "sara.mikhail@nakhla.example", "department": "Executive Office"}},
         ]
         runtime = Runtime()
-        with TestClient(create_app(runtime)) as client:
+        with AuthedTestClient(create_test_app(runtime)) as client:
             for body in invalid:
                 with self.subTest(body_type=list(body)):
                     self.assertEqual(client.post("/api/chat", json=body).status_code, 422)
@@ -111,7 +112,9 @@ class ContractSafetyTests(unittest.TestCase):
     def test_approval_requires_strict_boolean_and_id_only(self):
         runtime = Runtime()
         base = {"session_id": "contract-3", "action_id": "act-unknown"}
-        with TestClient(create_app(runtime)) as client:
+        app = create_test_app(runtime)
+        claim_for(app, "contract-3", "sara.mikhail@nakhla.example")
+        with AuthedTestClient(app) as client:
             for value in ("true", "false", 1, 0, None):
                 with self.subTest(value=value):
                     self.assertEqual(client.post("/api/approve", json={**base, "approved": value}).status_code, 422)
@@ -123,7 +126,7 @@ class ContractSafetyTests(unittest.TestCase):
             self.assertEqual(runtime.approval_calls, [("contract-3", "act-unknown", True)])
 
     def test_no_application_admin_or_voice_route(self):
-        with TestClient(create_app(Runtime())) as client:
+        with AuthedTestClient(create_test_app(Runtime())) as client:
             self.assertEqual(client.post("/admin/reset").status_code, 404)
             self.assertEqual(client.post("/api/voice").status_code, 404)
 

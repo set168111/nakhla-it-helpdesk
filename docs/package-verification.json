@@ -1,143 +1,29 @@
 {
-  "package": "nakhla-it-helpdesk",
-  "verification_kind": "Static local package file/link/anchor/privacy review (final copy, re-run 2026-10-29 after the video/architecture update). Static only: no application, test, Docker, UI or API execution was performed in this preparation.",
-  "file_count": 220,
+  "kind": "static selected-package verification, not runtime or live acceptance",
+  "file_count": 265,
   "manifest_exactly_matches_files": true,
-  "missing_files_or_links": [],
-  "forbidden_runtime_paths": [],
-  "credential_pattern_matches_no_values": [],
-  "private_path_matches_no_values": [],
-  "runtime_file_count": 43,
-  "KB018_fixture_byte_identical": true,
-  "preserved_original_evidence_hashes_unchanged": true,
-  "redacted_evidence_copies": [
-    "evidence/repeated-lockout-2026-10-26/before.redacted.log",
-    "evidence/repeated-lockout-2026-10-26/relevant-offline.redacted.log",
-    "evidence/supplemental-dock-2026-10-26/offline.redacted.log",
-    "evidence/timing-clarity-2026-10-26/targeted-offline-final.redacted.log",
-    "evidence/approval-incident-2026-10-26/approvals-before.redacted.log",
-    "evidence/approval-incident-2026-10-26/code-after.redacted.log",
-    "evidence/approval-incident-2026-10-26/code-before.redacted.log",
-    "evidence/approval-incident-2026-10-26/code-regression-before.redacted.log",
-    "evidence/approval-incident-2026-10-26/ignore-after.redacted.txt",
-    "evidence/approval-incident-2026-10-26/incident-before.redacted.log",
-    "evidence/approval-incident-2026-10-26/test_agent_workflow.py.redacted.log",
-    "evidence/approval-incident-2026-10-26/test_approvals.py.redacted.log",
-    "evidence/approval-incident-2026-10-26/workflow-final.redacted.log",
-    "evidence/approval-incident-2026-10-26/package-ignore.redacted.txt",
-    "evidence/docker-approval-incident-2026-10-27/containers-after-start.redacted.json",
-    "evidence/docker-approval-incident-2026-10-27/containers-before.redacted.json"
-  ],
-  "fresh_start": "Historical isolated PASS predating approval/incident changes; not rerun",
-  "independent_peer_preflight": "UNCOMPLETED",
-  "paid_calls_or_service_actions": 0,
-  "scope_limit": "Credential pattern scanning is a static check, not a legal clearance or Git-history audit; the supplied kit keeps its own terms and is not covered by the scoped MIT licence.",
-  "docker_verification": "Historical PASS recorded in evidence/docker-approval-incident-2026-10-27/verification.json (working project, mocked, no paid calls); not re-run for this copy",
-  "passed": null,
-  "MIT_scope_files_exist_and_match_original_contributions": true,
-  "MIT_scope_file_count": 17,
-  "runtime_evidence": "evidence/docker-approval-incident-2026-10-27/verification.json",
-  "static_checks_rerun": {
-    "file_count": 219,
-    "manifest_exactly_matches_git_index": true,
-    "relative_links_checked": 219,
-    "relative_links_bad": 0,
-    "relative_links_scope": "Markdown links/images in all 57 tracked .md files, resolved to files on disk (the 2026-10-29 re-run used this narrower method; the earlier 236 figure was from a differently scoped check and is not comparable)"
-  },
-  "runtime_verification": {
-    "performed_in_this_preparation": false,
-    "tests_run": 0,
-    "docker_run": false,
-    "paid_or_live_api_calls": 0,
-    "fresh_clone_run": false,
-    "historical_evidence": "Earlier runtime evidence is preserved under evidence/ and describes the working project at that time; it was not re-run for this copy."
-  },
-  "runtime_source_vs_working_project": {
-    "files_compared": 43,
-    "byte_identical": 43,
-    "identical_after_LF_normalisation": 43,
-    "differing_after_LF_normalisation": [],
-    "note": "static comparison of the copy against the working project at preparation time"
-  },
-  "static_checks_passed": true,
-  "supplied_kit_snapshot": {
-    "source": "fork commit 2ae2f52 on origin/main of set168111/Agentic-AI-Bootcamp-Students (the snapshot actually used)",
-    "upstream_compared": "local ref 39636dd: no differences for scenario-2-it-helpdesk or the Final-Mini-Project README versus 2ae2f52",
-    "repinned": false
-  },
-  "static_update_2026-10-29": {
-    "scope": "Portfolio video and two architecture screenshots added; two planning pages removed from the publication copy only; README, status wording and superseded-diagram notice updated",
-    "video_sha256_source_equals_published": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
-    "video_duration_seconds_mp4_header": 144.341,
-    "video_re_encoded": false,
-    "screenshots_sha256": {
-      "docs/architecture-answer-draft.png": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
-      "docs/architecture-approval-ticket.png": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263"
-    },
-    "removed_from_publication_copy_only": [
-      "docs/video-script.md",
-      "docs/demo.md"
-    ],
-    "captions_checked_against_code": true,
-    "staged_secret_pattern_scan": "no credential-pattern, private-key, .env/database or local-path matches in staged text files; no values recorded",
-    "runtime_executed": false,
-    "superseded_2026-10-30": "Historical value as recorded on 2026-10-29. The video was replaced on 2026-10-30; the current published hash is in static_update_2026-10-30_memory_fix_and_video_finalisation."
-  },
-  "static_update_2026-10-30": {
-    "scope": "Contributor attribution text updated to 'Sari Tahhan'; no application code, tests, Docker, services or API calls",
-    "files_edited": [
-      "DESIGN.md",
-      "HANDOVER.md",
-      "LICENSE-SCOPE.md",
-      "LICENSE.md",
-      "LICENSES/MIT.txt",
-      "README.md",
-      "REQUIREMENTS.md",
-      "TASKS.md",
-      "docs/publication-files.md"
-    ],
-    "hash_refresh": "package_sha256 recomputed for each edited file in docs/package-provenance.json",
-    "file_count": 219
-  },
-  "static_update_2026-10-30_memory_fix_and_video_finalisation": {
-    "scope": "Records the memory-routing-fix checkpoint package changes and the final portfolio video replacement. Static package/metadata checks only.",
-    "memory_fix_checkpoint": {
-      "files_changed": [
-        "README.md",
-        "app/agent.py",
-        "tests/test_agent_workflow.py",
-        "docs/publication-files.md",
-        "docs/publication-files.txt"
-      ],
-      "file_added": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
-      "test_and_manual_results_source": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md (offline mocked tests and a user-reported manual retest; recorded there, not executed or replayed in this finalisation)",
-      "historical_65_of_69_unchanged": true
-    },
-    "video_finalisation": {
-      "file": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "previous_sha256": "ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e",
-      "previous_size_bytes": 14309937,
-      "sha256_source_equals_both_published_copies": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
-      "size_bytes": 19324654,
-      "duration_seconds": 144.34,
-      "resolution": "1920x1080",
-      "re_encoded_by_this_task": false,
-      "previous_version_backed_up_outside_git": true,
-      "caption_window_checked": "49-53 s, by frame extraction from the source before copying"
-    },
-    "static_checks": {
-      "file_count": 220,
-      "manifest_exactly_matches_git_index": true,
-      "missing_tracked_files": 0,
-      "markdown_files_checked": 58,
-      "relative_links_checked": 223,
-      "relative_links_bad": 0,
-      "readme_video_link_targets_published_file": true,
-      "package_sha256_refreshed_for_stale_entries": true
-    },
-    "runtime_executed": false,
-    "tests_docker_services_or_api_calls_run_in_this_update": false,
-    "repository_visibility_changed": false,
-    "v1_0_tag_created_or_moved": false
-  }
+  "python_ast_files": 59,
+  "links_checked": 270,
+  "link_errors": [],
+  "forbidden_paths": [],
+  "private_path_matches": [],
+  "provider_key_or_private_key_patterns": [],
+  "setup_errors": [],
+  "fresh_clone_setup_static_review": "PASS",
+  "source_byte_identical_files": 56,
+  "tested_app_and_case19_hashes_match": true,
+  "KB018_unchanged": true,
+  "intentional_isolated_fault_commands_retained": true,
+  "fresh_clone_runtime": "NOT RUN",
+  "independent_peer_preflight": "NOT RUN",
+  "application_tests_run": 0,
+  "paid_calls": 0,
+  "installations": 0,
+  "service_operations": 0,
+  "actual_credentials_password_hashes_salts_token_hashes_scan": "PASS",
+  "staged_changes_secret_scan": "PASS",
+  "scan_limits": "static bytes; no media OCR, remote history or legal clearance",
+  "manifest_exactly_matches_git_index": true,
+  "staged_source_equivalent_after_git_newline_conversion": true,
+  "git_diff_check": "PASS (CRLF-aware)"
 }

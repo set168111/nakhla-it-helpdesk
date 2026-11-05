@@ -115,6 +115,35 @@ def resolve_precedence(chunks: list[dict], department: str | None = None) -> lis
     return sorted(result, key=lambda c: _precedence(c, department), reverse=True)
 
 
+_EXPLICIT_REQUEST = re.compile(
+    r"\bsoftware request\b|\baccess request\b|\blicen[cs]e request\b"
+    r"|\brequest(?:ing)?\s+(?:new |a new )?(?:software|access|licen[cs]e)\b"
+    r"|\bnot listed\b|\bnot in (?:the )?(?:catalou?g(?:ue)?|software center)\b", re.I)
+_NETWORK_CLIENT = re.compile(r"\bvpn\b|nakhlaconnect|\bnx-\d|remote.access|fin-secure|wi.?fi|\bwlan\b|\bvdi\b", re.I)
+_PRODUCT_REQUEST = re.compile(
+    r"\b(?:need|want|request(?:ing)?|would like|get me)\b\s+(?:a |an |the )?"
+    r"(?!(?:version|client|v|a|an|the)\b)[A-Za-z][\w+-]{2,}\s+(?:v(?:ersion)?\s*)?\d+(?:\.\d+)+"
+    r"|\b(?:need|want|would like)\b[^.!?\n]{0,30}\binstall(?:ed)?\b"
+    r"|\binstall\b[^.!?\n]{0,25}\bfor (?:me|my|a|our)\b"
+    r"|\b(?:need|want|would like|get me)\b[^.!?\n]{0,30}\blicen[cs]e\b", re.I)
+
+
+def software_request_intent(text: str) -> bool:
+    """Generalized software/service-request detection.
+
+    Explicit request phrases always count. Product-style phrasings (need/want
+    a named tool, an install request) count only when the text is neither an
+    error report nor a network-client version discussion, so troubleshooting
+    never becomes a P4 request. Historical ticket text quoted by a requester
+    is data; it cannot alter these rules or any priority.
+    """
+    if _EXPLICIT_REQUEST.search(text):
+        return True
+    if re.search(r"\b(?!(?:kb|sp|it|inc|gw)-)[a-z]{2,5}-\d{2,4}\b", text, re.I) or _NETWORK_CLIENT.search(text):
+        return False
+    return bool(_PRODUCT_REQUEST.search(text))
+
+
 def unexplained_daily_lockouts(text: str) -> bool:
     """SP-001 section 3 / KB-006: require count, daily scope and unknown cause."""
     text = text.lower()
@@ -140,7 +169,7 @@ def ticket_policy(employee: dict, topic: str, affected_users: int = 1,
     """Source-linked ticket category, priority and department refusal rules."""
     text = topic.lower()
     error_report = bool(re.search(r"\b(?!(?:kb|sp|it|inc|gw)-)[a-z]{2,5}-\d{2,4}\b",text))
-    request = request or bool(re.search(r"\b(?:software|access) request\b",text)) or (
+    request = request or software_request_intent(text) or (
         bool(re.search(r"\bhow.to\b",text)) and not error_report)
     vpn = bool(re.search(r"\bvpn\b|nakhlaconnect|\bnx-\d|remote.access|fin-secure", text))
     department = employee.get("department")
@@ -156,7 +185,7 @@ def ticket_policy(employee: dict, topic: str, affected_users: int = 1,
         category = "security"
     elif vpn or re.search(r"wi.?fi|\bwlan|\bvdi\b|network|shares?", text):
         category = "network_access"
-    elif re.search(r"password|mfa|nakhlakey|\bnid-|\bmfa-|sso|lockout|account|access request|\bidentity\b", text):
+    elif re.search(r"password|mfa|nakhlakey|\bnakhlaid\b|\bnid-|\bmfa-|sso|lockout|account|access request|\bidentity\b", text):
         category = "identity_access"
     elif re.search(r"onboard|new starter|offboard|leaver", text):
         category = "onboarding"
@@ -166,6 +195,8 @@ def ticket_policy(employee: dict, topic: str, affected_users: int = 1,
         category = "email_collab"
     elif re.search(r"software|install|\bswc-|licen[cs]e|code studio", text):
         category = "software"
+    elif request and software_request_intent(text):
+        category = "software"  # generalized catalogue request names only the product
     else:
         category = "other"
     if affected_users >= 4 or department == "Executive Office" or employee.get("vip") or security_incident:

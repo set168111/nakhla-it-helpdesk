@@ -12,3 +12,8 @@ __pycache__
 *.log
 *.pid
 *.sqlite3*
+secrets
+*.credential
+docker-compose.eval.yml
+
+# Retained publication exclusions

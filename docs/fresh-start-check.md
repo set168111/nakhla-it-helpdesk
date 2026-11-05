@@ -1,3 +1,19 @@
+# Current authenticated fresh-clone setup scope
+
+Follow [README](../README.md#run-it), including host dependencies, private config
+and generated logins before first Compose startup. For side-by-side checks use a
+separate clone and data/secrets, replace host mappings with unused loopback ports
+and adjust UI APP_PUBLIC_URL. Leave simulator unpublished unless an explicitly
+isolated eval/fault fixture requires it. [Isolation](isolated-fault-demo.md).
+
+Submission preparation checks setup statically; no install/build/start/paid
+ingestion was performed. Current authenticated fresh-clone execution and
+independent peer preflight remain NOT RUN. The October isolated result below is
+historical, predates authentication, and must not be called a current-copy pass.
+
+<details>
+<summary>Historical October fresh-start procedure/result (not current setup)</summary>
+
 # Isolated fresh-start check - agent-run PASS
 
 **27 October update:** [current-source Docker verification](../evidence/docker-approval-incident-2026-10-27/SUMMARY.md) passed with cached working data and focused mocked regressions. The isolated fresh-start described below remains historical; it was not rerun. Independent peer preflight is still uncompleted.
@@ -14,3 +30,5 @@ Extra steps beyond the default README, required to keep an existing installation
 6. Stop only isolated services, retain the named volume and sanitized evidence, and add actual charges/reservations to aggregate accounting. No down -v or data reset. The existing app must remain running unchanged.
 
 Independent [peer preflight](peer-preflight.md) remains separate and uncompleted. This check did not run acceptance cases, publish or submit anything. A new independent preflight needs its own authorization and key/budget; this pass is not permission for more paid calls.
+
+</details>

@@ -1,3 +1,13 @@
+# Current submission copy - 5 November 2026
+
+Use [submission status](docs/submission-status.md) and [README](README.md) for current login/setup and limits.
+Case19 is user-verified including wording; Case20 is incomplete/code deferred.
+Default simulator 8102 is unpublished; admin pages require separate login.
+The dated observations below remain historical and are not current setup,
+accounting, peer-preflight or authenticated acceptance claims. 65/69 is retained.
+
+<details><summary>Original publication checkpoint observations (historical)</summary>
+
 # Requirements and evidence - local user-testing checkpoint
 
 > **Publication status (29 October 2026):** this file is a dated working record from local development and is kept for provenance. Statements below such as "latest", "paused", "resume", local paths (including `local-packages/nakhla-it-helpdesk`) and 127.0.0.1 service state describe the original development machine, not this repository or a fresh clone. Public repository: https://github.com/set168111/nakhla-it-helpdesk (the course submission repository created from this package). The demo video segments exist; final assembly and upload are pending. No peer review or instructor approval is claimed, and supplied course-kit material is included under the assignment's instruction to copy the kit into a public project repository, keeps its own notices, and is not covered by the project's scoped MIT grant (see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)). Current setup instructions are in [README.md](README.md).
@@ -45,3 +55,5 @@ Current scoped finding: repeated unexplained daily lockouts were incorrectly rou
 
 
 _Publication current-section extract; historical evidence retained._
+
+</details>

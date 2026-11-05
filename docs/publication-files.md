@@ -1,13 +1,28 @@
-# Clean local package manifest
+# Reviewed publication file manifest
 
-Local package name: **nakhla-it-helpdesk**. [publication-files.txt](publication-files.txt) is the exact package-relative inclusion list; the current tree contains exactly these 220 paths (219 verified against the Git index before the 2026-10-29 video/screenshot update commit, plus one added by the 2026-10-30 conversation-recall checkpoint: `evidence/memory-routing-fix-2026-10-30/SUMMARY.md`; that checkpoint also changed `app/agent.py`, `tests/test_agent_workflow.py` and `README.md`). The initial commit contained 218 paths; the update added the portfolio video and two architecture screenshots and removed the two planning pages `docs/video-script.md` and `docs/demo.md` (retained in the working project, not published). All listed paths resolve inside the package.
+Coordinated 5 November 2026 update of the separate submission repository.
+[publication-files.txt](publication-files.txt) lists the exact selected tree,
+including generated metadata; [provenance](package-provenance.json) records
+payload/source hashes and transformations. Generated metadata self-hashes are
+excluded to avoid circular references; the private preparation report hashes them.
+[Static verification](package-verification.json) covers files, links, syntax,
+setup references and scans; it is not a fresh-clone runtime or peer pass.
 
-Includes application/tests/harness, unchanged supplied simulator/data/cases/pins, configuration example, scoped licensing/provenance, the actual fictional UI screenshot, two architecture screenshots, the completed portfolio video (`assets/video/Nakhla IT Helpdesk portfolio.mp4`, 2:24, a demonstration rather than a test), the future-only demo commands, curated historical/lockout proof and user-reported manual records. Copied course guidance is replaced with official-source link pointers; course logos/visuals and five unrelated Capstone documents are not included. Machine-specific native stop tooling and the backup REQUIREMENTS.md are excluded and retained in the working project.
+Includes current auth/admin/ownership, intake/routing fixes, setup/eval helpers,
+relevant tests, the completed portfolio video, a portable presentation, updated
+demo guidance and intentionally isolated fault commands. The reviewed 35 missing
+and 13 changed paths were reconciled; the native stop helper is portable in this
+copy. No runtime credentials, password hashes, session tokens, databases, private
+backups or caches are package files. Public synthetic fixtures/fictional poisoned
+KB018 remain intentional test/data content.
 
-No real .env, databases/WAL/SHM, embedding caches, browser profiles, private runtime dumps, .git, .venv or compiled caches are included. Intentional fictional KB-018 data is preserved byte-for-byte. [Evidence-copy notice](EVIDENCE-COPY-NOTICE.md) and [provenance](package-provenance.json) identify reviewed/redacted copies and current-section extracts; original evidence stays local. Filename suffix `.redacted` identifies copies with private paths or credentials removed. [Verification report](package-verification.json) records file/link/anchor/credential checks, not a test-suite or fresh-start pass.
+All historical evidence and manual observations are retained; Case19 is now
+user-verified including wording, Case20 incomplete/code deferred, and **65/69**
+unchanged. Existing repo/video are not newly created. No installation, paid call,
+service operation, commit/push/tag/release or submission is performed by staging.
+Visibility/access, instructor auth-aware grading, private handoff and independent
+peer/fresh-clone execution remain unverified. [Remaining blockers](submission-status.md).
 
-MIT is limited to [identified original contributions](../LICENSE-SCOPE.md). Supplied/mixed material retains [separate notices](../THIRD_PARTY_NOTICES.md), not a blanket MIT license. Supplied kit material is published under the assignment's instruction to copy the kit into a public project repository (exact wording in THIRD_PARTY_NOTICES.md); this is not a licence grant, so it is neither relicensed nor covered by MIT, and nothing beyond that instruction is claimed.
-
-Historical65/69, three S2-07 failures, separate OWN-08 retest and supplemental503 results remain distinct. The latest rejection PASS is user-reported, not replayed. Solo attribution/AI assistance and unverified course/peer status remain explicit. Contributor attribution names Sari Tahhan (GitHub username set168111 retained in URLs and identifiers); updated 2026-10-30. [Agent-run fresh-start and actual cost](fresh-start-check.md) passed; independent peer preflight remains uncompleted and no peer review or instructor approval is claimed. Repository: https://github.com/set168111/nakhla-it-helpdesk (currently private; visibility not changed by this update). The completed portfolio video is included; no course submission has been made. Video finalisation (2026-10-30): `assets/video/Nakhla IT Helpdesk portfolio.mp4` replaced byte-for-byte by the approved final cut (19,324,654 bytes, 2:24.34, SHA-256 `4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d`; the earlier 14,309,937-byte version, SHA-256 `ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e`, is backed up outside Git). Checks in this update were static (hashes, file counts, link targets); no tests, Docker, services or API calls were run, and the v1.0 tag has not been created.
-
-Current-source refresh: [27 October Docker verification](../evidence/docker-approval-incident-2026-10-27/SUMMARY.md) passed within its bounded scope. Historical isolated fresh-start and independent peer status remain separate.
+[MIT scope](../LICENSE-SCOPE.md), [third-party notices](../THIRD_PARTY_NOTICES.md)
+and [evidence-copy notice](EVIDENCE-COPY-NOTICE.md) still apply. Original local
+private evidence stays local; only portable/curated public material is included.

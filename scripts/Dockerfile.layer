@@ -1,0 +1,13 @@
+# Pip-free image refresh: copies the current source over an existing, already-built image, so NO package is
+# downloaded or installed (use it when the Docker build cache for the pip step is gone and you want the same
+# dependency set). Same four COPY lines as the main Dockerfile. Build context = project root, so .dockerignore
+# applies and secrets/, data/ and .env are never sent to the daemon.
+#
+#   docker build --network none -f scripts/Dockerfile.layer --build-arg BASE=nakhla-helpdesk-app:rollback-auth-82b7ec29c0be -t nakhla-helpdesk-app:auth-candidate .
+#   docker build --network none -f scripts/Dockerfile.layer --build-arg BASE=nakhla-helpdesk-ui:rollback-auth-3dd88dff7921  -t nakhla-helpdesk-ui:auth-candidate .
+ARG BASE
+FROM ${BASE}
+COPY app ./app
+COPY services ./services
+COPY dataset ./dataset
+COPY ui ./ui

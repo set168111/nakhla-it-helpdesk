@@ -6,8 +6,10 @@ services:
     build:
       context: .
       dockerfile: services/Dockerfile
-    ports:
-      - "8102:8102"
+    # NOT published to the host (local demo login): its /admin endpoints (list, reset, faults) and
+    # its business API need no employee login, so browsers and the network must not reach it. The
+    # app and the demo-admin pages reach it on the compose network. For the eval runner or
+    # check_kit.py use the opt-in override:  docker-compose -f docker-compose.yml -f docker-compose.eval.yml up -d
     environment:
       HELPDESK_API_KEY: ${HELPDESK_API_KEY:-dev-key-change-me}
       HELPDESK_TODAY: ${HELPDESK_TODAY:-}
@@ -16,7 +18,8 @@ services:
   app:
     build: .
     ports:
-      - "8000:8000"
+      # loopback only: every /api call needs a signed-in employee; /demo pages need the demo admin login
+      - "127.0.0.1:8000:8000"
     env_file: .env
     environment:
       HELPDESK_API_URL: http://helpdesk-api:8102
@@ -25,6 +28,11 @@ services:
     volumes:
       # Share the SAME spending ledger with local runs; packaging cannot reset budget.
       - ./data:/workspace/data
+      # LOCAL DEMO ONLY (run scripts/setup_demo_auth.py first). Read-only; only the demo-admin credential
+      # sheet and the two allow-listed demo assets are mounted - never eval/ or private/ secrets.
+      - ./secrets/demo:/workspace/secrets/demo:ro
+      - "./assets/video/Nakhla IT Helpdesk portfolio.mp4:/workspace/demo-assets/video.mp4:ro"
+      - ./docs/IT-Helpdesk-Presenter-v7.html:/workspace/demo-assets/presentation.html:ro
     # Explicit, budgeted real ingestion; cached restarts do not re-embed.
     # Missing credentials or budget stops startup instead of creating fake vectors.
     command: ["sh", "-c", "python -m app.retrieval ingest && exec python -m uvicorn app.main:app --host 0.0.0.0 --port 8000"]
@@ -43,9 +51,10 @@ services:
   ui:
     build: .
     ports:
-      - "7860:7860"
+      - "127.0.0.1:7860:7860"
     environment:
       APP_URL: http://app:8000
+      APP_PUBLIC_URL: ${APP_PUBLIC_URL:-http://localhost:8000}
       UI_HOST: 0.0.0.0
       GRADIO_ANALYTICS_ENABLED: "False"
     command: ["python", "ui/app_ui.py"]

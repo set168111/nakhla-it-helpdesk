@@ -13,3 +13,14 @@ Machine-specific native tooling, backup REQUIREMENTS.md, raw data/index/database
 Historical evidence may retain earlier budgets, file counts and verification stages. Those values are snapshots, not current package claims; use package-verification.json and publication-files.txt for this assembled copy. The current exact count is in package-verification.json. No original score or later retest is silently substituted.
 
 The isolated fresh-start evidence records a subsequent agent-run check, not an independent peer run. Its startup/interruption logs are reviewed copies with any private paths/credentials removed; raw local originals remain retained.
+
+
+## Coordinated November submission update
+
+The current source/setup/tests are copied from the reviewed working implementation.
+New manual/status docs distinguish Case19 user-verified PASS from incomplete
+Case20. The native stop helper now uses a portable root and the optional browser
+test example uses a clone-relative interpreter; both transformations are recorded.
+Current package verification/provenance supersede old file-count and source-parity
+claims without replacing historical tests or observations. No real passwords,
+password hashes, tokens, databases or private backups are package artifacts.

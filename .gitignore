@@ -24,8 +24,12 @@ chroma_db/
 .idea/
 .DS_Store
 Thumbs.db
+.claude/
 
-# Local package safety
+# local demo login: generated credentials (never commit)
+/secrets/
+
+# Retained publication exclusions
 .env.*
 !.env.example
 local-packages/
@@ -33,3 +37,6 @@ local-packages/
 **/pre-verification-data/
 **/pre-local-checkpoint-records/
 **/*browser-profile*/
+docker-compose.*.local.yml
+/private/
+*private-backup*/

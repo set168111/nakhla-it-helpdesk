@@ -1,0 +1,8 @@
+# OPT-IN override for the eval runner and check_kit.py ONLY:
+#   docker-compose -p nakhla-helpdesk -f docker-compose.yml -f docker-compose.eval.yml up -d --no-deps helpdesk-api
+# Publishes the simulator on the loopback interface only. Its /admin endpoints have no login (they are
+# test-only by the kit's design), so never use it on the retained main demo. Isolated eval/fault demos only; see docs/isolated-fault-demo.md.
+services:
+  helpdesk-api:
+    ports:
+      - "127.0.0.1:8102:8102"

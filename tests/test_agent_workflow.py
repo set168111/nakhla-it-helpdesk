@@ -145,7 +145,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
                  "claims": [{"text": "Three unexplained daily lockouts require Security Operations escalation at P2.", "chunk_ids": [CHUNK["chunk_id"]]}]}
         def drafting():
             return self.workflow({"action": "retrieve"}, draft, {"accepted": True, "complete": True})
-        result = await drafting().chat("s", followup, None)
+        result = await drafting().chat("s", followup, {"email": self.mcp.employee["email"]})
         self.assertEqual(result["state"], "await_confirmation")
         first = result["pending_action"]
         payload = first["payload"]
@@ -158,7 +158,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(self.mcp.writes, [])
         await self.approvals.decide("s", first["action_id"], False)
         self.assertEqual(self.mcp.writes, [])
-        second = (await drafting().chat("s", "Please prepare a fresh ticket draft.", None))["pending_action"]
+        second = (await drafting().chat("s", "Please prepare a fresh ticket draft.", {"email": self.mcp.employee["email"]}))["pending_action"]
         self.assertNotEqual(second["action_id"], first["action_id"])
         await self.approvals.decide("s", first["action_id"], True)
         self.assertEqual(self.mcp.writes, [])
@@ -269,7 +269,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         first=await self.chat(self.workflow({"action":"retrieve"}),crm)
         self.assertEqual(first["state"],"unknown")
         workflow=self.workflow()
-        missing=await workflow.chat("s","I haven't tried anything yet. Please prepare a ticket.",None)
+        missing=await workflow.chat("s","I haven't tried anything yet. Please prepare a ticket.",{"email":self.mcp.employee["email"]})
         self.assertEqual(missing["state"],"clarification")
         self.assertIn("workaround",missing["reply"])
         self.assertNotIn("error code",missing["reply"])
@@ -278,11 +278,11 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         draft={"intent":"draft","subject":"CRM-1150 contact-sync error","description":crm,"attempted_steps":[],"affected_users":1}
         def drafting():
             return self.workflow({"action":"retrieve"},draft,{"accepted":True,"complete":True})
-        first=await drafting().chat("s","I have a documented workaround: I can sync contacts using the web client.",None)
+        first=await drafting().chat("s","I have a documented workaround: I can sync contacts using the web client.", {"email": self.mcp.employee["email"]})
         old=first["pending_action"]
         self.assertEqual(old["payload"]["priority"],"P3")
         original=copy.deepcopy(self.store.get_action(old["action_id"]))
-        updated=await drafting().chat("s","This blocks me completely from working, and I have no workaround.",None)
+        updated=await drafting().chat("s","This blocks me completely from working, and I have no workaround.", {"email": self.mcp.employee["email"]})
         new=updated["pending_action"]
         self.assertEqual(new["payload"]["priority"],"P2")
         self.assertNotEqual(new["action_id"],old["action_id"])
@@ -296,7 +296,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         accepted=await self.approvals.decide("s",new["action_id"],True)
         self.assertTrue(accepted.get("result"))
         committed=copy.deepcopy(self.store.get_action(new["action_id"]))
-        revised=await drafting().chat("s","I can still work using a documented workaround.",None)
+        revised=await drafting().chat("s","I can still work using a documented workaround.", {"email": self.mcp.employee["email"]})
         self.assertEqual(revised["pending_action"]["payload"]["priority"],"P3")
         self.assertEqual(self.store.get_action(new["action_id"]),committed)
         self.assertEqual(len(self.mcp.writes),1)
@@ -577,9 +577,18 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
                 candidate["description"] = unsafe
                 workflow = self.workflow({"action": "retrieve"}, candidate, {"accepted": True, "complete": True})
                 result = await self.chat(workflow, "My Finance VPN shows NX-403. Prepare an escalation ticket.", session="payload-"+str(len(unsafe)))
-                self.assertIsNone(result["pending_action"])
                 self.assertNotIn(unsafe, result["reply"])
-                self.assertIsNone(self.store.latest_action("payload-"+str(len(unsafe))))
+                if "IT-2999" in unsafe:
+                    # Batch 8: the model description is discarded and replaced by the source-bound one
+                    # before review, so a model-invented id there can no longer reach any output. The
+                    # draft is built only from requester text; the id appears nowhere.
+                    self.assertEqual(result["state"], "await_confirmation")
+                    self.assertNotIn("IT-2999", json.dumps(result))
+                    self.assertNotIn("IT-2999", json.dumps(self.store.latest_action("payload-"+str(len(unsafe)))))
+                    self.assertEqual(self.mcp.writes, [])
+                else:
+                    self.assertIsNone(result["pending_action"])   # a credential is still blocked
+                    self.assertIsNone(self.store.latest_action("payload-"+str(len(unsafe))))
 
     async def test_unknown_error_rejects_adjacent_fix_but_permits_requested_escalation(self):
         workflow = self.workflow({"action": "retrieve"}, ANSWER, {"accepted": True, "complete": True})
@@ -662,7 +671,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.retrieval.chunks=[chunk]
         answer={"intent":"answer","claims":[{"text":chunk["text"],"chunk_ids":[chunk["chunk_id"]]}]}
         workflow=self.workflow({"action":"retrieve"},answer,{"accepted":True,"complete":True})
-        result=await workflow.chat("s","NX-781",None)
+        result=await workflow.chat("s","NX-781",{"email":self.mcp.employee["email"]})
         self.assertEqual(result["state"],"answer")
         self.assertIn("Minimum supported client: 5.4.",result["reply"])
         self.assertIn("Recommended client: 5.4.2",result["reply"])
@@ -699,7 +708,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         workflow=self.workflow()
         first=await self.chat(workflow,"VPN doesn't work")
         self.assertEqual(first["state"],"clarification")
-        result=await workflow.chat("s","NX-503",None)
+        result=await workflow.chat("s","NX-503",{"email":self.mcp.employee["email"]})
         self.assertEqual(result["state"],"active_incident")
         self.assertIn("INC-2207",result["reply"])
         self.assertIn("KB-015",result["reply"])
@@ -716,7 +725,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(first["state"],"active_incident")
         crm="The NakhlaCRM mobile app shows CRM-1150 when syncing contacts. How do I fix it?"
         workflow=self.workflow({"action":"retrieve"})
-        second=await workflow.chat("s",crm,None)
+        second=await workflow.chat("s",crm,{"email":self.mcp.employee["email"]})
         self.assertEqual(second["state"],"unknown")
         stored=self.store.get_session("s")
         self.assertNotIn("VPN",stored["issue"])
@@ -728,11 +737,11 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         draft={"intent":"draft","subject":"NakhlaCRM CRM-1150 contact sync failure",
                "description":"NakhlaCRM mobile app contact sync fails with CRM-1150.","attempted_steps":[],"affected_users":1}
         workflow=self.workflow({"action":"retrieve"},draft,{"accepted":True,"complete":True})
-        third=await workflow.chat("s","I haven’t tried anything yet. Please prepare a ticket.",None)
+        third=await workflow.chat("s","I haven’t tried anything yet. Please prepare a ticket.",{"email":self.mcp.employee["email"]})
         self.assertEqual(third["state"],"clarification")
         self.assertIn("workaround",third["reply"])
         self.assertNotIn("error code",third["reply"])
-        third=await workflow.chat("s","I can still work using a documented workaround.",None)
+        third=await workflow.chat("s","I can still work using a documented workaround.",{"email":self.mcp.employee["email"]})
         self.assertEqual(third["state"],"await_confirmation")
         payload=third["pending_action"]["payload"]
         self.assertEqual(payload["attempted_steps"],["I haven’t tried anything yet."])
@@ -926,7 +935,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertNotIn('IT-1002',result['reply'])
         self.assertNotIn('Private other issue',result['reply'])
         self.assertNotIn('INC-2207',result['reply'])
-        self.assertEqual(len(workflow.script_calls),1)
+        self.assertEqual(len(workflow.script_calls),0)  # list requests are deterministic now
         self.assertEqual(self.retrieval.queries,[])
         self.assertEqual(self.mcp.writes,[])
 
@@ -937,7 +946,9 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
                                    'subject':'Own history' if owned else 'Private other history','status':'resolved'}]
                 workflow=self.workflow({'action':'get_ticket','ticket_id':'IT-1001'})
                 result=await self.chat(workflow,'Show ticket IT-1001.',session='owner-'+str(owned))
-                self.assertEqual(result['state'],'history' if owned else 'stopped')
+                self.assertEqual(result['state'],'history' if owned else 'refused')
+                if not owned:
+                    self.assertIn('not available for your account',result['reply'])
                 if owned:
                     self.assertIn('IT-1001',result['reply'])
                 else:

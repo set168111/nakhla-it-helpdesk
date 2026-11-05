@@ -1,22 +1,25 @@
-PREPARED COMMANDS ONLY - NOT EXECUTED
-Use only for a separately authorized rehearsal/demo with API budget.
-These address the fictional simulator at8102, not the application ledger.
-Reset deletes currently created simulator tickets and logs; preserve needed evidence first.
-Do not run against the owner's current session just to prepare documentation.
+PREPARED ONLY - never executed by this submission update.
+Prerequisites: docs/isolated-fault-demo.md; separate clone/project/data/credentials;
+explicit authorization and API budget. Main simulator 8102 is unpublished.
+Use the app's protected /demo/tickets for ordinary instructor inspection.
 
-PowerShell - future simulator setup:
-Invoke-RestMethod -Method Post -Uri http://localhost:8102/admin/reset
-Invoke-RestMethod -Method Delete -Uri http://localhost:8102/admin/faults
+PowerShell: explicit isolated fixture endpoint (never main retained data):
+$demoBase = 'http://127.0.0.1:8104'
 
-PowerShell - show actual created tickets before/after approval or failure:
-Invoke-RestMethod -Uri http://localhost:8102/admin/tickets | ConvertTo-Json -Depth 10
+# Optional, destructive ONLY to this isolated simulator; preserve its evidence first.
+Invoke-RestMethod -Method Post -Uri ($demoBase + '/admin/reset')
+Invoke-RestMethod -Method Delete -Uri ($demoBase + '/admin/faults')
 
-PowerShell - arm the same supplemental create_ticket fault just before the dock case:
+# Read actual isolated count before/after explicitly authorized approval or failure.
+Invoke-RestMethod -Uri ($demoBase + '/admin/tickets') | ConvertTo-Json -Depth 10
+
+# Intentional supplemental create_ticket503 demonstration, retained by design.
 $demoFault = @{target='create_ticket'; mode='error_503'; count=5} | ConvertTo-Json
-Invoke-RestMethod -Method Post -Uri http://localhost:8102/admin/faults -ContentType 'application/json' -Body $demoFault
+Invoke-RestMethod -Method Post -Uri ($demoBase + '/admin/faults') -ContentType 'application/json' -Body $demoFault
 
-PowerShell - clear remaining demo faults after the failure segment:
-Invoke-RestMethod -Method Delete -Uri http://localhost:8102/admin/faults
+# Clear only isolated demo faults after the failure segment.
+Invoke-RestMethod -Method Delete -Uri ($demoBase + '/admin/faults')
 
-Do not delete data/, reset/restore spending.sqlite3, display .env or change application code.
-A failed dock attempt adds zero tickets; any earlier approved Finance ticket can remain.
+Never delete/restore data, reset spending, reveal credentials or operate on an
+existing owner's pending draft. A failed create adds no additional ticket; any
+earlier approved isolated Finance ticket may remain. S2-07 is not passed by this.

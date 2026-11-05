@@ -1,3 +1,40 @@
+# Current authenticated design - 5 November 2026
+
+Support selects bounded reads and drafts; Reviewer checks source grounding and
+completeness with one bounded correction. App code validates and proposes an
+immutable approval action; only approval code can create the exact saved ticket.
+
+Employee identity comes from verified local demo login and stable employee_id,
+not message text or asserted email. Conversation ownership applies to chat, recall,
+ticket reads and approval/rejection. Demo-admin login is separate and cannot
+impersonate employees; protected read-only pages are /demo/accounts and /demo/tickets.
+Default app/UI bindings are loopback; simulator 8102 is internal-only.
+
+Current-message assessment precedes context merging. Explicit ticket preparation,
+resumption and both clarification states retain safe requester facts and draft
+intent. Refused material is excluded before merging. Software service-request
+read clarification proceeds through structured missing-fact intake/review, while
+troubleshooting retains relevant error-code clarification. Case19's user-verified
+manager-only then attempted-step wording and approval-required software/P4 draft
+are recorded separately from Case20's safe but unhelpful incomplete snippets.
+Case20 code changes are deferred; comprehensive semantic classification is not claimed.
+
+Retrieval uses current/security/department precedence and cached real embeddings.
+Six model calls/six reads, deadlines and one connection/timeout read-selection
+retry share existing accounting; USD0.02 is an estimated turn allowance, not a
+guaranteed billing ceiling. Unknown billing remains reserved. Original dataset,
+simulator, pins and sample expectations remain unchanged.
+
+SQLite preserves history/actions/auth/spending; startup does not destructively
+clean records. A new message can supersede a pending draft, so new checks use a
+separate chat. No deployment, reset or approval is part of submission preparation.
+This HTTP/no-MFA local demo is not production OIDC authentication certification.
+[Setup/contract](docs/local-demo-login.md), [status](docs/submission-status.md),
+[source](app/agent.py), [approval](app/approvals.py), [identity](app/auth.py).
+Historical **65/69**, original failures and separate manual observations are retained.
+
+<details><summary>Original publication design observations (historical)</summary>
+
 # Accepted design - local user-testing checkpoint
 
 > **Publication status (29 October 2026):** this file is a dated working record from local development and is kept for provenance. Statements below such as "latest", "paused", "resume", local paths (including `local-packages/nakhla-it-helpdesk`) and 127.0.0.1 service state describe the original development machine, not this repository or a fresh clone. Public repository: https://github.com/set168111/nakhla-it-helpdesk (the course submission repository created from this package). The demo video segments exist; final assembly and upload are pending. No peer review or instructor approval is claimed, and supplied course-kit material is included under the assignment's instruction to copy the kit into a public project repository, keeps its own notices, and is not covered by the project's scoped MIT grant (see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)). Current setup instructions are in [README.md](README.md).
@@ -40,3 +77,5 @@ Source claims are bounded: this lexical recognizer and scripted offline checks d
 
 
 _Publication current-section extract; historical evidence retained._
+
+</details>

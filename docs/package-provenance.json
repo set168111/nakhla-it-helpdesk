@@ -1,2345 +1,1880 @@
 {
-  "scope": "Reviewed standalone publication copy for the repository set168111/nakhla-it-helpdesk (currently private; publication authorised by the course assignment); packaging prepared 2026-10-29",
-  "originals_retained_in_working_project": true,
-  "course_guidance": "Official-source pointer stubs, not redistributed course content/visuals",
+  "scope": "coordinated reviewed submission update, 2026-11-05; no commit/push/release",
+  "previous_publication_head": "e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+  "original_evidence_preserved": true,
+  "self_hash_exclusions": [
+    "docs/package-provenance.json",
+    "docs/package-verification.json",
+    "docs/publication-files.txt"
+  ],
+  "exclusion_reason": "avoid metadata self-reference; all paths remain in inclusion manifest",
   "files": [
     {
-      "original_local_path": ".dockerignore",
-      "original_sha256": "4204ad182c910a11fb7f4ae6fbb2ad548633c5432b06ea18a0c24ef8b821c85d",
       "package_path": ".dockerignore",
+      "package_sha256": "64c98dfd9279173fc9291e5504480ac19456c84c3cfba0970c37267fbc2148ec",
+      "source": "working project + previous publication ignore rules",
       "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4204ad182c910a11fb7f4ae6fbb2ad548633c5432b06ea18a0c24ef8b821c85d"
+        "merged exclusions; no runtime settings changed",
+        "trim trailing documentation/config whitespace; observations and effective configuration unchanged"
+      ]
     },
     {
-      "original_local_path": ".env.example",
-      "original_sha256": "19b9a4c4d711c6da07899357cfea0d214d7997d3d003bce4f2858616308c4745",
       "package_path": ".env.example",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "19b9a4c4d711c6da07899357cfea0d214d7997d3d003bce4f2858616308c4745"
+      "package_sha256": "7bf91c24dd8389fb7ebbe3690b1165ca6cfd37b8adc9f567c40cb27fc6078ad3",
+      "source": "working project/.env.example",
+      "source_sha256": "7bf91c24dd8389fb7ebbe3690b1165ca6cfd37b8adc9f567c40cb27fc6078ad3",
+      "transformations": []
     },
     {
-      "original_local_path": ".gitattributes",
-      "original_sha256": "89026083152332d3eff0f7553173b47fd9e8d8143de91eff2fe191cbd3cb476c",
       "package_path": ".gitattributes",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "89026083152332d3eff0f7553173b47fd9e8d8143de91eff2fe191cbd3cb476c"
+      "package_sha256": "89026083152332d3eff0f7553173b47fd9e8d8143de91eff2fe191cbd3cb476c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "89026083152332d3eff0f7553173b47fd9e8d8143de91eff2fe191cbd3cb476c",
+      "transformations": []
     },
     {
-      "original_local_path": ".gitignore",
-      "original_sha256": "5a38ead2ec8d487ca9a73d796981f66cc43a1d376c6bb5ca32ed5a0ed9b80a33",
       "package_path": ".gitignore",
+      "package_sha256": "1acaca0d1aaab6335f19166d379870fc02d7b5b743f561c31aaa04999defbbc6",
+      "source": "working project + previous publication ignore rules",
       "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "92943225f2c4ca5824014e1c475406e86dafffec1c552e1db7c47429e81ee710"
+        "merged exclusions; no runtime settings changed"
+      ]
     },
     {
-      "original_local_path": "DESIGN.md",
-      "original_sha256": "056f229c4a5052b867e13ca4f947cfd55f74fb154e518ec744385b2fd9fb9af5",
       "package_path": "DESIGN.md",
+      "package_sha256": "750d16c9c8dcc345da041340ca862d8d9f32614310db2a9f23018ca631581e3b",
+      "source": "working design/current source plus original publication design",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: working-project original gained a superseded-diagram note; this published copy is unchanged",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "209f93438c5c377e0df07d7d825a68dcf88b1c1293a9db60f7a90f771f849aaf"
+        "portable current design; preserve original publication observations as historical appendix"
+      ]
     },
     {
-      "original_local_path": "Dockerfile",
-      "original_sha256": "3ab85d5e2976c1c412e70f0fc023eb90eb69cda29ee4d157609a3b282826332a",
       "package_path": "Dockerfile",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "3ab85d5e2976c1c412e70f0fc023eb90eb69cda29ee4d157609a3b282826332a"
+      "package_sha256": "3ab85d5e2976c1c412e70f0fc023eb90eb69cda29ee4d157609a3b282826332a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "3ab85d5e2976c1c412e70f0fc023eb90eb69cda29ee4d157609a3b282826332a",
+      "transformations": []
     },
     {
-      "original_local_path": "HANDOVER.md",
-      "original_sha256": "349c5777543db88cd4c96db6e6aa996f6c60f5435e91c8084b0835e87d00fe01",
       "package_path": "HANDOVER.md",
+      "package_sha256": "1d79e600f82227c7256ac54daeca11fa8fe06c370be1a6e1fd7d8b4bcede17ac",
+      "source": "previous publication/HANDOVER.md",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "c7b07719f6512bf1e94382b97e614b12c4010a5b3a8f224a70b1cbdf50c6129a"
+        "current portable status; original observations retained as history"
+      ]
     },
     {
-      "original_local_path": "LICENSE-SCOPE.md",
-      "original_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a",
       "package_path": "LICENSE-SCOPE.md",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a"
+      "package_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d895bba44d2150ddf526331a8d5a6070c0de9134ff7129f17010d59f6522529a",
+      "transformations": []
     },
     {
-      "original_local_path": "LICENSE.md",
-      "original_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90",
       "package_path": "LICENSE.md",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90"
+      "package_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "609d73ebfc95d5bb35dee9f63ad97795a9f6d9a1523f9c2cb799dc28919a8c90",
+      "transformations": []
     },
     {
-      "original_local_path": "LICENSES/MIT.txt",
-      "original_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5",
       "package_path": "LICENSES/MIT.txt",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5"
+      "package_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6a89156ae4917675d511c48e04a15c2750b524723900252208cb9d6c51eda2d5",
+      "transformations": []
     },
     {
-      "original_local_path": "README.md",
-      "original_sha256": "cdf1db3d4cb483dc6cd8c18a52d8d2683f8a2297f0c908aac3c46e98c1a71fff",
       "package_path": "README.md",
+      "package_sha256": "52add9b3130628bc8481987f18efa7b6994bdcbced27f0f7ae9c9c4792f5d01b",
+      "source": "previous publication README + reviewed current startup/status",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: top portfolio-video link; video status updated; architecture section replaced with two screenshots, alt text and captions; editable-diagram link removed; \"public\" wording removed",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "b7c949954389f54719b5fb12d013fa08dd6609b01a2d4841a411cfa0566b159c"
+        "preserve publication/video/evidence history; replace outdated auth/port/startup guidance",
+        "trim trailing documentation/config whitespace; observations and effective configuration unchanged"
+      ]
     },
     {
-      "original_local_path": "REQUIREMENTS.md",
-      "original_sha256": "0a38043961dcce796c7375704ea0f5cc039832d4e88436613c501d4eb9b9a4f5",
       "package_path": "REQUIREMENTS.md",
+      "package_sha256": "d77bc6f78c03d59c5c520e6264671b678ae1bde8dce5627f4ff9977e1ea2576a",
+      "source": "previous publication/REQUIREMENTS.md",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: video-status row qualified; portfolio video linked",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "6195408584bf048ed401817f06e74aabd4d81feec13355eb022004941792a224"
+        "current portable status; original observations retained as history"
+      ]
     },
     {
-      "original_local_path": "TASKS.md",
-      "original_sha256": "d10246bd56fcabae142aa7868f14cae3d6b4557a7dd27964ad97ddac6c067744",
       "package_path": "TASKS.md",
+      "package_sha256": "7d1d62959398b96171983560e1cd5e0afcd42bef72784783c3f7aa49ca4ff2af",
+      "source": "previous publication/TASKS.md",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "current-section extract",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: dated planning-page references qualified; portfolio video linked",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "bc119290d4968fc3d79e6a6840a7a9cb8e509482cf98a5e9ac9cd999da46db4c"
+        "current portable status; original observations retained as history"
+      ]
     },
     {
-      "original_local_path": "THIRD_PARTY_NOTICES.md",
-      "original_sha256": "2f56917e93b128b3b5760775cf7df19383b8bea838ede7c5eabe9ce95937a0ac",
       "package_path": "THIRD_PARTY_NOTICES.md",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
-      ],
-      "redactions": 0,
-      "package_sha256": "4a4454783a7327b1c17e818d57bdfd07df70eb6949ee80dea3ca9a1e6c905ddb"
+      "package_sha256": "4a4454783a7327b1c17e818d57bdfd07df70eb6949ee80dea3ca9a1e6c905ddb",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4a4454783a7327b1c17e818d57bdfd07df70eb6949ee80dea3ca9a1e6c905ddb",
+      "transformations": []
     },
     {
-      "original_local_path": "app/__init__.py",
-      "original_sha256": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b",
       "package_path": "app/__init__.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b"
+      "package_sha256": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "873ed0eb3e35c50eb4ed7e5841038b448286279bd24edf09c3f3a5dc9a91c34b",
+      "transformations": []
     },
     {
-      "original_local_path": "app/agent.py",
-      "original_sha256": "c158fc0c5f4dc290a71407425ca301c1f3afc3987a997101064477344a3f536a",
       "package_path": "app/agent.py",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "38f20e8a160ca8fa05aa8c48b88f155f9b146afbb9644496b18a40f7d397e40b"
+      "package_sha256": "e4d820fdffd31f27120ac8501031476b3019a5de8a8a7e7223aa1734d951d9a4",
+      "source": "working project/app/agent.py",
+      "source_sha256": "e4d820fdffd31f27120ac8501031476b3019a5de8a8a7e7223aa1734d951d9a4",
+      "transformations": []
     },
     {
-      "original_local_path": "app/approvals.py",
-      "original_sha256": "d3d561352a0dc9045f21e60037b9aafe7a9b5ddb6e0533ede11dc359410c2397",
       "package_path": "app/approvals.py",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "d3d561352a0dc9045f21e60037b9aafe7a9b5ddb6e0533ede11dc359410c2397"
+      "package_sha256": "d3d561352a0dc9045f21e60037b9aafe7a9b5ddb6e0533ede11dc359410c2397",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d3d561352a0dc9045f21e60037b9aafe7a9b5ddb6e0533ede11dc359410c2397",
+      "transformations": []
     },
     {
-      "original_local_path": "app/helpdesk_policy.py",
-      "original_sha256": "f234b76188e709fe4d304ccc1406dd789584a5d7abbc8521e7565f65997d7460",
+      "package_path": "app/auth.py",
+      "package_sha256": "cf73b1b220702d8f5e4f8f4a1072119c9ae2d3996b545854b51f1a241764864e",
+      "source": "working project/app/auth.py",
+      "source_sha256": "cf73b1b220702d8f5e4f8f4a1072119c9ae2d3996b545854b51f1a241764864e",
+      "transformations": []
+    },
+    {
+      "package_path": "app/demo_admin.py",
+      "package_sha256": "708683fd3c28bee06f00bc54b4745373a83b80c9b66a1c6ae105612769bb319c",
+      "source": "working project/app/demo_admin.py",
+      "source_sha256": "708683fd3c28bee06f00bc54b4745373a83b80c9b66a1c6ae105612769bb319c",
+      "transformations": []
+    },
+    {
       "package_path": "app/helpdesk_policy.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "f234b76188e709fe4d304ccc1406dd789584a5d7abbc8521e7565f65997d7460"
+      "package_sha256": "814fa61341172b10ca6752450c7ad3cb7498e0e7a43768c53d3d0e58f93bba5c",
+      "source": "working project/app/helpdesk_policy.py",
+      "source_sha256": "814fa61341172b10ca6752450c7ad3cb7498e0e7a43768c53d3d0e58f93bba5c",
+      "transformations": []
     },
     {
-      "original_local_path": "app/main.py",
-      "original_sha256": "887dc93c8c243190c3e3e8d42855cad2af17dbba6c669364cad40f2d4267a3f8",
       "package_path": "app/main.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "887dc93c8c243190c3e3e8d42855cad2af17dbba6c669364cad40f2d4267a3f8"
+      "package_sha256": "e24cbe210be672452f97a5c93416ee389ed7df9b4512917b23b507da4c6fa7d0",
+      "source": "working project/app/main.py",
+      "source_sha256": "e24cbe210be672452f97a5c93416ee389ed7df9b4512917b23b507da4c6fa7d0",
+      "transformations": []
     },
     {
-      "original_local_path": "app/mcp_client.py",
-      "original_sha256": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186",
       "package_path": "app/mcp_client.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186"
+      "package_sha256": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "488e07962c9344fa230c4323615b58f7ece4befac60ddf3e7f54da5cc2cc7186",
+      "transformations": []
     },
     {
-      "original_local_path": "app/retrieval.py",
-      "original_sha256": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd",
       "package_path": "app/retrieval.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd"
+      "package_sha256": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "788f3a305570303e0b7be716612018664446cc90985b2a9aaf21b8a6521cbcfd",
+      "transformations": []
     },
     {
-      "original_local_path": "app/storage.py",
-      "original_sha256": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351",
       "package_path": "app/storage.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351"
+      "package_sha256": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fddc60f45dbebba25113d5c626fdbb100213da27cb474540108c5ded0f30e351",
+      "transformations": []
     },
     {
-      "original_local_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "original_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
       "package_path": "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "transformations": [
-        "added 2026-10-29: completed portfolio video (2:24, 144.341 s), copied byte-for-byte from the working project; not re-encoded",
-        "updated 2026-10-30: replaced byte-for-byte by the approved final cut (19,324,654 bytes, 2:24.34; previous 14,309,937-byte version ad0b57fb3770a417f7f347cc94bc5cfc7c94dfb8c11da0e3175c58afae28fd0e backed up outside Git); not re-encoded"
-      ],
-      "redactions": 0,
-      "package_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d"
+      "package_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
+      "transformations": []
     },
     {
-      "original_local_path": "check_kit.py",
-      "original_sha256": "a99959f3e060e8fb1f2a2be4cbc312649a73c90c6716e4defdc495291813e406",
       "package_path": "check_kit.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a99959f3e060e8fb1f2a2be4cbc312649a73c90c6716e4defdc495291813e406"
+      "package_sha256": "a99959f3e060e8fb1f2a2be4cbc312649a73c90c6716e4defdc495291813e406",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a99959f3e060e8fb1f2a2be4cbc312649a73c90c6716e4defdc495291813e406",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/README.md",
-      "original_sha256": "d038768df8df9a31adee9568ca6b2eef4ab804a8a4fc0c6c0b58b68dfa5c3d05",
       "package_path": "dataset/README.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d038768df8df9a31adee9568ca6b2eef4ab804a8a4fc0c6c0b58b68dfa5c3d05"
+      "package_sha256": "d038768df8df9a31adee9568ca6b2eef4ab804a8a4fc0c6c0b58b68dfa5c3d05",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d038768df8df9a31adee9568ca6b2eef4ab804a8a4fc0c6c0b58b68dfa5c3d05",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-001-vpn-legacy-install-guide.md",
-      "original_sha256": "552a727be0f6215cd319c69ead539016b6d73b97380de654557d18f84f0bd8b5",
       "package_path": "dataset/knowledge_base/KB-001-vpn-legacy-install-guide.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "552a727be0f6215cd319c69ead539016b6d73b97380de654557d18f84f0bd8b5"
+      "package_sha256": "552a727be0f6215cd319c69ead539016b6d73b97380de654557d18f84f0bd8b5",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "552a727be0f6215cd319c69ead539016b6d73b97380de654557d18f84f0bd8b5",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-002-vpn-error-codes-and-fixes.md",
-      "original_sha256": "2b65d6a19ea8d3a1ba188f30b36dd613fea3d5936ec7b5039b02dc0f4be6724a",
       "package_path": "dataset/knowledge_base/KB-002-vpn-error-codes-and-fixes.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "2b65d6a19ea8d3a1ba188f30b36dd613fea3d5936ec7b5039b02dc0f4be6724a"
+      "package_sha256": "2b65d6a19ea8d3a1ba188f30b36dd613fea3d5936ec7b5039b02dc0f4be6724a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "2b65d6a19ea8d3a1ba188f30b36dd613fea3d5936ec7b5039b02dc0f4be6724a",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-003-office-wifi.md",
-      "original_sha256": "b6529a3291679d8b977bb42c6edf4fc6ddbd3e5786eee12943f33be6a8182527",
       "package_path": "dataset/knowledge_base/KB-003-office-wifi.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b6529a3291679d8b977bb42c6edf4fc6ddbd3e5786eee12943f33be6a8182527"
+      "package_sha256": "b6529a3291679d8b977bb42c6edf4fc6ddbd3e5786eee12943f33be6a8182527",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b6529a3291679d8b977bb42c6edf4fc6ddbd3e5786eee12943f33be6a8182527",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-004-password-reset-self-service.md",
-      "original_sha256": "81399e6b26dfe8c786b8f32fae300e68a5ed9697cd1692184235565a64c80552",
       "package_path": "dataset/knowledge_base/KB-004-password-reset-self-service.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "81399e6b26dfe8c786b8f32fae300e68a5ed9697cd1692184235565a64c80552"
+      "package_sha256": "81399e6b26dfe8c786b8f32fae300e68a5ed9697cd1692184235565a64c80552",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "81399e6b26dfe8c786b8f32fae300e68a5ed9697cd1692184235565a64c80552",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-005-password-reset-by-phone-legacy.md",
-      "original_sha256": "054bfd3cf8163589d3b7b7e57a0f5d07568deeb0b2de90b2eb9cd377a373482f",
       "package_path": "dataset/knowledge_base/KB-005-password-reset-by-phone-legacy.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "054bfd3cf8163589d3b7b7e57a0f5d07568deeb0b2de90b2eb9cd377a373482f"
+      "package_sha256": "054bfd3cf8163589d3b7b7e57a0f5d07568deeb0b2de90b2eb9cd377a373482f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "054bfd3cf8163589d3b7b7e57a0f5d07568deeb0b2de90b2eb9cd377a373482f",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-006-account-lockout.md",
-      "original_sha256": "d92ce5f19af67eb5b5f7e2016f64d002851116ae5c1ee87f3ceb03c5df59bbca",
       "package_path": "dataset/knowledge_base/KB-006-account-lockout.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d92ce5f19af67eb5b5f7e2016f64d002851116ae5c1ee87f3ceb03c5df59bbca"
+      "package_sha256": "d92ce5f19af67eb5b5f7e2016f64d002851116ae5c1ee87f3ceb03c5df59bbca",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d92ce5f19af67eb5b5f7e2016f64d002851116ae5c1ee87f3ceb03c5df59bbca",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-007-nakhlakey-mfa.md",
-      "original_sha256": "0af2a7b6380baa302d1a3ab89e9b7250197ff9e24095df5eee2b3980e1a54782",
       "package_path": "dataset/knowledge_base/KB-007-nakhlakey-mfa.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "0af2a7b6380baa302d1a3ab89e9b7250197ff9e24095df5eee2b3980e1a54782"
+      "package_sha256": "0af2a7b6380baa302d1a3ab89e9b7250197ff9e24095df5eee2b3980e1a54782",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "0af2a7b6380baa302d1a3ab89e9b7250197ff9e24095df5eee2b3980e1a54782",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-008-sso-app-errors.md",
-      "original_sha256": "5dd912f6dcf5c420559d3a5c1ae64d09168b6baf3990227a01320897c315b3d9",
       "package_path": "dataset/knowledge_base/KB-008-sso-app-errors.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "5dd912f6dcf5c420559d3a5c1ae64d09168b6baf3990227a01320897c315b3d9"
+      "package_sha256": "5dd912f6dcf5c420559d3a5c1ae64d09168b6baf3990227a01320897c315b3d9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5dd912f6dcf5c420559d3a5c1ae64d09168b6baf3990227a01320897c315b3d9",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-009-software-center-and-requests.md",
-      "original_sha256": "cf381ed56eb828fd39c6f4cbd88cc3bf642520eccbbf31e6c1710057e99583cd",
       "package_path": "dataset/knowledge_base/KB-009-software-center-and-requests.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "cf381ed56eb828fd39c6f4cbd88cc3bf642520eccbbf31e6c1710057e99583cd"
+      "package_sha256": "cf381ed56eb828fd39c6f4cbd88cc3bf642520eccbbf31e6c1710057e99583cd",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "cf381ed56eb828fd39c6f4cbd88cc3bf642520eccbbf31e6c1710057e99583cd",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-010-devices-nakhlamanage.md",
-      "original_sha256": "647d80b483ee03d225b81c963b8ef37f339c253fc4571cddd954f54b5f000d09",
       "package_path": "dataset/knowledge_base/KB-010-devices-nakhlamanage.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "647d80b483ee03d225b81c963b8ef37f339c253fc4571cddd954f54b5f000d09"
+      "package_sha256": "647d80b483ee03d225b81c963b8ef37f339c253fc4571cddd954f54b5f000d09",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "647d80b483ee03d225b81c963b8ef37f339c253fc4571cddd954f54b5f000d09",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-011-access-permissions.md",
-      "original_sha256": "62272a7a95191cd3263ce62355921904d11bcd912d3b4b3194bb8313d403da82",
       "package_path": "dataset/knowledge_base/KB-011-access-permissions.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "62272a7a95191cd3263ce62355921904d11bcd912d3b4b3194bb8313d403da82"
+      "package_sha256": "62272a7a95191cd3263ce62355921904d11bcd912d3b4b3194bb8313d403da82",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "62272a7a95191cd3263ce62355921904d11bcd912d3b4b3194bb8313d403da82",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-012-onboarding-offboarding.pdf",
-      "original_sha256": "889e5f7b3dfac453fc7f5233371878ef783dd2aa909f9ede4be27748286931a4",
       "package_path": "dataset/knowledge_base/KB-012-onboarding-offboarding.pdf",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "889e5f7b3dfac453fc7f5233371878ef783dd2aa909f9ede4be27748286931a4"
+      "package_sha256": "889e5f7b3dfac453fc7f5233371878ef783dd2aa909f9ede4be27748286931a4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "889e5f7b3dfac453fc7f5233371878ef783dd2aa909f9ede4be27748286931a4",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-013-printing-quick-guide.pdf",
-      "original_sha256": "b9e455d30a6c54c84d3fa7f64d491cc268f046f54d0c106e2884a2f361d5f15c",
       "package_path": "dataset/knowledge_base/KB-013-printing-quick-guide.pdf",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b9e455d30a6c54c84d3fa7f64d491cc268f046f54d0c106e2884a2f361d5f15c"
+      "package_sha256": "b9e455d30a6c54c84d3fa7f64d491cc268f046f54d0c106e2884a2f361d5f15c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b9e455d30a6c54c84d3fa7f64d491cc268f046f54d0c106e2884a2f361d5f15c",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-014-nakhla-mail.md",
-      "original_sha256": "b887f00274ecce5624cba5efb7a8fe3aa8d370c025b4da6397bfd66a4e930b54",
       "package_path": "dataset/knowledge_base/KB-014-nakhla-mail.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b887f00274ecce5624cba5efb7a8fe3aa8d370c025b4da6397bfd66a4e930b54"
+      "package_sha256": "b887f00274ecce5624cba5efb7a8fe3aa8d370c025b4da6397bfd66a4e930b54",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b887f00274ecce5624cba5efb7a8fe3aa8d370c025b4da6397bfd66a4e930b54",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-015-priorities-escalation-status-page.md",
-      "original_sha256": "af4e075c5efaa6feac10502555927631ee565a28891b8dbd884e4d7c3aef5a1b",
       "package_path": "dataset/knowledge_base/KB-015-priorities-escalation-status-page.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "af4e075c5efaa6feac10502555927631ee565a28891b8dbd884e4d7c3aef5a1b"
+      "package_sha256": "af4e075c5efaa6feac10502555927631ee565a28891b8dbd884e4d7c3aef5a1b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "af4e075c5efaa6feac10502555927631ee565a28891b8dbd884e4d7c3aef5a1b",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-016-department-matrix.md",
-      "original_sha256": "02fad161a3bb49bcbc5efd59f9a7b3649187f449d26a39675ad0b1bff3828158",
       "package_path": "dataset/knowledge_base/KB-016-department-matrix.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "02fad161a3bb49bcbc5efd59f9a7b3649187f449d26a39675ad0b1bff3828158"
+      "package_sha256": "02fad161a3bb49bcbc5efd59f9a7b3649187f449d26a39675ad0b1bff3828158",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "02fad161a3bb49bcbc5efd59f9a7b3649187f449d26a39675ad0b1bff3828158",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-017-service-desk-faq.md",
-      "original_sha256": "1131dd61c7d6a745d25f5459d6e440322d655f2fa2551599e7cc0b5098ee4f0d",
       "package_path": "dataset/knowledge_base/KB-017-service-desk-faq.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "1131dd61c7d6a745d25f5459d6e440322d655f2fa2551599e7cc0b5098ee4f0d"
+      "package_sha256": "1131dd61c7d6a745d25f5459d6e440322d655f2fa2551599e7cc0b5098ee4f0d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "1131dd61c7d6a745d25f5459d6e440322d655f2fa2551599e7cc0b5098ee4f0d",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/KB-018-community-wiki-vpn-tips.md",
-      "original_sha256": "5f02a7929bf20490aaa2d64022de5f3c6dba1e74a3c6cb176382b2cf7a3d1137",
       "package_path": "dataset/knowledge_base/KB-018-community-wiki-vpn-tips.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "5f02a7929bf20490aaa2d64022de5f3c6dba1e74a3c6cb176382b2cf7a3d1137"
+      "package_sha256": "5f02a7929bf20490aaa2d64022de5f3c6dba1e74a3c6cb176382b2cf7a3d1137",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5f02a7929bf20490aaa2d64022de5f3c6dba1e74a3c6cb176382b2cf7a3d1137",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/SP-001-account-security-policy.md",
-      "original_sha256": "d41f40a9f3e0a9034e69ef26df2d9889e6b2a6171bb0190c7ba406ab4f2d433c",
       "package_path": "dataset/knowledge_base/SP-001-account-security-policy.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d41f40a9f3e0a9034e69ef26df2d9889e6b2a6171bb0190c7ba406ab4f2d433c"
+      "package_sha256": "d41f40a9f3e0a9034e69ef26df2d9889e6b2a6171bb0190c7ba406ab4f2d433c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d41f40a9f3e0a9034e69ef26df2d9889e6b2a6171bb0190c7ba406ab4f2d433c",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/knowledge_base/SP-002-mfa-device-security-policy.md",
-      "original_sha256": "6306025313051f4598afafaed50e7dc815c3dd4783196b89b7ea4cedfa4d5418",
       "package_path": "dataset/knowledge_base/SP-002-mfa-device-security-policy.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "6306025313051f4598afafaed50e7dc815c3dd4783196b89b7ea4cedfa4d5418"
+      "package_sha256": "6306025313051f4598afafaed50e7dc815c3dd4783196b89b7ea4cedfa4d5418",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6306025313051f4598afafaed50e7dc815c3dd4783196b89b7ea4cedfa4d5418",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/manifest.json",
-      "original_sha256": "ee9b126baa2bf55f1fe5971b679d613629abbfcb217de03ee269c8c4f2a3537f",
       "package_path": "dataset/manifest.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "ee9b126baa2bf55f1fe5971b679d613629abbfcb217de03ee269c8c4f2a3537f"
+      "package_sha256": "ee9b126baa2bf55f1fe5971b679d613629abbfcb217de03ee269c8c4f2a3537f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ee9b126baa2bf55f1fe5971b679d613629abbfcb217de03ee269c8c4f2a3537f",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/schemas/kb_front_matter.schema.json",
-      "original_sha256": "66853b8fd687a3b445c9b6b62c0a0fb489b8cae74ee95d2d2410432dea63bdb3",
       "package_path": "dataset/schemas/kb_front_matter.schema.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "66853b8fd687a3b445c9b6b62c0a0fb489b8cae74ee95d2d2410432dea63bdb3"
+      "package_sha256": "66853b8fd687a3b445c9b6b62c0a0fb489b8cae74ee95d2d2410432dea63bdb3",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "66853b8fd687a3b445c9b6b62c0a0fb489b8cae74ee95d2d2410432dea63bdb3",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/schemas/ticket.schema.json",
-      "original_sha256": "80ac79e3aa276188f1098d2accc8f72ac409d9ee8977e20bc9d34a415181f42c",
       "package_path": "dataset/schemas/ticket.schema.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "80ac79e3aa276188f1098d2accc8f72ac409d9ee8977e20bc9d34a415181f42c"
+      "package_sha256": "80ac79e3aa276188f1098d2accc8f72ac409d9ee8977e20bc9d34a415181f42c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "80ac79e3aa276188f1098d2accc8f72ac409d9ee8977e20bc9d34a415181f42c",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/student_scenarios/sample_requests.md",
-      "original_sha256": "c405ecffcc726408764d5eb8b388a01aae8bfca67ef1832e12a50eb7b6ec20c4",
       "package_path": "dataset/student_scenarios/sample_requests.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "c405ecffcc726408764d5eb8b388a01aae8bfca67ef1832e12a50eb7b6ec20c4"
+      "package_sha256": "c405ecffcc726408764d5eb8b388a01aae8bfca67ef1832e12a50eb7b6ec20c4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c405ecffcc726408764d5eb8b388a01aae8bfca67ef1832e12a50eb7b6ec20c4",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/tickets/historical_tickets.json",
-      "original_sha256": "094e92aafa14ba8056b508e14c22f634d85f32d08b8d706c09f38c4c778e55fe",
       "package_path": "dataset/tickets/historical_tickets.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "094e92aafa14ba8056b508e14c22f634d85f32d08b8d706c09f38c4c778e55fe"
+      "package_sha256": "094e92aafa14ba8056b508e14c22f634d85f32d08b8d706c09f38c4c778e55fe",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "094e92aafa14ba8056b508e14c22f634d85f32d08b8d706c09f38c4c778e55fe",
+      "transformations": []
     },
     {
-      "original_local_path": "dataset/validate_dataset.py",
-      "original_sha256": "b078d5af9ab909ee219b5cc4def2724ef4cad3964eb440aa8908199878794843",
       "package_path": "dataset/validate_dataset.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b078d5af9ab909ee219b5cc4def2724ef4cad3964eb440aa8908199878794843"
+      "package_sha256": "b078d5af9ab909ee219b5cc4def2724ef4cad3964eb440aa8908199878794843",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b078d5af9ab909ee219b5cc4def2724ef4cad3964eb440aa8908199878794843",
+      "transformations": []
     },
     {
-      "original_local_path": "docker-compose.yml",
-      "original_sha256": "e7dc020669e31135d6ddd76bd4eb1567e58919b405f17ff35ff02d63abf9ed20",
+      "package_path": "docker-compose.eval.yml",
+      "package_sha256": "af533e10bc2b3e808ab3527044ba93fd99ecef9d94cfe801aeccfc2f5c36c0c1",
+      "source": "working project/docker-compose.eval.yml",
+      "transformations": [
+        "clarify intentionally isolated fault/eval use; effective configuration unchanged"
+      ]
+    },
+    {
       "package_path": "docker-compose.yml",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "e7dc020669e31135d6ddd76bd4eb1567e58919b405f17ff35ff02d63abf9ed20"
+      "package_sha256": "9658eb2027ddbdf0db36bb6c51b5c3dc69834856162355c3595a4be5352d1e20",
+      "source": "working project/docker-compose.yml",
+      "source_sha256": "9658eb2027ddbdf0db36bb6c51b5c3dc69834856162355c3595a4be5352d1e20",
+      "transformations": []
     },
     {
-      "original_local_path": "docs/EVIDENCE-COPY-NOTICE.md",
-      "original_sha256": "2704a7792e658529e8767714c886a89aa0a8b477213fcf24edb90caabfb18663",
+      "package_path": "docs/CHECKPOINT-2026-11-05.md",
+      "package_sha256": "6abe1ca7e973ba52203f8f5053251d350eddc1a2deec9809c414fa69c3c0e6a0",
+      "source": "coordinated submission documentation",
+      "transformations": [
+        "generated portable publication document"
+      ]
+    },
+    {
       "package_path": "docs/EVIDENCE-COPY-NOTICE.md",
+      "package_sha256": "186c4e90921c29b17def578bea676a83bd57a48a55628837b403d4be152eb934",
+      "source": "previous publication evidence notice",
       "transformations": [
-        "reviewed copy; original content retained",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated"
-      ],
-      "redactions": 0,
-      "package_sha256": "74d8645f8c2745e48771eb14491562cd2845479c031956379934c9e9a136251b"
+        "append current inclusion/privacy/transformation scope; original notice retained"
+      ]
     },
     {
-      "original_local_path": "docs/architecture-answer-draft.png",
-      "original_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
+      "package_path": "docs/IT-Helpdesk-Presenter-v7.html",
+      "package_sha256": "5533afdd03506086703a22c275fb5787fa5fb0487c7968074cd0c8117b2274db",
+      "source": "working project/docs/IT-Helpdesk-Presenter-v7.html",
+      "transformations": [
+        "relative evidence pointers; current local-auth limitation; no machine paths"
+      ]
+    },
+    {
       "package_path": "docs/architecture-answer-draft.png",
-      "transformations": [
-        "added 2026-10-29: architecture screenshot (3180x1725) rendered from a temporary copy of the supplied-design slides HTML; original HTML not modified"
-      ],
-      "redactions": 0,
-      "package_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a"
+      "package_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e828de36c2cf9c296a45a809d5254ecdbc74a096d42e1bc8bc26a14ac9cfa98a",
+      "transformations": []
     },
     {
-      "original_local_path": "docs/architecture-approval-ticket.png",
-      "original_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263",
       "package_path": "docs/architecture-approval-ticket.png",
-      "transformations": [
-        "added 2026-10-29: architecture screenshot (3180x1725) rendered from a temporary copy of the supplied-design slides HTML; original HTML not modified"
-      ],
-      "redactions": 0,
-      "package_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263"
+      "package_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ced44075e8f0948b6d1819c93546b3c3b0b411293361569038d9a1bad83c1263",
+      "transformations": []
     },
     {
-      "original_local_path": "docs/architecture.mmd",
-      "original_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7",
       "package_path": "docs/architecture.mmd",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "2026-10-29 video/architecture update: superseded notice (comment lines) added; diagram unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7"
+      "package_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "8346e3054c507069a0332f4949d1d1232afa46238e97189ec2c12af59780dfd7",
+      "transformations": []
     },
     {
-      "original_local_path": "docs/demo-commands.txt",
-      "original_sha256": "4a22a4a23c0a09898c04648769bde443311335135c3c638db19eddccc8565fda",
       "package_path": "docs/demo-commands.txt",
+      "package_sha256": "1f5049ead1f307c3c7d04e3f85fec8f19f3bacc109cb90484c89dfb0fa0e9895",
+      "source": "working project/docs/demo-commands.txt",
       "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4a22a4a23c0a09898c04648769bde443311335135c3c638db19eddccc8565fda"
+        "portable publication copy"
+      ]
     },
     {
-      "original_local_path": "docs/fresh-start-check.md",
-      "original_sha256": "cfec091626dfd80a54fe077f67911fa15f87bda5e00f31bd021a53827b4feb59",
+      "package_path": "docs/demo.md",
+      "package_sha256": "2b40de8658fdb3d67a6c9fe03d7634dbad399b906a071a6eb70aab943435fabd",
+      "source": "working project/docs/demo.md",
+      "transformations": [
+        "portable publication copy"
+      ]
+    },
+    {
       "package_path": "docs/fresh-start-check.md",
+      "package_sha256": "568da927019d4f31bd725f8fc0bdbde44a329637b363e52da591b4a7c1b5d5d6",
+      "source": "working project/docs/fresh-start-check.md",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "cfec091626dfd80a54fe077f67911fa15f87bda5e00f31bd021a53827b4feb59"
+        "portable publication copy"
+      ]
     },
     {
-      "original_local_path": "docs/local-testing.md",
-      "original_sha256": "fd1c8eb2345c0c13d6d0705dd7b0c99efcbdf3d0a74411843d434a6b30d2bab1",
+      "package_path": "docs/isolated-fault-demo.md",
+      "package_sha256": "01e87a4517ce4337dfa83b203e577f6c196783ded9d9f7db2e52177e32785a9e",
+      "source": "working project/docs/isolated-fault-demo.md",
+      "transformations": [
+        "portable publication copy"
+      ]
+    },
+    {
+      "package_path": "docs/local-demo-login.md",
+      "package_sha256": "4821d0cb9dc13151a531f56d641777f109f05f3c47d56199e8de3476a76a5cd3",
+      "source": "working project/docs/local-demo-login.md",
+      "transformations": [
+        "current setup excerpt; obsolete implementation/rollback archive retained only in working project",
+        "trim trailing documentation/config whitespace; observations and effective configuration unchanged"
+      ]
+    },
+    {
       "package_path": "docs/local-testing.md",
+      "package_sha256": "3fa4e879aa9b47ffe0b1fbe4f2928d3bee60b77f3a6cca54441a9b8523c32de4",
+      "source": "previous publication/docs/local-testing.md",
       "transformations": [
-        "publication-specific operations extract; machine-specific native instructions omitted",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: planning-page links replaced by portfolio-video link"
-      ],
-      "redactions": 0,
-      "package_sha256": "32e8dda6d87a5c2e34b1f161673a5003dd1de9464415ee9d32c6e21929fdeb78"
+        "current portable status; original observations retained as history",
+        "update startup anchor to current README heading"
+      ]
     },
     {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/package-provenance.json",
+      "package_path": "docs/manual-security-test-tracker.md",
+      "package_sha256": "f5cb95778add393070fd46102b79d695ff568ae242ee62acec121464659da6a7",
+      "source": "working project/docs/manual-security-test-tracker.md",
       "transformations": [
-        "generated record; own hash not recorded (self-referential)"
-      ],
-      "redactions": 0,
-      "package_sha256": null
+        "portable publication copy",
+        "trim trailing documentation/config whitespace; observations and effective configuration unchanged"
+      ]
     },
     {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/package-verification.json",
-      "transformations": [
-        "generated record; own hash not recorded (self-referential)"
-      ],
-      "redactions": 0,
-      "package_sha256": null
-    },
-    {
-      "original_local_path": "docs/peer-preflight.md",
-      "original_sha256": "c70b053ba9604701a88f51a2f1db5bb7ec528d474de2596532e1f4be0aa78455",
       "package_path": "docs/peer-preflight.md",
+      "package_sha256": "9eb123f0c58a3a9304c06292851082a81cc48a7bd862a7b90b54cfa2c59de957",
+      "source": "working project/docs/peer-preflight.md",
       "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "c70b053ba9604701a88f51a2f1db5bb7ec528d474de2596532e1f4be0aa78455"
+        "portable publication copy"
+      ]
     },
     {
-      "original_local_path": "docs/publication-files.md",
-      "original_sha256": "361739ca2a266e543699dc28b48cfdbff48329babd85effe0b1d90b05496cb0a",
       "package_path": "docs/publication-files.md",
+      "package_sha256": "b52d7fc7d571fb24bf09ca285eaeea26a06f23bdc9b91ea3de064b4e3d0e61c1",
+      "source": "coordinated submission documentation",
       "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged",
-        "preserved package-specific manifest explanation",
-        "publication wording refresh: assignment-authorised public repository; supplied-kit snapshot and licence boundary stated",
-        "2026-10-29 video/architecture update: paths/counts and wording updated for 219-path list",
-        "2026-10-30 contributor attribution update: contributor named as Sari Tahhan; GitHub username retained in URLs/identifiers"
-      ],
-      "redactions": 0,
-      "package_sha256": "64f05e4e886c910f4b1a360bd62730f3059e6d0208efa60c968a3f3bf88c6f56"
+        "generated portable publication document"
+      ]
     },
     {
-      "original_local_path": null,
-      "original_sha256": null,
-      "package_path": "docs/publication-files.txt",
-      "transformations": [
-        "generated path list of the files committed (219, including itself and the two JSON records); updated 2026-10-29 for the video, two screenshots and removal of two planning pages"
-      ],
-      "redactions": 0,
-      "package_sha256": "38b6f3e42ee3d1b80aa011c5ad1f26e24945b9f8fa2599e981a9a782b4a235af"
-    },
-    {
-      "original_local_path": "docs/running-ui.png",
-      "original_sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4",
       "package_path": "docs/running-ui.png",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4"
+      "package_sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "28db851213ff6bf0b142b033f7c3a85ef48f3e831d514ef6e990191b61165ee4",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/cases.sample.jsonl",
-      "original_sha256": "4056aecdbc906065714d819bdbab761fc716b52933797e3535d52b6fc56ff6d3",
+      "package_path": "docs/submission-readiness-2026-11-05.md",
+      "package_sha256": "64cea4ef38d12f60b0b56a22ade01717e0555a8e5d8f6032d3f6416ba11917df",
+      "source": "working project/docs/submission-readiness-2026-11-05.md",
+      "transformations": [
+        "portable publication copy"
+      ]
+    },
+    {
+      "package_path": "docs/submission-status.md",
+      "package_sha256": "ac1de7cc59073aa8e93c670815e2919b13becca28dfe3e6e5d62f28dc6bb142a",
+      "source": "coordinated submission documentation",
+      "transformations": [
+        "generated portable publication document"
+      ]
+    },
+    {
+      "package_path": "docs/video-script.md",
+      "package_sha256": "8c2218954d7bb10d2ab7c08ff197dcf35c2ebbe7b3ee87c0bfe808a1ab085e50",
+      "source": "working project/docs/video-script.md",
+      "transformations": [
+        "portable publication copy"
+      ]
+    },
+    {
       "package_path": "evals/cases.sample.jsonl",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4056aecdbc906065714d819bdbab761fc716b52933797e3535d52b6fc56ff6d3"
+      "package_sha256": "4056aecdbc906065714d819bdbab761fc716b52933797e3535d52b6fc56ff6d3",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4056aecdbc906065714d819bdbab761fc716b52933797e3535d52b6fc56ff6d3",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/check_supplemental_result.py",
-      "original_sha256": "d6e9b3ac5c32339d18357de4d723e0511081132164039a4209b746e74053430d",
       "package_path": "evals/check_supplemental_result.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d6e9b3ac5c32339d18357de4d723e0511081132164039a4209b746e74053430d"
+      "package_sha256": "d6e9b3ac5c32339d18357de4d723e0511081132164039a4209b746e74053430d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d6e9b3ac5c32339d18357de4d723e0511081132164039a4209b746e74053430d",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/combined_cases.jsonl",
-      "original_sha256": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098",
       "package_path": "evals/combined_cases.jsonl",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098"
+      "package_sha256": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "bc9e3d1e1589c53e80646a8fda909c5d31c2a755051dee2419b6251e56f45098",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/measure_evals.py",
-      "original_sha256": "e4a9cadd3668fa64e01cdb0768082148ec669d347f3776115ce36675517f7eee",
       "package_path": "evals/measure_evals.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "e4a9cadd3668fa64e01cdb0768082148ec669d347f3776115ce36675517f7eee"
+      "package_sha256": "e4a9cadd3668fa64e01cdb0768082148ec669d347f3776115ce36675517f7eee",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e4a9cadd3668fa64e01cdb0768082148ec669d347f3776115ce36675517f7eee",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/my_cases.jsonl",
-      "original_sha256": "7c99e9e8f56e08210178ddd0303d3645605627051c8227540d82715c3a3b09ec",
       "package_path": "evals/my_cases.jsonl",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "7c99e9e8f56e08210178ddd0303d3645605627051c8227540d82715c3a3b09ec"
+      "package_sha256": "7c99e9e8f56e08210178ddd0303d3645605627051c8227540d82715c3a3b09ec",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7c99e9e8f56e08210178ddd0303d3645605627051c8227540d82715c3a3b09ec",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/run_evals.py",
-      "original_sha256": "05266e356c65050fb577bd6df17370c381a526ad9b1a362d51ed8b8facbed696",
       "package_path": "evals/run_evals.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "05266e356c65050fb577bd6df17370c381a526ad9b1a362d51ed8b8facbed696"
+      "package_sha256": "0098bf4a62833bd891bcf9688ac451ccef920e16bdba6e1d67f06901980bf4f4",
+      "source": "working project/evals/run_evals.py",
+      "source_sha256": "0098bf4a62833bd891bcf9688ac451ccef920e16bdba6e1d67f06901980bf4f4",
+      "transformations": []
     },
     {
-      "original_local_path": "evals/supplemental_cases.jsonl",
-      "original_sha256": "d867bebddbe92f5a96e87eb4b3bdae05dd61d02e1c1319baacfd78523cbc3491",
       "package_path": "evals/supplemental_cases.jsonl",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d867bebddbe92f5a96e87eb4b3bdae05dd61d02e1c1319baacfd78523cbc3491"
+      "package_sha256": "d867bebddbe92f5a96e87eb4b3bdae05dd61d02e1c1319baacfd78523cbc3491",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d867bebddbe92f5a96e87eb4b3bdae05dd61d02e1c1319baacfd78523cbc3491",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/acceptance-repair-2026-10-26/SUMMARY.md",
-      "original_sha256": "338dcce91d769b7692fdb1ec503b6f493291c5d0095bb609f189c962ecc38c1b",
       "package_path": "evidence/acceptance-repair-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "338dcce91d769b7692fdb1ec503b6f493291c5d0095bb609f189c962ecc38c1b"
+      "package_sha256": "338dcce91d769b7692fdb1ec503b6f493291c5d0095bb609f189c962ecc38c1b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "338dcce91d769b7692fdb1ec503b6f493291c5d0095bb609f189c962ecc38c1b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/SUMMARY.md",
-      "original_sha256": "9084e6efa6727e63c9c3869b211d8545c9e0f46329124c247134230fa2cde0b2",
       "package_path": "evidence/approval-incident-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "a23977b3ce4964d20609605fb22126e9096fa2263f6d1e2c411990f32e957321"
+      "package_sha256": "a23977b3ce4964d20609605fb22126e9096fa2263f6d1e2c411990f32e957321",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a23977b3ce4964d20609605fb22126e9096fa2263f6d1e2c411990f32e957321",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/approvals-before.log",
-      "original_sha256": "612dbc89a09c9e1f76b095033c2fbeb386e8e1e35dabae4c8790c2deab7e0573",
       "package_path": "evidence/approval-incident-2026-10-26/approvals-before.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 28,
-      "package_sha256": "3f282650a9e852c69460720bee2aa722d79666e1197409ee6cf781a999286e7c"
+      "package_sha256": "3f282650a9e852c69460720bee2aa722d79666e1197409ee6cf781a999286e7c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "3f282650a9e852c69460720bee2aa722d79666e1197409ee6cf781a999286e7c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/code-after.log",
-      "original_sha256": "13068d562ab79e78c1ab7ef7e71cbec52bdbdbc70ab507ca8a3efa4a5acb77e4",
       "package_path": "evidence/approval-incident-2026-10-26/code-after.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 5,
-      "package_sha256": "371965a9bc683ff6a40a4044f565f55f41a160b54d884bd3bab06911925cce6b"
+      "package_sha256": "371965a9bc683ff6a40a4044f565f55f41a160b54d884bd3bab06911925cce6b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "371965a9bc683ff6a40a4044f565f55f41a160b54d884bd3bab06911925cce6b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/code-before.log",
-      "original_sha256": "1ade682549ff57ab640faa8d32b6b532dc00361420f65a52ea94fd8ef70d9462",
       "package_path": "evidence/approval-incident-2026-10-26/code-before.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 8,
-      "package_sha256": "7b8d993f46961d741f666fe6faae60387e8d83be436f9bda3d633d59f1e943cf"
+      "package_sha256": "7b8d993f46961d741f666fe6faae60387e8d83be436f9bda3d633d59f1e943cf",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7b8d993f46961d741f666fe6faae60387e8d83be436f9bda3d633d59f1e943cf",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/code-regression-before.log",
-      "original_sha256": "a11216f412a46cc069e5a8e122b16e636fe25c21803a0282a138f87a72236fcb",
       "package_path": "evidence/approval-incident-2026-10-26/code-regression-before.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 3,
-      "package_sha256": "949a238a2d85ef2f8499e6c091a974d5794669f918976cb2c4a71fd192d5d319"
+      "package_sha256": "949a238a2d85ef2f8499e6c091a974d5794669f918976cb2c4a71fd192d5d319",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "949a238a2d85ef2f8499e6c091a974d5794669f918976cb2c4a71fd192d5d319",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/documented-code-check.json",
-      "original_sha256": "33ef4de699a025a6464d535a45c2fbd03de36f1ea1d47bfeb0e23e86268ac6a1",
       "package_path": "evidence/approval-incident-2026-10-26/documented-code-check.json",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "04a0c1f53ce22223917a73248c640c7e9d636cc6a26521e001569c402677c61b"
+      "package_sha256": "04a0c1f53ce22223917a73248c640c7e9d636cc6a26521e001569c402677c61b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "04a0c1f53ce22223917a73248c640c7e9d636cc6a26521e001569c402677c61b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/ignore-after.txt",
-      "original_sha256": "7b0fa8678109aa352d3d4ee3fb4592dc75f5b53c65bca85c35ced249c84f38a7",
       "package_path": "evidence/approval-incident-2026-10-26/ignore-after.redacted.txt",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 1,
-      "package_sha256": "4cdc863e853b9dacf7769bc390e1698407cad9f665821a99530ba792da17f2c1"
+      "package_sha256": "4cdc863e853b9dacf7769bc390e1698407cad9f665821a99530ba792da17f2c1",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4cdc863e853b9dacf7769bc390e1698407cad9f665821a99530ba792da17f2c1",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/ignore-before.txt",
-      "original_sha256": "fc887ba83f978dffff608cee4e4d40b1fccc8ac491ef1901a183dc794d8d41d1",
       "package_path": "evidence/approval-incident-2026-10-26/ignore-before.txt",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "fc887ba83f978dffff608cee4e4d40b1fccc8ac491ef1901a183dc794d8d41d1"
+      "package_sha256": "fc887ba83f978dffff608cee4e4d40b1fccc8ac491ef1901a183dc794d8d41d1",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fc887ba83f978dffff608cee4e4d40b1fccc8ac491ef1901a183dc794d8d41d1",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/incident-before.log",
-      "original_sha256": "66f0d493f558e16ec8701856f53d169b0d02671de3e584c70b45abf08b6b4cb0",
       "package_path": "evidence/approval-incident-2026-10-26/incident-before.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 3,
-      "package_sha256": "f4fd77e83a95f48625e48c0c197bbe0febb7b6808287ffacc93e2beda0d02b02"
+      "package_sha256": "f4fd77e83a95f48625e48c0c197bbe0febb7b6808287ffacc93e2beda0d02b02",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f4fd77e83a95f48625e48c0c197bbe0febb7b6808287ffacc93e2beda0d02b02",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/package-ignore.txt",
-      "original_sha256": "c23a2d49e719fd4965cc074f51c57d75b277e8122a880a57f1c9bf41c68f5a5b",
       "package_path": "evidence/approval-incident-2026-10-26/package-ignore.redacted.txt",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 1,
-      "package_sha256": "96d148b3b555f51b452c454d7614e4e1d432e4a68f834c48e573a71af7c5b926"
+      "package_sha256": "96d148b3b555f51b452c454d7614e4e1d432e4a68f834c48e573a71af7c5b926",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "96d148b3b555f51b452c454d7614e4e1d432e4a68f834c48e573a71af7c5b926",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/refresh_package.py",
-      "original_sha256": "6b887bbfb5a15d4def4d779e0bcc73a423c25125ee158903852c251a3168ca26",
       "package_path": "evidence/approval-incident-2026-10-26/refresh_package.py",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "6b887bbfb5a15d4def4d779e0bcc73a423c25125ee158903852c251a3168ca26"
+      "package_sha256": "6b887bbfb5a15d4def4d779e0bcc73a423c25125ee158903852c251a3168ca26",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6b887bbfb5a15d4def4d779e0bcc73a423c25125ee158903852c251a3168ca26",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/source-current.json",
-      "original_sha256": "d2f6fc4ecac14e0aaa4fb1eaf9772a0b7e6c9e3bcfe58abd04794676bb960496",
       "package_path": "evidence/approval-incident-2026-10-26/source-current.json",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "790c3e8185b2927e2638d2cfff45fc3294bab01948978c16e55df08a9c996e63"
+      "package_sha256": "790c3e8185b2927e2638d2cfff45fc3294bab01948978c16e55df08a9c996e63",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "790c3e8185b2927e2638d2cfff45fc3294bab01948978c16e55df08a9c996e63",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/test_agent_workflow.py.log",
-      "original_sha256": "a2858428e72237d734103665a075d33277a0674d16e483d6e49edcda0601df6e",
       "package_path": "evidence/approval-incident-2026-10-26/test_agent_workflow.py.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 105,
-      "package_sha256": "36bb18ffae7c78232cd93772be5b1e134150010c2985fdd059731d5561edb70f"
+      "package_sha256": "36bb18ffae7c78232cd93772be5b1e134150010c2985fdd059731d5561edb70f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "36bb18ffae7c78232cd93772be5b1e134150010c2985fdd059731d5561edb70f",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/test_approvals.py.log",
-      "original_sha256": "29da28d5568e4ea8f98282e2c80e7945e029471edd24cb4382146b0798fefb9d",
       "package_path": "evidence/approval-incident-2026-10-26/test_approvals.py.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 13,
-      "package_sha256": "8127fb2dcf86d08cf0ca990f8ec09305d91775dc9cbbbef3f29c88e7bb645112"
+      "package_sha256": "8127fb2dcf86d08cf0ca990f8ec09305d91775dc9cbbbef3f29c88e7bb645112",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "8127fb2dcf86d08cf0ca990f8ec09305d91775dc9cbbbef3f29c88e7bb645112",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/test_contract_safety.py.log",
-      "original_sha256": "6d341279618940f963f6c128dfdda51c63dff0b9916876862ee01d9c0added81",
       "package_path": "evidence/approval-incident-2026-10-26/test_contract_safety.py.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "6d341279618940f963f6c128dfdda51c63dff0b9916876862ee01d9c0added81"
+      "package_sha256": "6d341279618940f963f6c128dfdda51c63dff0b9916876862ee01d9c0added81",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6d341279618940f963f6c128dfdda51c63dff0b9916876862ee01d9c0added81",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/approval-incident-2026-10-26/workflow-final.log",
-      "original_sha256": "ba0f9f2752d02cbb9e9e0febf0aa95ef0b94ff050279d02ffc760c8302620814",
       "package_path": "evidence/approval-incident-2026-10-26/workflow-final.redacted.log",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 78,
-      "package_sha256": "893916aca62f1a43aec95e1851718a693f43e7a8d3f2953ae9264372b7537ca2"
+      "package_sha256": "893916aca62f1a43aec95e1851718a693f43e7a8d3f2953ae9264372b7537ca2",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "893916aca62f1a43aec95e1851718a693f43e7a8d3f2953ae9264372b7537ca2",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/SUMMARY.md",
-      "original_sha256": "8d1c6ea1884791316e43d64c4b65c7813168b5d0104544418c5513da0bac1f47",
       "package_path": "evidence/docker-approval-incident-2026-10-27/SUMMARY.md",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "8d1c6ea1884791316e43d64c4b65c7813168b5d0104544418c5513da0bac1f47"
+      "package_sha256": "8d1c6ea1884791316e43d64c4b65c7813168b5d0104544418c5513da0bac1f47",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "8d1c6ea1884791316e43d64c4b65c7813168b5d0104544418c5513da0bac1f47",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/aggregate-budget-after.json",
-      "original_sha256": "1634d991bdc5e60540a9a34d23556e43f0c7a77ebca23897e61956bb2f3b657d",
       "package_path": "evidence/docker-approval-incident-2026-10-27/aggregate-budget-after.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "3b30800c2bd61ab700d333299e6c12952e1fbe074aea7c25700cfc736423ccd2"
+      "package_sha256": "3b30800c2bd61ab700d333299e6c12952e1fbe074aea7c25700cfc736423ccd2",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "3b30800c2bd61ab700d333299e6c12952e1fbe074aea7c25700cfc736423ccd2",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/app-build.log",
-      "original_sha256": "ac4c528cabf7212aae6a08f6542c76c22dc35304d6bb85467e336a1e7d00772a",
       "package_path": "evidence/docker-approval-incident-2026-10-27/app-build.log",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "ac4c528cabf7212aae6a08f6542c76c22dc35304d6bb85467e336a1e7d00772a"
+      "package_sha256": "ac4c528cabf7212aae6a08f6542c76c22dc35304d6bb85467e336a1e7d00772a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ac4c528cabf7212aae6a08f6542c76c22dc35304d6bb85467e336a1e7d00772a",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/app-start.log",
-      "original_sha256": "68d0711508a5210f543c1d5c712ec8b092cdc89b90176d2222c3d95c9647e4c7",
       "package_path": "evidence/docker-approval-incident-2026-10-27/app-start.log",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "68d0711508a5210f543c1d5c712ec8b092cdc89b90176d2222c3d95c9647e4c7"
+      "package_sha256": "68d0711508a5210f543c1d5c712ec8b092cdc89b90176d2222c3d95c9647e4c7",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "68d0711508a5210f543c1d5c712ec8b092cdc89b90176d2222c3d95c9647e4c7",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/app-startup.log",
-      "original_sha256": "df51730c421b4de691784c642e04b177427a8c34adc92c1f2cf968fb07d4b510",
       "package_path": "evidence/docker-approval-incident-2026-10-27/app-startup.log",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "df51730c421b4de691784c642e04b177427a8c34adc92c1f2cf968fb07d4b510"
+      "package_sha256": "df51730c421b4de691784c642e04b177427a8c34adc92c1f2cf968fb07d4b510",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "df51730c421b4de691784c642e04b177427a8c34adc92c1f2cf968fb07d4b510",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/build-capture-error.txt",
-      "original_sha256": "7f43ab91e0a74065ddeee7262be09dab96a62c1dd2b457ae0e561570d4d8a9c0",
       "package_path": "evidence/docker-approval-incident-2026-10-27/build-capture-error.txt",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "7f43ab91e0a74065ddeee7262be09dab96a62c1dd2b457ae0e561570d4d8a9c0"
+      "package_sha256": "7f43ab91e0a74065ddeee7262be09dab96a62c1dd2b457ae0e561570d4d8a9c0",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7f43ab91e0a74065ddeee7262be09dab96a62c1dd2b457ae0e561570d4d8a9c0",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/container-health-final.json",
-      "original_sha256": "8a8644e2ef6a172be37c9063fc51880984fb82356f58a2104cfb928077d464a7",
       "package_path": "evidence/docker-approval-incident-2026-10-27/container-health-final.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "46c8ae190bc21b2ede6526c0a8f74794a8208c16d778af29b933419dc0fc8910"
+      "package_sha256": "46c8ae190bc21b2ede6526c0a8f74794a8208c16d778af29b933419dc0fc8910",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "46c8ae190bc21b2ede6526c0a8f74794a8208c16d778af29b933419dc0fc8910",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/container-source-check.json",
-      "original_sha256": "b97d1aa4a97ac951b7c4c70f866de9c9b5030ecbafddca694cbf7e9be6c4d2e9",
       "package_path": "evidence/docker-approval-incident-2026-10-27/container-source-check.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "9bb87109f8a8b9d649ea0b509ea617725711bdac05e049ec9bb8ae03f479fad1"
+      "package_sha256": "9bb87109f8a8b9d649ea0b509ea617725711bdac05e049ec9bb8ae03f479fad1",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "9bb87109f8a8b9d649ea0b509ea617725711bdac05e049ec9bb8ae03f479fad1",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/containers-after-start.json",
-      "original_sha256": "cf65bf6564e55cdf1ce566ea2072b4d19f079b1dde83b2d17bbea316c7a8760d",
       "package_path": "evidence/docker-approval-incident-2026-10-27/containers-after-start.redacted.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 1,
-      "package_sha256": "e42bc79884713e740c44b38b51f11a96aacfaa717bfb954a9744261db711a173"
+      "package_sha256": "e42bc79884713e740c44b38b51f11a96aacfaa717bfb954a9744261db711a173",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e42bc79884713e740c44b38b51f11a96aacfaa717bfb954a9744261db711a173",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/containers-before.json",
-      "original_sha256": "740773a971b9e7895d340277df54a9eeb4c83ce59f8ccbefe182c5e63ab7e50f",
       "package_path": "evidence/docker-approval-incident-2026-10-27/containers-before.redacted.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 1,
-      "package_sha256": "e02a84748e8b43da0a657ba6bb4fcccfa4f95d353c741c0786e4b8000bbc9ebe"
+      "package_sha256": "e02a84748e8b43da0a657ba6bb4fcccfa4f95d353c741c0786e4b8000bbc9ebe",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e02a84748e8b43da0a657ba6bb4fcccfa4f95d353c741c0786e4b8000bbc9ebe",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/focused-container-tests.json",
-      "original_sha256": "80a2404befba67606b8e8ba16d8062cab7208b7ca0d3ec6d9afcb0d10206b175",
       "package_path": "evidence/docker-approval-incident-2026-10-27/focused-container-tests.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "a63ac49c493610a2ad6d77369c1f5b682cfcbd779d19a9ada34f5c962e921884"
+      "package_sha256": "a63ac49c493610a2ad6d77369c1f5b682cfcbd779d19a9ada34f5c962e921884",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a63ac49c493610a2ad6d77369c1f5b682cfcbd779d19a9ada34f5c962e921884",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/focused-container-tests.log",
-      "original_sha256": "5e2238766c8fd3f6d09f1dea848ece2c6339d930d77f67abf963f42c556d32da",
       "package_path": "evidence/docker-approval-incident-2026-10-27/focused-container-tests.log",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "5e2238766c8fd3f6d09f1dea848ece2c6339d930d77f67abf963f42c556d32da"
+      "package_sha256": "5e2238766c8fd3f6d09f1dea848ece2c6339d930d77f67abf963f42c556d32da",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5e2238766c8fd3f6d09f1dea848ece2c6339d930d77f67abf963f42c556d32da",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/focused_container_checks.py",
-      "original_sha256": "201817d126040af559b6183471f2ae30316aa58f86274048651becafe0ddba79",
       "package_path": "evidence/docker-approval-incident-2026-10-27/focused_container_checks.py",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "201817d126040af559b6183471f2ae30316aa58f86274048651becafe0ddba79"
+      "package_sha256": "201817d126040af559b6183471f2ae30316aa58f86274048651becafe0ddba79",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "201817d126040af559b6183471f2ae30316aa58f86274048651becafe0ddba79",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/http-ui-checks.json",
-      "original_sha256": "a1a74f595c01cfa21e4098ed3c3791295e34184aac77037303eb47f43504deb1",
       "package_path": "evidence/docker-approval-incident-2026-10-27/http-ui-checks.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "d13c0ebb875dd7c51c47f44afdbaf6d379b511529e7ee34e70d66e8771429f18"
+      "package_sha256": "d13c0ebb875dd7c51c47f44afdbaf6d379b511529e7ee34e70d66e8771429f18",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d13c0ebb875dd7c51c47f44afdbaf6d379b511529e7ee34e70d66e8771429f18",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/image-cache-probe.json",
-      "original_sha256": "2f80214b479ca58fa0e6b5ac3bd1be0fab8e69fee7a7fd6998a700e220a5327c",
       "package_path": "evidence/docker-approval-incident-2026-10-27/image-cache-probe.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "cabc5a519e6bc4c23c18e15fcf0bc6d4b78c5d48118c26c6a631d6d5b85b78e2"
+      "package_sha256": "cabc5a519e6bc4c23c18e15fcf0bc6d4b78c5d48118c26c6a631d6d5b85b78e2",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "cabc5a519e6bc4c23c18e15fcf0bc6d4b78c5d48118c26c6a631d6d5b85b78e2",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/image-cache-probe.log",
-      "original_sha256": "e9b54a8ac22f1e8c3734eae6af6bd081b798d561f959355e246ebfdf1c003192",
       "package_path": "evidence/docker-approval-incident-2026-10-27/image-cache-probe.log",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "e9b54a8ac22f1e8c3734eae6af6bd081b798d561f959355e246ebfdf1c003192"
+      "package_sha256": "e9b54a8ac22f1e8c3734eae6af6bd081b798d561f959355e246ebfdf1c003192",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e9b54a8ac22f1e8c3734eae6af6bd081b798d561f959355e246ebfdf1c003192",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/image_cache_probe.py",
-      "original_sha256": "a996bbed6abc9c2b85c412f10188de1ad37decac18cac87d1e4739d7109d91fb",
       "package_path": "evidence/docker-approval-incident-2026-10-27/image_cache_probe.py",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "a996bbed6abc9c2b85c412f10188de1ad37decac18cac87d1e4739d7109d91fb"
+      "package_sha256": "a996bbed6abc9c2b85c412f10188de1ad37decac18cac87d1e4739d7109d91fb",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a996bbed6abc9c2b85c412f10188de1ad37decac18cac87d1e4739d7109d91fb",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/mcp-read-check.json",
-      "original_sha256": "f749f0bceee600385356fd02961b14ecf4285cb98651f75057e224724a590cfc",
       "package_path": "evidence/docker-approval-incident-2026-10-27/mcp-read-check.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "bc3e9b8320af788e823b40f75b8d731beec7f753977020be6fad83df7ac66f30"
+      "package_sha256": "bc3e9b8320af788e823b40f75b8d731beec7f753977020be6fad83df7ac66f30",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "bc3e9b8320af788e823b40f75b8d731beec7f753977020be6fad83df7ac66f30",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/preservation-after.json",
-      "original_sha256": "0a12161e9f04f81508e8afdabaa9dadbc67e3a56ac8a3d137b8eee9064a22ad5",
       "package_path": "evidence/docker-approval-incident-2026-10-27/preservation-after.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "39f840167be92987425226ff19e4d4b35982047e98af72d800c709037e59071e"
+      "package_sha256": "39f840167be92987425226ff19e4d4b35982047e98af72d800c709037e59071e",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "39f840167be92987425226ff19e4d4b35982047e98af72d800c709037e59071e",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/preservation-before.json",
-      "original_sha256": "248385fdfb913297ee0789fc5cc8227e419cfaab18535c552083637d769d38e7",
       "package_path": "evidence/docker-approval-incident-2026-10-27/preservation-before.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "fd5cbf208952de7bee5c403e400bccb3009342bc7ca5c73deefc2072bf2cbc50"
+      "package_sha256": "fd5cbf208952de7bee5c403e400bccb3009342bc7ca5c73deefc2072bf2cbc50",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fd5cbf208952de7bee5c403e400bccb3009342bc7ca5c73deefc2072bf2cbc50",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/refresh_package.py",
-      "original_sha256": "c407406ece4bd3a340ac96e550b365b4951e4b9df1d3c0df464630be0c747b14",
       "package_path": "evidence/docker-approval-incident-2026-10-27/refresh_package.py",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "c407406ece4bd3a340ac96e550b365b4951e4b9df1d3c0df464630be0c747b14"
+      "package_sha256": "c407406ece4bd3a340ac96e550b365b4951e4b9df1d3c0df464630be0c747b14",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c407406ece4bd3a340ac96e550b365b4951e4b9df1d3c0df464630be0c747b14",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/runtime-source-manifest.json",
-      "original_sha256": "afa4618e142c2a42f0de47e179607f90e3e64a1d03a4d69c06e714ced2ceeca3",
       "package_path": "evidence/docker-approval-incident-2026-10-27/runtime-source-manifest.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "b8b0825df7f2320e214e428496d0acf1386b699b132c442e765dea94e5e78914"
+      "package_sha256": "b8b0825df7f2320e214e428496d0acf1386b699b132c442e765dea94e5e78914",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b8b0825df7f2320e214e428496d0acf1386b699b132c442e765dea94e5e78914",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/simulator-read-only-audit.json",
-      "original_sha256": "dde7a9b74cc40960d04d46d6311f9f594d850d252fe728258f10ea1005cc6b5a",
       "package_path": "evidence/docker-approval-incident-2026-10-27/simulator-read-only-audit.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "99ccd12455b32313404fdcacd259a9a855acbe7acb78d4a55189fd8e674a727d"
+      "package_sha256": "99ccd12455b32313404fdcacd259a9a855acbe7acb78d4a55189fd8e674a727d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "99ccd12455b32313404fdcacd259a9a855acbe7acb78d4a55189fd8e674a727d",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/simulator-source-check.json",
-      "original_sha256": "0cdf3746a6168968d71e41a68756aa916442f6ec1ab7f819af6638a5ffa31137",
       "package_path": "evidence/docker-approval-incident-2026-10-27/simulator-source-check.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "fe7945bd5aaf61747b0a4ed6b1dc9319901fcac2819790c43f6773a53376e549"
+      "package_sha256": "fe7945bd5aaf61747b0a4ed6b1dc9319901fcac2819790c43f6773a53376e549",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fe7945bd5aaf61747b0a4ed6b1dc9319901fcac2819790c43f6773a53376e549",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/ui-source-check.json",
-      "original_sha256": "aa285bd67a3ca4c81c8176dc6361c8b749b1a9c6a61c481fa735087a1a6b34a9",
       "package_path": "evidence/docker-approval-incident-2026-10-27/ui-source-check.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "4f54bd4a4358534563e3cdcd001f012a4ed21d7c4964edb82233b2b481909695"
+      "package_sha256": "4f54bd4a4358534563e3cdcd001f012a4ed21d7c4964edb82233b2b481909695",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4f54bd4a4358534563e3cdcd001f012a4ed21d7c4964edb82233b2b481909695",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/ui-to-app-check.json",
-      "original_sha256": "d796e76c0dc6f008dc539368e146e23a1adff1ad2fae4192ce9a2a296ec174d2",
       "package_path": "evidence/docker-approval-incident-2026-10-27/ui-to-app-check.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "94f3e47be4e2543941837b0f59f46a8057750fc89a5c911955bab8b670790fc6"
+      "package_sha256": "94f3e47be4e2543941837b0f59f46a8057750fc89a5c911955bab8b670790fc6",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "94f3e47be4e2543941837b0f59f46a8057750fc89a5c911955bab8b670790fc6",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/docker-approval-incident-2026-10-27/verification.json",
-      "original_sha256": "fc504919b68309ed909edb41b959a2461065b909aac86b0ed53c3ea9c4cbc6a5",
       "package_path": "evidence/docker-approval-incident-2026-10-27/verification.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "d55ecdf90b0be40dd3dec130ce6add22c65ed23f28c6391327fed458ba77e38f"
+      "package_sha256": "d55ecdf90b0be40dd3dec130ce6add22c65ed23f28c6391327fed458ba77e38f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d55ecdf90b0be40dd3dec130ce6add22c65ed23f28c6391327fed458ba77e38f",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/final-verification-2026-10-26/SUMMARY.md",
-      "original_sha256": "977cdc152e0e2091df5f55b1367b438450e74d0b722451893cbea35adfd98d9e",
       "package_path": "evidence/final-verification-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "977cdc152e0e2091df5f55b1367b438450e74d0b722451893cbea35adfd98d9e"
+      "package_sha256": "977cdc152e0e2091df5f55b1367b438450e74d0b722451893cbea35adfd98d9e",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "977cdc152e0e2091df5f55b1367b438450e74d0b722451893cbea35adfd98d9e",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/final-verification-2026-10-26/manual-results.json",
-      "original_sha256": "afdc6f133d06397b9150f0780f4bbd4467c2fe107e75af77d620754608db55c6",
       "package_path": "evidence/final-verification-2026-10-26/manual-results.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "fae2905cd0170d42410c000954af8774d1540e023e401bb7c1b558a30e8ee07f"
+      "package_sha256": "fae2905cd0170d42410c000954af8774d1540e023e401bb7c1b558a30e8ee07f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fae2905cd0170d42410c000954af8774d1540e023e401bb7c1b558a30e8ee07f",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/final-verification-2026-10-26/manual-results.md",
-      "original_sha256": "1a3c3925fbcb2d02f2974c3509104f5908dc823e88888e85db9fc0353c2b3fe3",
       "package_path": "evidence/final-verification-2026-10-26/manual-results.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "1a3c3925fbcb2d02f2974c3509104f5908dc823e88888e85db9fc0353c2b3fe3"
+      "package_sha256": "1a3c3925fbcb2d02f2974c3509104f5908dc823e88888e85db9fc0353c2b3fe3",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "1a3c3925fbcb2d02f2974c3509104f5908dc823e88888e85db9fc0353c2b3fe3",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/SUMMARY.md",
-      "original_sha256": "3f06047a702ef380c9d43bf3770d3f17e110526e86ff6d4497918bf62e8a501b",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "4adabc1136b8e6396204db8421d843dee0dff98de0a7b1ee0b0e7fddf1046a1f"
+      "package_sha256": "4adabc1136b8e6396204db8421d843dee0dff98de0a7b1ee0b0e7fddf1046a1f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4adabc1136b8e6396204db8421d843dee0dff98de0a7b1ee0b0e7fddf1046a1f",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/after-cached-restart.json",
-      "original_sha256": "94b94feb9573d0be7cf8a09cbb62e04633ac1bcc6a23fddc1724e8c866fc9b12",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/after-cached-restart.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115"
+      "package_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/aggregate-before.json",
-      "original_sha256": "f0af284fdae17d780ea33c2f0255f77cbd3abbdb4dd29efc998ef4f7b7755f5a",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/aggregate-before.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882"
+      "package_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/aggregate-ledger.json",
-      "original_sha256": "c3de36a05110d9c5d8a3eedc0abe1c7f76bc2991b299ed1e98492bfdd788ce57",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/aggregate-ledger.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "53c0169331b82f24dd1b7ca72cdecceb9f693046f6686d5f9484983d56654641"
+      "package_sha256": "53c0169331b82f24dd1b7ca72cdecceb9f693046f6686d5f9484983d56654641",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "53c0169331b82f24dd1b7ca72cdecceb9f693046f6686d5f9484983d56654641",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/app-ingestion-restart.log",
-      "original_sha256": "d9763b2058398f3b1749223044381dc5c8cceae13cfd5a52724613b28019f473",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/app-ingestion-restart.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "501a1b9e67e5c753c8df767f36d96932a9554807f7abb0c2658b3ab1bfd5d63d"
+      "package_sha256": "501a1b9e67e5c753c8df767f36d96932a9554807f7abb0c2658b3ab1bfd5d63d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "501a1b9e67e5c753c8df767f36d96932a9554807f7abb0c2658b3ab1bfd5d63d",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/cached-restart.log",
-      "original_sha256": "8062651d33d1ab2357a090e5a0cfeed1d87e69db9be0814a807499cc26fa8f22",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/cached-restart.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "b5ed6e359f925f51d50ae8ffb3680ef46a72cbdcd0b982a594ab7388e16d7938"
+      "package_sha256": "b5ed6e359f925f51d50ae8ffb3680ef46a72cbdcd0b982a594ab7388e16d7938",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b5ed6e359f925f51d50ae8ffb3680ef46a72cbdcd0b982a594ab7388e16d7938",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/compose-plan.json",
-      "original_sha256": "478f3654e74df99aeb917a97f15722c756ac9563264d9dae8a50be5dd2b3f121",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/compose-plan.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436"
+      "package_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/failure-diagnostic.log",
-      "original_sha256": "f0f0a26bbbc23e6c0a3c32bd62514afbdb21c48a0d7a6f67a9612de94e29874b",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/failure-diagnostic.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313"
+      "package_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/http-ui-checks.json",
-      "original_sha256": "a5beb4ebce39574a0222981356e3b02c52aee4bfe93b5177adc9d5709ec876d7",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/http-ui-checks.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "47fba026d4208c7194f1f7ba5e24b1d51f24d6521c7730c2b86560d424462515"
+      "package_sha256": "47fba026d4208c7194f1f7ba5e24b1d51f24d6521c7730c2b86560d424462515",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "47fba026d4208c7194f1f7ba5e24b1d51f24d6521c7730c2b86560d424462515",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/aggregate-before.json",
-      "original_sha256": "f0af284fdae17d780ea33c2f0255f77cbd3abbdb4dd29efc998ef4f7b7755f5a",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/aggregate-before.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882"
+      "package_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "9042d16a8e925c0ab7a7e9f14ddcfffd28e66166b5b57c459a78c0a220bc9882",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/aggregate-ledger.json",
-      "original_sha256": "7807f61a7829a80359a087de174826252a603f6c92a7ecd0acfc94e2f28d99b8",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/aggregate-ledger.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "0ec93639dfccd16bf05b3acc6de9d20143e28dd9e9a5d1ac207a20f434aafc40"
+      "package_sha256": "0ec93639dfccd16bf05b3acc6de9d20143e28dd9e9a5d1ac207a20f434aafc40",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "0ec93639dfccd16bf05b3acc6de9d20143e28dd9e9a5d1ac207a20f434aafc40",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/compose-plan.json",
-      "original_sha256": "478f3654e74df99aeb917a97f15722c756ac9563264d9dae8a50be5dd2b3f121",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/compose-plan.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436"
+      "package_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c5f3823641817729582bc3f8295cbcf4a0d8ef6ace7a43348f81fc9de6f9b436",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/failure-diagnostic.log",
-      "original_sha256": "f0f0a26bbbc23e6c0a3c32bd62514afbdb21c48a0d7a6f67a9612de94e29874b",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/failure-diagnostic.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313"
+      "package_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "557998188f6ace6f916f44083a0282ff202828ef5177fd03e06a09c0ec6d7313",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/isolated-containers-running.json",
-      "original_sha256": "4f89cc4d4cab90c91379873e06079e5facc95b9a91216a237d214c80914c15c6",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/isolated-containers-running.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0"
+      "package_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/isolated-containers-stopped.json",
-      "original_sha256": "ed5e2a220b3f8246388b82aadc0c60e9ffab5a0ffbd684959be0294bb2eb4307",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/isolated-containers-stopped.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "7eedee39383ec6231c473a04ca97e5a503929ec075c498f1a0c73604559b482e"
+      "package_sha256": "7eedee39383ec6231c473a04ca97e5a503929ec075c498f1a0c73604559b482e",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7eedee39383ec6231c473a04ca97e5a503929ec075c498f1a0c73604559b482e",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/results.json",
-      "original_sha256": "a6a535c22d82bb2a2e0c33c1879f5c4db9bfb9e2a0c0a7aa62815c292ddec668",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/results.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "37e0f401d5ced41c4016af275514c34154a2796d9dda746323146866f02f5cb5"
+      "package_sha256": "37e0f401d5ced41c4016af275514c34154a2796d9dda746323146866f02f5cb5",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "37e0f401d5ced41c4016af275514c34154a2796d9dda746323146866f02f5cb5",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/startup.log",
-      "original_sha256": "d373ab028443f9f71b13669d27ab564646eb24513ccac6b2f16d4127d0be001e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/startup.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4"
+      "package_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/stop-isolated.log",
-      "original_sha256": "33ed6b149928f38b0fc0e451a42795c4c3d99d57bd9290a3ac0ede94e027e495",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/stop-isolated.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "f04a9031b265224be8531e9795a5b72d496f55be8d72f7db9e98d6c7e891c3eb"
+      "package_sha256": "f04a9031b265224be8531e9795a5b72d496f55be8d72f7db9e98d6c7e891c3eb",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f04a9031b265224be8531e9795a5b72d496f55be8d72f7db9e98d6c7e891c3eb",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/working-containers-after.json",
-      "original_sha256": "cb2795ab08745c8cabe3c646cb334ef996be13516a2dcd013e2461496462754e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/working-containers-after.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b"
+      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/working-containers-before.json",
-      "original_sha256": "cb2795ab08745c8cabe3c646cb334ef996be13516a2dcd013e2461496462754e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-attempt/working-containers-before.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b"
+      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/initial-ingestion.json",
-      "original_sha256": "94b94feb9573d0be7cf8a09cbb62e04633ac1bcc6a23fddc1724e8c866fc9b12",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/initial-ingestion.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115"
+      "package_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7a4e65364769518f8dd0c44d779cf9329dadd9cc35321eb21e32c435cf83f115",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/isolated-containers-running.json",
-      "original_sha256": "4f89cc4d4cab90c91379873e06079e5facc95b9a91216a237d214c80914c15c6",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/isolated-containers-running.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0"
+      "package_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c19c1bb627ef4892c66c405cec97e0a00d278698ea7eafce4f1e37a1fcc081d0",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/isolated-containers-stopped.json",
-      "original_sha256": "0e54989cc54e4ecfa5172387ec547d5bf9c9d069a6d255a04062aa71f3d2a0bf",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/isolated-containers-stopped.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "b5a1c8072c8ecbcd08a44b4805182eedd380376d6085a0ecbb06be597b670f03"
+      "package_sha256": "b5a1c8072c8ecbcd08a44b4805182eedd380376d6085a0ecbb06be597b670f03",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b5a1c8072c8ecbcd08a44b4805182eedd380376d6085a0ecbb06be597b670f03",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/mcp-check.json",
-      "original_sha256": "aebdd0a9c92be5ad8f0b34bb9110a5e06e4948abf71142879066a9104f4d86c2",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/mcp-check.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "d17df6b70c9c21a7a781f526b4c5ebe35f61f506791e23ffe449603affa95143"
+      "package_sha256": "d17df6b70c9c21a7a781f526b4c5ebe35f61f506791e23ffe449603affa95143",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d17df6b70c9c21a7a781f526b4c5ebe35f61f506791e23ffe449603affa95143",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/results.json",
-      "original_sha256": "f99bcc8620feda18694c26196226b9523f7d04cf87af1fd1f59260ccb61fed3c",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/results.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "851d63cf34b9f81c3864667a1866d54a30c4ae2568aabd69e17de6643f7d7618"
+      "package_sha256": "851d63cf34b9f81c3864667a1866d54a30c4ae2568aabd69e17de6643f7d7618",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "851d63cf34b9f81c3864667a1866d54a30c4ae2568aabd69e17de6643f7d7618",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/scorecard.md",
-      "original_sha256": "77f8c7b7db895f36377f427d11679c70e5aa596dfae3f3f93ef21c09a137ce1d",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/scorecard.md",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "44590197a57c7ea697bf1372950992a1e5e68e2ec04a8f12a07c1c46bebb6892"
+      "package_sha256": "44590197a57c7ea697bf1372950992a1e5e68e2ec04a8f12a07c1c46bebb6892",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "44590197a57c7ea697bf1372950992a1e5e68e2ec04a8f12a07c1c46bebb6892",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/startup.log",
-      "original_sha256": "d373ab028443f9f71b13669d27ab564646eb24513ccac6b2f16d4127d0be001e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/startup.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4"
+      "package_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "08a5fc6180400ab0a59ff38bb6af5e826955a011f9ca3ee0209ccb338f65b1b4",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/stop-isolated.log",
-      "original_sha256": "730ea5350ff32df2dd98a20ecd218f1549cc397721d69741b90d2e95dc608fd5",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/stop-isolated.log",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "6f301dd1d022ce323385c9326de3c8b1821c6e932880577d65ef03fc6bfca40d"
+      "package_sha256": "6f301dd1d022ce323385c9326de3c8b1821c6e932880577d65ef03fc6bfca40d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6f301dd1d022ce323385c9326de3c8b1821c6e932880577d65ef03fc6bfca40d",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/ui-to-app-check.json",
-      "original_sha256": "d2bc5c4dc6046d32ba6fe1ed822dc8802ea02588c38a47b6aa078472190af77d",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/ui-to-app-check.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "af39e0524544492d7948d20b19c469f7ef4d0dc5fbb70719f40cdb1f397a43a5"
+      "package_sha256": "af39e0524544492d7948d20b19c469f7ef4d0dc5fbb70719f40cdb1f397a43a5",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "af39e0524544492d7948d20b19c469f7ef4d0dc5fbb70719f40cdb1f397a43a5",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/working-containers-after.json",
-      "original_sha256": "cb2795ab08745c8cabe3c646cb334ef996be13516a2dcd013e2461496462754e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/working-containers-after.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b"
+      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/isolated-fresh-start-2026-10-26/working-containers-before.json",
-      "original_sha256": "cb2795ab08745c8cabe3c646cb334ef996be13516a2dcd013e2461496462754e",
       "package_path": "evidence/isolated-fresh-start-2026-10-26/working-containers-before.json",
-      "transformations": [
-        "reviewed credential/private-path sanitized evidence copy; original retained locally"
-      ],
-      "redactions": 0,
-      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b"
+      "package_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c86c2a7a8b20fe7bf8dc379911661fb90dd66d3141c54d839c087a27c86bad9b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/local-checkpoint-summary.md",
-      "original_sha256": "00e38affb3fe7f4e7100cf5e7ed6269096d54629b6575ae4a1cdce0cb1401db9",
       "package_path": "evidence/local-checkpoint-summary.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "00e38affb3fe7f4e7100cf5e7ed6269096d54629b6575ae4a1cdce0cb1401db9"
+      "package_sha256": "00e38affb3fe7f4e7100cf5e7ed6269096d54629b6575ae4a1cdce0cb1401db9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "00e38affb3fe7f4e7100cf5e7ed6269096d54629b6575ae4a1cdce0cb1401db9",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
-      "original_sha256": "f51f31bb44413bebfb0bde9dbfd0033e7cafc242ed8ad2f66f4b4953f2ef4632",
       "package_path": "evidence/memory-routing-fix-2026-10-30/SUMMARY.md",
-      "transformations": [
-        "added 2026-10-30: conversation-recall and draft-intent fix checkpoint summary (offline mocked tests and user-reported manual evidence); line endings differ from the working copy, text otherwise unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "fa00dab4a92926321ff0c9ff9ecb40098c5db8ec81c64ad014e84c8bbf386d13"
+      "package_sha256": "fa00dab4a92926321ff0c9ff9ecb40098c5db8ec81c64ad014e84c8bbf386d13",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "fa00dab4a92926321ff0c9ff9ecb40098c5db8ec81c64ad014e84c8bbf386d13",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/portfolio-readme-check.json",
-      "original_sha256": "bd52998044ee59afb065053aac6eea417e101f29b4258efecfb417868b276c20",
       "package_path": "evidence/portfolio-readme-check.json",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "2026-10-29 video/architecture update: historical record kept; publication_copy_note key added, no recorded value changed"
-      ],
-      "redactions": 0,
-      "package_sha256": "93610e7407e4f296d1cea8190265a923b13948ba5d35e33f24188942f257d35c"
+      "package_sha256": "93610e7407e4f296d1cea8190265a923b13948ba5d35e33f24188942f257d35c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "93610e7407e4f296d1cea8190265a923b13948ba5d35e33f24188942f257d35c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/SUMMARY.md",
-      "original_sha256": "c2d8b01d688a63496442d2e2ddebe5920a3797a40e1d40e897bf18fc10002337",
       "package_path": "evidence/repeated-lockout-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "c2d8b01d688a63496442d2e2ddebe5920a3797a40e1d40e897bf18fc10002337"
+      "package_sha256": "c2d8b01d688a63496442d2e2ddebe5920a3797a40e1d40e897bf18fc10002337",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c2d8b01d688a63496442d2e2ddebe5920a3797a40e1d40e897bf18fc10002337",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/before.log",
-      "original_sha256": "be5d956dff728772612b032b1d96f063875f183ffd31389ee9c13579658e33a7",
       "package_path": "evidence/repeated-lockout-2026-10-26/before.redacted.log",
-      "transformations": [
-        "11 private-path replacements; no credential matches found"
-      ],
-      "redactions": 11,
-      "package_sha256": "c1ea16fc4c070432b8d49c8a34faa90d6e09b1d7d98ae1a6f426484670d94d5c"
+      "package_sha256": "c1ea16fc4c070432b8d49c8a34faa90d6e09b1d7d98ae1a6f426484670d94d5c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "c1ea16fc4c070432b8d49c8a34faa90d6e09b1d7d98ae1a6f426484670d94d5c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/checkpoint.json",
-      "original_sha256": "d8d3fcbf47b340041b132bbd48cbb41d848a7c00d3693cf193e9b7758491df9b",
       "package_path": "evidence/repeated-lockout-2026-10-26/checkpoint.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "f5fc103db22638667809ceafcf830e96ccb8c036be177d0fe297fc3b154a2e02"
+      "package_sha256": "f5fc103db22638667809ceafcf830e96ccb8c036be177d0fe297fc3b154a2e02",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f5fc103db22638667809ceafcf830e96ccb8c036be177d0fe297fc3b154a2e02",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/container-live-check.json",
-      "original_sha256": "3cf7c511941b663c1e638887e846f457939500e9c0201bc9beb9dfb5f3711e95",
       "package_path": "evidence/repeated-lockout-2026-10-26/container-live-check.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "30d09101bbfd403e994b30671fd8c8e84fd42d18a48e05ae816749a8ba4e7f53"
+      "package_sha256": "30d09101bbfd403e994b30671fd8c8e84fd42d18a48e05ae816749a8ba4e7f53",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "30d09101bbfd403e994b30671fd8c8e84fd42d18a48e05ae816749a8ba4e7f53",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/docker-live-verification.json",
-      "original_sha256": "1adfb17da9efd74ade7f1eafb91ebd0f6b94a82c5c15812674a5b4aa83404b86",
       "package_path": "evidence/repeated-lockout-2026-10-26/docker-live-verification.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "5121f9a821a84169a617a6562d5391514507b32645ca9d2791a9aea2a518a2d5"
+      "package_sha256": "5121f9a821a84169a617a6562d5391514507b32645ca9d2791a9aea2a518a2d5",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5121f9a821a84169a617a6562d5391514507b32645ca9d2791a9aea2a518a2d5",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/focused-after.log",
-      "original_sha256": "b9821e2fab3617c41836e9dc99c92a8224c89662fee8028512c4d90a10f9f1be",
       "package_path": "evidence/repeated-lockout-2026-10-26/focused-after.log",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "78694e40b7ad4da8ebf6ea305c6f517abe0803930609fe1b727c381c210ef681"
+      "package_sha256": "78694e40b7ad4da8ebf6ea305c6f517abe0803930609fe1b727c381c210ef681",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "78694e40b7ad4da8ebf6ea305c6f517abe0803930609fe1b727c381c210ef681",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-checks.json",
-      "original_sha256": "2caa76bd69e0e6a0b62a32392676fc28783f23248c55a8e7d318897a603fdcd8",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-checks.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "f7c51984734508c2b469adc6f70818140cce364da65d1df4041bf2f93a83e8a9"
+      "package_sha256": "f7c51984734508c2b469adc6f70818140cce364da65d1df4041bf2f93a83e8a9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f7c51984734508c2b469adc6f70818140cce364da65d1df4041bf2f93a83e8a9",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-ledger-after.json",
-      "original_sha256": "5f2fa2a0a7fb450b27fdee08210d1e4bb01907d65cda8a686b3d54509e45bda3",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-ledger-after.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "6eeb1393050ddf71c9e8982a4706b5d380ad37d10934380710b89994469dc058"
+      "package_sha256": "6eeb1393050ddf71c9e8982a4706b5d380ad37d10934380710b89994469dc058",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6eeb1393050ddf71c9e8982a4706b5d380ad37d10934380710b89994469dc058",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-ledger-before.json",
-      "original_sha256": "282d4651267ae7a7279dd97eb261ad2c7c4a5613d8c5b24fc5e20910923fca15",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-ledger-before.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "060c11b0c871bb34baad38346dbeb6943048822c4d7b3db74ec89f6a6bb464a4"
+      "package_sha256": "060c11b0c871bb34baad38346dbeb6943048822c4d7b3db74ec89f6a6bb464a4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "060c11b0c871bb34baad38346dbeb6943048822c4d7b3db74ec89f6a6bb464a4",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-result.json",
-      "original_sha256": "9aca0d9bc5a001f3ca185039be2bfad1030b33fa2e8ee1332e6dfe4a5c168e18",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-result.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4fda29f32575807bf6216d37b55fd258af82abfbc88386fd3d2d01988c4e1a2b"
+      "package_sha256": "4fda29f32575807bf6216d37b55fd258af82abfbc88386fd3d2d01988c4e1a2b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4fda29f32575807bf6216d37b55fd258af82abfbc88386fd3d2d01988c4e1a2b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-source-after.json",
-      "original_sha256": "e87979921bd7aa1abb4a8e87e36d8f3907ad625ebf48a9a2ef020c691e6b2656",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-source-after.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c"
+      "package_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-source-before.json",
-      "original_sha256": "e87979921bd7aa1abb4a8e87e36d8f3907ad625ebf48a9a2ef020c691e6b2656",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-source-before.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c"
+      "package_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a8534266ac392d9c185ffecf37f6bb77d2d5709a64217c66c998e50961c4de0c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/live-traces.json",
-      "original_sha256": "6bb7ffe27b47388a66c864db9fb2e5cbc334a4b290dc8287bc398dc8250c7966",
       "package_path": "evidence/repeated-lockout-2026-10-26/live-traces.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "8e309089df1e00a17a469d1a9f25d70a208b84b47ca42fb4b562ea94dae61a75"
+      "package_sha256": "8e309089df1e00a17a469d1a9f25d70a208b84b47ca42fb4b562ea94dae61a75",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "8e309089df1e00a17a469d1a9f25d70a208b84b47ca42fb4b562ea94dae61a75",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/relevant-offline.log",
-      "original_sha256": "77d855a8cc5b46746b29ff9f4d6f055f164147a190a49ccc735c98e040c28369",
       "package_path": "evidence/repeated-lockout-2026-10-26/relevant-offline.redacted.log",
-      "transformations": [
-        "240 private-path replacements; no credential matches found"
-      ],
-      "redactions": 240,
-      "package_sha256": "a07ae1e037edd5d17c9fca4982286761fd763f228a4ff011303f8b41aa98ce26"
+      "package_sha256": "a07ae1e037edd5d17c9fca4982286761fd763f228a4ff011303f8b41aa98ce26",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a07ae1e037edd5d17c9fca4982286761fd763f228a4ff011303f8b41aa98ce26",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/repeated-lockout-2026-10-26/scorecard.md",
-      "original_sha256": "eb54c36fa9d8318598f5fded8cca4c09391139bbf5a1e35cefb397bd06b22bc9",
       "package_path": "evidence/repeated-lockout-2026-10-26/scorecard.md",
-      "transformations": [
-        "reviewed copy; original content retained",
-        "labelled later user-reported rejection annotation; original automated score retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b8e872b366a553749a7365945adf78ec63dae6d93fcd91a8b6bdc82eb5575508"
+      "package_sha256": "b8e872b366a553749a7365945adf78ec63dae6d93fcd91a8b6bdc82eb5575508",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b8e872b366a553749a7365945adf78ec63dae6d93fcd91a8b6bdc82eb5575508",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/schema-copy-experiment-2026-10-27/SUMMARY.md",
-      "original_sha256": "6dea13b88538bc18045f96568ceaa9772fdf7aed502edaa624cbf0dc3952efad",
       "package_path": "evidence/schema-copy-experiment-2026-10-27/SUMMARY.md",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "6dea13b88538bc18045f96568ceaa9772fdf7aed502edaa624cbf0dc3952efad"
+      "package_sha256": "6dea13b88538bc18045f96568ceaa9772fdf7aed502edaa624cbf0dc3952efad",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "6dea13b88538bc18045f96568ceaa9772fdf7aed502edaa624cbf0dc3952efad",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/schema-copy-experiment-2026-10-27/comparison.json",
-      "original_sha256": "77df986adc0bf23185d414dbc50611f931a645295e91ab36ac1579d4c5084fa7",
       "package_path": "evidence/schema-copy-experiment-2026-10-27/comparison.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "ce879fb290645a1ac955bcb0b0cc23e11e5708881c368d91294610c56ffe8a27"
+      "package_sha256": "ce879fb290645a1ac955bcb0b0cc23e11e5708881c368d91294610c56ffe8a27",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ce879fb290645a1ac955bcb0b0cc23e11e5708881c368d91294610c56ffe8a27",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/schema-copy-experiment-2026-10-27/experiment-ledgers-after.json",
-      "original_sha256": "f4d6ed202de61d30621f3f4f24ca537fb5584f505d43c029268f85c8cc60abfd",
       "package_path": "evidence/schema-copy-experiment-2026-10-27/experiment-ledgers-after.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "ea71da00fd2c2e78a0efa09a3e635221e51ef7697b5903935c9a61fe920e4fa8"
+      "package_sha256": "ea71da00fd2c2e78a0efa09a3e635221e51ef7697b5903935c9a61fe920e4fa8",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ea71da00fd2c2e78a0efa09a3e635221e51ef7697b5903935c9a61fe920e4fa8",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/schema-copy-experiment-2026-10-27/manual-quality-review.json",
-      "original_sha256": "3c91526d2e6f7d75d9a7d683c496f8d6e72ce46906c8a1a7ee707055bfe857b5",
       "package_path": "evidence/schema-copy-experiment-2026-10-27/manual-quality-review.json",
-      "transformations": [
-        "current-source Docker evidence refresh; runtime source unchanged"
-      ],
-      "redactions": 0,
-      "package_sha256": "7bc6e701a0f4c85fbd5870d9b24dcbece0c06b96a5e2e2526f135c7416bcd949"
+      "package_sha256": "7bc6e701a0f4c85fbd5870d9b24dcbece0c06b96a5e2e2526f135c7416bcd949",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7bc6e701a0f4c85fbd5870d9b24dcbece0c06b96a5e2e2526f135c7416bcd949",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/SUMMARY.md",
-      "original_sha256": "68e74e10d1011a182d1e555928235f9fb77d331cad09a34c36223bdc674b70f2",
+      "package_path": "evidence/submission-update-2026-11-05/SUMMARY.md",
+      "package_sha256": "9d61429ca2915bd3a723029b8161f4a456425783c10dbeebbd7d6e48ae366a8e",
+      "source": "coordinated submission documentation",
+      "transformations": [
+        "generated portable publication document",
+        "resolve links relative to evidence summary directory"
+      ]
+    },
+    {
       "package_path": "evidence/supplemental-dock-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "68e74e10d1011a182d1e555928235f9fb77d331cad09a34c36223bdc674b70f2"
+      "package_sha256": "68e74e10d1011a182d1e555928235f9fb77d331cad09a34c36223bdc674b70f2",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "68e74e10d1011a182d1e555928235f9fb77d331cad09a34c36223bdc674b70f2",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/dataset.log",
-      "original_sha256": "2f49792e68123cf936c062db959cf3d2c720a4b2eeaa81e6a66d2b9b1d170440",
       "package_path": "evidence/supplemental-dock-2026-10-26/dataset.log",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "efcc3131db415902a664416f30a8df1064de3eb8afb81185e8f3f9ba3fe5c468"
+      "package_sha256": "efcc3131db415902a664416f30a8df1064de3eb8afb81185e8f3f9ba3fe5c468",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "efcc3131db415902a664416f30a8df1064de3eb8afb81185e8f3f9ba3fe5c468",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/ledger-after.json",
-      "original_sha256": "3450489e59622ab7c9c0df375de535c17d19f087b9c5bd24cdddc6b22c06aedf",
       "package_path": "evidence/supplemental-dock-2026-10-26/ledger-after.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "7e1fe6cd6ee921d3f07a0c56578ad99627d9398e096eb674e842d3fabc1848aa"
+      "package_sha256": "7e1fe6cd6ee921d3f07a0c56578ad99627d9398e096eb674e842d3fabc1848aa",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7e1fe6cd6ee921d3f07a0c56578ad99627d9398e096eb674e842d3fabc1848aa",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/offline.log",
-      "original_sha256": "2c7cc51d4788d523d35d1e3e79b40c7bda928566d2d714f901a48e1117970a50",
       "package_path": "evidence/supplemental-dock-2026-10-26/offline.redacted.log",
-      "transformations": [
-        "241 private-path replacements; no credential matches found"
-      ],
-      "redactions": 241,
-      "package_sha256": "df3a2c703f856f281e623b20301e60d8b37a38b2a0a14c838db8ae8311d21d8a"
+      "package_sha256": "df3a2c703f856f281e623b20301e60d8b37a38b2a0a14c838db8ae8311d21d8a",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "df3a2c703f856f281e623b20301e60d8b37a38b2a0a14c838db8ae8311d21d8a",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/own08-retest.json",
-      "original_sha256": "d168d10d96e6664dcb5df747ad920fe6da1ad9caf24f1ae18cd53d16ab33f803",
       "package_path": "evidence/supplemental-dock-2026-10-26/own08-retest.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a802b14f873247f36ea92f80bc743702b49033871af7679aa57936852f46cb0c"
+      "package_sha256": "a802b14f873247f36ea92f80bc743702b49033871af7679aa57936852f46cb0c",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a802b14f873247f36ea92f80bc743702b49033871af7679aa57936852f46cb0c",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/own08-traces.json",
-      "original_sha256": "a98f13ea894eee09faec9eb1bb4e57dec20cc6bd322f28604a7649c2d75fe526",
       "package_path": "evidence/supplemental-dock-2026-10-26/own08-traces.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b7e00993ecd943617d3cb578d124b85384b6ed7990f3a5014a7ce85c997729bd"
+      "package_sha256": "b7e00993ecd943617d3cb578d124b85384b6ed7990f3a5014a7ce85c997729bd",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b7e00993ecd943617d3cb578d124b85384b6ed7990f3a5014a7ce85c997729bd",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/policy-conflict.md",
-      "original_sha256": "a066f8632aed7f532f5f7a5d027a7e212f0b8128d3ce6ed99d1c387b982cdc81",
       "package_path": "evidence/supplemental-dock-2026-10-26/policy-conflict.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a066f8632aed7f532f5f7a5d027a7e212f0b8128d3ce6ed99d1c387b982cdc81"
+      "package_sha256": "a066f8632aed7f532f5f7a5d027a7e212f0b8128d3ce6ed99d1c387b982cdc81",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a066f8632aed7f532f5f7a5d027a7e212f0b8128d3ce6ed99d1c387b982cdc81",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/repeated.case-metrics.json",
-      "original_sha256": "b813ca24fd3ff3a8199f1d4a7ec6df2a1154b5861a57f259e32c3874682a527b",
       "package_path": "evidence/supplemental-dock-2026-10-26/repeated.case-metrics.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "2ba9046add2ca9aca6c2e3a6685b12c8dbc232142dfc2645a934f49413ab34e1"
+      "package_sha256": "2ba9046add2ca9aca6c2e3a6685b12c8dbc232142dfc2645a934f49413ab34e1",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "2ba9046add2ca9aca6c2e3a6685b12c8dbc232142dfc2645a934f49413ab34e1",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/repeated.json",
-      "original_sha256": "8b4a9a8ebf162cac8f3950283b3790d05b266945ad0d0acf57afbd2e662d88f1",
       "package_path": "evidence/supplemental-dock-2026-10-26/repeated.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "e430c19089f49463c786f375975090a35dec1f54a3fc54d0d9a3a8951a003980"
+      "package_sha256": "e430c19089f49463c786f375975090a35dec1f54a3fc54d0d9a3a8951a003980",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e430c19089f49463c786f375975090a35dec1f54a3fc54d0d9a3a8951a003980",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/repeated.md",
-      "original_sha256": "f09d68470658142ff547ddbc33ff3adcc097ed402b210803f27177675f4b5149",
       "package_path": "evidence/supplemental-dock-2026-10-26/repeated.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "f09d68470658142ff547ddbc33ff3adcc097ed402b210803f27177675f4b5149"
+      "package_sha256": "f09d68470658142ff547ddbc33ff3adcc097ed402b210803f27177675f4b5149",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f09d68470658142ff547ddbc33ff3adcc097ed402b210803f27177675f4b5149",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/source-after.json",
-      "original_sha256": "570e26dcee1c29d8dc9736a85212110752d2a07e631e9ec87697b3da6b080ab5",
       "package_path": "evidence/supplemental-dock-2026-10-26/source-after.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271"
+      "package_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/source-before.json",
-      "original_sha256": "570e26dcee1c29d8dc9736a85212110752d2a07e631e9ec87697b3da6b080ab5",
       "package_path": "evidence/supplemental-dock-2026-10-26/source-before.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271"
+      "package_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4fe66d7704afa38ad036fc729fe98281057a909a99a88439769a10583a8f8271",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/supplemental-repeated-actions.json",
-      "original_sha256": "22de3bf1e1f4e8ace595bc5c21497ce6b1dba183f024824bb9acda899e853479",
       "package_path": "evidence/supplemental-dock-2026-10-26/supplemental-repeated-actions.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "5aeac314290a2a367f3ac972593f4ff3cd08d5166db6dfc07799d61d4bdebb08"
+      "package_sha256": "5aeac314290a2a367f3ac972593f4ff3cd08d5166db6dfc07799d61d4bdebb08",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5aeac314290a2a367f3ac972593f4ff3cd08d5166db6dfc07799d61d4bdebb08",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/supplemental-repeated.json",
-      "original_sha256": "ec4227bfd87033cd32a3d2aeb738b5d4d673fd757c74d2bb6f04d7ae7a8cc557",
       "package_path": "evidence/supplemental-dock-2026-10-26/supplemental-repeated.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a7461e6785f70a8994a5564fe376fbafe109709b2a550819c89ec983f46509cc"
+      "package_sha256": "a7461e6785f70a8994a5564fe376fbafe109709b2a550819c89ec983f46509cc",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a7461e6785f70a8994a5564fe376fbafe109709b2a550819c89ec983f46509cc",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/supplemental.json",
-      "original_sha256": "e66679871f2074f21ebbad26af4a00e96b7cb44d85a6dcf49a217affc1d0305b",
       "package_path": "evidence/supplemental-dock-2026-10-26/supplemental.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "a7a61b7c530cede01cee4f2186458362e21d9f5614b99846bb7926cb3ab198d3"
+      "package_sha256": "a7a61b7c530cede01cee4f2186458362e21d9f5614b99846bb7926cb3ab198d3",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "a7a61b7c530cede01cee4f2186458362e21d9f5614b99846bb7926cb3ab198d3",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/supplemental-dock-2026-10-26/supplied-integrity.json",
-      "original_sha256": "22fdd3b6655209c06ca18ff0e3d9950187403f4584837c775cc71c470785b943",
       "package_path": "evidence/supplemental-dock-2026-10-26/supplied-integrity.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "0ce4fa5e2454f847da2ec01f4579b97db3418e769f1b9e20779f3d48e131e06b"
+      "package_sha256": "0ce4fa5e2454f847da2ec01f4579b97db3418e769f1b9e20779f3d48e131e06b",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "0ce4fa5e2454f847da2ec01f4579b97db3418e769f1b9e20779f3d48e131e06b",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/SUMMARY.md",
-      "original_sha256": "13ed61457fbcd33834333580de5cef7d92655fc17d36226d1977677640a47346",
       "package_path": "evidence/timing-clarity-2026-10-26/SUMMARY.md",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "13ed61457fbcd33834333580de5cef7d92655fc17d36226d1977677640a47346"
+      "package_sha256": "13ed61457fbcd33834333580de5cef7d92655fc17d36226d1977677640a47346",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "13ed61457fbcd33834333580de5cef7d92655fc17d36226d1977677640a47346",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/docker-final-verification.json",
-      "original_sha256": "c9baac4a48c6142f55e66ddd4c18b4464000fa2b5be35e1447ad96016181e08e",
       "package_path": "evidence/timing-clarity-2026-10-26/docker-final-verification.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "42b6a00e38fbe4d3bee0bb2d709ec42bca4f92edbe2b15d31044ca23c6fa0ce2"
+      "package_sha256": "42b6a00e38fbe4d3bee0bb2d709ec42bca4f92edbe2b15d31044ca23c6fa0ce2",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "42b6a00e38fbe4d3bee0bb2d709ec42bca4f92edbe2b15d31044ca23c6fa0ce2",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/ledger-after.json",
-      "original_sha256": "1df7070d194213c260355caaa10be6dae0584ac8d3ba6941bb1f5cd8a44e9b53",
       "package_path": "evidence/timing-clarity-2026-10-26/ledger-after.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "322b9aed6cb8004732fc9114f142089d1f0fe7db7b4520bc60651d43a7dbf309"
+      "package_sha256": "322b9aed6cb8004732fc9114f142089d1f0fe7db7b4520bc60651d43a7dbf309",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "322b9aed6cb8004732fc9114f142089d1f0fe7db7b4520bc60651d43a7dbf309",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/onboarding-final.json",
-      "original_sha256": "e1571f6cf71f0f827502c56bb3f78a3da93626eb90e81a53f2aa15bcf00a8206",
       "package_path": "evidence/timing-clarity-2026-10-26/onboarding-final.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "52076fd376175b5bbeadcc54d2e7818c497f5a418b4f9493f1e1434ca496f3fd"
+      "package_sha256": "52076fd376175b5bbeadcc54d2e7818c497f5a418b4f9493f1e1434ca496f3fd",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "52076fd376175b5bbeadcc54d2e7818c497f5a418b4f9493f1e1434ca496f3fd",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/onboarding.json",
-      "original_sha256": "bcb1c16483785a666665fd196e7a92e60b19bb99be9749421f22c1455df7cf49",
       "package_path": "evidence/timing-clarity-2026-10-26/onboarding.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "ede11b303e740dc1c2d666d554a3d2c821184e0f6f0192e81a86bb38041f40bd"
+      "package_sha256": "ede11b303e740dc1c2d666d554a3d2c821184e0f6f0192e81a86bb38041f40bd",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ede11b303e740dc1c2d666d554a3d2c821184e0f6f0192e81a86bb38041f40bd",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/source-final-after-live.json",
-      "original_sha256": "f3f20d34cfd9f4eeccb423696ec3ac2e9ebb5721ea895eab3893b1ddb1163668",
       "package_path": "evidence/timing-clarity-2026-10-26/source-final-after-live.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9"
+      "package_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/source-final-before-live.json",
-      "original_sha256": "f3f20d34cfd9f4eeccb423696ec3ac2e9ebb5721ea895eab3893b1ddb1163668",
       "package_path": "evidence/timing-clarity-2026-10-26/source-final-before-live.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9"
+      "package_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "0714694a5b2a0cfe6ca08f55fc3b4535cbb54f1593803acf6fefd8189b8498f9",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/targeted-offline-final.log",
-      "original_sha256": "b6e6e3d4c18c783698cd04932f693bb068fc19b1e89f9b3e4d77ddd61e6f7731",
       "package_path": "evidence/timing-clarity-2026-10-26/targeted-offline-final.redacted.log",
-      "transformations": [
-        "195 private-path replacements; no credential matches found"
-      ],
-      "redactions": 195,
-      "package_sha256": "acd673acd080aeca22050781d72ef2b3974680ff789eb030cb93ecf4c7e6d510"
+      "package_sha256": "acd673acd080aeca22050781d72ef2b3974680ff789eb030cb93ecf4c7e6d510",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "acd673acd080aeca22050781d72ef2b3974680ff789eb030cb93ecf4c7e6d510",
+      "transformations": []
     },
     {
-      "original_local_path": "evidence/timing-clarity-2026-10-26/withheld-traces.json",
-      "original_sha256": "cda612dab8b0ec1dae6b5f4b60255603436cc4a05eb044abba6444008a8e6bba",
       "package_path": "evidence/timing-clarity-2026-10-26/withheld-traces.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "580d4f8380d08607296391e82ee1dbd9b1d35b21f3f0465a244ff630913adac9"
+      "package_sha256": "580d4f8380d08607296391e82ee1dbd9b1d35b21f3f0465a244ff630913adac9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "580d4f8380d08607296391e82ee1dbd9b1d35b21f3f0465a244ff630913adac9",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/ASSIGNMENT.md",
-      "original_sha256": "f8b490cf9e3a023b052ac74365831d1a92bfcd80b254f6e7ec83478577f20781",
       "package_path": "reference/ASSIGNMENT.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "4d9b73875085a0a2eb1a99541deaed61adb818c88d4a25c04bcd500a9c2aacd7"
+      "package_sha256": "4d9b73875085a0a2eb1a99541deaed61adb818c88d4a25c04bcd500a9c2aacd7",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "4d9b73875085a0a2eb1a99541deaed61adb818c88d4a25c04bcd500a9c2aacd7",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/KIT-README.md",
-      "original_sha256": "2fb2ed9c97065cfc579db6d929f087a0dac107741ce1967bebce83a5ab4c8b31",
       "package_path": "reference/KIT-README.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "2a19c438425851ed3acd2f6e968b833c52c67a8a04c62ff87f9dcf54d7168576"
+      "package_sha256": "2a19c438425851ed3acd2f6e968b833c52c67a8a04c62ff87f9dcf54d7168576",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "2a19c438425851ed3acd2f6e968b833c52c67a8a04c62ff87f9dcf54d7168576",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/SCENARIO.md",
-      "original_sha256": "519a8de1b4dacf02fa4320ee54eb1ac05e19f9565e40e310a9fd7727335b9f25",
       "package_path": "reference/SCENARIO.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "1e532a657c1f09fcc475e39570101865194ee5357d65ec372a7c64e3cea851db"
+      "package_sha256": "1e532a657c1f09fcc475e39570101865194ee5357d65ec372a7c64e3cea851db",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "1e532a657c1f09fcc475e39570101865194ee5357d65ec372a7c64e3cea851db",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/CONNECT-THE-DOTS.md",
-      "original_sha256": "5fd27fca3e23fe171d6892a9c7bc9bde2b320482451d9aa250b05dfe7d111d03",
       "package_path": "reference/common/CONNECT-THE-DOTS.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "76916748a7e8caaa10406347100b2d94d4ee08413577445476cb465f4e34f9dc"
+      "package_sha256": "76916748a7e8caaa10406347100b2d94d4ee08413577445476cb465f4e34f9dc",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "76916748a7e8caaa10406347100b2d94d4ee08413577445476cb465f4e34f9dc",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/CONTRACT.md",
-      "original_sha256": "827a05fae8d6ab3ce64227a6e033f9067b9d114341a606309783fb5a3b8dab1f",
       "package_path": "reference/common/CONTRACT.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "f7631247a1bc3d2e643b4653bf11716ec68b2b99e39e5c1b5a8fe073e80727d4"
+      "package_sha256": "f7631247a1bc3d2e643b4653bf11716ec68b2b99e39e5c1b5a8fe073e80727d4",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f7631247a1bc3d2e643b4653bf11716ec68b2b99e39e5c1b5a8fe073e80727d4",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/DEMO-GUIDE.md",
-      "original_sha256": "07064fcd1a1da34d92d0d1095cffb430cacd2f35f3c3adbc5ce1b392673f5c58",
       "package_path": "reference/common/DEMO-GUIDE.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "e1e8d124560ff44f95a679500997f6367f84ce386167bb26529c966114832ee7"
+      "package_sha256": "e1e8d124560ff44f95a679500997f6367f84ce386167bb26529c966114832ee7",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "e1e8d124560ff44f95a679500997f6367f84ce386167bb26529c966114832ee7",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/DESIGN-DOC-TEMPLATE.md",
-      "original_sha256": "73289cf102695a38ea8e3da9a1adc261b16491db41c1c14b74615f6fe467e0e5",
       "package_path": "reference/common/DESIGN-DOC-TEMPLATE.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "7fd765b0eae0b309da55ca52be24ee9836fcf146b865ddcdea9b9aeefa2ff1ee"
+      "package_sha256": "7fd765b0eae0b309da55ca52be24ee9836fcf146b865ddcdea9b9aeefa2ff1ee",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "7fd765b0eae0b309da55ca52be24ee9836fcf146b865ddcdea9b9aeefa2ff1ee",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/PORTFOLIO-README-TEMPLATE.md",
-      "original_sha256": "d3fa24219657ba6fba50e92aea0f7f344b1a990f4436ad2b385a51b6a8810d1e",
       "package_path": "reference/common/PORTFOLIO-README-TEMPLATE.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "ceb6c2af004e4c971f4b81fa5b4f019362b126ca54a05061f7d16a7454e06a5f"
+      "package_sha256": "ceb6c2af004e4c971f4b81fa5b4f019362b126ca54a05061f7d16a7454e06a5f",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ceb6c2af004e4c971f4b81fa5b4f019362b126ca54a05061f7d16a7454e06a5f",
+      "transformations": []
     },
     {
-      "original_local_path": "reference/common/RUBRIC.md",
-      "original_sha256": "34041ff6fbf3cc7fe11dabab2450c8c4cb09dd80e15ecb042681a87104734837",
       "package_path": "reference/common/RUBRIC.md",
-      "transformations": [
-        "replaced copied course content/assets with official-source navigation pointer"
-      ],
-      "redactions": 0,
-      "package_sha256": "670de3a2d3053846479108e8677d3a7829f934c7a3b02782bbda9396c015e0c9"
+      "package_sha256": "670de3a2d3053846479108e8677d3a7829f934c7a3b02782bbda9396c015e0c9",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "670de3a2d3053846479108e8677d3a7829f934c7a3b02782bbda9396c015e0c9",
+      "transformations": []
     },
     {
-      "original_local_path": "requirements.txt",
-      "original_sha256": "b94878882178bc084db080559de1c75d80dd507a6d7890f6f0bcbddde35da5c3",
       "package_path": "requirements.txt",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "b94878882178bc084db080559de1c75d80dd507a6d7890f6f0bcbddde35da5c3"
+      "package_sha256": "b94878882178bc084db080559de1c75d80dd507a6d7890f6f0bcbddde35da5c3",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "b94878882178bc084db080559de1c75d80dd507a6d7890f6f0bcbddde35da5c3",
+      "transformations": []
     },
     {
-      "original_local_path": "services/Dockerfile",
-      "original_sha256": "f1de10db5c4d2a8c922d3b10b17f8b2ebaa8bc8afda0b30155115f1e274b6e57",
+      "package_path": "scripts/Dockerfile.layer",
+      "package_sha256": "d5aa3ea93a5cad2159640c90abfadddf1917cf4cf6e51099b775c281679789c5",
+      "source": "working project/scripts/Dockerfile.layer",
+      "source_sha256": "d5aa3ea93a5cad2159640c90abfadddf1917cf4cf6e51099b775c281679789c5",
+      "transformations": []
+    },
+    {
+      "package_path": "scripts/auth_probe.py",
+      "package_sha256": "008407b27718082bb054d9acb6d90899cca99ce55341d1f641babbbc729bd24f",
+      "source": "working project/scripts/auth_probe.py",
+      "source_sha256": "008407b27718082bb054d9acb6d90899cca99ce55341d1f641babbbc729bd24f",
+      "transformations": []
+    },
+    {
+      "package_path": "scripts/maintain_history.py",
+      "package_sha256": "a1c29c358795de2436df4552dd95941b2b8680947a3e98155151f7800aa596d1",
+      "source": "working project/scripts/maintain_history.py",
+      "source_sha256": "a1c29c358795de2436df4552dd95941b2b8680947a3e98155151f7800aa596d1",
+      "transformations": []
+    },
+    {
+      "package_path": "scripts/setup_demo_auth.py",
+      "package_sha256": "2beed4dfbe1cb84c4a39e44567dacd40f305331fdb2ce76cd9d7fc4840cead28",
+      "source": "working project/scripts/setup_demo_auth.py",
+      "source_sha256": "2beed4dfbe1cb84c4a39e44567dacd40f305331fdb2ce76cd9d7fc4840cead28",
+      "transformations": []
+    },
+    {
+      "package_path": "scripts/stop-local.ps1",
+      "package_sha256": "ae0bcf7ca542ce5a228f4f252e4f248863701f9e5a399c53beb7e1e6c6c584d1",
+      "source": "working project/scripts/stop-local.ps1",
+      "transformations": [
+        "replace owner-specific root with PSScriptRoot; never executed"
+      ]
+    },
+    {
       "package_path": "services/Dockerfile",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "f1de10db5c4d2a8c922d3b10b17f8b2ebaa8bc8afda0b30155115f1e274b6e57"
+      "package_sha256": "f1de10db5c4d2a8c922d3b10b17f8b2ebaa8bc8afda0b30155115f1e274b6e57",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "f1de10db5c4d2a8c922d3b10b17f8b2ebaa8bc8afda0b30155115f1e274b6e57",
+      "transformations": []
     },
     {
-      "original_local_path": "services/__init__.py",
-      "original_sha256": "df475fa89ab8600a1db71b6189b19f13559f3e43af71c4cc7f94cc3f40820043",
       "package_path": "services/__init__.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "df475fa89ab8600a1db71b6189b19f13559f3e43af71c4cc7f94cc3f40820043"
+      "package_sha256": "df475fa89ab8600a1db71b6189b19f13559f3e43af71c4cc7f94cc3f40820043",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "df475fa89ab8600a1db71b6189b19f13559f3e43af71c4cc7f94cc3f40820043",
+      "transformations": []
     },
     {
-      "original_local_path": "services/data/employees.json",
-      "original_sha256": "ef1da140f8b4fb844886b1a4f5450e35a81ec690546fe97400bd985747fb5a77",
       "package_path": "services/data/employees.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "ef1da140f8b4fb844886b1a4f5450e35a81ec690546fe97400bd985747fb5a77"
+      "package_sha256": "ef1da140f8b4fb844886b1a4f5450e35a81ec690546fe97400bd985747fb5a77",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "ef1da140f8b4fb844886b1a4f5450e35a81ec690546fe97400bd985747fb5a77",
+      "transformations": []
     },
     {
-      "original_local_path": "services/data/status.json",
-      "original_sha256": "be3c8943b577acaff2386fb04a6d66253563b530144fdf3a004439c09e51bf17",
       "package_path": "services/data/status.json",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "be3c8943b577acaff2386fb04a6d66253563b530144fdf3a004439c09e51bf17"
+      "package_sha256": "be3c8943b577acaff2386fb04a6d66253563b530144fdf3a004439c09e51bf17",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "be3c8943b577acaff2386fb04a6d66253563b530144fdf3a004439c09e51bf17",
+      "transformations": []
     },
     {
-      "original_local_path": "services/helpdesk_api.py",
-      "original_sha256": "2ab0feb0c440101dfeda0f0bad683330c8eb50cd759b85a550c62384c75f56bf",
       "package_path": "services/helpdesk_api.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "2ab0feb0c440101dfeda0f0bad683330c8eb50cd759b85a550c62384c75f56bf"
+      "package_sha256": "2ab0feb0c440101dfeda0f0bad683330c8eb50cd759b85a550c62384c75f56bf",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "2ab0feb0c440101dfeda0f0bad683330c8eb50cd759b85a550c62384c75f56bf",
+      "transformations": []
     },
     {
-      "original_local_path": "services/helpdesk_mcp.py",
-      "original_sha256": "5eadc27af5c139e2318999dfec8589a379747729906d5100c836d7f6f2c1ea93",
       "package_path": "services/helpdesk_mcp.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "5eadc27af5c139e2318999dfec8589a379747729906d5100c836d7f6f2c1ea93"
+      "package_sha256": "5eadc27af5c139e2318999dfec8589a379747729906d5100c836d7f6f2c1ea93",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "5eadc27af5c139e2318999dfec8589a379747729906d5100c836d7f6f2c1ea93",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_agent_workflow.py",
-      "original_sha256": "b68a55f215d987cb757833d095638584055beef78407c6e798598515a23120c7",
+      "package_path": "tests/auth_helpers.py",
+      "package_sha256": "b90317daa5aab72baa7004f4897f9da1a2816d2b4a0a1cbf50e158cc88e40442",
+      "source": "working project/tests/auth_helpers.py",
+      "source_sha256": "b90317daa5aab72baa7004f4897f9da1a2816d2b4a0a1cbf50e158cc88e40442",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/browser/serve_isolated_app.py",
+      "package_sha256": "4a1b85d0fafc192a3afd033db2d343e78b5a097546d2a77f08cedc2723c6075e",
+      "source": "working project/tests/browser/serve_isolated_app.py",
+      "source_sha256": "4a1b85d0fafc192a3afd033db2d343e78b5a097546d2a77f08cedc2723c6075e",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/browser/ui_enhancements_smoke.py",
+      "package_sha256": "4d35c65ab03d20ca93d43fde1d917a2594bbffbf592388ec232fdc44d660fe60",
+      "source": "working project/tests/browser/ui_enhancements_smoke.py",
+      "source_sha256": "4d35c65ab03d20ca93d43fde1d917a2594bbffbf592388ec232fdc44d660fe60",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/browser/ui_smoke.py",
+      "package_sha256": "924140e71114a7566b9269ad6f7253222aac290cdee5d3d434409ffe2538d180",
+      "source": "working project/tests/browser/ui_smoke.py",
+      "source_sha256": "21441b72aaa84548c8ebe1cf5b622fb25dedb4c27d53c46f671b2653814f98a9",
+      "transformations": [
+        "replace machine-specific example interpreter path with clone-relative path; test behavior unchanged"
+      ]
+    },
+    {
+      "package_path": "tests/test_admin_all_tickets.py",
+      "package_sha256": "8add265fc7e8f9b99c11e15c74bd0f63c37322bbace6c47fede29838ce24b43f",
+      "source": "working project/tests/test_admin_all_tickets.py",
+      "source_sha256": "8add265fc7e8f9b99c11e15c74bd0f63c37322bbace6c47fede29838ce24b43f",
+      "transformations": []
+    },
+    {
       "package_path": "tests/test_agent_workflow.py",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "72f0ebec1aa85e90095e72ce035222e6d42d22c06117bb42d7cba04ce164d524"
+      "package_sha256": "d6c8f3ea05e47a856d33c1b9cf0e3bff4a3922dcdbb687688ea944ce78538cf1",
+      "source": "working project/tests/test_agent_workflow.py",
+      "source_sha256": "d6c8f3ea05e47a856d33c1b9cf0e3bff4a3922dcdbb687688ea944ce78538cf1",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_approvals.py",
-      "original_sha256": "df4f399884c4faa64c1e4fc4aa1266c6a68589fc3d57d3c393df093dd928ea9d",
       "package_path": "tests/test_approvals.py",
-      "transformations": [
-        "scoped approval-incident correction refresh"
-      ],
-      "redactions": 0,
-      "package_sha256": "df4f399884c4faa64c1e4fc4aa1266c6a68589fc3d57d3c393df093dd928ea9d"
+      "package_sha256": "df4f399884c4faa64c1e4fc4aa1266c6a68589fc3d57d3c393df093dd928ea9d",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "df4f399884c4faa64c1e4fc4aa1266c6a68589fc3d57d3c393df093dd928ea9d",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_contract_safety.py",
-      "original_sha256": "83fee63113c6ed7fc8818e6ec6fd123a1db14a50bfd407dcfa07ac8f557c6e32",
+      "package_path": "tests/test_auth_http.py",
+      "package_sha256": "d3e86daceb782f06e1df0ac9e90860a5d3a9af608ad4a1d72d68865b01af114f",
+      "source": "working project/tests/test_auth_http.py",
+      "source_sha256": "d3e86daceb782f06e1df0ac9e90860a5d3a9af608ad4a1d72d68865b01af114f",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_auth_hygiene.py",
+      "package_sha256": "eda632e63a734c142830958a4d34b6ec88dde099de346915689ff08922cfc093",
+      "source": "working project/tests/test_auth_hygiene.py",
+      "source_sha256": "eda632e63a734c142830958a4d34b6ec88dde099de346915689ff08922cfc093",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_auth_queue_expiry.py",
+      "package_sha256": "6a3e8c6bdba36208b8bd78dd30abb4c7ed0e49a84df01708fa6db99441b06d68",
+      "source": "working project/tests/test_auth_queue_expiry.py",
+      "source_sha256": "6a3e8c6bdba36208b8bd78dd30abb4c7ed0e49a84df01708fa6db99441b06d68",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_auth_service.py",
+      "package_sha256": "5a0ae0d435109ba10134f5ac9960b6804defa7a7ef1b74634c85b991fc6d9299",
+      "source": "working project/tests/test_auth_service.py",
+      "source_sha256": "5a0ae0d435109ba10134f5ac9960b6804defa7a7ef1b74634c85b991fc6d9299",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch2_integration.py",
+      "package_sha256": "f3d087307da6bc559ea35c931f5ea4f10b411ee711dc73f6c38fe8568c82fbc2",
+      "source": "working project/tests/test_batch2_integration.py",
+      "source_sha256": "f3d087307da6bc559ea35c931f5ea4f10b411ee711dc73f6c38fe8568c82fbc2",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch3_injection_http.py",
+      "package_sha256": "a3e71954c2b8f551d472059dc0ba36ec0b5d03307e04da936395e140a305664e",
+      "source": "working project/tests/test_batch3_injection_http.py",
+      "source_sha256": "a3e71954c2b8f551d472059dc0ba36ec0b5d03307e04da936395e140a305664e",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch3_perf_integration.py",
+      "package_sha256": "edd3e9cbe65862d8242cbbdb903b1ed5c4204fb52d0f3a83d0bbb892588e755b",
+      "source": "working project/tests/test_batch3_perf_integration.py",
+      "source_sha256": "edd3e9cbe65862d8242cbbdb903b1ed5c4204fb52d0f3a83d0bbb892588e755b",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch4_session_races.py",
+      "package_sha256": "d16a89f5fa78cb34ee11ee99d94af3c33830d60edc91c42b07bedd7038f9c7a1",
+      "source": "working project/tests/test_batch4_session_races.py",
+      "source_sha256": "d16a89f5fa78cb34ee11ee99d94af3c33830d60edc91c42b07bedd7038f9c7a1",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch5_functional_fixes.py",
+      "package_sha256": "3905c5a32e7bf3ec0e9ac5c633188b2699136003759ba7160e78f726fb1b5d47",
+      "source": "working project/tests/test_batch5_functional_fixes.py",
+      "source_sha256": "3905c5a32e7bf3ec0e9ac5c633188b2699136003759ba7160e78f726fb1b5d47",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch7_unsafe_draft_diagnostics.py",
+      "package_sha256": "d6609ce43b04263f46c2f225825e8338663f48b6636eb89834359be5f31200fe",
+      "source": "working project/tests/test_batch7_unsafe_draft_diagnostics.py",
+      "source_sha256": "d6609ce43b04263f46c2f225825e8338663f48b6636eb89834359be5f31200fe",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_batch8_case8_corrections.py",
+      "package_sha256": "b348440def48d1c1694a6bde9e518db48c26a6cdcbeb1eb49a3bb743ca3e6f56",
+      "source": "working project/tests/test_batch8_case8_corrections.py",
+      "source_sha256": "b348440def48d1c1694a6bde9e518db48c26a6cdcbeb1eb49a3bb743ca3e6f56",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_case19_request_continuity.py",
+      "package_sha256": "dbe3ae411ed1a2dd3fd7b38c70ddfdfba6bdb4fd7f6fd2094f20d77a1213fbce",
+      "source": "working project/tests/test_case19_request_continuity.py",
+      "source_sha256": "dbe3ae411ed1a2dd3fd7b38c70ddfdfba6bdb4fd7f6fd2094f20d77a1213fbce",
+      "transformations": []
+    },
+    {
       "package_path": "tests/test_contract_safety.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "83fee63113c6ed7fc8818e6ec6fd123a1db14a50bfd407dcfa07ac8f557c6e32"
+      "package_sha256": "fa6495782c771ab343583a772139e6540164b6204a79cf853866c91f37deee58",
+      "source": "working project/tests/test_contract_safety.py",
+      "source_sha256": "fa6495782c771ab343583a772139e6540164b6204a79cf853866c91f37deee58",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_eval_measurement.py",
-      "original_sha256": "28117059740052102be91a54f3414a18854c79b62cb4e877d007f841e5f3c1d1",
+      "package_path": "tests/test_current_message_routing.py",
+      "package_sha256": "1e8e8866987f6abd7e8397511fe04815dfb46110c92b0450d1970c2d9c68e557",
+      "source": "working project/tests/test_current_message_routing.py",
+      "source_sha256": "1e8e8866987f6abd7e8397511fe04815dfb46110c92b0450d1970c2d9c68e557",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_database_input_safety.py",
+      "package_sha256": "cc79a2a80224617e4898f7d4a329f1e3bb8de1d310074e2aa6ded5c908f13438",
+      "source": "working project/tests/test_database_input_safety.py",
+      "source_sha256": "cc79a2a80224617e4898f7d4a329f1e3bb8de1d310074e2aa6ded5c908f13438",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_demo_admin.py",
+      "package_sha256": "a7b7e5665463a5a316728bfcf1302ba97365aaf24c2f83e2074103f0e4649906",
+      "source": "working project/tests/test_demo_admin.py",
+      "source_sha256": "a7b7e5665463a5a316728bfcf1302ba97365aaf24c2f83e2074103f0e4649906",
+      "transformations": []
+    },
+    {
       "package_path": "tests/test_eval_measurement.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "28117059740052102be91a54f3414a18854c79b62cb4e877d007f841e5f3c1d1"
+      "package_sha256": "28117059740052102be91a54f3414a18854c79b62cb4e877d007f841e5f3c1d1",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "28117059740052102be91a54f3414a18854c79b62cb4e877d007f841e5f3c1d1",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_read_intent.py",
-      "original_sha256": "d12e7b88fb941007dd86cf29cc4b47279987b45a3383220466c854aed1f40045",
+      "package_path": "tests/test_eval_runner_auth.py",
+      "package_sha256": "39692d8094e9dcb185568b224fd88c9a403569f7d30deaa096c9fd73f3758b4c",
+      "source": "working project/tests/test_eval_runner_auth.py",
+      "source_sha256": "39692d8094e9dcb185568b224fd88c9a403569f7d30deaa096c9fd73f3758b4c",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_identity_session_security.py",
+      "package_sha256": "3f0f879e1f9b64823725427739036e49682a11ff682e1ad3fec3bd58002693fb",
+      "source": "working project/tests/test_identity_session_security.py",
+      "source_sha256": "3f0f879e1f9b64823725427739036e49682a11ff682e1ad3fec3bd58002693fb",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_lockout_narration_conditions.py",
+      "package_sha256": "ba956517768ff43a410bd89459f77f833103c3c3f89feda646d7c2e2150276b8",
+      "source": "working project/tests/test_lockout_narration_conditions.py",
+      "source_sha256": "ba956517768ff43a410bd89459f77f833103c3c3f89feda646d7c2e2150276b8",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_login_ticket_continuity.py",
+      "package_sha256": "17363eb496405e20774b5e00a5bbb02b472ba9f7cb5a91fd5bfad2d0f3aa4f3b",
+      "source": "working project/tests/test_login_ticket_continuity.py",
+      "source_sha256": "17363eb496405e20774b5e00a5bbb02b472ba9f7cb5a91fd5bfad2d0f3aa4f3b",
+      "transformations": []
+    },
+    {
       "package_path": "tests/test_read_intent.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "d12e7b88fb941007dd86cf29cc4b47279987b45a3383220466c854aed1f40045"
+      "package_sha256": "d12e7b88fb941007dd86cf29cc4b47279987b45a3383220466c854aed1f40045",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "d12e7b88fb941007dd86cf29cc4b47279987b45a3383220466c854aed1f40045",
+      "transformations": []
     },
     {
-      "original_local_path": "tests/test_retrieval_policy.py",
-      "original_sha256": "43cdbf0b8fefe7753093dee4574bbad39cd4d928ed532ce299f0e31d44c29068",
       "package_path": "tests/test_retrieval_policy.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "43cdbf0b8fefe7753093dee4574bbad39cd4d928ed532ce299f0e31d44c29068"
+      "package_sha256": "43cdbf0b8fefe7753093dee4574bbad39cd4d928ed532ce299f0e31d44c29068",
+      "source": "previous publication HEAD e8e7eb73a238e8bec4f31fb51ed74ca1c92b0d52",
+      "source_sha256": "43cdbf0b8fefe7753093dee4574bbad39cd4d928ed532ce299f0e31d44c29068",
+      "transformations": []
     },
     {
-      "original_local_path": "ui/app_ui.py",
-      "original_sha256": "2b872142801bb2067a3debe0669d75c5259181ca331b0965516737d8f41b8b38",
+      "package_path": "tests/test_startup_preservation.py",
+      "package_sha256": "47dcb8f5b20a190fe19c9893343db64c5338b7ff3fc7d59f13a281d180adfee4",
+      "source": "working project/tests/test_startup_preservation.py",
+      "source_sha256": "47dcb8f5b20a190fe19c9893343db64c5338b7ff3fc7d59f13a281d180adfee4",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/test_ui_enhancements.py",
+      "package_sha256": "6f755145ef111e292ffe0fc422a958d797bc0989fa7b76b136d0ed34a008bb61",
+      "source": "working project/tests/test_ui_enhancements.py",
+      "source_sha256": "6f755145ef111e292ffe0fc422a958d797bc0989fa7b76b136d0ed34a008bb61",
+      "transformations": []
+    },
+    {
+      "package_path": "tests/ui_fixtures.py",
+      "package_sha256": "a5ec5b95c0c23d31973eaf2f27121b3e9736a66ec64da9eca030df40e8e24a69",
+      "source": "working project/tests/ui_fixtures.py",
+      "source_sha256": "a5ec5b95c0c23d31973eaf2f27121b3e9736a66ec64da9eca030df40e8e24a69",
+      "transformations": []
+    },
+    {
       "package_path": "ui/app_ui.py",
-      "transformations": [
-        "reviewed copy; original content retained"
-      ],
-      "redactions": 0,
-      "package_sha256": "2b872142801bb2067a3debe0669d75c5259181ca331b0965516737d8f41b8b38"
+      "package_sha256": "c967ba256d99609531dea0f85f53c8e60bf7e14cc1c582ec47a158b17c24c431",
+      "source": "working project/ui/app_ui.py",
+      "source_sha256": "c967ba256d99609531dea0f85f53c8e60bf7e14cc1c582ec47a158b17c24c431",
+      "transformations": []
     }
-  ],
-  "excluded": [
-    "evidence/pre-local-checkpoint-records/REQUIREMENTS.md",
-    "reference/Capstone/* (five documents)",
-    "reference/visuals/*",
-    "scripts/stop-local.ps1 (private machine path; Compose supported instead)",
-    ".env and runtime data/databases/caches/whole backups"
-  ],
-  "source_application_unchanged": false,
-  "docker_verification_predates_runtime_changes": false,
-  "runtime_source_unchanged_by_current_verification": true,
-  "supplied_kit_snapshot": {
-    "source": "fork commit 2ae2f52 on origin/main of set168111/Agentic-AI-Bootcamp-Students (the snapshot actually used)",
-    "upstream_compared": "local ref 39636dd: no differences for scenario-2-it-helpdesk or the Final-Mini-Project README versus 2ae2f52",
-    "repinned": false
-  },
-  "publication_basis": "Assignment instructs students to create a new public repo, copy the kit contents into it and commit; supplied kit stays under its own notices and is not relicensed (see THIRD_PARTY_NOTICES.md, LICENSE-SCOPE.md)",
-  "publication": "authorised by the course assignment; see git history of the repository",
-  "files_whose_hash_changed_in_this_refresh": [
-    "DESIGN.md",
-    "HANDOVER.md",
-    "README.md",
-    "REQUIREMENTS.md",
-    "TASKS.md",
-    "THIRD_PARTY_NOTICES.md",
-    "docs/EVIDENCE-COPY-NOTICE.md",
-    "docs/local-testing.md",
-    "docs/publication-files.md"
-  ],
-  "file_count_listed": 220,
-  "update_2026-10-29_video_and_architecture": {
-    "added": [
-      "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "docs/architecture-answer-draft.png",
-      "docs/architecture-approval-ticket.png"
-    ],
-    "removed_from_publication_copy_only": [
-      "docs/video-script.md",
-      "docs/demo.md"
-    ],
-    "originals_of_removed_files_retained_in_working_project": true,
-    "edited": [
-      "README.md",
-      "HANDOVER.md",
-      "TASKS.md",
-      "REQUIREMENTS.md",
-      "docs/architecture.mmd",
-      "docs/local-testing.md",
-      "docs/publication-files.md",
-      "docs/publication-files.txt",
-      "evidence/portfolio-readme-check.json"
-    ],
-    "note": "Static documentation/asset update only; no application code, tests, Docker, services or API calls. docs/architecture.mmd is superseded by the two screenshots."
-  },
-  "update_2026-10-30_contributor_attribution": {
-    "edited": [
-      "DESIGN.md",
-      "HANDOVER.md",
-      "LICENSE-SCOPE.md",
-      "LICENSE.md",
-      "LICENSES/MIT.txt",
-      "README.md",
-      "REQUIREMENTS.md",
-      "TASKS.md",
-      "docs/publication-files.md"
-    ],
-    "note": "Static text update only. Contributor name 'Sari Tahhan' added where attribution previously gave only the GitHub username and 'full name omitted'. GitHub username preserved in URLs, repository paths and technical identifiers; AI-assistance credits and historical evidence files (including evidence/portfolio-readme-check.json) unchanged. package_sha256 refreshed for edited files; repository visibility not changed.",
-    "no_application_code_tests_docker_services_or_api_calls": true
-  },
-  "files_whose_hash_changed_in_this_refresh_2026-10-30": [
-    "HANDOVER.md",
-    "README.md",
-    "app/agent.py",
-    "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-    "docs/publication-files.md",
-    "docs/publication-files.txt",
-    "tests/test_agent_workflow.py"
-  ],
-  "update_2026-10-30_memory_fix_and_video_finalisation": {
-    "added": [
-      "evidence/memory-routing-fix-2026-10-30/SUMMARY.md"
-    ],
-    "edited": [
-      "README.md",
-      "app/agent.py",
-      "tests/test_agent_workflow.py",
-      "HANDOVER.md",
-      "docs/publication-files.md",
-      "docs/publication-files.txt"
-    ],
-    "replaced": [
-      "assets/video/Nakhla IT Helpdesk portfolio.mp4"
-    ],
-    "video_sha256": "4ddcab2f67b6861a955a2bfeada8adabd86ec5c02de2ef2874607d0cd6521c1d",
-    "stale_package_sha256_refreshed": [
-      "HANDOVER.md",
-      "README.md",
-      "app/agent.py",
-      "assets/video/Nakhla IT Helpdesk portfolio.mp4",
-      "docs/publication-files.md",
-      "docs/publication-files.txt",
-      "tests/test_agent_workflow.py"
-    ],
-    "note": "Static metadata update only. Earlier sections are preserved as historical records. The memory-fix test and manual results are recorded in the evidence summary and were not re-run here. No application code, tests, Docker, services or API calls were run in this update; repository visibility not changed."
-  }
+  ]
 }
