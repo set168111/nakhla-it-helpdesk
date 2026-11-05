@@ -65,12 +65,16 @@ def say(page, text: str) -> None:
 def run_employee_ui(page) -> None:
     page.goto(UI)
     expect(page.get_by_text("LOCAL DEMO ONLY").first).to_be_visible(timeout=60000)
+    # The static heading can precede Gradio hydration after a navigation/reload.
+    expect(page.locator("a[href^='%s/']" % APP)).to_have_count(6, timeout=30000)
+    expect(page.get_by_text("Not signed in.").first).to_be_visible(timeout=30000)
     menu = {a.inner_text(): (a.get_attribute("href"), a.get_attribute("target"), a.get_attribute("rel"))
             for a in page.locator("a[href^='%s/']" % APP).all()}
     for label, path in (("Demo accounts", "/demo/login"), ("Admin tickets", "/demo/tickets"), ("App health", "/health"),
                         ("Demo video", "/demo/video"), ("Presentation", "/demo/presentation")):
         check(f"menu link: {label}", menu.get(label, (None,))[0] == APP + path, str(menu.get(label)))
-    check("menu links open in a new tab safely", len(menu) == 5 and all(t == "_blank" and "noopener" in (r or "") for _, t, r in menu.values()))
+    check("updates menu link", menu.get("Updates", (None,))[0] == APP + "/demo/updates")
+    check("menu links open in a new tab safely", len(menu) == 6 and all(t == "_blank" and "noopener" in (r or "") and "noreferrer" in (r or "") for _, t, r in menu.values()))
     check("starts signed out", page.get_by_text("Not signed in.").first.is_visible())
     say(page, "hello before sign in")
     expect(page.get_by_text("Please sign in first.").first).to_be_visible(timeout=20000)

@@ -24,3 +24,10 @@ test example uses a clone-relative interpreter; both transformations are recorde
 Current package verification/provenance supersede old file-count and source-parity
 claims without replacing historical tests or observations. No real passwords,
 password hashes, tokens, databases or private backups are package artifacts.
+
+## Navigation polish scope
+
+The new public summary reports the scoped 37 offline/65 isolated-browser checks
+and all-layer/image activation verification. Raw live data, credential material,
+private source/SQLite backups and machine-specific deployment evidence remain
+local. No provider call or full acceptance rerun is inferred.

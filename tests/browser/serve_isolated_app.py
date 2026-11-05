@@ -61,7 +61,8 @@ class StubRuntime:
 
 
 def main() -> None:
-    tmp = Path(tempfile.mkdtemp(prefix="iso-ui-"))
+    tmp = Path(os.environ["ISO_FIXTURE_DIR"]) if os.environ.get("ISO_FIXTURE_DIR") else Path(tempfile.mkdtemp(prefix="iso-ui-"))
+    tmp.mkdir(parents=True, exist_ok=True)
     sheet = tmp / "demo-accounts.json"
     sheet.write_text(json.dumps({"note": "LOCAL DEMO ONLY", "accounts": [
         {"email": e, "name": n, "department": d, "password": p} for _, e, n, d, p in ACCOUNTS]}), encoding="utf-8")

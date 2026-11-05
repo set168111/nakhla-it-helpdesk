@@ -113,6 +113,14 @@ Only UI7860 and app8000 are published, on loopback. The simulator's **internal**
 8102 is unpublished by default; `/admin/tickets` is not a public app/admin URL.
 Do not submit chat as a health probe.
 
+The employee menu groups Demo video, Presentation, App health and Updates, with
+Admin tickets/Demo accounts in a bordered separate-login group. Admin navigation
+opens new tabs safely; sign-in/sign-out actions stay in their tab. Protected
+Demo accounts explains how to select an employee login. See the public
+[Updates since the live demo](http://localhost:8000/demo/updates) page and its
+[source copy](docs/updates-since-demo.md) for improvements and honest limitations.
+
+
 Employee identity is server-verified from login; sign out and sign in to change
 people. **New chat** keeps the current employee. Separate employees in parallel
 need separate browser profiles/contexts. Chat text cannot approve a draft; the

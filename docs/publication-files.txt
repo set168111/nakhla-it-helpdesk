@@ -74,6 +74,7 @@ docs/publication-files.txt
 docs/running-ui.png
 docs/submission-readiness-2026-11-05.md
 docs/submission-status.md
+docs/updates-since-demo.md
 docs/video-script.md
 evals/cases.sample.jsonl
 evals/check_supplemental_result.py
@@ -162,6 +163,7 @@ evidence/isolated-fresh-start-2026-10-26/working-containers-after.json
 evidence/isolated-fresh-start-2026-10-26/working-containers-before.json
 evidence/local-checkpoint-summary.md
 evidence/memory-routing-fix-2026-10-30/SUMMARY.md
+evidence/navigation-polish-2026-11-05/SUMMARY.md
 evidence/portfolio-readme-check.json
 evidence/repeated-lockout-2026-10-26/SUMMARY.md
 evidence/repeated-lockout-2026-10-26/before.redacted.log
@@ -230,6 +232,7 @@ services/data/status.json
 services/helpdesk_api.py
 services/helpdesk_mcp.py
 tests/auth_helpers.py
+tests/browser/navigation_polish_smoke.py
 tests/browser/serve_isolated_app.py
 tests/browser/ui_enhancements_smoke.py
 tests/browser/ui_smoke.py
@@ -257,6 +260,7 @@ tests/test_eval_runner_auth.py
 tests/test_identity_session_security.py
 tests/test_lockout_narration_conditions.py
 tests/test_login_ticket_continuity.py
+tests/test_navigation_polish.py
 tests/test_read_intent.py
 tests/test_retrieval_policy.py
 tests/test_startup_preservation.py

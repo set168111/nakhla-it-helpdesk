@@ -80,7 +80,7 @@ class UsageRenderingTests(unittest.TestCase):
         self.assertNotIn('0.003', side_panels({})[1])
         self.assertIn('Cost (USD): Unknown', reset_panels()[6])
         self.assertEqual([label for label, _ in MENU],
-                         ['Demo video', 'Presentation', 'Admin tickets', 'App health', 'Demo accounts'])
+                         ['Demo video', 'Presentation', 'App health', 'Updates', 'Admin tickets', 'Demo accounts'])
 
 
 class AdminTableTests(DemoAdminBase):

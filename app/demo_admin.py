@@ -27,10 +27,30 @@ from .auth import AuthService, LoginThrottled
 COOKIE = "demo_admin"
 STYLE = ("body{font-family:system-ui,sans-serif;margin:0;background:#f6f7f9;color:#1b1f24}"
          "header{background:#7a1f1f;color:#fff;padding:10px 20px;font-weight:700;letter-spacing:.04em}"
-         "main{max-width:1000px;margin:20px auto;padding:0 16px}nav a,nav button{margin-right:12px}"
+         "main{max-width:1000px;margin:20px auto;padding:0 16px;min-width:0}"
+         "nav{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:14px 0}"
+         "nav form{margin:0}.table-scroll{max-width:100%;overflow-x:auto}"
          "table{border-collapse:collapse;width:100%;background:#fff}th,td{border:1px solid #d8dce1;padding:6px 8px;text-align:left}"
          "th{background:#eceff3}button,input[type=submit]{cursor:pointer}.warn{color:#7a1f1f;font-weight:700}"
+         ".instructor-note{color:#a31313;border-left:4px solid #a31313;background:#fff0f0;padding:12px;font-weight:700}"
          "code{background:#eceff3;padding:1px 4px}")
+
+UPDATES_INTRO = "The video and presentation show an earlier version. Since the live demo, the following improvements have been added."
+UPDATES = (
+    "Individual employee login and separate protected demo-admin access.",
+    "Ownership checks for conversations, ticket reads and approvals.",
+    "Improved clarification, conversation recall and request resumption.",
+    "Better handling of unrelated or harmful requests, with remaining snippet limitations noted below.",
+    "Clearer lockout-policy conditions, including the daily count and unknown-cause requirements.",
+    "Last-turn token and cost display, including honest unknown and estimated values.",
+    "One combined historical/new ticket table, grouped by status and sorted newest first within each group.",
+    "Saved grading history is retained until explicit cleanup.",
+)
+UPDATE_LIMITS = (
+    "Per-ticket cost attribution remains unavailable.",
+    "Snippet clarification remains safe but sometimes unhelpful.",
+    "Historical evaluation remains 65/69; later checks are separate evidence.",
+)
 
 
 def _first_existing(*candidates: str | Path | None) -> Path | None:
@@ -74,7 +94,8 @@ def build_demo_router(get_auth: Callable[[], AuthService], *, root: Path) -> API
     def page(title: str, body: str, *, status: int = 200, script: str = "") -> HTMLResponse:
         nonce = secrets.token_urlsafe(12)
         script_tag = f'<script nonce="{nonce}">{script}</script>' if script else ""
-        content = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{html.escape(title)}</title>'
+        content = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">'
+                   f'<meta name="viewport" content="width=device-width, initial-scale=1"><title>{html.escape(title)}</title>'
                    f"<style>{STYLE}</style></head><body><header>LOCAL DEMO ONLY &mdash; not a production system</header>"
                    f"<main><h1>{html.escape(title)}</h1>{body}</main>{script_tag}</body></html>")
         csp = f"default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-{nonce}'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'"
@@ -88,15 +109,19 @@ def build_demo_router(get_auth: Callable[[], AuthService], *, root: Path) -> API
     def to_login() -> RedirectResponse:
         return RedirectResponse("/demo/login", status_code=303)
 
-    NAV = ('<nav><a href="/demo/video">Demo video</a><a href="/demo/presentation">Presentation</a>'
-           '<a href="/demo/tickets">Admin tickets</a><a href="/health">App health</a>'
-           '<a href="/demo/login">Demo accounts</a>'
-           '<form method="post" action="/demo/logout" style="display:inline"><button type="submit">Sign out</button></form></nav>')
+    NAV = ('<nav aria-label="Demo navigation">' + ''.join(
+        f'<a href="{path}" target="_blank" rel="noopener noreferrer">{label}</a>'
+        for label, path in (("Demo video", "/demo/video"), ("Presentation", "/demo/presentation"),
+                            ("App health", "/health"), ("Updates", "/demo/updates"),
+                            ("Admin tickets", "/demo/tickets"), ("Demo accounts", "/demo/login"))) +
+        '<form method="post" action="/demo/logout" target="_self"><button type="submit">Sign out</button></form></nav>')
 
     def login_form(message: str = "", status: int = 200) -> HTMLResponse:
         notice = f'<p class="warn">{html.escape(message)}</p>' if message else ""
         return page("Demo admin sign-in", notice + '<p>This page is for the instructor only. It does not sign you in as an employee.</p>'
-                    '<form method="post" action="/demo/login"><label>Demo admin password '
+                    '<p class="instructor-note">Instructors: use the demo-admin password shared privately by the developer via WhatsApp. '
+                    'After signing in, choose Demo accounts to obtain an employee login.</p>'
+                    '<form method="post" action="/demo/login" target="_self"><label>Demo admin password '
                     '<input type="password" name="password" autocomplete="off" required></label> '
                     '<input type="submit" value="Sign in"></form>', status=status)
 
@@ -141,7 +166,11 @@ def build_demo_router(get_auth: Callable[[], AuthService], *, root: Path) -> API
                         f'<td>{email} <button type="button" data-copy="{email}">Copy email</button></td>'
                         f'<td><code>&bull;&bull;&bull;&bull;&bull;&bull;</code> <button type="button" data-copy="{password}">Copy password</button></td></tr>')
         body = (NAV + '<p class="warn">LOCAL DEMO ONLY. Passwords are simulated demo credentials. Signing in here does not impersonate anyone.</p>'
-                "<table><tr><th>Employee</th><th>Department</th><th>Email</th><th>Password</th></tr>" + "".join(rows) + "</table>")
+                '<p>Choose an employee below, copy their email and password, then open the '
+                '<a href="http://localhost:7860" target="_blank" rel="noopener noreferrer">Employee sign-in</a> '
+                'page to test the helpdesk.</p>'
+                '<p>The demo-admin password opens these instructor pages. Employee passwords sign in to the helpdesk; these logins are separate.</p>'
+                '<div class="table-scroll"><table><tr><th>Employee</th><th>Department</th><th>Email</th><th>Password</th></tr>' + "".join(rows) + "</table></div>")
         script = ("document.querySelectorAll('button[data-copy]').forEach(function(b){b.addEventListener('click',function(){"
                   "var t=b.dataset.copy;var done=function(){var o=b.textContent;b.textContent='Copied';setTimeout(function(){b.textContent=o},1200)};"
                   "if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done)}else{"
@@ -189,8 +218,17 @@ def build_demo_router(get_auth: Callable[[], AuthService], *, root: Path) -> API
         headers = ("Ticket ID", "Created", "Subject", "Category", "Priority", "Status", "Requester",
                    "Origin", "AI cost to create ticket (USD)")
         head = "".join(f"<th>{title}</th>" for title in headers)
-        return page("Admin tickets", NAV + summary + f"<table><tr>{head}</tr>{rows}</table>",
+        return page("Admin tickets", NAV + summary + f'<div class="table-scroll"><table><tr>{head}</tr>{rows}</table></div>',
                     status=502 if all_tickets is None and created is None else 200)
+
+    @router.get("/updates")
+    async def updates():
+        # Fixed public information only: no directory mount or user-selected file path.
+        items = ''.join(f'<li>{html.escape(item)}</li>' for item in UPDATES)
+        limits = ''.join(f'<li>{html.escape(item)}</li>' for item in UPDATE_LIMITS)
+        return page("Updates since the live demo", f'<p>{html.escape(UPDATES_INTRO)}</p>' + NAV +
+                    f'<ul>{items}</ul><h2>Current limitations</h2><ul>{limits}</ul>' +
+                    '<p>Later automated and manual checks cover their recorded scope. No comprehensive security certification or new full-suite acceptance is claimed.</p>')
 
     # Exactly two files are ever served; nothing is resolved from the request path.
     video = _first_existing(os.getenv("DEMO_VIDEO_PATH"), root / "demo-assets" / "video.mp4",

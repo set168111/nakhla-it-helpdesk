@@ -59,7 +59,7 @@ def check_table(context):
     smoke.check('ticket text cannot execute markup', page.evaluate('window.ticketXss') is None
                 and page.locator('td').filter(has_text='<script>window.ticketXss=1</script>').count() == 1)
     smoke.check('admin menu order', page.locator('nav a').all_text_contents() ==
-                ['Demo video', 'Presentation', 'Admin tickets', 'App health', 'Demo accounts'])
+                ['Demo video', 'Presentation', 'App health', 'Updates', 'Admin tickets', 'Demo accounts'])
     page.screenshot(path=str(smoke.OUT / 'admin-tickets.png'))
 
 

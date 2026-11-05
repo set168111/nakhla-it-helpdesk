@@ -26,3 +26,11 @@ peer/fresh-clone execution remain unverified. [Remaining blockers](submission-st
 [MIT scope](../LICENSE-SCOPE.md), [third-party notices](../THIRD_PARTY_NOTICES.md)
 and [evidence-copy notice](EVIDENCE-COPY-NOTICE.md) still apply. Original local
 private evidence stays local; only portable/curated public material is included.
+
+## Focused navigation update
+
+Includes the fixed public Updates route and document, responsive administrator
+link grouping, protected guidance, and relevant offline/browser regressions.
+[Polish evidence](../evidence/navigation-polish-2026-11-05/SUMMARY.md). Current
+file count/index/source/privacy status is in package-verification.json; earlier
+35/13 and 45/25 figures describe the prior coordinated update, not this diff.

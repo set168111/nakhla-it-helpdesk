@@ -76,3 +76,12 @@ A new message can supersede its conversation's pending draft: use a separate cha
 for new tests. Employee and admin logins have separate scope; no public reset or
 fault control is exposed by the app. Single-worker SQLite, HTTP and simulator
 in-memory tickets remain demo limitations. Production OIDC/MFA is not implemented.
+
+## Navigation guidance
+
+Admin pages link resources in safe new tabs; login/logout remain in the current
+tab. Demo accounts links Employee sign-in to http://localhost:7860 and explains
+that admin and employee passwords have separate roles. The public
+[Updates page](updates-since-demo.md) lists the earlier-demo differences without
+exposing any directory or credentials. The instructor reminder refers to a
+private WhatsApp handoff; it contains no password or personal contact details.

@@ -23,8 +23,11 @@ PUBLIC_URL = os.getenv("APP_PUBLIC_URL", "http://localhost:8000").rstrip("/")   
 NO_CARD = "_No ticket draft waiting for approval._"
 NOT_SIGNED_IN = "_Not signed in._"
 SIGN_IN_FIRST = "Please sign in first."
-MENU = [("Demo video", "/demo/video"), ("Presentation", "/demo/presentation"),
-        ("Admin tickets", "/demo/tickets"), ("App health", "/health"), ("Demo accounts", "/demo/login")]
+PUBLIC_MENU = [("Demo video", "/demo/video"), ("Presentation", "/demo/presentation"),
+               ("App health", "/health"), ("Updates", "/demo/updates")]
+ADMIN_MENU = [("Admin tickets", "/demo/tickets"), ("Demo accounts", "/demo/login")]
+MENU = PUBLIC_MENU + ADMIN_MENU
+ADMIN_LABEL = "For administrators — separate login required"
 
 
 def new_session_id() -> str:
@@ -32,8 +35,16 @@ def new_session_id() -> str:
 
 
 def menu_html() -> str:
-    links = " | ".join(f'<a href="{html.escape(PUBLIC_URL + path)}" target="_blank" rel="noopener">{label}</a>' for label, path in MENU)
-    return f'<div style="padding:4px 0">{links}</div>'
+    def links(items):
+        return ''.join(f'<a href="{html.escape(PUBLIC_URL + path, quote=True)}" target="_blank" '
+                       f'rel="noopener noreferrer">{html.escape(label)}</a>' for label, path in items)
+    flex = 'display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;min-width:0;max-width:100%;box-sizing:border-box'
+    return (f'<nav aria-label="Helpdesk links" style="{flex};padding:4px 0;gap:12px 24px">'
+            f'<div role="group" aria-label="Helpdesk resources" style="{flex}">{links(PUBLIC_MENU)}</div>'
+            f'<div role="group" aria-label="{html.escape(ADMIN_LABEL)}" '
+            f'style="{flex};border:1px solid #aeb5bf;border-radius:4px;padding:8px 12px">'
+            f'<span style="flex-basis:100%;font-size:.9em;overflow-wrap:anywhere">{html.escape(ADMIN_LABEL)}</span>'
+            f'{links(ADMIN_MENU)}</div></nav>')
 
 
 def call_app(path: str, body: dict | None = None, token: str | None = None) -> tuple[int, dict]:
